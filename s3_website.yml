@@ -1,14 +1,17 @@
+s3_endpoint: eu-west-1
+site: public
+
+<% if ENV['TRAVIS_BRANCH'] == 'master' %>
 s3_id: <%= ENV['S3_ID'] %>
 s3_secret: <%= ENV['S3_SECRET'] %>
-s3_endpoint: eu-west-1
-
-<%- if ENV['TRAVIS_PULL_REQUEST'] == 'false' %>
 s3_bucket: honeypot-staticpages
 cloudfront_distribution_id: E21RQMGDUM8ALN
 <% else %>
+s3_id: <%= ENV['STAGING_S3_ID'] %>
+s3_secret: <%= ENV['STAGING_S3_SECRET'] %>
 s3_bucket: staging-honeypot-staticpages
 cloudfront_distribution_id: E2663ZPEPJTJSO
-s3_key_prefix: pr-<%= ENV['TRAVIS_PULL_REQUEST'] %>
+<%= "s3_key_prefix: pr-#{ENV['TRAVIS_PULL_REQUEST']}" if ENV['TRAVIS_PULL_REQUEST'] && ENV['TRAVIS_PULL_REQUEST'] != 'false'%>
 <% end %>
 
 #cloudfront_distribution_config:
@@ -16,49 +19,3 @@ s3_key_prefix: pr-<%= ENV['TRAVIS_PULL_REQUEST'] %>
 #    items:
 #      CNAME: <%= ENV['TRAVIS_PULL_REQUEST'] == 'false' ? 'staticpages.honeypot.io' : 'staging-staticpages.honeypot.io' %>
 
-# Below are examples of all the available configurations.
-# See README for more detailed info on each of them.
-
-# site: path-to-your-website
-
-# index_document: index.html
-# error_document: error.html
-
-# max_age:
-#   "assets/*": 6000
-#   "*": 300
-
-# gzip:
-#   - .html
-#   - .css
-#   - .md
-# gzip_zopfli: true
-
-
-# ignore_on_server: that_folder_of_stuff_i_dont_keep_locally
-
-# exclude_from_upload:
-#   - those_folders_of_stuff
-#   - i_wouldnt_want_to_upload
-
-# s3_reduced_redundancy: true
-
-# cloudfront_distribution_id: your-dist-id
-
-
-# cloudfront_invalidate_root: true
-
-# concurrency_level: 5
-
-# redirects:
-#   index.php: /
-#   about.php: about.html
-#   music-files/promo.mp4: http://www.youtube.com/watch?v=dQw4w9WgXcQ
-
-# routing_rules:
-#   - condition:
-#       key_prefix_equals: blog/some_path
-#     redirect:
-#       host_name: blog.example.com
-#       replace_key_prefix_with: some_new_path/
-#       http_redirect_code: 301
