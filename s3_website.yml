@@ -1,7 +1,7 @@
 s3_endpoint: eu-west-1
 site: public
 
-<% if ENV['TRAVIS_BRANCH'] == 'master' %>
+<% if ENV['TRAVIS_BRANCH'] == 'master' && ENV['TRAVIS_PULL_REQUEST'] == 'false' %>
 s3_id: <%= ENV['S3_ID'] %>
 s3_secret: <%= ENV['S3_SECRET'] %>
 s3_bucket: honeypot-staticpages
@@ -11,11 +11,5 @@ s3_id: <%= ENV['STAGING_S3_ID'] %>
 s3_secret: <%= ENV['STAGING_S3_SECRET'] %>
 s3_bucket: staging-honeypot-staticpages
 cloudfront_distribution_id: E2663ZPEPJTJSO
-<%= "s3_key_prefix: pr-#{ENV['TRAVIS_PULL_REQUEST']}" if ENV['TRAVIS_PULL_REQUEST'] && ENV['TRAVIS_PULL_REQUEST'] != 'false'%>
+s3_key_prefix: <%= ENV['PREFIX_FOLDER'] %>
 <% end %>
-
-#cloudfront_distribution_config:
-#  aliases:
-#    items:
-#      CNAME: <%= ENV['TRAVIS_PULL_REQUEST'] == 'false' ? 'staticpages.honeypot.io' : 'staging-staticpages.honeypot.io' %>
-
