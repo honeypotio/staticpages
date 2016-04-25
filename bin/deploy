@@ -1,0 +1,8 @@
+#!/bin/bash
+if [ "$TRAVIS_BRANCH" == "master" -o "$TRAVIS_PULL_REQUEST" != "false" ]
+then
+  PREFIX_FOLDER=$([ "$TRAVIS_PULL_REQUEST" != "false" ] && echo "pr-$TRAVIS_PULL_REQUEST")
+  bundle exec s3_website push
+else
+  echo "no deployent for branch $TRAVIS_BRANCH"
+fi
