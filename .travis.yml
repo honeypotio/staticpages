@@ -1,4 +1,3 @@
 language: ruby
 
-before_script: "ls -lt `bundle show s3_website`"
 script: bundle exec s3_website push
