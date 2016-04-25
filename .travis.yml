@@ -1,7 +1,3 @@
 language: ruby
 
-before_script: env
-script:
-  - bundle exec s3_website push
-env:
-  PREFIX_FOLDER: $([ "$TRAVIS_PULL_REQUEST" != "false" ] && echo "pr-$TRAVIS_PULL_REQUEST")
+script: ./bin/deploy
