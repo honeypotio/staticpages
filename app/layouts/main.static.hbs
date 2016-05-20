@@ -1,15 +1,33 @@
-<!DOCTYPE html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-  <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-  <title>{{ title }}</title>
-  <script src="/vendor.js"></script>
-  <script src="/app.js"></script>
-  <script>require('initialize');</script>
-</head>
-<body>
-  {{ content }}
-</body>
+---
+description: "Honeypot is a Developer-Focused Job Platform. Companies apply to you with salary and tech stack upfront."
+title: "Honeypot - The Developer-Focused Job Platform"
+url_base: "http://localhost:3000"
+_options:
+  partials:
+    - app/partials/favicons.static.hbs
+    - app/partials/meta_tags.static.hbs
+    - app/partials/analytics_optout.static.hbs
+---
+<html>
+  <head>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <title>{{title}}</title>
+    <!-- TODO: cookie policy -->
+    <!-- TODO: optimizely -->
+    <script type="text/javascript" src="app.js"></script>
+    <link rel="stylesheet" href="app.css">
+    {{>analytics_optout}}
+    {{>favicons}}
+    <meta name="description" content="{{description}}" />
+    {{>meta_tags}}
+  </head>
+  <body>
+    <!-- TODO: bring back google_tag_manager -->
+    <!-- TODO: flash -->
+    <!-- TODO: partial layouts/navigation -->
+    <main role="main">
+      {{content}}
+      <!-- TODO: partial/footer -->
+    </main>
+  </body>
 </html>
