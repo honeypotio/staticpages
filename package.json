@@ -12,15 +12,17 @@
     "prod": "brunch build --production"
   },
   "dependencies": {
-    "sass-brunch": "^2.6.3"
   },
   "devDependencies": {
+    "sass-brunch": "^2.6.3",
     "auto-reload-brunch": "^2.0.0",
     "babel-brunch": "~6.0.0",
     "babel-preset-es2015": "~6.3.13",
     "brunch": "^2.4.0",
+    "brunch-static": "^1.1.1",
     "clean-css-brunch": "^2.0.0",
     "css-brunch": "^2.0.0",
+    "html-brunch-static": "^1.2.1",
     "javascript-brunch": "^2.0.0",
     "uglify-js-brunch": "^2.0.0"
   }
