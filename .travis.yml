@@ -1,6 +1,8 @@
 language: ruby
 
-before_script: env
+before_script:
+  - env
+  - npm install
 script: ./bin/deploy
 env:
   global:

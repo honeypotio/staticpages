@@ -1,6 +1,7 @@
 #!/bin/bash
 if [ "$TRAVIS_BRANCH" == "master" -o "$TRAVIS_PULL_REQUEST" != "false" ]
 then
+  brunch build --production
   bundle exec s3_website push
 else
   echo "no deployment for branch $TRAVIS_BRANCH"
