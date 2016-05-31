@@ -1,0 +1,55 @@
+.c-landing-references {
+  &__company {
+    $logos: (
+      'travis': (0, -7px),
+      'finleap': (0, 4px),
+      'carmudi': (0, 3px),
+      'hitfox': (-4px, -5px),
+      'liqid': (3px, 6px)
+    );
+
+    @each $logo in $logos {
+      $name: nth($logo, 1);
+      $margins: nth($logo, 2);
+
+      &--#{$name} {
+        @include property-md-up('margin-top', nth($margins, 1), nth($margins, 2));
+      }
+    }
+  }
+
+  &__company-logo {
+    display: inline-block;
+    padding: 20px 10px 20px 0;
+    text-align: right;
+    opacity: .4;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    @media #{$md-up} {
+      padding-right: 0;
+      text-align: center;
+    }
+
+    &--even {
+      padding-left: 10px;
+      text-align: left;
+
+      @media #{$md-up} {
+        padding-left: 0;
+        text-align: center;
+      }
+    }
+
+    &--travis {
+      opacity: .6;
+      padding: 14px;
+
+      @media #{$md-up} {
+        padding: 20px 10px 20px 0;
+      }
+    }
+  }
+}

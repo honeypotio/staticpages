@@ -2,7 +2,7 @@
 _options:
   layout: app/layouts/main.static.hbs
   partials:
-    - app/partials/companies.static.hbs
+    - app/partials/landing_references.static.hbs
     - app/partials/landing_step.static.hbs
 ---
 
@@ -24,11 +24,7 @@ _options:
   </div>
 </header>
 
-<section class="landing__references">
-  <div class="container">
-    {{> companies}}
-  </div>
-</section>
+{{> landing_references}}
 
 <section class="landing__section c-refferals">
   <div class="container">

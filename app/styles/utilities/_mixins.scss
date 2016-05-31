@@ -38,3 +38,11 @@
   font-weight: $fw;
   color: $color;
 }
+
+@mixin property-md-up($prop-name, $value, $value-md-up) {
+  #{$prop-name}: $value;
+
+  @media #{$md-up} {
+    #{$prop-name}: $value-md-up;
+  }
+}
