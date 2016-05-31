@@ -1,5 +1,24 @@
 .c-landing {
-  &__section { padding: 65px 0 112px; }
+  &__section {
+    padding: 65px 0 112px;
+
+    &--primary {
+      background-color: $blue-color;
+      color: $white-color;
+    }
+
+    &--secondary {
+      background-color: $light-gray-color;
+    }
+
+    &--more-spacing {
+      padding-top: 124px;
+    }
+
+    &--line {
+      border-top: 1px solid $light-blue-color;
+    }
+  }
 
   &__main-heading {
     @include text($fs-alpha, $fw-light, $blue-color);
