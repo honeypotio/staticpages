@@ -1,0 +1,17 @@
+.c-landing {
+  &__section { padding: 65px 0 112px; }
+
+  &__main-heading {
+    @include text($fs-alpha, $fw-light, $blue-color);
+    text-align: center;
+    margin-bottom: 42px;
+
+    @media #{$md-up} {
+      @include text($fs-beta, $fw-light, $blue-color);
+    }
+
+    &--inverse {
+      color: $white-color;
+    }
+  }
+}
