@@ -22,8 +22,7 @@
   @if length($args) == 2 {
     width: nth($args, 1);
     height: nth($args, 2);
-  }
-  @else {
+  } @else {
     width: $args;
     height: $args;
   }
@@ -32,4 +31,10 @@
 @mixin circle($args) {
   @include sizing($args);
   border-radius: 50%;
+}
+
+@mixin text($fs, $fw, $color) {
+  font-size: $fs;
+  font-weight: $fw;
+  color: $color;
 }

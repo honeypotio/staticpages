@@ -1,0 +1,45 @@
+.c-landing-header {
+  padding: 90px 0;
+  text-align: center;
+  background: url('images/employers_bg.png') no-repeat;
+  background: {
+    color: $blue-color;
+    size: cover;
+    position-x: -250px;
+  }
+
+  @media #{$sm-up} {
+    background-position-x: 0;
+  }
+
+  @media #{$md-up} {
+    padding: 190px 0 157px;
+  }
+
+  &__heading {
+    @include text($fs-alpha, $fw-normal, $white-color);
+    margin: 0 0 5px;
+
+    @media #{$md-up} {
+      @include text($fs-beta, $fw-normal, $white-color);
+    }
+  }
+
+  &__content {
+    margin: 0 auto;
+    width: 100%;
+
+    @media #{$md-up} {
+      width: 70%;
+    }
+  }
+
+  &__body {
+    @include text($fs-gamma, $fw-light, $white-color);
+    margin: 0 0 36px;
+
+    @media #{$md-up} {
+      @include text($fs-gamma, $fw-light, $white-color);
+    }
+  }
+}
