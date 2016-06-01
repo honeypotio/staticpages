@@ -5,6 +5,8 @@ _options:
     - app/partials/landing_references.static.hbs
     - app/partials/landing_step.static.hbs
     - app/partials/landing_read_more.static.hbs
+    - app/partials/landing_steps.static.hbs
+    - app/partials/commission.static.hbs
 ---
 
 <header class="c-landing-header">
@@ -42,72 +44,14 @@ _options:
   </div>
 </section>
 
-<section class="landing__section landing__section--secondary landing__steps">
-  <div class="container">
-    <h2 class="landing__main-heading">How does it work?</h2>
-    {{> landing_step
-      number=1
-      full_width=true
-      title="Set Up A Profile"
-      arrow=true
-      content='We create a company profile for you. Think of it as <b>employer branding.</b> We want developers to understand what makes your company great.'
-    }}
-    {{> landing_step
-      number=2
-      full_width=true
-      title="Browse Pre-Screened Developers"
-      arrow=true
-      content='
-        All developers on Honeypot are pre-screened through a call, code-checked and actively looking for new opportunities.
-        And <b>we release new profiles each week</b> in groups, which we call batches.
-      '
-    }}
-    {{> landing_step
-      number=3
-      full_width=true
-      title="Invite Developers To Interview"
-      arrow=true
-      content='
-        Reach out to developers directly through Honeypot. Honeypot messages get read, the average <b>response rate is 85%.</b>
-      '
-    }}
-    {{> landing_step
-      number=4
-      full_width=true
-      title="Only Pay When You Hire"
-      arrow=false
-      content='
-        Browse and contact developers for free. Only pay when you hire developers and they stay with you.
-      '
-    }}
-  </div><!-- ./container -->
-
-  <div class="text-center landing__steps-signup-container">
-    <a href="{{url_base}}/invite_requests/new" class="btn btn-primary landing__btn landing__btn--big">Start Hiring</a>
-  </div>
+<section class="c-landing__section c-landing__section--secondary c-landing__section--line">
+  {{> landing_steps }}
 </section>
 
-<section class="landing__section landing__section--primary">
-  <div class="container landing__commission-container text-center">
-    <h2 class="landing__main-heading landing__main-heading--inverse">Only pay when you hire!</h2>
-    <div class="c-commission">
-      <div class="c-commission__header">
-        15<small>%</small>
-        <p class="c-commission__header__text">Commission*</p>
-      </div>
-      <ul class="c-commission__details">
-        <li>Payment upon hire</li>
-        <li>1 installment</li>
-        <li>100% refund if the talent leaves in the first 3 months after hire</li>
-        <li>Full visa support for non-EU talents</li>
-      </ul>
-    </div><!-- ./c-commission -->
-    <div class="c-commission__legend">
-      *Commission is calculated from the yearly gross salary of the hired developer
-    </div>
-    <div class="c-commission__start-hiring-container">
-      <a href="{{url_base}}/invite_requests/new" class="btn btn-primary landing__btn landing__btn--big">Start Hiring</a>
-    </div>
+<section class="c-landing__section c-landing__section--primary">
+  <div class="container">
+    <h2 class="c-landing__main-heading c-landing__main-heading--inverse">Only pay when you hire!</h2>
+    {{> commission}}
   </div>
 </section>
 

@@ -13,3 +13,6 @@ s3_bucket: staging-honeypot-staticpages
 cloudfront_distribution_id: E2663ZPEPJTJSO
 s3_key_prefix: <%= ENV['PREFIX_FOLDER'] %>
 <% end %>
+
+redirects:
+  for_employers: for_employers.html

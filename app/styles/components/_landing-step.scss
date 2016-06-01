@@ -1,0 +1,47 @@
+.c-landing-step {
+  width: 100%;
+  margin: 0 auto;
+
+  @media #{$md-up} {
+    width: 75%;
+  }
+
+  &--full-width {
+    @media #{$md-up} {
+      width: 100%;
+    }
+  }
+
+  &__symbol-container {
+    vertical-align: top;
+    text-align: right;
+  }
+
+  &__symbol {
+    @include text(50px, $fw-normal, $blue-color);
+    font-family: "Montserrat", "Proxima Nova", sans-serif;
+    display: block;
+    font-style: normal;
+
+    @media #{$md-up} {
+      @include text(80px, $fw-normal, $blue-color);
+    }
+  }
+
+  &__heading {
+    @include text(30px, $fw-light, $gray-2-color);
+
+    @media #{$md-up} {
+      @include text($fs-jumbo-2, $fw-light, $gray-2-color);
+    }
+  }
+
+  &__body {
+    @include text($fs-9, $fw-light, $dark-gray-color);
+    line-height: $fs-9 + 5px;
+
+    @media #{$md-up} {
+      @include text($fs-gamma, $fw-light, $dark-gray-color);
+    }
+  }
+}

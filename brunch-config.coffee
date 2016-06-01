@@ -16,6 +16,8 @@ module.exports =
     sass:
       options:
         includePaths: ['node_modules/bootstrap-sass/assets/stylesheets']
+    digest:
+      referenceFiles: /(\.html|\.css)$/
     static:
       processors: [
         require('html-brunch-static') {

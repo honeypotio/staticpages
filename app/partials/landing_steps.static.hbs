@@ -1,0 +1,42 @@
+  <div class="container">
+    <h2 class="c-landing__main-heading">How does it work?</h2>
+    {{> landing_step
+      number=1
+      full_width=true
+      title="Set Up A Profile"
+      arrow=true
+      content='We create a company profile for you. Think of it as <b>employer branding.</b> We want developers to understand what makes your company great.'
+    }}
+    {{> landing_step
+      number=2
+      full_width=true
+      title="Browse Pre-Screened Developers"
+      arrow=true
+      content='
+        All developers on Honeypot are pre-screened through a call, code-checked and actively looking for new opportunities.
+        And <b>we release new profiles each week</b> in groups, which we call batches.
+      '
+    }}
+    {{> landing_step
+      number=3
+      full_width=true
+      title="Invite Developers To Interview"
+      arrow=true
+      content='
+        Reach out to developers directly through Honeypot. Honeypot messages get read, the average <b>response rate is 85%.</b>
+      '
+    }}
+    {{> landing_step
+      number=4
+      full_width=true
+      title="Only Pay When You Hire"
+      arrow=false
+      content='
+        Browse and contact developers for free. Only pay when you hire developers and they stay with you.
+      '
+    }}
+  </div><!-- ./container -->
+
+  <div class="text-center c-landing-steps__signup-container">
+    <a href="{{url_base}}/invite_requests/new" class="btn-landing btn-landing--big">Start Hiring</a>
+  </div>
