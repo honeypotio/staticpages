@@ -1,0 +1,11 @@
+.c-explanation-header {
+  &__heading {
+    @include text($fs-15, $fw-light, $blue-color);
+    margin-bottom: 14px;
+  }
+
+  &__text {
+    @include text($fs-6, $fw-light, $gray-2-color);
+    margin-bottom: 32px;
+  }
+}

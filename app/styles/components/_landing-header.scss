@@ -1,7 +1,7 @@
 .c-landing-header {
   padding: 90px 0;
   text-align: center;
-  background: url('images/employers_bg.png') no-repeat;
+  background: url('images/lp_header.png') no-repeat;
   background: {
     color: $blue-color;
     size: cover;
@@ -14,6 +14,17 @@
 
   @media #{$md-up} {
     padding: 190px 0 157px;
+  }
+
+  &--employers {
+    background: url('images/employers_bg.png') no-repeat;
+    background-color: $blue-color;
+    background-position-x: -800px;
+
+    @media #{$sm-up} {
+      background-size: cover;
+      background-position-x: 0;
+    }
   }
 
   &__heading {

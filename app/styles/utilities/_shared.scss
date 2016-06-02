@@ -1,0 +1,20 @@
+// PUSH HELPER
+
+$margins: ('half', 5px), ('', 10px), ('double', 20px), ('triple', 30px), ('quadruple', 40px);
+$directions: 'top', 'bottom', 'left', 'right';
+
+.push {
+  margin: 10px;
+}
+
+@each $margin in $margins {
+
+  @each $dir in $directions {
+    $name: nth($margin, 1);
+    $val: nth($margin, 2);
+
+    .push--#{$dir}--#{$name} {
+      margin-#{$dir}: $val;
+    }
+  }
+}

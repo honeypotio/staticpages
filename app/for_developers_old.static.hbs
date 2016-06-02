@@ -1,10 +1,23 @@
-<header class="o-hero-unit landing__header">
+---
+_options:
+  layout: app/layouts/main.static.hbs
+  partials:
+    - app/partials/landing_references.static.hbs
+    - app/partials/landing_step.static.hbs
+    - app/partials/landing_read_more.static.hbs
+    - app/partials/landing_steps.static.hbs
+    - app/partials/commission.static.hbs
+    - app/partials/quote.static.hbs
+    - app/partials/avatar.static.hbs
+---
+
+<header class="c-landing-header">
   <div class="container">
-    <div class="o-hero-unit__content landing__header__content">
-      <h1 class="o-hero-unit__heading">
+    <div class="c-landing-header__content">
+      <h1 class="c-landing-header__heading">
         Companies Apply To You
       </h1>
-      <div class="o-hero-unit__body">
+      <div class="c-landing-header__body">
         <div>
           We help programmers find great jobs at great companies.
         </div>
@@ -12,90 +25,76 @@
           No applications, just one profile and your code.
         </div>
       </div>
-      <div class="o-hero-unit__form">
-        <form action="<%= new_user_registration_path %>" method="GET">
-            <input type="text" name="email" class="form-control landing__input landing__input-text" placeholder="Enter your email" />
-            <input type="submit" value="Sign Up" class="btn btn-primary landing__btn">
+      <div class="c-landing-header__form">
+        <form action="{{url_base}}/users/signup" method="GET">
+          <input type="text" name="email" class="form-control c-landing__input c-landing__input-text" placeholder="Enter your email" />
+          <input type="submit" value="Sign Up" class="btn btn-landing">
         </form>
       </div>
     </div>
   </div>
 </header>
 
-<section class="landing__references">
-  <div class="container">
-    <%= render partial: 'pages/companies' %>
-  </div>
-</section>
+{{> landing_references}}
 
-<section class="landing__section landing__section--secondary landing__steps">
+<section class="c-landing__section c-landing__section--secondary landing__steps">
   <div class="container">
-    <h2 class="landing__main-heading">How does it work?</h2>
-    <%= render layout: "components/landing_step", locals: {
-      number: 1,
-      title: "Set up a profile",
-      full_width: false,
-    } do %>
-      Tell us about your experience, your salary expectations and your desired tech stack. No CV needed!
-    <% end %>
-    <%= render layout: "components/landing_step", locals: {
-      number: 2,
-      title: "Show off your skills",
-      full_width: false,
-    } do %>
-      We value your code not your CV. Share your open source contributions or solve a coding challenge in your favorite language and let companies see your skills!
-    <% end %>
-    <%= render layout: "components/landing_step", locals: {
-      number: 3,
-      title: "Receive great job offers",
-      full_width: false,
-    } do %>
+    <h2 class="c-landing__main-heading">How does it work?</h2>
+  </div>
+  <div class="container">
+    {{> landing_step
+      number=1
+      full_width=false
+      title="Set Up A Profile"
+      arrow=true
+      content='Tell us about your experience, your salary expectations and your desired tech stack. No CV needed!'
+    }}
+    {{> landing_step
+      number=2
+      full_width=false
+      title="Show off your skills"
+      arrow=true
+      content='
+      We value your code not your CV. Share your open source contributions or solve a coding challenge in your
+      favorite language and let companies see your skills!
+      '
+    }}
+    {{> landing_step
+      number=3
+      full_width=false
+      title="Receive great job offers"
+      arrow=true
+      content='
       Companies request an interview with you, sending tech stack and salary upfront.
-    <% end %>
-    <%= render layout: "components/landing_step", locals: {
-      number: 4,
-      full_width: false,
-      title: "Find a job and get a bonus",
-    } do %>
+      '
+    }}
+    {{> landing_step
+      number=4
+      full_width=false
+      title="Find a job and get a bonus"
+      arrow=true
+      content='
       You choose which companies to interview with and when you get hired we give you a <b>&euro;1024 bonus.</b>
-    <% end %>
+      '
+    }}
   </div><!-- ./container -->
 
-  <div class="text-center landing__steps-signup-container">
-    <%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-primary landing__btn landing__btn--big' %>
+  <div class="text-center c-landing-steps__signup-container">
+    <a href="{{url_base}}/users/signup">
+      <button class="btn btn-landing btn-landing--big">Sign Up</button>
+    </a>
   </div>
 </section>
 
-<section class="landing__section landing__section--primary landing__section--more-spacing">
-  <div class="container c-quote">
-    <p class="c-quote__content">
-      In Italy, I worked as a freelancer and founded my own agency, but I felt like a new challenge.
-      Thanks to Honeypot I landed an exciting position as Senior Backend Developer at LIQID in Berlin.
-      I have been in touch with technical recruiters before,
-      but the guys at Honeypot showed a level of dedication that is uncommon in the industry.
-      I would recommend them to any engineer looking for a new opportunity here in Berlin,
-      best job platform I have experienced so far!
-    </p>
-    <div class="media c-quote__author">
-      <div class="media-body">
-        <div>
-          Michele Piccirillo
-        </div>
-        <div class="c-quote__author__position">
-          Senior Backend Developer
-        </div>
-        <img class="c-quote__author__company" src="<%= asset_url('frontend/images/liqid_logo.png') %>" width="79" height="23" alt="Liqid jobs"/>
-      </div>
-      <div class="media-right">
-        <%= render partial: 'components/avatar', locals: { sizing: 70, author: "m_piccirillo" } %>
-      </div>
-    </div>
-  </div>
+<section class="c-landing__section c-landing__section--primary c-landing__section--more-spacing">
+  {{> quote}}
 </section>
 
-<section class="landing__section">
+<section class="c-landing__section">
   <div class="container text-center">
-    <h2 class="landing__main-heading">Sign up for free and find your ideal job!</h2>
-    <%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-primary landing__btn landing__btn--big' %>
+    <h2 class="c-landing__main-heading">Sign up for free and find your ideal job!</h2>
+    <a href="{{url_base}}/users/signup">
+      <button class="btn btn-landing btn-landing--big">Sign Up</button>
+    </a>
   </div>
 </section>

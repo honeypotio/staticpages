@@ -33,4 +33,36 @@
       color: $white-color;
     }
   }
+
+  &__input-container {
+    @media #{$md-up} {
+      padding-left: 38px;
+    }
+  }
+
+  &__input {
+    @include text($fs-9, $fw-light, $gray-2-color);
+    width: 94%;
+    margin-bottom: 20px;
+    display: inline-block;
+    height: auto;
+    padding: 12px 20px;
+    box-sizing: border-box;
+
+    @media #{$md-up} {
+      margin: 0 8px 20px 0;
+      width: 90%;
+      display: inline-block;
+      vertical-align: bottom;
+    }
+
+    @media #{$lg-up} {
+      margin: 0 8px 0 0;
+      width: 405px;
+    }
+  }
+
+  &__input-text {
+    color: $almost-black-color;
+  }
 }

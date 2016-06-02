@@ -1,5 +1,5 @@
 .c-commission-container {
-  @include quote-comission-decoration(157px, 129px);
+  @include quote-comission-decoration(48px, 21px);
 
   @media #{$md-up} {
     width: 660px;

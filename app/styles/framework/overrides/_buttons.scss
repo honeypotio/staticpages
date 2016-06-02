@@ -2,6 +2,10 @@
   font-size: $fs-btn;
   font-weight: $fw-bold;
 
+  &:hover {
+    text-decoration: none;
+  }
+
   &-blue {
     @include button-variant($white-color, $blue-color, $blue-color);
     text-transform: none;
