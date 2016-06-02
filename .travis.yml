@@ -1,4 +1,7 @@
 language: node_js
+cache:
+  - node_modules
+  - bundler
 
 before_install:
   - rvm use $(< .ruby-version) --install --binary --fuzzy
