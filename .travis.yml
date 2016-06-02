@@ -1,5 +1,9 @@
-language: ruby
+language: node_js
 
+before_install:
+  - rvm use $(< .ruby-version) --install --binary --fuzzy
+  - sudo apt-get update -qq
+  - sudo apt-get install -qq optipng libjpeg-progs
 install:
   - npm install
   - bundle install
