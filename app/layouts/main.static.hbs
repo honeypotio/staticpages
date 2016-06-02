@@ -7,6 +7,8 @@ _options:
     - app/partials/favicons.static.hbs
     - app/partials/meta_tags.static.hbs
     - app/partials/analytics_optout.static.hbs
+    - app/partials/navigation.static.hbs
+    - app/partials/footer.static.hbs
 ---
 <html>
   <head>
@@ -16,18 +18,18 @@ _options:
     <!-- TODO: optimizely -->
     <script type="text/javascript" src="app.js"></script>
     <link rel="stylesheet" href="app.css">
-    {{>analytics_optout}}
-    {{>favicons}}
+    {{> analytics_optout}}
+    {{> favicons}}
     <meta name="description" content="{{description}}" />
-    {{>meta_tags}}
+    {{> meta_tags}}
   </head>
   <body>
     <!-- TODO: bring back google_tag_manager -->
     <!-- TODO: flash -->
-    <!-- TODO: partial layouts/navigation -->
+    {{> navigation logo='logo.svg'}}
     <main role="main">
       {{content}}
-      <!-- TODO: partial/footer -->
     </main>
+    {{> footer}}
   </body>
 </html>

@@ -1,0 +1,4 @@
+.c-navigation {
+  &__logo-link { padding: 9px 15px; }
+  &__logo { @include sizing(131px 33px); }
+}
