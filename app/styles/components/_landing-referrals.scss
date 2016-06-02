@@ -1,0 +1,34 @@
+.c-landing-referrals {
+  border-top: 1px solid  $light-blue-color;
+  padding-bottom: 95px;
+
+  &__content {
+    margin-top: 55px;
+  }
+
+  &__text {
+    @include text($fs-7, $fw-light, $dark-gray-color);
+    text-align: center;
+    font-style: italic;
+
+    @media #{$md-up} {
+      font-size: $fs-8;
+    }
+  }
+
+  &__author {
+    @include text($fs-6, $fw-light, $gray-color);
+    margin-top: 36px;
+    text-align: center;
+
+    &-logo {
+      display: block;
+      margin: 0 auto 10px;
+
+      @media #{$md-up} {
+        display: inline;
+        margin: 0 10px 0 0;
+      }
+    }
+  }
+}

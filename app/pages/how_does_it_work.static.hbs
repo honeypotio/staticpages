@@ -1,0 +1,149 @@
+---
+_options:
+  layout: app/layouts/main.static.hbs
+  partials:
+    - app/partials/avatar.static.hbs
+---
+
+<section class="c-landing__section c-landing__section--line">
+  <div class="container text-center c-explanation-header">
+    <h2 class="c-landing__main-heading c-explanation-header__heading">
+      <b>Companies apply to you,</b> not the other way around
+    </h2>
+    <div class="c-explanation-header__text">
+      On Honeypot companies apply directly to developers with salaries from &euro;40,000 to &euro;120,000.
+    </div>
+    <a href="{{base_url}}/users/signup">
+      <button class="btn btn-landing btn-landing--big">Join Now</button>
+    </a>
+  </div>
+</section>
+
+<section class="c-landing__section c-landing__section--secondary">
+  <div class="container">
+    <div class="row c-explanation-showcase">
+      <div class="col-md-6">
+        <img class="c-explanation-showcase__talent-image" src="DIGEST(images/talent_screens.png)" alt="Highlight your experience and your ideal position" />
+      </div>
+      <div class="col-md-6 c-explanation-showcase__text">
+        <div class="c-explanation-showcase__text-block">
+          <h2 class="c-landing__main-heading c-explanation-showcase__heading">
+            Highlight your experience and your ideal position
+          </h2>
+          <div class="c-explanation-showcase__copy text-right">
+            <p>
+              Create your profile and fill in some details about your experience and ideal position.
+              We value code not CVs so before being accepted onto Honeypot,
+              each developer is individually code reviewed.
+            </p>
+            <p class="c-explanation-showcase__copy__paragraph">
+              We also do a quick call to find out what you are passionate about and to match you to the
+              best positions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="c-landing__section">
+  <div class="container">
+    <div class="row c-explanation-showcase">
+      <div class="col-md-6 col-md-push-6">
+        <img class="c-explanation-showcase__companies-image" src="DIGEST(images/companies_screens.png)" alt="Companies request an interview with you" />
+      </div>
+      <div class="col-md-6 col-md-pull-6 c-explanation-showcase__text">
+        <div class="c-explanation-showcase__text-block c-explanation-showcase__text-block--full-width pull-left">
+          <h2 class="c-landing__main-heading c-explanation-showcase__heading--left">
+            Companies request an interview with you
+          </h2>
+          <div class="c-explanation-showcase__copy">
+            <p>
+              Companies browse developer profiles by applying filters for technologies, location and salary range.
+              They then request an interview by sending interview invites with salary and tech stack up front.
+            </p>
+            <p class="c-explanation-showcase__copy__paragraph">
+              Privacy is important to us. By default your current employers won’t see your profile.
+              You can also choose to block your profile from other companies.
+            </p>
+          </div>
+        </div>
+      </div><!-- /.col-md-6 -->
+    </div>
+  </div>
+</section>
+
+<section class="c-landing__section c-landing__section--secondary">
+  <div class="container">
+    <div class="row c-explanation-showcase">
+      <div class="col-md-6">
+        <div class="c-explanation-talent-rep">
+          <div class="c-explanation-talent-rep__upper-avatar">
+            {{> avatar sizing=220 author="fabio"}}
+          </div>
+          <div class="c-explanation-talent-rep__lower-avatar">
+            {{> avatar sizing=220 author="janet"}}
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 c-explanation-showcase__text">
+        <div class="c-explanation-showcase__text-block c-explanation-showcase__text-block--talent-rep">
+          <h2 class="c-landing__main-heading c-explanation-showcase__heading">
+            Your talent rep supports you in finding your ideal role
+          </h2>
+        </div>
+        <div class="c-explanation-showcase__text-block c-explanation-showcase__text-block--no-push">
+          <div class="c-explanation-showcase__copy text-right">
+            <p>
+              Your Talent Rep is your personal career assistant. They will help you create
+              your profile, get the best job offers
+              and negotiate your salary.
+              Feel free to ask them anything
+              before, during and after the job hunt!
+            </p>
+
+            <div class="push--top--quadruple">
+              <a href="{{base_url}}/users/signup">
+                <button class="btn btn-landing btn-landing--big">Join Now</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="c-landing__section">
+  <div class="container">
+    <div class="row c-explanation-showcase">
+      <div class="col-md-5 col-md-push-7 text-right">
+        <img class="c-explanation-showcase__get-job-image" src="DIGEST(images/handshake.svg)" alt="Get a job in two weeks" />
+      </div>
+      <div class="col-md-7 col-md-pull-5 c-explanation-showcase__text">
+        <div class="c-explanation-showcase__text-block c-explanation-showcase__text-block--full-width pull-left">
+          <h2 class="c-landing__main-heading c-explanation-showcase__heading--left">
+            Get a job in two weeks
+          </h2>
+        </div>
+        <div class="c-explanation-showcase__text-block c-explanation-showcase__text-block--no-push pull-left">
+          <div class="c-explanation-showcase__copy">
+            <p>
+              Your profile is visible to companies for a two week period, condensing the job hunt into an efficient time frame.
+            </p>
+            <p class="c-explanation-showcase__copy__paragraph">
+              Companies on Honeypot are hiring for frontend, backend and mobile developers, system administrators, devops, data-scientists, CTOs and more.
+            </p>
+
+            <div class="push--top--quadruple">
+              <a href="{{base_url}}/users/signup">
+                <button class="btn btn-landing btn-landing--big">Join Now</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div><!-- /.col-md-6 -->
+    </div>
+  </div>
+</section>

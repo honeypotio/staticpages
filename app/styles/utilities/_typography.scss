@@ -1,0 +1,10 @@
+*,
+*::after,
+*::before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+@import 'proxima-nova';
+@import 'montserrat';
+

@@ -1,7 +1,17 @@
-language: ruby
+language: node_js
 
-before_script: env
+before_install:
+  - rvm use $(< .ruby-version) --install --binary --fuzzy
+  - sudo apt-get update -qq
+  - sudo apt-get install -qq optipng libjpeg-progs
+install:
+  - npm install
+  - bundle install
+
+before_script:
+  - env
 script: ./bin/deploy
+
 env:
   global:
     - PREFIX_FOLDER=$([ "$TRAVIS_PULL_REQUEST" != "false" ] && echo "pr-$TRAVIS_PULL_REQUEST")

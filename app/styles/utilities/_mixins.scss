@@ -1,0 +1,66 @@
+@mixin _position($position, $args) {
+  @each $dir in top, left, bottom, right {
+    $i: index($args, $dir);
+    @if $i {
+      #{$dir}: nth($args, $i + 1);
+    }
+  }
+  position: $position;
+}
+
+@mixin absolute($args) {
+  @include _position(absolute, $args);
+}
+@mixin relative($args) {
+  @include _position(relative, $args);
+}
+@mixin fixed($args) {
+  @include _position(fixed, $args);
+}
+
+@mixin sizing($args) {
+  @if length($args) == 2 {
+    width: nth($args, 1);
+    height: nth($args, 2);
+  } @else {
+    width: $args;
+    height: $args;
+  }
+}
+
+@mixin circle($args) {
+  @include sizing($args);
+  border-radius: 50%;
+}
+
+@mixin text($fs, $fw, $color) {
+  font-size: $fs;
+  font-weight: $fw;
+  color: $color;
+}
+
+@mixin property-md-up($prop-name, $value, $value-md-up) {
+  #{$prop-name}: $value;
+
+  @media #{$md-up} {
+    #{$prop-name}: $value-md-up;
+  }
+}
+
+@mixin quote-comission-decoration($before-top, $after-top) {
+  position: relative;
+
+  &:before {
+    @include sizing(166px 263px);
+    @include absolute(top $before-top left -200px);
+    content: '';
+    background-image: url('DIGEST(images/more-info-before.svg)');
+  }
+
+  &:after {
+    @include sizing(181px 212px);
+    @include absolute(top $after-top right -200px);
+    content: '';
+    background-image: url('DIGEST(images/more-info-after.svg)');
+  }
+}

@@ -1,0 +1,25 @@
+.c-landing-read-more {
+  &__container {
+    text-align: center;
+
+    &:last-of-type {
+      padding-top: 0;
+      margin-bottom: 40px;
+    }
+
+    @media #{$md-up} {
+      padding-top: 34px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__logo {
+    margin: 50px auto 0;
+    display: block;
+
+    @media #{$md-up} {
+      display: inline;
+      margin: 0 79px 0 0;
+    }
+  }
+}

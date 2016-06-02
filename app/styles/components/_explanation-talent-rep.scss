@@ -1,0 +1,67 @@
+.c-explanation-talent-rep {
+  margin: 0 0 110px;
+  position: relative;
+  text-align: center;
+
+  @media #{$md-up} {
+    margin: 100px 0 0;
+  }
+
+  &:before {
+    @include sizing(66px 61px);
+    @include absolute(top -41px right 13px);
+    content: '';
+    background: url('DIGEST(images/talent_rep_upper.svg)') no-repeat;
+    background-size: contain;
+
+    @media #{$md-up} {
+      @include sizing(264px 242px);
+      @include absolute(top -92px right 21px);
+    }
+  }
+
+  &:after {
+    @include sizing(72px 61px);
+    @include absolute(top 130px left 20px);
+    content: '';
+    background: url('DIGEST(images/talent_rep_lower.svg)') no-repeat;
+    background-size: contain;
+
+    @media #{$md-up} {
+      @include sizing(250px 211px);
+      @include absolute(top 260px left 30px);
+    }
+  }
+
+  &__lower-avatar,
+  &__upper-avatar {
+    display: inline-block;
+  }
+
+  &__upper-avatar {
+    vertical-align: top;
+
+    .honeycomb__shape {
+      @include sizing(120px);
+
+      @media #{$md-up} {
+        @include sizing(220px);
+      }
+    }
+  }
+
+  &__lower-avatar {
+
+    @media #{$md-up} {
+      margin-top: 150px;
+    }
+
+    .honeycomb__shape {
+      @include sizing(120px);
+
+      @media #{$md-up} {
+        @include sizing(220px);
+      }
+    }
+  }
+}

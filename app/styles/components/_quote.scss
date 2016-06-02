@@ -1,0 +1,47 @@
+.c-quote {
+  @include quote-comission-decoration(36px, -50px);
+
+  @media #{$md-up} {
+    width: 800px;
+  }
+
+  &__content {
+    @include text($fs-gamma, $fw-light, $white-color);
+    position: relative;
+    text-align: center;
+
+    &:before {
+      @include absolute(top -70px left 0);
+      @include text(70px, $fw-light, $white-color);
+      content: '“';
+      font-style: italic;
+      width: 100%;
+      text-align: center;
+
+      @media #{$md-up} {
+        @include absolute(top -50px left -22px);
+        width: auto;
+        text-align: left;
+      }
+    }
+  }
+
+
+  &__author {
+    @include text($fs-gamma, $fw-light, $white-color);
+    text-align: right;
+    margin: 37px auto 0;
+
+    @media #{$md-up} {
+      width: 290px;
+    }
+
+    &__position {
+      @include text($fs-14, $fw-light, darken($blue-color, 20%));
+    }
+
+    &__company {
+      opacity: .2;
+    }
+  }
+}

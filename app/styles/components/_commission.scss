@@ -1,0 +1,56 @@
+.c-commission-container {
+  @include quote-comission-decoration(48px, 21px);
+
+  @media #{$md-up} {
+    width: 660px;
+  }
+}
+
+.c-commission {
+  width: 218px;
+  min-height: 328px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 12px 22px 0;
+  text-align: center;
+  color: $dark-gray-color;
+  background-color: $white-color;
+  box-shadow: 0 0 11px rgba($black-color, .3);
+
+  &__header {
+    margin-bottom: 8px;
+    padding: 32px 0 5px;
+    font-size: $fs-beta;
+    color: $blue-color;
+    border-bottom: 1px solid $light-gray-color;
+
+    small {
+      font-size: $fs-11;
+    }
+
+    &__text {
+      margin-top: -8px;
+      font-size: $fs-12;
+      text-transform: uppercase;
+      color: $almost-black-color;
+    }
+  }
+
+  &__details {
+    padding: 8px 10px;
+    list-style-type: none;
+
+    li {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__legend {
+    @include text($fs-13, $fw-light, rgba($white-color, .5));
+    margin-top: 31px;
+  }
+
+  &__start-hiring-container {
+    margin-top: 55px;
+  }
+}

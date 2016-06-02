@@ -1,0 +1,70 @@
+---
+_options:
+  layout: app/layouts/main.static.hbs
+  partials:
+    - app/partials/landing_references.static.hbs
+    - app/partials/landing_step.static.hbs
+    - app/partials/landing_read_more.static.hbs
+    - app/partials/landing_steps.static.hbs
+    - app/partials/commission.static.hbs
+---
+
+<header class="c-landing-header c-landing-header--employers">
+  <div class="container">
+    <div class="c-landing-header__content">
+      <h1 class="c-landing-header__heading">
+        Hire the best developers from around the world.
+      </h1>
+      <div class="c-landing-header__body">
+        And you can relax because we cover the visa. For free.
+      </div>
+      <div class="c-landing-header__form">
+        <a href="{{url_base}}/invite_requests/new" class="btn btn-landing btn-landing--big">
+          Start Hiring
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+{{> landing_references}}
+
+<section class="c-landing__section c-landing-referrals">
+  <div class="container">
+    <h2 class="c-landing__main-heading">What people say about Honeypot</h2>
+    <div class="c-landing-referrals__content">
+      <div class="c-landing-referrals__text">
+        ”Real pleasure to work with a team like that. Highly professional and really warm, with an extremely good understanding of IT recruitment.”
+      </div>
+      <div class="c-landing-referrals__author">
+        <img class="c-landing-referrals__author-logo" src="DIGEST(images/carmudi_logo_color.png)" height="20px" alt="Carmudi jobs"/>
+        found their system administrator on Honeypot
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="c-landing__section c-landing__section--secondary c-landing__section--line">
+  {{> landing_steps }}
+</section>
+
+<section class="c-landing__section c-landing__section--primary">
+  <div class="container">
+    <h2 class="c-landing__main-heading c-landing__main-heading--inverse">Only pay when you hire!</h2>
+    {{> commission}}
+  </div>
+</section>
+
+<section class="c-landing__section c-landing__section--secondary">
+  <div class="container">
+    <h2 class="c-landing__main-heading">Read more about Honeypot</h2>
+    {{> landing_read_more }}
+  </div>
+</section>
+
+<section class="c-landing__section">
+  <div class="container text-center">
+    <h2 class="c-landing__main-heading">Sign up for free and start hiring!</h2>
+    <a href="{{url_base}}/invite_requests/new" class="btn btn-landing btn-landing--big">Start Hiring</a>
+  </div>
+</section>

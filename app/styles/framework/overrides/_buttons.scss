@@ -1,0 +1,26 @@
+.btn {
+  font-size: $fs-btn;
+  font-weight: $fw-bold;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &-blue {
+    @include button-variant($white-color, $blue-color, $blue-color);
+    text-transform: none;
+  }
+
+  &-landing {
+    @include text($fs-btn-landing, $fw-normal, $white-color);
+    @include button-variant($white-color, $yellow-color, $yellow-color);
+    padding: 11px 78px;
+    border-radius: 5px;
+
+    &--big {
+      @include text($fs-btn-landing-big, $fw-normal, $white-color);
+      padding: 12px 116px;
+      border-radius: 36px;
+    }
+  }
+}

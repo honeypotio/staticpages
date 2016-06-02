@@ -1,0 +1,88 @@
+.c-explanation-showcase {
+
+  &__heading {
+    text-align: right;
+
+    &--left {
+      text-align: left;
+    }
+  }
+
+  &__copy {
+    @include text($fs-9, $fw-light, $gray-2-color);
+    line-height: $fs-9 + 4px; // 30px
+
+    @media #{$md-up} {
+      @include text($fs-theta, $fw-light, $gray-2-color);
+    }
+
+    &__paragraph {
+      margin-top: 35px;
+    }
+  }
+
+  &__text-block {
+    float: left;
+
+    @media #{$md-up} {
+      width: 500px;
+      margin-top: 84px;
+      float: right;
+    }
+
+    &--full-width {
+      @media #{$md-up} {
+        width: 100%;
+      }
+    }
+
+    &--no-push {
+      @media #{$md-up} {
+        margin-top: 0;
+      }
+    }
+
+    &--talent-rep {
+      @media #{$md-up} {
+        width: 580px;
+      }
+    }
+  }
+
+  &__image {
+    display: inline-block;
+  }
+
+  &__talent-image {
+    @include sizing(357px 323px);
+    display: block;
+    margin: 0 auto;
+
+    @media #{$md-up} {
+      @include sizing(683px 617px);
+      margin: 49px 0 0 -93px;
+    }
+  }
+
+  &__companies-image {
+    @include sizing(346px 308px);
+    margin: 0 auto;
+
+    @media #{$md-up} {
+      @include sizing(671px 597px);
+      margin: 65px 0 0 26px;
+    }
+  }
+
+  &__get-job-image {
+    @include sizing(218px 240px);
+    margin: 0 auto;
+    display: block;
+
+    @media #{$md-up} {
+      @include sizing(442px 486px);
+      margin-top: 57px;
+      display: inline-block;
+    }
+  }
+}
