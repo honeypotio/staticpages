@@ -1,5 +1,6 @@
 language: node_js
 
+before_install: rvm use $(< .ruby-version) --install --binary --fuzzy
 install:
   - npm install
   - bundle install
