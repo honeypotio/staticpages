@@ -1,6 +1,9 @@
 language: node_js
 
-before_install: rvm use $(< .ruby-version) --install --binary --fuzzy
+before_install:
+  - rvm use $(< .ruby-version) --install --binary --fuzzy
+  - sudo apt-get update -qq
+  - sudo apt-get install -qq optipng jpegtran
 install:
   - npm install
   - bundle install
