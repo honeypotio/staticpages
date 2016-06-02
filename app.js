@@ -5,9 +5,11 @@ var app     = express();
 
 //var doc = yaml.safeLoad(fs.readFileSync('/home/ixti/example.yml', 'utf8'));
 
-app.use(express.static('public'));
+app.use(express.static('public', {'setHeaders': setHeaders}));
 
-app.use('/for_employers', express.static('public/for_employers.html'));
+function setHeaders(res, _path) {
+  res.setHeader('Content-type', 'text/html')
+}
 
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!');
