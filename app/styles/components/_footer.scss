@@ -8,6 +8,10 @@
     padding: 100px 0;
   }
 
+  &--inverse {
+    background-color: $dark-blue-color;
+  }
+
   &__item {
     margin: 20px 10px 0 0;
     font-size: $fs-5 - 1px;

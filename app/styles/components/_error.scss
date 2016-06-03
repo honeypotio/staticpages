@@ -1,0 +1,63 @@
+.c-error {
+  padding: 80px 0 30px;
+  background: url('DIGEST(images/service_page_bg.png)') repeat-x top $dark-blue-color;
+
+  @media #{$md-up} {
+    padding-bottom: 150px;
+  }
+
+  &__focus {
+    margin: 0 0 47px;
+
+    &__element {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &__description {
+    @include text($fs-7, $fw-light, $white-color);
+    text-align: center;
+
+    &--sub {
+      @include text($fs-14, $fw-light, $gray-color);
+      margin-top: 5px;
+    }
+  }
+
+  &__btn {
+    margin: 34px auto 0;
+    padding: 9px 18px;
+    text-transform: uppercase;
+    color: $yellow-color;
+    border: 1px solid $yellow-color;
+    border-radius: 25px;
+    background-color: transparent;
+  }
+
+  //
+  // style images on 404 and 500 pages
+  // ----------
+  // second element in the list determines
+  // width and height of the splash image
+  $element-heights: (
+    (404, (545px, 290px)),
+    (500, (590px, 290px))
+  );
+
+  @each $el in $element-heights {
+    $name: nth($el, 1);
+    $dimensions: nth($el, 2);
+
+    &__#{$name} {
+      $width: nth($dimensions, 1);
+      $height: nth($dimensions, 2);
+
+      @include sizing((nth($dimensions, 1) / 2) (nth($dimensions, 2) / 2));
+
+      @media #{$md-up} {
+        @include sizing(nth($dimensions, 1) nth($dimensions, 2));
+      }
+    }
+  }
+}

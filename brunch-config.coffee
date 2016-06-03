@@ -17,7 +17,7 @@ module.exports =
       options:
         includePaths: ['node_modules/bootstrap-sass/assets/stylesheets']
     digest:
-      referenceFiles: /\.html|\.css|for_employers|how_does_it_work|terms_of_service$/
+      referenceFiles: /\.html|\.css|for_employers|404|how_does_it_work|terms_of_service$/
       # diges does not work with files without file extension
       #referenceFiles: /\.html|\.css|^[^.]+$/
     static:

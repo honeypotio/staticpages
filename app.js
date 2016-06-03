@@ -3,8 +3,6 @@ var yaml    = require('js-yaml');
 var fs      = require('fs');
 var app     = express();
 
-//var doc = yaml.safeLoad(fs.readFileSync('/home/ixti/example.yml', 'utf8'));
-
 app.use(express.static('public', {'setHeaders': setHeaders}));
 
 function setHeaders(res, path) {

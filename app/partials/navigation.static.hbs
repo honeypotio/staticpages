@@ -9,7 +9,11 @@
           <span class="icon-bar"></span>
         </button>
         <a href="{{base_url}}" class="navbar-brand c-navigation__logo-link">
-          <img src="DIGEST(/images/{{logo}})" class="c-navigation__logo" alt="Honeypot" />
+          {{#if logo}}
+            <img src="DIGEST(/images/{{logo}})" class="c-navigation__logo" alt="Honeypot" />
+          {{else}}
+            <img src="DIGEST(/images/logo.svg)" class="c-navigation__logo" alt="Honeypot" />
+          {{/if}}
         </a>
       </div>
       <div class='collapse navbar-collapse navbar-right'>

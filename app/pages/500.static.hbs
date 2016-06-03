@@ -1,0 +1,23 @@
+---
+header_class_name: 'c-navigation--inverse'
+footer_class_name: 'c-footer--inverse'
+nav_logo: 'logo_inverse.svg'
+_options:
+  layout: app/layouts/main.static.hbs
+---
+<div class="c-error">
+  <div class="container">
+    <div class="c-error__focus">
+      <img src="DIGEST(/images/service_500.png)" alt="500" class="c-error__focus__element c-error__500" height="290" width="545" />
+    </div>
+    <div class="c-error__description">
+      Well, this is embarrasing. We tracked this error automatically.
+    </div>
+    <div class="c-error__description c-error__description--sub">
+      If you continue to experience this problem, feel free to <a href="mailto:hello@honeypot.io">contact us.</a>
+    </div>
+    <p class="text-center">
+      <a href="{{base_url}}/" class="btn btn-primary c-error__btn">Back to homepage</a>
+    </p>
+  </div>
+</div>

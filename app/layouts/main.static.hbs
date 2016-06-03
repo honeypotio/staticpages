@@ -27,10 +27,10 @@ _options:
   <body>
     <!-- TODO: bring back google_tag_manager -->
     <!-- TODO: flash -->
-    {{> navigation logo='logo.svg'}}
+    {{> navigation logo=nav_logo class_name=header_class_name}}
     <main role="main">
       {{content}}
     </main>
-    {{> footer}}
+    {{> footer class_name=footer_class_name}}
   </body>
 </html>
