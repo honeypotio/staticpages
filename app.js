@@ -7,8 +7,11 @@ var app     = express();
 
 app.use(express.static('public', {'setHeaders': setHeaders}));
 
-function setHeaders(res, _path) {
-  res.setHeader('Content-type', 'text/html')
+function setHeaders(res, path) {
+  var regexp = /\.(.+)$/;
+  if(!regexp.test(path)) {
+    res.setHeader('Content-type', 'text/html');
+  }
 }
 
 app.listen(3000, function () {
