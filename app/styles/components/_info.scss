@@ -21,4 +21,11 @@
       color: $blue-color;
     }
   }
+
+  &__legal {
+    ul,
+    ol {
+      padding-left: 10px;
+    }
+  }
 }
