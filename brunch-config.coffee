@@ -1,10 +1,20 @@
 module.exports =
+  conventions:
+    assets: /^(public)/,
+    ignored: [
+      /^(node_modules\/bootstrap\/)(?!.*min.(js|css)$)/,
+      /^(node_modules\/jquery\/)(?!.*min.js)/
+    ]
   files:
     javascripts:
       joinTo:
-        'vendor.js': /^(?!app)/,
+        'vendor.js': /^(node_modules)/,
         'app.js': /^app/
-
+      order:
+        before: [
+          "node_modules/jquery/dist/jquery.min.js",
+          "node_modules/bootstrap/dist/js/bootstrap.js"
+        ]
     stylesheets:
       joinTo: 'app.css'
   plugins:
