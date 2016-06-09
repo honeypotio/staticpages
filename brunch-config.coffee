@@ -1,22 +1,15 @@
 module.exports =
-  conventions:
-    assets: /^(public)/,
-    ignored: [
-      /^(node_modules\/bootstrap\/)(?!.*min.(js|css)$)/,
-      /^(node_modules\/jquery\/)(?!.*min.js)/
-    ]
   files:
     javascripts:
       joinTo:
-        'vendor.js': /^(node_modules)/,
-        'app.js': /^app/
-      order:
-        before: [
-          "node_modules/jquery/dist/jquery.min.js",
-          "node_modules/bootstrap/dist/js/bootstrap.js"
-        ]
+        'vendor.js': /^(?!app)/,
+        'app.js': /^(app)/
     stylesheets:
       joinTo: 'app.css'
+  npm:
+    globals:
+      $: 'jquery',
+      jQuery: 'jquery'
   plugins:
     babel:
       presets: ['es2015']
