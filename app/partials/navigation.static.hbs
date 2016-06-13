@@ -8,22 +8,22 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a href="{{base_url}}" class="navbar-brand c-navigation__logo-link">
+        <a href="{{url_base}}" class="navbar-brand c-navigation__logo-link">
           {{#if logo}}
-            <img src="DIGEST(/images/{{logo}})" class="c-navigation__logo" alt="Honeypot" />
+            <img src="DIGEST({{url_base}}/images/{{logo}})" class="c-navigation__logo" alt="Honeypot" />
           {{else}}
-            <img src="DIGEST(/images/logo.svg)" class="c-navigation__logo" alt="Honeypot" />
+            <img src="DIGEST({{url_base}}/images/logo.svg)" class="c-navigation__logo" alt="Honeypot" />
           {{/if}}
         </a>
       </div>
       <div class='collapse navbar-collapse navbar-right'>
         <ul class='nav navbar-nav'>
-          <li><a href="{{base_url}}/pages/how_does_it_work">How does it work</a></li>
-          <li><a href="{{base_url}}/pages/for_employers">For Employers</a></li>
+          <li><a href="{{url_base}}/pages/how_does_it_work">How does it work</a></li>
+          <li><a href="{{url_base}}/pages/for_employers">For Employers</a></li>
           <li><a href="http://blog.honeypot.io/" target="_blank">Blog</a></li>
           <!-- TODO: verify if user is signed up -->
-          <li><a href="{{base_url}}/users/sign_in">Sign in</a></li>
-          <li><a href="{{base_url}}/users/sign_up">Sign up</a></li>
+          <li><a href="{{app_url}}/users/sign_in">Sign in</a></li>
+          <li><a href="{{app_url}}/users/sign_up">Sign up</a></li>
         </ul>
       </div>
     </div>

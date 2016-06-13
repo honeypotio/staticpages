@@ -1,5 +1,5 @@
 <script>
-var gaProperty = '<%= AppConfig.ga_id %>';
+  var gaProperty = '{{ga_id}}';
 var disableStr = 'ga-disable-' + gaProperty;
 if (document.cookie.indexOf(disableStr + '=true') > -1) {
   window[disableStr] = true;

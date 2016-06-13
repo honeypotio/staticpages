@@ -1,7 +1,6 @@
 ---
 description: "Honeypot is a Developer-Focused Job Platform. Companies apply to you with salary and tech stack upfront."
 title: "Honeypot - The Developer-Focused Job Platform"
-url_base: "http://localhost:3000"
 _options:
   partials:
     - app/partials/favicons.static.hbs
@@ -16,12 +15,9 @@ _options:
     <title>{{title}}</title>
     <!-- TODO: cookie policy -->
     <!-- TODO: optimizely -->
-    <script type="text/javascript" src="/app.js"></script>
-    <script type="text/javascript" src="/vendor.js"></script>
-    <script type="text/javascript">
-      require('js/app');
-    </script>
-    <link rel="stylesheet" href="/app.css">
+    <script type="text/javascript" src="{{url_base}}/app.js"></script>
+    <script type="text/javascript" src="{{url_base}}/vendor.js"></script>
+    <link rel="stylesheet" href="{{url_base}}/app.css">
     {{> analytics_optout}}
     {{> favicons}}
     <meta charset="utf-8">
