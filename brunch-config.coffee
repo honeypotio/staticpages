@@ -12,7 +12,7 @@ module.exports =
       jQuery: 'jquery'
   plugins:
     babel:
-      presets: ['es2015']
+      presets: ['es2015', 'react']
     imageoptimizer:
       smushit: false
       path: 'images'
