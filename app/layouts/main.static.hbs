@@ -6,6 +6,7 @@ _options:
     - app/partials/favicons.static.hbs
     - app/partials/meta_tags.static.hbs
     - app/partials/analytics_optout.static.hbs
+    - app/partials/google_tag_manager.static.hbs
     - app/partials/navigation.static.hbs
     - app/partials/footer.static.hbs
 ---
@@ -25,7 +26,9 @@ _options:
     {{> meta_tags}}
   </head>
   <body>
-    <!-- TODO: bring back google_tag_manager -->
+    {{#if gtm_id}}
+      {{> google_tag_manager tracker=gtm_id}}
+    {{/if}}
     <!-- TODO: flash -->
     {{> navigation logo=nav_logo class_name=header_class_name}}
     <main role="main">

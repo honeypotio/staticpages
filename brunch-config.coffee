@@ -30,6 +30,7 @@ module.exports =
             url_base: process.env.URL_BASE
             app_url: process.env.APP_URL || 'http://localhost:3000'
             ga_id: process.env.GA_ID
+            gtm_id: process.env.GTM_ID
           handlebars:
             enableProcessor:
               fileMatch: /\.static\.(hbs|handlebars)$/
