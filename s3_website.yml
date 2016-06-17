@@ -21,5 +21,7 @@ cloudfront_distribution_config:
     quantity: 1
     items:
       CNAME: staging.honeypot.io
+<% end %>
+<% if ENV['PREFIX_FOLDER'] != '' %>
 s3_key_prefix: <%= ENV['PREFIX_FOLDER'] %>
 <% end %>
