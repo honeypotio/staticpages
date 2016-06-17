@@ -6,7 +6,7 @@ s3_secret: <%= ENV['S3_SECRET'] %>
 # change bucket based on travis ENV
 # chechk for PR required as branch in PR's always is master
 <% if ENV['TRAVIS_TAG'] != '' %>
-s3_bucket: honeypot-staticpages
+s3_bucket: www.honeypot.io
 cloudfront_distribution_id: E21RQMGDUM8ALN
 cloudfront_distribution_config:
   aliases:
