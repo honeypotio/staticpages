@@ -19,7 +19,9 @@ _options:
     <script type="text/javascript" src="{{url_base}}/app.js"></script>
     <script type="text/javascript" src="{{url_base}}/vendor.js"></script>
     <link rel="stylesheet" href="{{url_base}}/app.css">
-    {{> analytics_optout}}
+    {{#if ga_id}}
+      {{> analytics_optout ga_id=ga_id}}
+    {{/if}}
     {{> favicons}}
     <meta charset="utf-8">
     <meta name="description" content="{{description}}" />
