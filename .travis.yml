@@ -18,3 +18,5 @@ script: ./bin/deploy
 env:
   global:
     - PREFIX_FOLDER=$([ "$TRAVIS_PULL_REQUEST" != "false" ] && echo "pr-$TRAVIS_PULL_REQUEST")
+    - APP_URL=$([ "$TRAVIS_TAG" != "" ] && echo "https://app.honeypot.io" || echo "https://staging.honeypot.io")
+    - URL_BASE=$([ "$PREFIX_FOLDER" != "" ] && echo "/$PREFIX_FOLDER")
