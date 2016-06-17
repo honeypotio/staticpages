@@ -18,7 +18,7 @@ script: ./bin/deploy
 env:
   global:
     - PREFIX_FOLDER=$([ "$TRAVIS_PULL_REQUEST" != "false" ] && echo "pr-$TRAVIS_PULL_REQUEST")
-    - APP_URL=$([ "$TRAVIS_TAG" != "" ] && echo "https://app.honeypot.io" || echo "https://staging.honeypot.io")
+    - APP_URL=$([ "$TRAVIS_TAG" != "" ] && echo "https://app.honeypot.io" || echo "https://app-staging.honeypot.io")
     - URL_BASE=$([ "$PREFIX_FOLDER" != "" ] && echo "/$PREFIX_FOLDER")
     - GTM_ID=$([ "$TRAVIS_TAG" != "" ] && echo "$PROD_GTM_ID" || echo "$STAGING_GTM_ID")
     - GA_ID=$([ "$TRAVIS_TAG" != "" ] && echo "$PROD_GA_ID" || echo "$STAGING_GA_ID")
