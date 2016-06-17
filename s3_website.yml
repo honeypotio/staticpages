@@ -5,7 +5,7 @@ s3_secret: <%= ENV['S3_SECRET'] %>
 
 # change bucket based on travis ENV
 # chechk for PR required as branch in PR's always is master
-<% if ENV['TRAVIS_BRANCH'] == 'master' && ENV['TRAVIS_PULL_REQUEST'] == 'false' %>
+<% if ENV['TRAVIS_TAG'] != '' %>
 s3_bucket: honeypot-staticpages
 cloudfront_distribution_id: E21RQMGDUM8ALN
 cloudfront_distribution_config:
@@ -14,7 +14,12 @@ cloudfront_distribution_config:
     items:
       CNAME: www2.honeypot.io
 <% else %>
-s3_bucket: staging-honeypot-staticpages
-cloudfront_distribution_id: E2663ZPEPJTJSO
+s3_bucket: staging.honeypot.io
+cloudfront_distribution_id: E18C1P1L63L0NC
+cloudfront_distribution_config:
+  aliases:
+    quantity: 1
+    items:
+      CNAME: staging.honeypot.io
 s3_key_prefix: <%= ENV['PREFIX_FOLDER'] %>
 <% end %>
