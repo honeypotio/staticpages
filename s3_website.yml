@@ -15,7 +15,7 @@ cloudfront_distribution_config:
       CNAME: www2.honeypot.io
 <% else %>
 s3_bucket: staging.honeypot.io
-cloudfront_distribution_id: E18C1P1L63L0NC
+cloudfront_distribution_id: E3JUH1MUHO6XDX
 cloudfront_distribution_config:
   aliases:
     quantity: 1
