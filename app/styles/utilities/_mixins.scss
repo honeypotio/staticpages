@@ -33,9 +33,13 @@
   border-radius: 50%;
 }
 
+@mixin text-sizing($font-size, $font-weight) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+}
+
 @mixin text($fs, $fw, $color) {
-  font-size: $fs;
-  font-weight: $fw;
+  @include text-sizing($fs, $fw);
   color: $color;
 }
 

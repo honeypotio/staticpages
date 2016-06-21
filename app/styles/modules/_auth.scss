@@ -1,0 +1,91 @@
+.m-auth {
+  &__container {
+    margin-top: 0;
+  }
+
+  &__form {
+    margin: 40px 0 0 auto;
+    width: 100%;
+
+    @media #{$md-up} {
+      width: 579px;
+    }
+
+    &__input {
+      margin-bottom: 11px;
+
+      .form-control {
+        @include text-sizing($fs-6, $fw-light);
+        padding: 26px 12px;
+        border: 1px solid $light-gray-2-color;
+      }
+
+      &--signup .form-control {
+        padding: 4px 12px;
+        height: auto;
+      }
+    }
+  }
+
+  &__heading {
+    @include text($fs-15, $fw-normal, $blue-color);
+    text-align: center;
+  }
+
+  &__panel {
+    margin: 22px 0;
+    padding: 20px 40px 24px;
+
+    &--switcher {
+      margin-top: 0;
+      border-top: 0;
+      border-radius: 0 0 5px 5px;
+    }
+
+    &__body {
+      padding: 0;
+    }
+  }
+
+  &__panel-description {
+    @include text($fs-12, $fw-light, $gray-2-color);
+    margin-top: 41px;
+    text-align: center;
+
+    @media #{$md-up} {
+      margin-top: 127px;
+      text-align: left;
+    }
+
+    &__heading {
+      @include text($fs-9, $fw-normal, $gray-2-color);
+    }
+
+    &__list {
+      padding-left: 50px;
+      text-align: left;
+
+      @media #{$md-up} {
+        padding-left: 15px;
+      }
+
+      li {
+        margin-top: 7px;
+      }
+    }
+
+    &__text-block {
+      margin-bottom: 28px;
+    }
+  }
+
+  &__secondary-text {
+    @include text($fs-5, $fw-normal, $gray-color);
+    margin: 20px 0;
+  }
+
+  &__checkbox-link {
+    position: relative;
+    z-index: $z-index-3;
+  }
+}

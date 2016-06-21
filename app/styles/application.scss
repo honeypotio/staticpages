@@ -12,6 +12,13 @@
 @import 'utilities/typography';
 
 @import 'framework/overrides';
+
+// OBJECTS
+@import 'objects/page-island';
+
+//MODULES
+@import 'modules/auth';
+
 // COMPONENTS
 @import 'components/landing';
 @import 'components/landing-header';
