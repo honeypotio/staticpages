@@ -1,10 +1,14 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
-import App from 'js/components/App';
+import SignupForm from 'js/components/SignupForm';
+
+const router = {
+  '/users/sign_up': SignupForm
+};
 
 const load = () => {
   ReactDOM.render(
-    <h1>Hello</h1>,
+    React.createElement(router[window.location.pathname]),
     document.querySelector('#app')
   );
 };

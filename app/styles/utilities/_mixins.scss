@@ -11,9 +11,11 @@
 @mixin absolute($args) {
   @include _position(absolute, $args);
 }
+
 @mixin relative($args) {
   @include _position(relative, $args);
 }
+
 @mixin fixed($args) {
   @include _position(fixed, $args);
 }
@@ -54,17 +56,25 @@
 @mixin quote-comission-decoration($before-top, $after-top) {
   position: relative;
 
-  &:before {
+  &::before {
     @include sizing(166px 263px);
     @include absolute(top $before-top left -200px);
     content: '';
     background-image: url('DIGEST(images/more-info-before.svg)');
   }
 
-  &:after {
+  &::after {
     @include sizing(181px 212px);
     @include absolute(top $after-top right -200px);
     content: '';
     background-image: url('DIGEST(images/more-info-after.svg)');
   }
+}
+
+@mixin checkbox-replacement($bg-path, $pos) {
+  @include sizing(20px);
+  float: left;
+  cursor: pointer;
+  background: url($bg-path) no-repeat;
+  background-position: 0 $pos;
 }

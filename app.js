@@ -12,6 +12,6 @@ function setHeaders(res, path) {
   }
 }
 
-app.listen(3000, function () {
-  console.log('Example app listening on port 3000!');
+app.listen(4000, function () {
+  console.log('Running app on port 4000!');
 });

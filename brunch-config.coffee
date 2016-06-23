@@ -3,7 +3,8 @@ module.exports =
     javascripts:
       joinTo:
         'vendor.js': /^(?!app)/,
-        'app.js': /^(app)/
+        'app.js': /^app/,
+        'tests.js': /^tests/
     stylesheets:
       joinTo: 'app.css'
   npm:

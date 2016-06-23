@@ -1,0 +1,83 @@
+linters:
+  BangFormat:
+    severity: error
+  ColorKeyword:
+    severity: error
+  ColorVariable:
+    severity: error
+  Comment:
+    enabled: false
+  DebugStatement:
+    severity: error
+  DeclarationOrder:
+    severity: error
+  DisableLinterReason:
+    enabled: true
+    severity: error
+  DuplicateProperty:
+    severity: error
+  ElsePlacement:
+    severity: error
+  EmptyLineBetweenBlocks:
+    severity: error
+  EmptyRule:
+    severity: error
+  FinalNewLine:
+    severity: error
+  HexLength:
+    enabled: false
+    style: short
+  HexNotation:
+    severity: error
+  HexValidation:
+    severity: error
+  NestingDepth:
+    max_depth: 4
+    severity: warning
+  IdSelector:
+    severity: error
+  ImportantRule:
+    severity: error
+  PlaceholderInExtend:
+    severity: warning
+  PropertySpelling:
+    severity: error
+  PropertySortOrder:
+    enabled: false
+  SelectorFormat:
+    convention: hyphenated_BEM
+  SingleLinePerProperty:
+    severity: error
+  SingleLinePerSelector:
+    severity: error
+  SpaceAfterPropertyColon:
+    severity: error
+  SpaceAfterPropertyName:
+    severity: error
+  SpaceAfterVariableColon:
+    severity: error
+  SpaceAfterVariableName:
+    severity: error
+  SpaceAroundOperator:
+    severity: error
+  SpaceBeforeBrace:
+    severity: error
+  SpaceBetweenParens:
+    severity: error
+  StringQuotes:
+    enabled: false
+  TrailingSemicolon:
+    severity: error
+  TransitionAll:
+    enabled: true
+    severity: warning
+  UnnecessaryMantissa:
+    severity: error
+  UnnecessaryParentReference:
+    severity: error
+  UrlQuotes:
+    severity: error
+  VendorPrefix:
+    severity: error
+  ZeroUnit:
+    severity: error

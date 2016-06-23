@@ -12,17 +12,14 @@
     }
 
     &__input {
+      @include text-sizing($fs-6, $fw-light);
       margin-bottom: 11px;
+      padding: 26px 12px;
+      border: 1px solid $light-gray-2-color;
 
-      .form-control {
-        @include text-sizing($fs-6, $fw-light);
-        padding: 26px 12px;
-        border: 1px solid $light-gray-2-color;
-      }
-
-      &--signup .form-control {
-        padding: 4px 12px;
+      &--signup {
         height: auto;
+        padding: 4px 12px;
       }
     }
   }
@@ -87,5 +84,12 @@
   &__checkbox-link {
     position: relative;
     z-index: $z-index-3;
+    color: $blue-color;
+
+    &:hover,
+    &:focus,
+    &:visited {
+      color: $blue-color;
+    }
   }
 }
