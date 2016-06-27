@@ -6,6 +6,7 @@ import Checkbox from './Checkbox';
 import errorMessages from '../utils/error-messages';
 import createInvite from '../utils/create-invite';
 import FormBase from './FormBase';
+import FlashMessages from '../utils/flash-messages';
 
 export default class InviteRequestForm extends FormBase {
   constructor(props) {
@@ -27,6 +28,7 @@ export default class InviteRequestForm extends FormBase {
   _handleValidSubmit(values) {
     this.setState({ isSaving: true });
     createInvite.perform(values).then(() => {
+      FlashMessages.setMessage('You have been added to the waiting list.');
       window.location.href = '/';
     }).catch((err) => {
       this.setState({ isSaving: false });
