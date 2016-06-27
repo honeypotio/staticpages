@@ -13,4 +13,11 @@
     text-transform: none;
     line-height: 32px;
   }
+
+  &__alert {
+    .alert {
+      @include absolute(top 100px left 50%);
+      transform: translateY(-50%);
+    }
+  }
 }

@@ -1,24 +1,27 @@
 import React from 'react';
 import Checkbox from './Checkbox';
 import FormWrapper from './FormWrapper';
-import { ButtonInput } from 'react-bootstrap';
+import { ButtonInput, Alert } from 'react-bootstrap';
 import { Form, ValidatedInput } from 'react-bootstrap-validation';
 import errorMessages from '../utils/error-messages';
+import createTalent from '../utils/create-talent';
+import FormBase from './FormBase';
 
-export default class SignupForm extends React.Component {
+export default class SignupForm extends FormBase {
   constructor(props) {
     super(props);
     this.state = {
       tosAgreed: false,
       formSubmitted: false,
-      isSaving: false
+      isSaving: false,
+      error: false
     };
     this.inputs = [
-      { name: 'firstName', placeholder: "First name", validate: "required" },
-      { name: 'lastName', placeholder: "Last name", validate: "required" },
-      { name: 'email', placeholder: "Email", validate: "required,isEmail" },
-      { name: 'password', placeholder: "Password", validate: "required,isLength:8" },
-      { name: 'repeatPassword', placeholder: "Repeat Password", validate: (val, context) => val && val === context.password  },
+      { type: 'text', name: 'firstName', placeholder: "First name", validate: "required" },
+      { type: 'text', name: 'lastName', placeholder: "Last name", validate: "required" },
+      { type: 'email', name: 'email', placeholder: "Email", validate: "required,isEmail" },
+      { type: 'password', name: 'password', placeholder: "Password", validate: "required,isLength:8" },
+      { type: 'password', name: 'repeatPassword', placeholder: "Repeat Password", validate: (val, context) => val && val === context.password  },
     ];
   }
 
@@ -26,8 +29,17 @@ export default class SignupForm extends React.Component {
     this.setState({ formSubmitted: true });
     if (this.state.tosAgreed) {
       this.setState({ isSaving: true });
-      console.log('submitting', values);
+      createTalent.perform(values).then(() => {
+        window.location.href = `${$PROCESS_ENV_EMBER_URL}profile`
+      }).catch((err) => {
+        this.setState({ isSaving: false });
+        this._showError('There has been a problem. Please try again later.');
+      });
     }
+  }
+
+  _onInvalidSubmit() {
+    this._showError('Please fill in all required fields!');
   }
 
   _onTosCheck(e) {
@@ -41,7 +53,15 @@ export default class SignupForm extends React.Component {
     return (
       <Form
         onValidSubmit={this._onValidSubmit.bind(this)}
+        onInvalidSubmit={this._onInvalidSubmit.bind(this)}
       >
+        <div className="c-sign-up-form__alert">
+          {(() => {
+            if (this.state.error) {
+              return <Alert bsStyle="danger">{this.state.error}</Alert>;
+            }
+          })()}
+        </div>
         <FormWrapper activePane="talent">
           <div className="panel-body m-auth__panel__body">
             <div className="form-inputs">
@@ -68,22 +88,5 @@ export default class SignupForm extends React.Component {
         </FormWrapper>
       </Form>
     );
-  }
-
-  _buildValidatedInputs(inputClass) {
-    return this.inputs.map((data) => {
-      return (
-        <ValidatedInput
-          type="text"
-          placeholder={data.placeholder}
-          name={data.name}
-          validate={data.validate}
-          className={inputClass}
-          key={data.name}
-          disabled={this.state.isSaving}
-          errorHelp={errorMessages}
-        />
-      );
-    });
   }
 }

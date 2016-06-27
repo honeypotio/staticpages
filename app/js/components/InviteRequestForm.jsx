@@ -4,37 +4,39 @@ import { Form, ValidatedInput } from 'react-bootstrap-validation';
 import FormWrapper from './FormWrapper';
 import Checkbox from './Checkbox';
 import errorMessages from '../utils/error-messages';
+import createInvite from '../utils/create-invite';
+import FormBase from './FormBase';
 
-const { Component } = React;
-
-export default class InviteRequestForm extends Component {
+export default class InviteRequestForm extends FormBase {
   constructor(props) {
     super(props);
     this.state = {
-      isSaving: false
+      isSaving: false,
+      error: false
     };
     this.inputs = [
-      { name: 'companyName', placeholder: "Company name", validate: "required" },
-      { name: 'hiringLocation', placeholder: "Hiring location", validate: "required" },
-      { name: 'numberOfEmployees', placeholder: "Number of employees", validate: "required" },
-      { name: 'contactPerson', placeholder: "Contact person", validate: "required" },
-      { name: 'contactEmail', placeholder: "Contact email", validate: "required,isEmail" },
-      { name: 'phoneNumber', placeholder: "Phone number (optional)", validate: null },
+      { type: 'text', name: 'companyName', placeholder: "Company name", validate: "required" },
+      { type: 'text', name: 'hiringLocation', placeholder: "Hiring location", validate: "required" },
+      { type: 'text', name: 'numberOfEmployees', placeholder: "Number of employees", validate: "required" },
+      { type: 'text', name: 'contactPerson', placeholder: "Contact person", validate: "required" },
+      { type: 'email', name: 'contactEmail', placeholder: "Contact email", validate: "required,isEmail" },
+      { type: 'text', name: 'phoneNumber', placeholder: "Phone number (optional)", validate: null },
     ];
   }
 
   _handleValidSubmit(values) {
     this.setState({ isSaving: true });
+    createInvite.perform(values).then(() => {
+      window.location.href = '/';
+    }).catch((err) => {
+      this.setState({ isSaving: false });
+      this._showError('There has been a problem. Please try again');
+    });
   }
 
   render() {
     const cssNamespace = 'm-auth';
     const inputClass = `${cssNamespace}__form__input ${cssNamespace}__form__input--signup`;
-    const btnText = (
-          <span>
-            <i className="fa fa-spin fa-circle-notch-o"></i>Saving ...
-          </span>
-    );
     return (
       <Form
         onValidSubmit={this._handleValidSubmit.bind(this)}
@@ -61,22 +63,5 @@ export default class InviteRequestForm extends Component {
         </FormWrapper>
       </Form>
     );
-  }
-
-  _buildValidatedInputs(inputClass) {
-    return this.inputs.map((data) => {
-      return (
-        <ValidatedInput
-          type="text"
-          placeholder={data.placeholder}
-          name={data.name}
-          validate={data.validate}
-          className={inputClass}
-          key={data.name}
-          disabled={this.state.isSaving}
-          errorHelp={errorMessages}
-        />
-      );
-    });
   }
 }
