@@ -74,8 +74,8 @@ export default class SignupForm extends FormBase {
               onCheck={this._onTosCheck.bind(this)}
               hasError={this.state.formSubmitted && !this.state.tosAgreed}
             >
-              I agree to the <a href="#" target="_blank" className="m-auth__checkbox-link">Terms of Service</a>
-              &nbsp;and the <a href="#" target="_blank" className="m-auth__checkbox-link">Privacy Policy</a>
+              I agree to the <a href="/pages/terms_of_service#talents" target="_blank" className="m-auth__checkbox-link">Terms of Service</a>
+              &nbsp;and the <a href="/pages/legal_notice#privacy_policy" target="_blank" className="m-auth__checkbox-link">Privacy Policy</a>
             </Checkbox>
             <ButtonInput
               type="submit"

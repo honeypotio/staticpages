@@ -8,7 +8,7 @@ export default (props) => {
       <input type="checkbox" id={props.label} className="c-checkbox__replace" onClick={props.onCheck} />
       <label className="c-checkbox__label"></label>
       <label htmlFor={props.label} className={elemClass}>
-        {props.children ? props.children : props.label}
+        {props.children || props.label}
       </label>
     </div>
   );
