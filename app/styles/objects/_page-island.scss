@@ -1,0 +1,17 @@
+.o-page-moat {
+  margin-top: -20px;
+  background-color: $moat-color;
+}
+
+.o-page-island {
+  margin: 40px 0;
+  background-color: $page-island-bg-color;
+
+  &--spaced {
+    padding: 22px 36px;
+
+    @media #{$md-up} {
+      padding: 37px 73px;
+    }
+  }
+}

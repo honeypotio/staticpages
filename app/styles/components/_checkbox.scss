@@ -1,0 +1,36 @@
+.c-checkbox {
+  @include clearfix();
+
+  &__replace {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height: 20px;
+    opacity: 0;
+
+    &:checked + .c-checkbox__label,
+    &:checked:hover + .c-checkbox__label {
+      @include checkbox-replacement("DIGEST(images/checkbox-state-clicked.svg)", 3px);
+    }
+
+    &:hover + .c-checkbox__label {
+      @include checkbox-replacement("DIGEST(images/checkbox-state-hovered.svg)", 3px);
+    }
+
+    + .c-checkbox__label {
+      @include checkbox-replacement("DIGEST(images/checkbox-state-inactive.svg)", 3px);
+      color: $gray-color;
+    }
+  }
+
+  > .c-checkbox__replacement-label {
+    @include text($fs-5, $fw-normal, $gray-color);
+    padding-left: 0;
+    float: left;
+    margin: 4px 0 0 5px;
+
+    &--error {
+      color: $brand-danger;
+    }
+  }
+}

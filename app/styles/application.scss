@@ -12,6 +12,13 @@
 @import 'utilities/typography';
 
 @import 'framework/overrides';
+
+// OBJECTS
+@import 'objects/page-island';
+
+//MODULES
+@import 'modules/auth';
+
 // COMPONENTS
 @import 'components/landing';
 @import 'components/landing-header';
@@ -29,3 +36,6 @@
 @import 'components/footer';
 @import 'components/info';
 @import 'components/error';
+@import 'components/panel-switcher';
+@import 'components/checkbox';
+@import 'components/sign-up-form';

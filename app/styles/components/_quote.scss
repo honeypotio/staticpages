@@ -10,7 +10,7 @@
     position: relative;
     text-align: center;
 
-    &:before {
+    &::before {
       @include absolute(top -70px left 0);
       @include text(70px, $fw-light, $white-color);
       content: '“';

@@ -1,11 +1,12 @@
 .c-landing-header {
   padding: 90px 0;
   text-align: center;
-  background: url('/images/lp_header.png') no-repeat;
   background: {
+    image: url('/images/lp_header.png');
     color: $blue-color;
     size: cover;
     position-x: -250px;
+    repeat: no-repeat;
   }
 
   @media #{$sm-up} {

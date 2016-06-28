@@ -7,7 +7,7 @@
     margin: 100px 0 0;
   }
 
-  &:before {
+  &::before {
     @include sizing(66px 61px);
     @include absolute(top -41px right 13px);
     content: '';
@@ -20,7 +20,7 @@
     }
   }
 
-  &:after {
+  &::after {
     @include sizing(72px 61px);
     @include absolute(top 130px left 20px);
     content: '';
