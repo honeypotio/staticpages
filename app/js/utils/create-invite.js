@@ -2,7 +2,7 @@ import 'whatwg-fetch';
 
 export default {
   perform(values) {
-    return fetch(`${$PROCESS_ENV_APP_URL}api/v1/invite_requests`, {
+    return fetch(`${$PROCESS_ENV_APP_URL}/api/v1/invite_requests`, {
       method: 'POST',
       body: JSON.stringify({
         invite_request: {

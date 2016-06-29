@@ -4,7 +4,7 @@ import Cookies from 'js-cookie';
 export default {
   perform(values) {
     const host = $PROCESS_ENV_API_HOST || '/';
-    return fetch(`${host}api/v1/users`, {
+    return fetch(`${host}/api/v1/users`, {
       method: 'POST',
       body: JSON.stringify({
         user: {
