@@ -30,7 +30,7 @@ export default class SignupForm extends FormBase {
     if (this.state.tosAgreed) {
       this.setState({ isSaving: true });
       createTalent.perform(values).then(() => {
-        window.location.href = `${$PROCESS_ENV_EMBER_URL}profile`
+        window.location.href = `${$PROCESS_ENV_APP_URL}profile`
       }).catch((err) => {
         this.setState({ isSaving: false });
         this._showError('There has been a problem. Please try again later.');
