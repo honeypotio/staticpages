@@ -7,6 +7,9 @@ import errorMessages from '../utils/error-messages';
 import createTalent from '../utils/create-talent';
 import FormBase from './FormBase';
 
+const url = window.location.href;
+const queryParams = url.indexOf('?') !== -1 ? decodeURIComponent(url.split('?')[1].replace('email=', '')) : null;
+
 export default class SignupForm extends FormBase {
   constructor(props) {
     super(props);
@@ -19,7 +22,7 @@ export default class SignupForm extends FormBase {
     this.inputs = [
       { type: 'text', name: 'firstName', placeholder: "First name", validate: "required" },
       { type: 'text', name: 'lastName', placeholder: "Last name", validate: "required" },
-      { type: 'email', name: 'email', placeholder: "Email", validate: "required,isEmail" },
+      { type: 'email', name: 'email', value: queryParams, placeholder: "Email", validate: "required,isEmail" },
       { type: 'password', name: 'password', placeholder: "Password", validate: "required,isLength:8" },
       { type: 'password', name: 'repeatPassword', placeholder: "Repeat Password", validate: (val, context) => val && val === context.password  },
     ];

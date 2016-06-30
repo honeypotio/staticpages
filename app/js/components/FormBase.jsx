@@ -9,6 +9,7 @@ export default class FormBase extends React.Component {
         <ValidatedInput
           type={data.type}
           placeholder={data.placeholder}
+          value={data.value}
           name={data.name}
           validate={data.validate}
           className={inputClass}
