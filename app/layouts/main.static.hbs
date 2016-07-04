@@ -15,7 +15,9 @@ _options:
     <meta content='width=device-width, initial-scale=1.0' name='viewport'>
     <title>{{title}}</title>
     <!-- TODO: cookie policy -->
-    <!-- TODO: optimizely -->
+    {{#if optimizely_id}}
+      {{> optimizely optimizely_id=optimizely_id}}
+    {{/if}}
     <link rel="stylesheet" href="{{url_base}}/app.css">
     {{#if ga_id}}
       {{> analytics_optout ga_id=ga_id}}
