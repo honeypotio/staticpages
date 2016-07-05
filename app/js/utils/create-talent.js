@@ -9,6 +9,7 @@ export default {
     dataFetcher.setCookieForStaging();
     return fetch(dataFetcher.buildURL('/api/v1/users'), {
       method: 'POST',
+      credentials: 'include',
       body: JSON.stringify({
         user: {
           firstname: values.firstName,

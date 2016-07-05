@@ -6,6 +6,7 @@ export default {
     dataFetcher.setCookieForStaging();
     return fetch(dataFetcher.buildURL('/api/v1/invite_requests'), {
       method: 'POST',
+      credentials: 'include',
       body: JSON.stringify({
         invite_request: {
           name: values.name,
