@@ -8,7 +8,7 @@ export default {
 
   setCookieForStaging() {
     if ($PROCESS_ENV_STAGING_AUTH) {
-      Cookies.set('staging_auth', $PROCESS_ENV_STAGING_AUTH);
+      Cookies.set('staging_auth', $PROCESS_ENV_STAGING_AUTH, { domain: 'honeypot.io' });
     }
   },
 

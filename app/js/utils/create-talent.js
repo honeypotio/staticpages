@@ -25,7 +25,7 @@ export default {
   },
 
   _writeToCookie(userId, token, email) {
-    Cookies.set(this.cookieName, this._generateCookie(userId, token, email));
+    Cookies.set(this.cookieName, this._generateCookie(userId, token, email), { domain: 'honeypot.io' });
   },
 
   _generateCookie(userId, token, email) {
