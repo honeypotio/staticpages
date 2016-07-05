@@ -1,8 +1,13 @@
 #!/bin/bash
 if [ "$TRAVIS_BRANCH" == "master" -o "$TRAVIS_PULL_REQUEST" != "false" -o "$TRAVIS_TAG" != "" ]
 then
-  brunch build --production
-  bundle exec s3_website push
+  mkdir -p tmp
+  brunch build --production 2>&1| tee tmp/output.txt
+  if [ "$(cat tmp/output.txt | grep error)" == "" ]; then
+    bundle exec s3_website push
+  else
+    exit 1
+  fi
 else
   echo "no deployment for branch $TRAVIS_BRANCH"
 fi
