@@ -1,10 +1,13 @@
 import 'whatwg-fetch';
 import Cookies from 'js-cookie';
+import dataFetcher from './data-fetcher';
 
 export default {
+  cookieName: 'honeypot_esa',
+
   perform(values) {
-    const host = $PROCESS_ENV_API_HOST || '/';
-    return fetch(`${host}/api/v1/users`, {
+    dataFetcher.setCookieForStaging();
+    return fetch(dataFetcher.buildURL('/api/v1/users'), {
       method: 'POST',
       body: JSON.stringify({
         user: {
@@ -21,10 +24,10 @@ export default {
   },
 
   _writeToCookie(userId, token, email) {
-    Cookies.set('honeypot_esa', this._generateLSToken(userId, token, email));
+    Cookies.set(this.cookieName, this._generateCookie(userId, token, email));
   },
 
-  _generateLSToken(userId, token, email) {
+  _generateCookie(userId, token, email) {
     return {
       authenticated: {
         authenticator: "authenticator:devise",

@@ -1,8 +1,10 @@
 import 'whatwg-fetch';
+import dataFetcher from './data-fetcher';
 
 export default {
   perform(values) {
-    return fetch(`${$PROCESS_ENV_APP_URL}/api/v1/invite_requests`, {
+    dataFetcher.setCookieForStaging();
+    return fetch(dataFetcher.buildURL('/api/v1/invite_requests'), {
       method: 'POST',
       body: JSON.stringify({
         invite_request: {
