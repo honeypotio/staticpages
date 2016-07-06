@@ -11,7 +11,7 @@
     "start": "brunch watch --server",
     "test": "mocha 'tests/**/*.spec.js' --compilers js:babel-core/register --watch",
     "prod": "brunch build --production",
-    "postinstall": "mkdir -p vendor && cp node_modules/bootstrap-sass/assets/javascripts/bootstrap.js vendor/"
+    "postinstall": "mkdir -p vendor && cp node_modules/bootstrap-sass/assets/javascripts/bootstrap.js vendor/ && cp node_modules/hisrc/hisrc.js vendor/"
   },
   "devDependencies": {
     "auto-reload-brunch": "^2.7.1",
@@ -28,6 +28,7 @@
     "es6-module-transpiler-brunch": "0.0.6",
     "expect": "^1.20.1",
     "express": "^4.14.0",
+    "hisrc": "^2.0.0",
     "html-brunch-static": "^1.2.1",
     "imageoptmizer-brunch": "0.0.6",
     "javascript-brunch": "^2.0.0",
