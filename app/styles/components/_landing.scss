@@ -1,68 +1,223 @@
+$counter-size: 40px;
+
 .c-landing {
-  &__section {
-    padding: 65px 0 112px;
+  &__header {
+    padding: 51px 0;
+    background: url('DIGEST(images/header_talent_lp_new.jpg)') no-repeat;
+    background-size: cover;
+    background-position-x: -145px;
 
-    &--primary {
-      background-color: $blue-color;
-      color: $white-color;
+    @media #{$xs-up} {
+      background-position-x: 0;
     }
 
-    &--secondary {
-      background-color: $light-gray-color;
+    @media #{$md-up} {
+      padding: 110px 0 102px;
+      background-position-x: 0;
+      background-position-y: -150px;
     }
 
-    &--more-spacing {
-      padding-top: 124px;
+    &__heading {
+      @include text($fs-17, $fw-bold, $white-color);
+      margin-top: 0;
+
+      @media #{$md-up} {
+        font-size: $fs-18;
+      }
     }
 
-    &--line {
-      border-top: 1px solid $light-blue-color;
+
+    &__body {
+      @include text($fs-12, $fw-normal, $white-color);
+      margin-top: 14px;
+      margin-bottom: 23px;
+
+      @media #{$md-up} {
+        @include text($fs-theta, $fw-normal, $white-color);
+        line-height: 32.5px;
+      }
     }
   }
 
-  &__main-heading {
-    @include text($fs-alpha, $fw-light, $blue-color);
+  &__form {
+    margin-bottom: 0;
+  }
+
+  &__btn {
+    @include text($fs-14, $fw-semibold, $white-color);
+    padding: 15px 49px;
+  }
+
+  &__steps-section {
+    padding: 70px 0 23px;
+
+    @media #{$md-up} {
+      padding-bottom: 40px;
+    }
+  }
+
+  &__steps {
+    padding-left: 0;
+    list-style-type: none;
     text-align: center;
-    margin-bottom: 42px;
+  }
 
-    @media #{$md-up} {
-      @include text($fs-beta, $fw-light, $blue-color);
+  &__step {
+
+    display: block;
+    width: 289px;
+    margin: 0 auto;
+    padding-bottom: 22px;
+    vertical-align: top;
+    position: relative;
+
+    &::after { @include steps-line-vertical($counter-size); }
+
+    @media #{$sm-up} {
+      float: left;
+      width: 25%;
+      margin-left: 0;
+      margin-bottom: 0;
+
+      &::after { @include steps-line-horizontal($counter-size); }
     }
 
-    &--inverse {
-      color: $white-color;
+    &:last-child::after {
+      content: none;
+    }
+
+    &__counter {
+      @include sizing($counter-size);
+      @include text($fs-9, $fw-normal, $blue-color);
+      position: relative;
+      margin: 0 auto;
+      float: left;
+      z-index: $z-index-steps-counter;
+      text-align: center;
+      line-height: $counter-size;
+      border: 1px solid $blue-color;
+      border-radius: $counter-size;
+      background-color: $white-color;
+
+      @media #{$sm-up} {
+        float: none;
+      }
+    }
+
+    &__text {
+      @include text($fs-9, $fw-normal, $almost-black-2-color);
+      float: left;
+      width: calc(100% - #{$counter-size});
+      padding-left: 10px;
+      text-align: left;
+
+      @media #{$sm-up} {
+        float: none;
+        width: auto;
+        margin-top: 14px;
+        text-align: center;
+      }
+    }
+
+    &__emph {
+      font-weight: $fw-semibold;
     }
   }
 
-  &__input-container {
+  &__partners-section {
+    padding-top: 41px;
+    border-top: 1px solid $light-blue-color;
+
     @media #{$md-up} {
-      padding-left: 38px;
+      padding-top: 50px;
     }
   }
 
-  &__input {
-    @include text($fs-9, $fw-light, $gray-2-color);
-    width: 94%;
-    margin-bottom: 20px;
-    display: inline-block;
-    height: auto;
-    padding: 12px 20px;
-    box-sizing: border-box;
+  &__partners__heading {
+    @include text($fs-12, $fw-semibold, $dark-gray-2-color);
+    text-transform: uppercase;
+    margin: 0 0 30px;
+    padding-left: 8px;
 
     @media #{$md-up} {
-      margin: 0 8px 20px 0;
-      width: 90%;
-      display: inline-block;
-      vertical-align: bottom;
-    }
-
-    @media #{$lg-up} {
-      margin: 0 8px 0 0;
-      width: 405px;
+      padding-left: 25px;
+      margin-top: 6px;
     }
   }
 
-  &__input-text {
-    color: $almost-black-color;
+  &__logo-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    &::before {
+      content: none;
+    }
+  }
+
+  &__logo-block {
+    flex-grow: 1;
+    align-self: center;
+    width: 50%;
+    text-align: center;
+
+    @media #{$md-up} {
+      width: 20%;
+    }
+  }
+
+  &__logo {
+    opacity: .4;
+    margin-bottom: 53px;
+
+    &--hitfox {
+      margin-top: 16px;
+    }
+
+    &--liqid {
+      margin-top: 19px;
+    }
+
+    &--triprebel {
+      margin-top: 9px;
+    }
+
+    &--glispa {
+      margin-top: 9px;
+    }
+
+    /*
+     * Desktop sizing
+    */
+
+    $margins: (
+      ('carmudi', 12px),
+      ('triprebel', 17px),
+      ('liqid', 16px),
+      ('hitfox', 16px),
+      ('glispa', 18px)
+    );
+
+    @each $margin in $margins {
+      $company-name: nth($margin, 1);
+      $margin: nth($margin, 2);
+
+      &--#{$company-name} {
+        @media #{$md-up} {
+          margin-top: $margin;
+        }
+      }
+    }
+
+    &--meedoc {
+      height: 55px;
+    }
+  }
+
+  &__force-break {
+    display: none;
+
+    @media #{$md-up} {
+      display: block;
+    }
   }
 }

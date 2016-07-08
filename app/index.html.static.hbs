@@ -10,91 +10,150 @@ _options:
     - app/partials/quote.static.hbs
     - app/partials/avatar.static.hbs
 ---
-<div id="app"></div>
-<header class="c-landing-header">
-  <div class="container">
-    <div class="c-landing-header__content">
-      <h1 class="c-landing-header__heading">
-        Companies Apply To You
+<header class="o-hero-unit c-landing__header">
+  <div class="container text-center">
+    <div class="o-hero-unit__content">
+      <h1 class="o-hero-unit__heading c-landing__header__heading">
+        Get job offers from Europe’s best tech companies
       </h1>
-      <div class="c-landing-header__body">
+      <div class="o-hero-unit__body c-landing__header__body">
         <div>
           We help programmers find great jobs at great companies.
-        </div>
-        <div>
+          <span class="c-landing__force-break"></span>
           No applications, just one profile and your code.
         </div>
       </div>
-      <div class="c-landing-header__form">
-        <form action="{{url_base}}/users/sign_up" method="GET">
-          <input type="text" name="email" class="form-control c-landing__input c-landing__input-text" placeholder="Enter your email" />
-          <input type="submit" value="Sign Up" class="btn btn-landing">
-        </form>
+      <div>
+        <a href="{{url_base}}/users/sign_up" class="btn btn-blue c-landing__btn">Sign up</a>
       </div>
     </div>
   </div>
 </header>
 
-{{> landing_references}}
+<section class="container c-landing__steps-section">
+  <ol class="clearfix c-landing__steps">
+    <li class="c-landing__step">
+      <div class="clearfix">
+        <div class="c-landing__step__counter">1</div>
+        <div class="c-landing__step__text">
+          <span class="c-landing__step__emph">Sign up,</span> it only takes<span class="force-break"></span> 5 minutes!
+        </div>
+      </div>
+    </li>
+    <li class="c-landing__step">
+      <div class="clearfix">
+        <div class="c-landing__step__counter">2</div>
+        <div class="c-landing__step__text">
+          <span class="c-landing__step__emph">Have a call</span> with us <span class="force-break"></span>
+          and complete a <span class="force-break"></span>technical screening
+        </div>
+      </div>
+    </li>
+    <li class="clearfix c-landing__step">
+      <div class="clearfix">
+        <div class="c-landing__step__counter">3</div>
+        <div class="c-landing__step__text">
+          <span class="c-landing__step__emph force-break">Receive job offers</span> based on your preferences
+        </div>
+      </div>
+    </li>
+    <li class="c-landing__step">
+      <div class="clearfix">
+        <div class="c-landing__step__counter">4</div>
+        <div class="c-landing__step__text">
+          Get hired and get <span class="force-break"></span> a <span class="c-landing__step__emph">&euro;1024 bonus</span>
+        </div>
+      </div>
+    </li>
+  </ol>
+</section>
 
-<section class="c-landing__section c-landing__section--secondary landing__steps">
+<section class="c-landing__partners-section">
   <div class="container">
-    <h2 class="c-landing__main-heading">How does it work?</h2>
-  </div>
-  <div class="container">
-    {{> landing_step
-      number=1
-      full_width=false
-      title="Set up a profile"
-      arrow=true
-      content='Tell us about your experience, your salary expectations and your desired tech stack. No CV needed!'
-    }}
-    {{> landing_step
-      number=2
-      full_width=false
-      title="Show off your skills"
-      arrow=true
-      content='
-      We value your code not your CV. Share your open source contributions or solve a coding challenge in your
-      favorite language and let companies see your skills!
-      '
-    }}
-    {{> landing_step
-      number=3
-      full_width=false
-      title="Receive great job offers"
-      arrow=true
-      content='
-      Companies request an interview with you, sending tech stack and salary upfront.
-      '
-    }}
-    {{> landing_step
-      number=4
-      full_width=false
-      title="Find a job and get a bonus"
-      arrow=true
-      content='
-      You choose which companies to interview with and when you get hired we give you a <b>&euro;1024 bonus.</b>
-      '
-    }}
+    <h4 class="c-landing__partners__heading">Our partners</h4>
+    <div class="row c-landing__logo-container">
+      <div class="c-landing__logo-block">
+        <img
+          class="hisrc c-landing__logo c-landing__logo--zenmate"
+          src="DIGEST(images/zenmate_logo.png)"
+          height="40px"
+          alt="Zenmate"
+        />
+      </div>
+      <div class="c-landing__logo-block">
+        <img
+          class="hisrc c-landing__logo c-landing__logo--carmudi"
+          src="DIGEST(images/carmudi_logo.png)"
+          height="24px"
+          alt="Carmudi jobs"
+        />
+      </div>
+      <div class="c-landing__logo-block">
+        <img
+          class="c-landing__logo c-landing__logo--travis"
+          src="DIGEST(images/travis_logo.svg)"
+          height="41px"
+          alt="Travis CI"
+        />
+      </div>
+      <div class="c-landing__logo-block">
+        <img
+          class="hisrc c-landing__logo c-landing__logo--triprebel"
+          src="DIGEST(images/triprebel_logo.png)"
+          height="23px"
+          alt="Triprebel"
+        />
+      </div>
+      <div class="c-landing__logo-block">
+        <img
+          class="hisrc c-landing__logo c-landing__logo--finleap"
+          src="DIGEST(images/finleap_logo.png)"
+          height="50px"
+          alt="Finleap jobs"
+        />
+      </div>
+      <div class="c-landing__logo-block">
+        <img class="hisrc c-landing__logo c-landing__logo--liqid"
+          src="DIGEST(images/liqid_logo.png)"
+          alt="Liqid jobs"
+          height="27px"
+        />
+      </div>
+      <div class="c-landing__logo-block">
+        <img
+          class="c-landing__logo c-landing__logo--hitfox"
+          src="DIGEST(images/hitfox_logo.svg)"
+          height="30px"
+          alt="HitFox jobs"
+        />
+      </div>
+      <div class="c-landing__logo-block">
+        <img
+          class="hisrc c-landing__logo c-landing__logo--wayfair"
+          src="DIGEST(images/wayfair_logo.png)"
+          height="48px"
+          alt="Wayfair"
+        />
+      </div>
+      <div class="c-landing__logo-block">
+        <img
+          class="c-landing__logo c-landing__logo--meedoc"
+          src="DIGEST(images/meedoc_logo.svg)"
+          alt="Meedoc"
+        />
+      </div>
+      <div class="c-landing__logo-block">
+        <img
+          class="hisrc c-landing__logo c-landing__logo--glispa"
+          src="DIGEST(images/glispa_logo.png)"
+          height="34px"
+          alt="Glispa"
+        />
+      </div>
+    </div>
   </div><!-- ./container -->
-
-  <div class="text-center c-landing-steps__signup-container">
-    <a href="{{url_base}}/users/sign_up">
-      <button class="btn btn-landing btn-landing--big">Sign Up</button>
-    </a>
-  </div>
 </section>
 
-<section class="c-landing__section c-landing__section--primary c-landing__section--more-spacing">
-  {{> quote}}
-</section>
-
-<section class="c-landing__section">
-  <div class="container text-center">
-    <h2 class="c-landing__main-heading">Sign up for free and find your ideal job!</h2>
-    <a href="{{url_base}}/users/sign_up">
-      <button class="btn btn-landing btn-landing--big">Sign Up</button>
-    </a>
-  </div>
+<section class="visible-xs visible-sm container text-center">
+    <a href="{{url_base}}/users/sign_up" class="btn btn-blue c-landing__btn">Sign up</a>
 </section>

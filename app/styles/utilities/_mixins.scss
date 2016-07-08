@@ -78,3 +78,22 @@
   background: url($bg-path) no-repeat;
   background-position: 0 $pos;
 }
+
+@mixin _steps-line($distance) {
+  display: block;
+  content: '';
+  background-color: $light-blue-color;
+  z-index: $z-index-steps-line;
+}
+
+@mixin steps-line-vertical($distance) {
+  @include absolute(top 0 left ($distance / 2));
+  @include sizing(1px 100%);
+  @include _steps-line($distance);
+}
+
+@mixin steps-line-horizontal($distance) {
+  @include absolute(top ($distance / 2) left 50%);
+  @include sizing(100% 1px);
+  @include _steps-line($distance);
+}
