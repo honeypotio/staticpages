@@ -15,7 +15,7 @@ module.exports =
     babel:
       presets: ['es2015', 'react']
     imageoptimizer:
-      smushit: false
+      smushit: true
       path: 'images'
     sass:
       options:
