@@ -1,5 +1,15 @@
 s3_endpoint: eu-west-1
 site: public
+gzip: true
+cloudfront_wildcard_invalidation: true
+cloudfront_invalidate_root: true
+ignore_on_server: _DELETE_NOTHING_ON_THE_S3_BUCKET_
+cache_control:
+  "images/*": public, max-age=<%= 60 * 60 * 24 * 14 %>
+  "rawimages/*": public, max-age=<%= 60 * 60 * 24 * 14 %>
+  "*.js": public, max-age=<%= 60 * 60 * 24 * 7 %>
+  "*.css": public, max-age=<%= 60 * 60 * 24 * 7 %>
+  "*": no-cache, no-store
 s3_id: <%= ENV['S3_ID'] %>
 s3_secret: <%= ENV['S3_SECRET'] %>
 
