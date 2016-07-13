@@ -5,17 +5,15 @@ cloudfront_wildcard_invalidation: true
 cloudfront_invalidate_root: true
 ignore_on_server: _DELETE_NOTHING_ON_THE_S3_BUCKET_
 cache_control:
-  "images/*": public, max-age=<%= 60 * 60 * 24 * 14 %>
-  "rawimages/*": public, max-age=<%= 60 * 60 * 24 * 14 %>
-  "*.js": public, max-age=<%= 60 * 60 * 24 * 7 %>
-  "*.css": public, max-age=<%= 60 * 60 * 24 * 7 %>
+  "**/*.{png,svg,jpeg,jpg}": public, max-age=<%= 60 * 60 * 24 * 14 %>
+  "{**/*,*}.{js,css}": public, max-age=<%= 60 * 60 * 24 * 7 %>
   "*": no-cache, no-store
 s3_id: <%= ENV['S3_ID'] %>
 s3_secret: <%= ENV['S3_SECRET'] %>
 
 # change bucket based on travis ENV
 # chechk for PR required as branch in PR's always is master
-<% if ENV['TRAVIS_TAG'] != '' %>
+<% if ENV['TRAVIS_TAG'].to_s != '' %>
 s3_bucket: www2.honeypot.io
 cloudfront_distribution_id: E21RQMGDUM8ALN
 cloudfront_distribution_config:
