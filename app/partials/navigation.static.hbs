@@ -10,9 +10,9 @@
         </button>
         <a href="{{url_base}}/" class="navbar-brand c-navigation__logo-link">
           {{#if logo}}
-            <img src="DIGEST({{url_base}}/images/{{logo}})" class="c-navigation__logo" alt="Honeypot" />
+            <img src="{{url_base}}DIGEST(/images/{{logo}})" class="c-navigation__logo" alt="Honeypot" />
           {{else}}
-            <img src="DIGEST({{url_base}}/images/logo.svg)" class="c-navigation__logo" alt="Honeypot" />
+            <img src="{{url_base}}DIGEST(/images/logo.svg)" class="c-navigation__logo" alt="Honeypot" />
           {{/if}}
         </a>
       </div>
