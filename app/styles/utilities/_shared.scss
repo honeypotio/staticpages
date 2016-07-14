@@ -23,3 +23,23 @@ $directions: 'top', 'bottom', 'left', 'right';
 .u-no-margin {
   margin: 0;
 }
+
+.force-break {
+  display: none;
+
+  @media #{$md-up} {
+    display: block;
+  }
+}
+
+.u-force-break {
+  display: inline;
+
+  @media #{$md-up} {
+    display: block;
+  }
+}
+
+.u-semibold-text {
+  font-weight: $fw-semibold;
+}

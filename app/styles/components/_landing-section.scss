@@ -1,0 +1,31 @@
+.c-landing-section {
+  padding: 26px 10px 49px;
+
+  @media #{$md-up} {
+    padding: 70px 0 50px;
+  }
+
+  &--explanation {
+    padding: 37px 0;
+    background: url('DIGEST(images/explanation_header_mobile.jpg)') no-repeat;
+    background-size: cover;
+
+    @media #{$xs-up} {
+      background: url('DIGEST(images/explanation_header.jpg)') no-repeat;
+      background-position-x: 0;
+    }
+
+    @media #{$md-up} {
+      padding: 87px 0 86px;
+      background-position-x: 0;
+    }
+  }
+
+  &--secondary {
+    background-color: $light-gray-color;
+  }
+
+  &--no-bottom-padding {
+    padding-bottom: 0;
+  }
+}

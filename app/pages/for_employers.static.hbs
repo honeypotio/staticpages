@@ -2,69 +2,94 @@
 _options:
   layout: app/layouts/main.static.hbs
   partials:
-    - app/partials/landing_references.static.hbs
+    - app/partials/avatar.static.hbs
     - app/partials/landing_step.static.hbs
-    - app/partials/landing_read_more.static.hbs
-    - app/partials/landing_steps.static.hbs
-    - app/partials/commission.static.hbs
+    - app/partials/landing_references.static.hbs
 ---
 
-<header class="c-landing-header c-landing-header--employers">
-  <div class="container">
-    <div class="c-landing-header__content">
-      <h1 class="c-landing-header__heading">
-        Hire the best developers from around the world.
+<header class="o-hero-unit c-landing__header c-landing-header--employers">
+  <div class="container text-center">
+    <div class="o-hero-unit__content">
+      <h1 class="o-hero-unit__heading c-landing__header__heading">
+        Hire the best developers from around the world
       </h1>
-      <div class="c-landing-header__body">
-        And you can relax because we cover the visa. For free.
+      <div class="o-hero-unit__body c-landing__header__body">
+        <div>
+          And you can relax because we cover the visa. For free!
+        </div>
       </div>
-      <div class="c-landing-header__form">
-        <a href="{{url_base}}/invite_requests/new" class="btn btn-landing btn-landing--big">
-          Start Hiring
-        </a>
+      <div>
+        <a href="{{url_base}}/invite_requests/new" class="btn btn-blue c-landing__btn">Start Hiring</a>
       </div>
     </div>
   </div>
 </header>
 
-{{> landing_references}}
+<section class="container c-landing__steps-section">
+  <ol class="clearfix c-landing__steps">
+    {{> landing_step
+      counter=1
+      text='
+        <b>Apply</b> to join <span class="u-force-break">Honeypot!</span>
+      '
+    }}
+    {{> landing_step
+      counter=2
+      text='
+        Search for <b>pre-screened</b> developers
+      '
+    }}
+    {{> landing_step
+      counter=3
+      text='
+        <b>Invite</b> developers to <span class="u-force-break">interview</span>
+      '
+    }}
+    {{> landing_step
+      counter=4
+      text='
+      Only pay when <span class="u-force-break">you <b>hire!</b></span>
+      '
+    }}
+  </ol>
+</section>
 
-<section class="c-landing__section c-landing-referrals">
-  <div class="container">
-    <h2 class="c-landing__main-heading">What people say about Honeypot</h2>
-    <div class="c-landing-referrals__content">
-      <div class="c-landing-referrals__text">
-        ”Real pleasure to work with a team like that. Highly professional and really warm, with an extremely good understanding of IT recruitment.”
-      </div>
-      <div class="c-landing-referrals__author">
-        <img class="hisrc c-landing-referrals__author-logo" src="DIGEST({{url_base}}/images/carmudi_logo_color.png)" height="20px" alt="Carmudi jobs"/>
-        found their system administrator on Honeypot
-      </div>
+<section class="c-landing-pricing">
+  <h2 class="c-landing-pricing__heading">Simple Transparent Pricing!</h2>
+  <p class="c-landing-pricing__text"><b class="u-semibold-text">Browse and contact developers for free.</b> Only pay
+    when you hire developers and they stay with you.
+  </p>
+  <div class="c-landing-pricing__table-container">
+    <h3 class="c-landing-pricing__table-heading">15%<small>Commission*</small></h3>
+    <ul class="c-landing-pricing__table-listing">
+      <li>Full visa support for non-EU talents</li>
+      <li>Personalized data reports</li>
+      <li><b class="u-semibold-text">100% refund</b> if the talent leaves in the first 3 months after hire</li>
+      <li>Payment upon hire</li>
+    </ul>
+    <div class="c-landing-pricing__btn-container text-center">
+      <a class="btn btn-primary btn-blue c-landing-pricing__btn" href="{{url_base}}/invite_requests/new">
+        Start Hiring
+      </a>
     </div>
+    <small class="c-landing-pricing__table-legend">
+      *Commission is calculated based on the yearly gross salary of the hired developer
+    </small>
+  </div>
+  <div class="c-landing-pricing__contact">
+    <span class="u-semibold-text">Questions?</span> Drop us a line and we’ll get back to you shortly. <a href="#">Contact us &gt;</a>
   </div>
 </section>
 
-<section class="c-landing__section c-landing__section--secondary c-landing__section--line">
-  {{> landing_steps }}
-</section>
-
-<section class="c-landing__section c-landing__section--primary">
+<section class="c-landing__partners-section">
   <div class="container">
-    <h2 class="c-landing__main-heading c-landing__main-heading--inverse">Only pay when you hire!</h2>
-    {{> commission}}
-  </div>
+    <h4 class="c-landing__partners__heading">They are already hiring</h4>
+    <div class="row c-landing__logo-container">
+      {{> landing_references}}
+    </div>
+  </div><!-- ./container -->
 </section>
 
-<section class="c-landing__section c-landing__section--secondary">
-  <div class="container">
-    <h2 class="c-landing__main-heading">Read more about Honeypot</h2>
-    {{> landing_read_more }}
-  </div>
-</section>
-
-<section class="c-landing__section">
-  <div class="container text-center">
-    <h2 class="c-landing__main-heading">Sign up for free and start hiring!</h2>
-    <a href="{{url_base}}/invite_requests/new" class="btn btn-landing btn-landing--big">Start Hiring</a>
-  </div>
+<section class="visible-xs visible-sm container text-center">
+    <a href="{{url_base}}/invite_requests/new" class="btn btn-blue c-landing__btn">Sign up</a>
 </section>

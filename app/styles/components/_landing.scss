@@ -12,7 +12,7 @@ $counter-size: 40px;
     }
 
     @media #{$md-up} {
-      padding: 110px 0 102px;
+      padding: 127px 0 102px;
       background-position-x: 0;
       background-position-y: -150px;
     }
@@ -45,7 +45,7 @@ $counter-size: 40px;
 
   &__btn {
     @include text($fs-14, $fw-semibold, $white-color);
-    padding: 15px 49px;
+    padding: 10px 39px;
   }
 
   &__steps-section {
