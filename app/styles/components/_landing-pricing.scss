@@ -12,34 +12,43 @@
   border-top: 1px solid $light-blue-color;
 
   &__heading {
-    margin: 0 auto 30px;
     text-align: center;
     font-size: $fs-7;
     font-weight: $fw-light;
 
     @media #{$md-up} {
       font-size: $fs-18;
+      margin-bottom: 27px;
     }
   }
 
   &__text {
-    margin-bottom: 23px;
+    width: 87%;
+    margin: 0 auto 23px;
     text-align: center;
-    font-size: $fs-14;
+    font-size: $fs-5;
     font-weight: $fw-light;
+
+    @media #{$md-up} {
+      margin: 0 auto 23px;
+      width: 450px;
+      font-size: $fs-14;
+    }
   }
 
   &__table {
     &-container {
-      width: 100%;
-      margin: 0 auto;
-      padding: 21px 41px 25px;
+      width: 90%;
+      margin: 36px auto 0;
+      padding: 19px 16px 25px;
       background-color: $white-color;
       border: 1px solid $light-gray-5-color;
       border-bottom: 6px solid $blue-color;
       box-shadow: 0 0 100px $light-gray-color;
 
       @media #{$md-up} {
+        margin-top: 0;
+        padding: 17px 45px 25px;
         width: $landing-pricing-table-width;
       }
     }
@@ -56,13 +65,14 @@
     }
 
     &-listing {
-      padding-left: 0;
+      padding-left: 7px;
       margin: 18px 0 0;
       list-style-type: none;
 
       li {
-        padding-left: 8px;
-        text-indent: -8px;
+        padding-left: 7px;
+        margin-top: -2px;
+        text-indent: -7px;
         font-size: $fs-12;
       }
 
