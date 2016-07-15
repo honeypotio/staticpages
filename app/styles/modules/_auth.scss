@@ -32,7 +32,11 @@
 
   &__panel {
     margin: 22px 0;
-    padding: 20px 40px 7px;
+    padding: 20px 17px 7px;
+
+    @media #{$md-up} {
+      padding: 20px 40px 7px;
+    }
 
     &--switcher {
       margin-top: 0;
@@ -80,6 +84,7 @@
   &__secondary-text {
     @include text($fs-5, $fw-normal, $gray-color);
     margin: 20px 0;
+    text-align: center;
   }
 
   &__checkbox-link {
