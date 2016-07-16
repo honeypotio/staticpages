@@ -1,7 +1,7 @@
 {
-  "name": "your-app",
+  "name": "www.honeypot.io",
   "description": "Description",
-  "author": "Your Name",
+  "author": "Honeypot GmbH",
   "version": "0.0.1",
   "repository": {
     "type": "git",
@@ -37,7 +37,7 @@
     "js-yaml": "^3.6.1",
     "mocha": "^2.5.3",
     "node-smushit": "^0.5.1",
-    "process-env-brunch": "^1.4.4-d",
+    "envstatic-brunch": "^0.1.0",
     "react": "^15.1.0",
     "react-addons-test-utils": "^15.1.0",
     "react-bootstrap": "0.28.5",

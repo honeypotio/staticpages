@@ -19,7 +19,7 @@ _options:
     {{#if optimizely_id}}
       {{> optimizely optimizely_id=optimizely_id}}
     {{/if}}
-    <link rel="stylesheet" href="{{url_base}}/app.css">
+    <link rel="stylesheet" href="{{url_base}}DIGEST(/app.css)">
     {{#if ga_id}}
       {{> analytics_optout ga_id=ga_id}}
     {{/if}}
@@ -40,8 +40,8 @@ _options:
       {{content}}
     </main>
     {{> footer class_name=footer_class_name}}
-    <script type="text/javascript" src="{{url_base}}/app.js"></script>
-    <script type="text/javascript" src="{{url_base}}/vendor.js"></script>
+    <script type="text/javascript" src="{{url_base}}DIGEST(/app.js)"></script>
+    <script type="text/javascript" src="{{url_base}}DIGEST(/vendor.js)"></script>
     <script>require('initialize');</script>
   </body>
 </html>
