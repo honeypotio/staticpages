@@ -2,13 +2,13 @@ import Cookies from 'js-cookie';
 
 export default {
   buildURL(url) {
-    const host = $ENVSTATIC_API_HOST || '/';
+    const host = $PROCESS_ENV_API_HOST || '/';
     return `${host}${url}`;
   },
 
   setCookieForStaging() {
-    if ($ENVSTATIC_STAGING_AUTH) {
-      Cookies.set('staging_auth', $ENVSTATIC_STAGING_AUTH, { domain: $ENVSTATIC_COOKIE_DOMAIN });
+    if ($PROCESS_ENV_STAGING_AUTH) {
+      Cookies.set('staging_auth', $PROCESS_ENV_STAGING_AUTH, { domain: $PROCESS_ENV_COOKIE_DOMAIN });
     }
   },
 

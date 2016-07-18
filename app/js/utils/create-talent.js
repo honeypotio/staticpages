@@ -25,7 +25,7 @@ export default {
   },
 
   _writeToCookie(userId, token, email) {
-    Cookies.set(this.cookieName, this._generateCookie(userId, token, email), { domain: $ENVSTATIC_COOKIE_DOMAIN });
+    Cookies.set(this.cookieName, this._generateCookie(userId, token, email), { domain: $PROCESS_ENV_COOKIE_DOMAIN });
   },
 
   _generateCookie(userId, token, email) {
