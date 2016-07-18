@@ -24,6 +24,12 @@ module.exports =
       referenceFiles: /\.html|\.css|for_employers|404|how_does_it_work|terms_of_service|legal_notice|500|faq|sign_up|new$/
       # diges does not work with files without file extension
       #referenceFiles: /\.html|\.css|^[^.]+$/
+    envstatic:
+      prefix: '$PROCESS_ENV_'
+      pattern: /\$PROCESS_ENV_(\w+)/gi
+      variables:
+        APP_HOST: process.env.APP_HOST
+        STAGING_AUTH: process.env.STAGING_AUTH
     static:
       processors: [
         require('html-brunch-static') {

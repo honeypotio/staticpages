@@ -12,6 +12,10 @@ Development
 ```shell
 brunch watch --sever
 ```
+In order to get the proper routing you also have to start the express server:
+```shell
+node app.js
+```
 
 
 License

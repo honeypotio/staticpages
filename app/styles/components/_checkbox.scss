@@ -25,9 +25,14 @@
 
   > .c-checkbox__replacement-label {
     @include text($fs-5, $fw-normal, $gray-color);
+    width: 90%;
     padding-left: 0;
     float: left;
     margin: 4px 0 0 5px;
+
+    @media #{$md-up} {
+      width: auto;
+    }
 
     &--error {
       color: $brand-danger;
