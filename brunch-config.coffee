@@ -29,7 +29,9 @@ module.exports =
       pattern: /\$PROCESS_ENV_(\w+)/gi
       variables:
         APP_HOST: process.env.APP_HOST
+        API_HOST: process.env.API_HOST
         STAGING_AUTH: process.env.STAGING_AUTH
+        COOKIE_DOMAIN: process.env.COOKIE_DOMAIN
     static:
       processors: [
         require('html-brunch-static') {
