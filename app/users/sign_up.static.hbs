@@ -8,7 +8,71 @@ _options:
     <div class="row">
 
       <div class="col-xs-12 col-md-offset-1 col-md-7">
-        <div id="app"></div>
+        <div id="app">
+          <div class="m-auth__form">
+            <div class="m-auth__heading">Join Honeypot</div>
+            <div class="c-panel-switcher clearfix">
+              <div class="c-panel-switcher__item c-panel-switcher__item--active">I'm a Talent</div>
+              <a href="/invite_requests/new" class="c-panel-switcher__item c-panel-switcher__item--last">
+                I'm an Employer
+              </a>
+            </div>
+            <div class="panel panel-default o-page-island m-auth__panel m-auth__panel--switcher">
+              <div class="panel-body m-auth__panel__body">
+                <div class="form-inputs">
+                  <div class="form-group">
+                    <input type="text" placeholder="First name" disabled=disabled class="m-auth__form__input m-auth__form__input--signup form-control" />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      placeholder="Last name"
+                      disabled=disabled
+                      class="m-auth__form__input m-auth__form__input--signup form-control"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      placeholder="Email"
+                      disabled=disabled
+                      class="m-auth__form__input m-auth__form__input--signup form-control"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      placeholder="Password"
+                      disabled=disabled
+                      class="m-auth__form__input m-auth__form__input--signup form-control"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      placeholder="Repeat Password"
+                      disabled=disabled
+                      class="m-auth__form__input m-auth__form__input--signup form-control"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="panel-footer c-sign-up-form__footer">
+                <div class='control-label c-checkbox' data-checkbox="agree">
+                  <input type="checkbox" id="agree" class="c-checkbox__replace" />
+                  <label class="c-checkbox__label"></label>
+                  <label for="agree" class="c-checkbox__replacement-label">
+                    I agree to the <a href="/pages/terms_of_service#talents" target="_blank" class="m-auth__checkbox-link">Terms of Service</a>
+                    &nbsp;and the <a href="/pages/legal_notice#privacy_policy" target="_blank" class="m-auth__checkbox-link">Privacy Policy</a>
+                  </label>
+                </div>
+                <button class="btn btn-primary btn-blue btn-block c-sign-up-form__submit-btn" disabled=true>
+                  Sign up
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="col-xs-12 col-md-4 m-auth__panel-description">
