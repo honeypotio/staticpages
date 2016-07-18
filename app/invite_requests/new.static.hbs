@@ -7,7 +7,81 @@ _options:
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-md-offset-1 col-md-7">
-        <div id="app"></div>
+        <div id="app">
+          <div class="m-auth__form">
+            <div class="m-auth__heading">Join Honeypot</div>
+            <div class="c-panel-switcher clearfix">
+              <a href="/users/sign_up" class="c-panel-switcher__item c-panel-switcher__item--last">I'm a Talent</a>
+              <div class="c-panel-switcher__item c-panel-switcher__item--active">
+                I'm an Employer
+              </div>
+            </div>
+            <div class="panel panel-default o-page-island m-auth__panel m-auth__panel--switcher">
+              <div class="panel-body m-auth__panel__body">
+                <div class="form-inputs">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      placeholder="Company name"
+                      disabled=disabled
+                      class="m-auth__form__input m-auth__form__input--signup form-control"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      placeholder="Hiring location"
+                      disabled=disabled
+                      class="m-auth__form__input m-auth__form__input--signup form-control"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      placeholder="Number of employees"
+                      disabled=disabled
+                      class="m-auth__form__input m-auth__form__input--signup form-control"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      placeholder="Contact person"
+                      disabled=disabled
+                      class="m-auth__form__input m-auth__form__input--signup form-control"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      placeholder="Contact email"
+                      disabled=disabled
+                      class="m-auth__form__input m-auth__form__input--signup form-control"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      placeholder="Phone number (optional)"
+                      disabled=disabled
+                      class="m-auth__form__input m-auth__form__input--signup form-control"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="panel-footer c-sign-up-form__footer">
+                <div class="m-auth__secondary-text">
+                  By requesting an invite you agree to the <a href="/pages/terms_of_service#companies" target="_blank" class="m-auth__checkbox-link">Terms of Service</a>
+                  &nbsp; and the <a href="/pages/legal_notice#privacy_policy" target="_blank" class="m-auth__checkbox-link">Privacy Policy</a>
+                </div>
+                <button class="btn btn-primary btn-blue btn-block c-sign-up-form__submit-btn" disabled=true>
+                  Request Invite
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
 
       <div class="col-xs-12 col-md-4 m-auth__panel-description">
