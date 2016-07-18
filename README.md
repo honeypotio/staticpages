@@ -1,7 +1,7 @@
 Staticpages
 ----------
 
-honeypot.io static pages. mainenance, error and others
+honeypot.io static pages. maintenance, error and others
 
 
 Development
