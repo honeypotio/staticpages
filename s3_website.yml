@@ -40,3 +40,6 @@ cloudfront_distribution_config:
 <% if ENV['PREFIX_FOLDER'] != '' %>
 s3_key_prefix: <%= ENV['PREFIX_FOLDER'] %>
 <% end %>
+
+redirects:
+  admin: <%= ENV['APP_HOST'] %>/admin
