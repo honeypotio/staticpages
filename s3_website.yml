@@ -1,6 +1,8 @@
 s3_endpoint: eu-west-1
 site: public
 gzip: true
+index_document: index.html
+error_document: pages/404
 cloudfront_wildcard_invalidation: true
 cloudfront_invalidate_root: true
 ignore_on_server: _DELETE_NOTHING_ON_THE_S3_BUCKET_
