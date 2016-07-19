@@ -41,5 +41,99 @@ cloudfront_distribution_config:
 s3_key_prefix: <%= ENV['PREFIX_FOLDER'] %>
 <% end %>
 
-redirects:
-  admin: <%= ENV['APP_HOST'] %>/admin
+routing_rules:
+  - condition:
+      key_prefix_equals: admin
+    redirect:
+      host_name: <%= ENV['APP_HOST'] %>
+      replace_key_prefix_with: admin
+  - condition:
+      key_prefix_equals: api
+    redirect:
+      host_name: <%= ENV['API_HOST'] %>
+      replace_key_prefix_with: api
+  - condition:
+      key_prefix_equals: talents
+    redirect:
+      host_name: <%= ENV['APP_HOST'] %>
+      replace_key_prefix_with: talents
+  - condition:
+      key_prefix_equals: company
+    redirect:
+      host_name: <%= ENV['APP_HOST'] %>
+      replace_key_prefix_with: company
+  - condition:
+      key_prefix_equals: companies
+    redirect:
+      host_name: <%= ENV['APP_HOST'] %>
+      replace_key_prefix_with: companies
+  - condition:
+      key_prefix_equals: users/sign_out
+    redirect:
+      host_name: <%= ENV['APP_HOST'] %>
+      replace_key_prefix_with: users/sign_out
+  - condition:
+      key_prefix_equals: users/password
+    redirect:
+      host_name: <%= ENV['APP_HOST'] %>
+      replace_key_prefix_with: users/password
+  - condition:
+      key_prefix_equals: users/cancel
+    redirect:
+      host_name: <%= ENV['APP_HOST'] %>
+      replace_key_prefix_with: users/cancel
+  - condition:
+      key_prefix_equals: users/confirmation
+    redirect:
+      host_name: <%= ENV['APP_HOST'] %>
+      replace_key_prefix_with: users/confirmation
+  - condition:
+      key_prefix_equals: users/invitation
+    redirect:
+      host_name: <%= ENV['APP_HOST'] %>
+      replace_key_prefix_with: users/invitation
+  - condition:
+      key_prefix_equals: registrations/new
+    redirect:
+      host_name: <%= ENV['APP_HOST'] %>
+      replace_key_prefix_with: users/sign_up
+  - condition:
+      key_prefix_equals: invitation/accept_refer_a_friend
+    redirect:
+      host_name: <%= ENV['APP_HOST'] %>
+      replace_key_prefix_with: invitation/accept_refer_a_friend
+  - condition:
+      key_prefix_equals: ref
+    redirect:
+      host_name: <%= ENV['APP_HOST'] %>
+      replace_key_prefix_with: ref
+  - condition:
+      key_prefix_equals: employers/request-invite
+    redirect:
+      host_name: <%= ENV['APP_HOST'] %>
+      replace_key_prefix_with: employers/request-invite
+  - condition:
+      key_prefix_equals: invite_requests
+    redirect:
+      host_name: <%= ENV['APP_HOST'] %>
+      replace_key_prefix_with: invite_requests
+  - condition:
+      key_prefix_equals: profile
+    redirect:
+      host_name: <%= ENV['APP_HOST'] %>
+      replace_key_prefix_with: profile
+  - condition:
+      key_prefix_equals: interview-invites
+    redirect:
+      host_name: <%= ENV['APP_HOST'] %>
+      replace_key_prefix_with: interview-invites
+  - condition:
+      key_prefix_equals: refer
+    redirect:
+      host_name: <%= ENV['APP_HOST'] %>
+      replace_key_prefix_with: refer
+  - condition:
+      key_prefix_equals: blog
+    redirect:
+      host_name: <%= ENV['BLOG_HOST'] || 'https://staging-blog-honeypot.herokuapp.com/' %>
+      replace_key_prefix_with: /
