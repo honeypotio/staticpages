@@ -4,7 +4,7 @@ then
   mkdir -p tmp
   brunch build --production 2>&1| tee tmp/output.txt
   if [ "$(cat tmp/output.txt | grep error)" == "" ]; then
-    bundle exec s3_website push
+    bundle exec s3_website push $( [ -n "$S3_FORCE" ] && echo '--force')
   else
     exit 1
   fi
