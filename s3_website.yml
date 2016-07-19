@@ -135,5 +135,5 @@ routing_rules:
   - condition:
       key_prefix_equals: blog
     redirect:
-      host_name: <%= ENV['BLOG_HOST'] || 'https://staging-blog-honeypot.herokuapp.com/' %>
+      host_name: <%= ENV['BLOG_HOST'] || 'staging-blog-honeypot.herokuapp.com' %>
       replace_key_prefix_with: /
