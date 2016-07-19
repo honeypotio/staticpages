@@ -186,16 +186,26 @@ $counter-size: 40px;
       margin-top: 9px;
     }
 
+    &--crowdpark {
+      margin-top: 18px;
+    }
+
     /*
      * Desktop sizing
     */
 
     $margins: (
       ('carmudi', 12px),
+      ('kiwi', 12px),
       ('triprebel', 17px),
       ('liqid', 16px),
-      ('hitfox', 16px),
-      ('glispa', 18px)
+      ('glispa', 18px),
+      ('crowdpark', 10px),
+      ('zenmate', 8px),
+      ('onefootball', 10px),
+      ('kauferportal', 5px),
+      ('optivo', 10px),
+      ('helpling', 10px)
     );
 
     @each $margin in $margins {
@@ -212,6 +222,7 @@ $counter-size: 40px;
     &--meedoc {
       height: 55px;
     }
+
   }
 
   &__force-break {
