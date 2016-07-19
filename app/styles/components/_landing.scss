@@ -170,8 +170,13 @@ $counter-size: 40px;
     opacity: .4;
     margin-bottom: 53px;
 
+    &--travis {
+      opacity: .6;
+    }
+
     &--hitfox {
       margin-top: 16px;
+      opacity: .7;
     }
 
     &--liqid {
@@ -190,6 +195,26 @@ $counter-size: 40px;
       margin-top: 18px;
     }
 
+    &--zalando {
+      opacity: .75;
+    }
+
+    &--kiwi {
+      opacity: .7;
+    }
+
+    &--onefootball {
+      opacity: .7;
+    }
+
+    &--kauferportal {
+      opacity: .7;
+    }
+
+    &--helpling {
+      opacity: .7;
+    }
+
     /*
      * Desktop sizing
     */
@@ -203,9 +228,10 @@ $counter-size: 40px;
       ('crowdpark', 10px),
       ('zenmate', 8px),
       ('onefootball', 10px),
-      ('kauferportal', 5px),
+      ('kauferportal', 15px),
       ('optivo', 10px),
-      ('helpling', 10px)
+      ('helpling', 10px),
+      ('hitfox', 5px)
     );
 
     @each $margin in $margins {
