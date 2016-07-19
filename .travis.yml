@@ -4,15 +4,11 @@ cache:
     - node_modules
     - bundler
 before_install:
-  - sudo apt-get update -qq
-  - sudo apt-get install -qq curl
   - rvm use $(< .ruby-version) --install --binary --fuzzy
 install:
   - npm install node-smushit -g
   - npm install
   - bundle install
-before_script:
-  - env
 script: travis_wait ./bin/deploy
 
 env:
