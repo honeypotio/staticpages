@@ -2,37 +2,79 @@
   min-height: 350px;
   padding: 50px 0;
   text-align: center;
-  background-color: $white-color;
+  background-color: $light-gray-color;
 
   @media #{$sm-up} {
-    padding: 100px 0;
+    padding: 40px 0;
+    text-align: left;
   }
 
   &--inverse {
     background-color: $dark-blue-color;
   }
 
+  a {
+    @include text($fs-5, $fw-normal, $dark-gray-2-color);
+  }
+
   &__item {
+    @include text($fs-5, $fw-normal, $dark-gray-2-color);
     margin: 20px 10px 0 0;
-    font-size: $fs-5 - 1px;
-    font-weight: $fw-semibold;
     text-align: center;
-    letter-spacing: 1px;
     color: $gray-color;
 
     @media #{$sm-up} {
-      margin: 0 45px 0 0;
+      margin: 0 21px 0 0;
       text-align: left;
     }
   }
 
   &__copyright {
     display: block;
-    margin: 50px 0 20px;
     text-align: center;
 
     @media #{$sm-up} {
       margin-bottom: 0;
+    }
+  }
+
+  &__company-name {
+    @include text($fs-5 - 1, $fw-light, $dark-gray-2-color);
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+
+    @media #{$md-up} {
+      float: right;
+      margin-right: 15px;
+      text-align: left;
+    }
+  }
+
+  &__social-container {
+    display: block;
+    margin-top: 25px;
+    text-align: center;
+
+    @media #{$md-up} {
+      float: right;
+      margin-top: 0;
+      text-align: left;
+    }
+  }
+
+  &__social-icon {
+    $sizing: 40px;
+    @include sizing($sizing);
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    line-height: $sizing;
+    border-radius: $sizing;
+    border: 1px solid $dark-gray-2-color;
+
+    @media #{$md-up} {
+      margin-top: -7px;
     }
   }
 }
