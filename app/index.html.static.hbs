@@ -32,39 +32,31 @@ _options:
 
 <section class="container c-landing__steps-section">
   <ol class="clearfix c-landing__steps">
-    <li class="c-landing__step">
-      <div class="clearfix">
-        <div class="c-landing__step__counter">1</div>
-        <div class="c-landing__step__text">
-          <span class="c-landing__step__emph">Sign up,</span> it only takes<span class="force-break"></span> 5 minutes!
-        </div>
-      </div>
-    </li>
-    <li class="c-landing__step">
-      <div class="clearfix">
-        <div class="c-landing__step__counter">2</div>
-        <div class="c-landing__step__text">
-          <span class="c-landing__step__emph">Have a call</span> with us <span class="force-break"></span>
-          and complete a <span class="force-break"></span>technical screening
-        </div>
-      </div>
-    </li>
-    <li class="clearfix c-landing__step">
-      <div class="clearfix">
-        <div class="c-landing__step__counter">3</div>
-        <div class="c-landing__step__text">
-          <span class="c-landing__step__emph force-break">Receive job offers</span> based on your preferences
-        </div>
-      </div>
-    </li>
-    <li class="c-landing__step">
-      <div class="clearfix">
-        <div class="c-landing__step__counter">4</div>
-        <div class="c-landing__step__text">
-          Get hired and get <span class="force-break"></span> a <span class="c-landing__step__emph">&euro;1024 bonus</span>
-        </div>
-      </div>
-    </li>
+    {{> landing_step
+      counter=1
+      text='
+        <span class="c-landing__step__emph">Sign up,</span> it only takes <span class="u-force-break">5 minutes!</span>
+      '
+    }}
+    {{> landing_step
+      counter=2
+      text='
+        <span class="c-landing__step__emph">Have a call</span> with us <span class="force-break"></span>
+        and complete a <span class="u-force-break">technical screening</span>
+      '
+    }}
+    {{> landing_step
+      counter=3
+      text='
+        <span class="c-landing__step__emph u-force-break">Receive job offers</span> based on your preferences
+      '
+    }}
+    {{> landing_step
+      counter=4
+      text='
+        Get hired and get <span class="force-break"></span> a <span class="c-landing__step__emph">&euro;1024 bonus</span>
+      '
+    }}
   </ol>
 </section>
 
@@ -72,98 +64,7 @@ _options:
   <div class="container">
     <h4 class="c-landing__partners__heading">Our partners</h4>
     <div class="row c-landing__logo-container">
-      <div class="c-landing__logo-block">
-        <img
-          class="hisrc c-landing__logo c-landing__logo--zenmate"
-          src="{{url_base}}DIGEST(/images/zenmate_logo.png)"
-          data-1x="{{url_base}}DIGEST(/images/zenmate_logo-1x.png)"
-          data-2x="{{url_base}}DIGEST(/images/zenmate_logo-2x.png)"
-          height="40px"
-          alt="Zenmate"
-        />
-      </div>
-      <div class="c-landing__logo-block">
-        <img
-          class="hisrc c-landing__logo c-landing__logo--carmudi"
-          src="{{url_base}}DIGEST(/images/carmudi_logo.png)"
-          data-1x="{{url_base}}DIGEST(/images/carmudi_logo-1x.png)"
-          data-2x="{{url_base}}DIGEST(/images/carmudi_logo-2x.png)"
-          height="24px"
-          alt="Carmudi jobs"
-        />
-      </div>
-      <div class="c-landing__logo-block">
-        <img
-          class="c-landing__logo c-landing__logo--travis"
-          src="{{url_base}}DIGEST(/images/travis_logo.svg)"
-          height="41px"
-          alt="Travis CI"
-        />
-      </div>
-      <div class="c-landing__logo-block">
-        <img
-          class="hisrc c-landing__logo c-landing__logo--triprebel"
-          src="{{url_base}}DIGEST(/images/triprebel_logo.png)"
-          data-1x="{{url_base}}DIGEST(/images/triprebel_logo-1x.png)"
-          data-2x="{{url_base}}DIGEST(/images/triprebel_logo-2x.png)"
-          height="23px"
-          alt="Triprebel"
-        />
-      </div>
-      <div class="c-landing__logo-block">
-        <img
-          class="hisrc c-landing__logo c-landing__logo--finleap"
-          src="{{url_base}}DIGEST(/images/finleap_logo.png)"
-          data-1x="{{url_base}}DIGEST(/images/finleap_logo-1x.png)"
-          data-2x="{{url_base}}DIGEST(/images/finleap_logo-2x.png)"
-          height="50px"
-          alt="Finleap jobs"
-        />
-      </div>
-      <div class="c-landing__logo-block">
-        <img class="hisrc c-landing__logo c-landing__logo--liqid"
-          src="{{url_base}}DIGEST(/images/liqid_logo.png)"
-          data-1x="{{url_base}}DIGEST(/images/liqid_logo-1x.png)"
-          data-2x="{{url_base}}DIGEST(/images/liqid_logo-2x.png)"
-          alt="Liqid jobs"
-          height="27px"
-        />
-      </div>
-      <div class="c-landing__logo-block">
-        <img
-          class="c-landing__logo c-landing__logo--hitfox"
-          src="{{url_base}}DIGEST(/images/hitfox_logo.svg)"
-          height="30px"
-          alt="HitFox jobs"
-        />
-      </div>
-      <div class="c-landing__logo-block">
-        <img
-          class="hisrc c-landing__logo c-landing__logo--wayfair"
-          src="{{url_base}}DIGEST(/images/wayfair_logo.png)"
-          data-1x="{{url_base}}DIGEST(/images/wayfair_logo-1x.png)"
-          data-2x="{{url_base}}DIGEST(/images/wayfair_logo-2x.png)"
-          height="48px"
-          alt="Wayfair"
-        />
-      </div>
-      <div class="c-landing__logo-block">
-        <img
-          class="c-landing__logo c-landing__logo--meedoc"
-          src="{{url_base}}DIGEST(/images/meedoc_logo.svg)"
-          alt="Meedoc"
-        />
-      </div>
-      <div class="c-landing__logo-block">
-        <img
-          class="hisrc c-landing__logo c-landing__logo--glispa"
-          src="{{url_base}}DIGEST(/images/glispa_logo.png)"
-          data-1x="{{url_base}}DIGEST(/images/glispa_logo-1x.png)"
-          data-2x="{{url_base}}DIGEST(/images/glispa_logo-2x.png)"
-          height="34px"
-          alt="Glispa"
-        />
-      </div>
+      {{> landing_references}}
     </div>
   </div><!-- ./container -->
 </section>

@@ -1,7 +1,11 @@
 .c-explanation-showcase {
 
   &__heading {
-    text-align: right;
+    @include text($fs-theta, $fw-light, $almost-black-color);
+
+    @media #{$md-up} {
+      font-size: $fs-18;
+    }
 
     &--left {
       text-align: left;
@@ -9,15 +13,25 @@
   }
 
   &__copy {
-    @include text($fs-9, $fw-light, $gray-2-color);
+    @include text($fs-5, $fw-light, $dark-gray-2-color);
+    margin-top: 25px;
     line-height: $fs-9 + 4px; // 30px
 
     @media #{$md-up} {
-      @include text($fs-theta, $fw-light, $gray-2-color);
+      font-size: $fs-14;
     }
 
     &__paragraph {
-      margin-top: 35px;
+      margin-top: 20px;
+    }
+
+    &__cta {
+      margin-top: 20px;
+      font-size: $fs-12;
+      font-weight: $fw-normal;
+
+      @media #{$md-up} { font-size: inherit; }
+      a { color: $blue-color; }
     }
   }
 
@@ -25,8 +39,9 @@
     float: left;
 
     @media #{$md-up} {
-      width: 500px;
-      margin-top: 84px;
+      width: 372px;
+      margin-top: 2px;
+      margin-right: 34px;
       float: right;
     }
 
@@ -42,9 +57,15 @@
       }
     }
 
+    &--padded-left {
+      @media #{$md-up} {
+        padding-left: 52px;
+      }
+    }
+
     &--talent-rep {
       @media #{$md-up} {
-        width: 580px;
+        width: 480px;
       }
     }
   }
@@ -54,23 +75,25 @@
   }
 
   &__talent-image {
-    @include sizing(357px 323px);
+    @include sizing(249px 145px);
     display: block;
-    margin: 0 auto;
+    margin: 45px auto 0;
 
     @media #{$md-up} {
-      @include sizing(683px 617px);
-      margin: 49px 0 0 -93px;
+      @include sizing(702px 378px);
+      margin: 33px 0 0 -55px;
     }
   }
 
   &__companies-image {
-    @include sizing(346px 308px);
-    margin: 0 auto;
+    @include sizing(300px 218px);
+    display: block;
+    margin: 45px auto 0;
 
-    @media #{$md-up} {
-      @include sizing(671px 597px);
-      margin: 65px 0 0 26px;
+    @media #{$sm-up} {
+      @include sizing(664px 477px);
+      margin: 9px 0 0 14px;
+      display: block;
     }
   }
 
@@ -84,5 +107,24 @@
       margin-top: 57px;
       display: inline-block;
     }
+  }
+
+  &__talent-rep {
+    @media #{$md-up} {
+      padding-left: 60px;
+    }
+  }
+
+  &__centered {
+    margin: 0 auto;
+
+    @media #{$md-up} {
+      width: 550px;
+    }
+  }
+
+  &__btn {
+    padding: 15px 48px;
+    font-size: $fs-14;
   }
 }

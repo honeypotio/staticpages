@@ -1,35 +1,38 @@
+$avatar-sizing-mobile: 109px;
+$avatar-sizing-desktop: 180px;
+
 .c-explanation-talent-rep {
-  margin: 0 0 110px;
+  margin: 0 0 41px;
   position: relative;
   text-align: center;
 
   @media #{$md-up} {
-    margin: 100px 0 0;
+    margin-bottom: 110px;
   }
 
   &::before {
-    @include sizing(66px 61px);
-    @include absolute(top -41px right 13px);
+    @include sizing(129px 123px);
+    @include absolute(top 3px right 13px);
     content: '';
     background: url('DIGEST(images/talent_rep_upper.svg)') no-repeat;
     background-size: contain;
 
     @media #{$md-up} {
-      @include sizing(264px 242px);
-      @include absolute(top -92px right 21px);
+      @include sizing(208px 242px);
+      @include absolute(top -38px right 33px);
     }
   }
 
   &::after {
-    @include sizing(72px 61px);
-    @include absolute(top 130px left 20px);
+    @include sizing(120px 112px);
+    @include absolute(top 175px left 20px);
     content: '';
     background: url('DIGEST(images/talent_rep_lower.svg)') no-repeat;
     background-size: contain;
 
     @media #{$md-up} {
-      @include sizing(250px 211px);
-      @include absolute(top 260px left 30px);
+      @include sizing(208px 242px);
+      @include absolute(top 250px left 128px);
     }
   }
 
@@ -40,27 +43,35 @@
 
   &__upper-avatar {
     vertical-align: top;
+    margin: 44px 0 0 15px;
+
+    @media #{$md-up} {
+      margin: 21px 0 0 90px;
+    }
 
     .honeycomb__shape {
-      @include sizing(120px);
+      @include sizing($avatar-sizing-mobile);
 
       @media #{$md-up} {
-        @include sizing(220px);
+        @include sizing($avatar-sizing-desktop);
       }
     }
   }
 
   &__lower-avatar {
+    margin-top: 120px;
+    margin-left: -16px;
 
     @media #{$md-up} {
-      margin-top: 150px;
+      margin-left: -25px;
+      margin-top: 156px;
     }
 
     .honeycomb__shape {
-      @include sizing(120px);
+      @include sizing($avatar-sizing-mobile);
 
       @media #{$md-up} {
-        @include sizing(220px);
+        @include sizing($avatar-sizing-desktop);
       }
     }
   }

@@ -18,8 +18,8 @@
   }
 
   &--employers {
-    background: url('images/employers_bg.png') no-repeat;
-    background-color: $blue-color;
+    background: url('images/employers_bg.jpg') no-repeat;
+    background-color: $black-color;
     background-position-x: -800px;
 
     @media #{$sm-up} {

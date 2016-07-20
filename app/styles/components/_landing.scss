@@ -12,7 +12,7 @@ $counter-size: 40px;
     }
 
     @media #{$md-up} {
-      padding: 110px 0 102px;
+      padding: 127px 0 102px;
       background-position-x: 0;
       background-position-y: -150px;
     }
@@ -45,7 +45,7 @@ $counter-size: 40px;
 
   &__btn {
     @include text($fs-14, $fw-semibold, $white-color);
-    padding: 15px 49px;
+    padding: 10px 39px;
   }
 
   &__steps-section {
@@ -67,7 +67,7 @@ $counter-size: 40px;
     display: block;
     width: 289px;
     margin: 0 auto;
-    padding-bottom: 22px;
+    padding-bottom: 58px;
     vertical-align: top;
     position: relative;
 
@@ -76,6 +76,7 @@ $counter-size: 40px;
     @media #{$sm-up} {
       float: left;
       width: 25%;
+      padding-bottom: 22px;
       margin-left: 0;
       margin-bottom: 0;
 
@@ -129,7 +130,7 @@ $counter-size: 40px;
     border-top: 1px solid $light-blue-color;
 
     @media #{$md-up} {
-      padding-top: 50px;
+      padding-top: 60px;
     }
   }
 
@@ -169,8 +170,13 @@ $counter-size: 40px;
     opacity: .4;
     margin-bottom: 53px;
 
+    &--travis {
+      opacity: .6;
+    }
+
     &--hitfox {
       margin-top: 16px;
+      opacity: .7;
     }
 
     &--liqid {
@@ -185,16 +191,47 @@ $counter-size: 40px;
       margin-top: 9px;
     }
 
+    &--crowdpark {
+      margin-top: 18px;
+    }
+
+    &--zalando {
+      opacity: .75;
+    }
+
+    &--kiwi {
+      opacity: .7;
+    }
+
+    &--onefootball {
+      opacity: .7;
+    }
+
+    &--kauferportal {
+      opacity: .7;
+    }
+
+    &--helpling {
+      opacity: .7;
+    }
+
     /*
      * Desktop sizing
     */
 
     $margins: (
       ('carmudi', 12px),
+      ('kiwi', 12px),
       ('triprebel', 17px),
       ('liqid', 16px),
-      ('hitfox', 16px),
-      ('glispa', 18px)
+      ('glispa', 18px),
+      ('crowdpark', 10px),
+      ('zenmate', 8px),
+      ('onefootball', 10px),
+      ('kauferportal', 15px),
+      ('optivo', 10px),
+      ('helpling', 10px),
+      ('hitfox', 5px)
     );
 
     @each $margin in $margins {
@@ -211,6 +248,7 @@ $counter-size: 40px;
     &--meedoc {
       height: 55px;
     }
+
   }
 
   &__force-break {
