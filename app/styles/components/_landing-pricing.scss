@@ -1,0 +1,113 @@
+.c-landing-pricing-container {
+  width: 100%;
+
+  @media #{$md-up} {
+    width: $landing-pricing-container-width;
+  }
+}
+
+.c-landing-pricing {
+  margin: 0 auto;
+  padding-top: 50px;
+  border-top: 1px solid $light-blue-color;
+
+  &__heading {
+    text-align: center;
+    font-size: $fs-7;
+    font-weight: $fw-light;
+
+    @media #{$md-up} {
+      font-size: $fs-18;
+      margin-bottom: 27px;
+    }
+  }
+
+  &__text {
+    width: 70%;
+    margin: 20px auto 23px;
+    text-align: center;
+    font-size: $fs-5;
+    font-weight: $fw-light;
+
+    @media #{$md-up} {
+      margin: 0 auto 23px;
+      width: 450px;
+      font-size: $fs-14;
+    }
+  }
+
+  &__table {
+    &-container {
+      width: 90%;
+      margin: 36px auto 0;
+      padding: 19px 16px 25px;
+      background-color: $white-color;
+      border: 1px solid $light-gray-5-color;
+      border-bottom: 6px solid $blue-color;
+      box-shadow: 0 0 100px $light-gray-color;
+
+      @media #{$md-up} {
+        margin-top: 0;
+        padding: 17px 45px 25px;
+        width: $landing-pricing-table-width;
+      }
+    }
+
+    &-heading {
+      font-size: 69px;
+      font-weight: $fw-semibold;
+      color: $dark-gray-2-color;
+
+      small {
+        display: block;
+        font-size: 18px;
+      }
+    }
+
+    &-listing {
+      padding-left: 7px;
+      margin: 18px 0 0;
+      list-style-type: none;
+
+      li {
+        padding-left: 7px;
+        margin-top: -2px;
+        text-indent: -7px;
+        font-size: $fs-12;
+      }
+
+      li::before {
+        content: "•";
+        font-size: 25px;
+        margin: 0 7px 0 -9px;
+        color: $blue-color;
+      }
+    }
+
+    &-legend {
+      @include text($fs-5, $fw-normal, $dark-gray-color);
+      text-align: left;
+    }
+  }
+
+  &__btn-container {
+    margin: 28px 0 34px;
+  }
+
+  &__btn {
+    @include text($fs-12, $fw-semibold, $white-color);
+    padding: 12px 32px;
+  }
+
+  &__contact {
+    margin: 15px auto 50px;
+    font-size: $fs-12;
+    text-align: center;
+
+    @media #{$md-up} {
+      width: $landing-pricing-table-width - 55px;
+    }
+
+    a { color: $blue-color; }
+  }
+}

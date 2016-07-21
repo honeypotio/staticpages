@@ -31,3 +31,15 @@ $directions: 'top', 'bottom', 'left', 'right';
     display: block;
   }
 }
+
+.u-force-break {
+  display: inline;
+
+  @media #{$md-up} {
+    display: block;
+  }
+}
+
+.u-semibold-text {
+  font-weight: $fw-semibold;
+}

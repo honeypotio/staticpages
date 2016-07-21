@@ -1,11 +1,8 @@
-<div class="row c-landing-step {{#if full_width }}c-landing-step--full-width{{/if}}">
-  <div class="col-sm-1 col-xs-2 col-md-2 c-landing-step__symbol-container">
-    <i class="c-landing-step__symbol">{{ number }}</i>
-  </div>
-  <div class="col-xs-9">
-    <h3 class="c-landing-step__heading">{{ title }}</h3>
-    <p class="c-landing-step__body">
-      {{{ content }}}
-    </p>
-  </div>
-</div>
+  <li class="c-landing__step">
+    <div class="clearfix">
+      <div class="c-landing__step__counter">{{counter}}</div>
+      <div class="c-landing__step__text">
+        {{{text}}}
+      </div>
+    </div>
+  </li>
