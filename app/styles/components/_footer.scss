@@ -61,20 +61,20 @@
       margin-top: 0;
       text-align: left;
     }
-  }
+    .fa {
+      $sizing: 40px;
+      @include sizing($sizing);
+      display: inline-block;
+      vertical-align: top;
+      text-align: center;
+      line-height: $sizing;
+      border-radius: $sizing;
+      border: 1px solid $dark-gray-2-color;
 
-  &__social-icon {
-    $sizing: 40px;
-    @include sizing($sizing);
-    display: inline-block;
-    vertical-align: top;
-    text-align: center;
-    line-height: $sizing;
-    border-radius: $sizing;
-    border: 1px solid $dark-gray-2-color;
-
-    @media #{$md-up} {
-      margin-top: -7px;
+      @media #{$md-up} {
+        margin-top: -7px;
+      }
     }
   }
+
 }
