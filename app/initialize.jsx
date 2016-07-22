@@ -11,10 +11,11 @@ const router = {
 };
 
 const load = () => {
-  if(!router[window.location.pathname]) return;
+  const pathname = window.location.pathname.replace(/pr-[0-9]+\//, '');
+  if(!router[pathname]) return;
 
   ReactDOM.render(
-    React.createElement(router[window.location.pathname]),
+    React.createElement(router[pathname]),
     document.querySelector('#app')
   );
 };

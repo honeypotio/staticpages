@@ -32,6 +32,7 @@ module.exports =
         API_HOST: process.env.API_HOST
         STAGING_AUTH: process.env.STAGING_AUTH
         COOKIE_DOMAIN: process.env.COOKIE_DOMAIN
+        URL_BASE: process.env.URL_BASE
     static:
       processors: [
         require('html-brunch-static') {
