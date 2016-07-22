@@ -16,6 +16,7 @@ export default class FormBase extends React.Component {
           key={data.name}
           disabled={this.state.isSaving}
           errorHelp={errorMessages}
+          validationEvent="onBlur"
         />
       );
     });
