@@ -5,7 +5,6 @@ cache:
     - bundler
 before_install:
   - ruby --version
-  - rvm use $(< .ruby-version) --install --binary --fuzzy
 install:
   - npm install node-smushit -g
   - npm install
