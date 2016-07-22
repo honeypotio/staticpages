@@ -17,7 +17,8 @@ export default class SignupForm extends FormBase {
       tosAgreed: false,
       formSubmitted: false,
       isSaving: false,
-      error: false
+      error: false,
+      tosError: false
     };
     this.inputs = [
       { type: 'text', name: 'firstName', placeholder: "First name", validate: "required" },
@@ -31,13 +32,19 @@ export default class SignupForm extends FormBase {
   _onValidSubmit(values) {
     this.setState({ formSubmitted: true });
     if (this.state.tosAgreed) {
-      this.setState({ isSaving: true });
+      this.setState({
+        isSaving: true,
+        tosError: false
+      });
       createTalent.perform(values).then(() => {
         window.location.href = `${$PROCESS_ENV_APP_HOST}/profile`;
       }).catch((err) => {
         this.setState({ isSaving: false });
         this._showError('There has been a problem. Please try again later.');
       });
+    } else {
+      this._showError('Please fill in all required fields!');
+      this.setState({ tosError: true });
     }
   }
 
@@ -46,7 +53,7 @@ export default class SignupForm extends FormBase {
   }
 
   _onTosCheck(e) {
-    this.setState({ tosAgreed: e.target.checked});
+    this.setState({ tosAgreed: e.target.checked, tosError: false });
   }
 
   render() {
@@ -80,6 +87,11 @@ export default class SignupForm extends FormBase {
               I agree to the <a href="/pages/terms_of_service#talents" target="_blank" className="m-auth__checkbox-link">Terms of Service</a>
               &nbsp;and the <a href="/pages/legal_notice#privacy_policy" target="_blank" className="m-auth__checkbox-link">Privacy Policy</a>
             </Checkbox>
+            {(() => {
+              if (this.state.tosError) {
+                return <p className="text-danger">This field is required.</p>
+              }
+            })()}
             <ButtonInput
               type="submit"
               className="btn btn-primary btn-blue btn-block c-sign-up-form__submit-btn"
