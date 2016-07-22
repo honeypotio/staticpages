@@ -62,7 +62,13 @@
       text-align: left;
     }
 
-    a:hover { text-decoration: none; }
+    a:hover,
+    a:visited,
+    a:link,
+    a:visited:hover,
+    a:active {
+      text-decoration: none;
+    }
 
     .fa {
       $sizing: 40px;
