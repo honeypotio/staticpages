@@ -113,11 +113,6 @@ routing_rules:
       host_name: <%= ENV['APP_HOST'] %>
       replace_key_prefix_with: employers/request-invite
   - condition:
-      key_prefix_equals: invite_requests
-    redirect:
-      host_name: <%= ENV['APP_HOST'] %>
-      replace_key_prefix_with: invite_requests
-  - condition:
       key_prefix_equals: profile
     redirect:
       host_name: <%= ENV['APP_HOST'] %>
