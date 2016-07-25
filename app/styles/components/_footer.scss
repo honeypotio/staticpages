@@ -5,8 +5,14 @@
   background-color: $light-gray-color;
 
   @media #{$sm-up} {
+    margin-top: 30px;
     padding: 40px 0;
     text-align: left;
+  }
+
+  &--padded {
+    margin-top: 0;
+    padding: 70px 0;
   }
 
   &--inverse {
