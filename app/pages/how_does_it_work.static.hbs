@@ -45,10 +45,14 @@ _options:
       </div>
       <div class="col-md-6 col-md-pull-6">
         <img
-          class="hisrc c-explanation-showcase__talent-image"
-          src="{{url_base}}DIGEST(/images/explanation_highlight.png)"
-          data-1x="{{url_base}}DIGEST(/images/explanation_highlight-1x.png)"
-          data-2x="{{url_base}}DIGEST(/images/explanation_highlight-2x.png)"
+          class="c-explanation-showcase__talent-image"
+          srcset="
+            {{url_base}}DIGEST(/images/explanation_highlight.png) 309w,
+            {{url_base}}DIGEST(/images/explanation_highlight-1x.png) 647w,
+            {{url_base}}DIGEST(/images/explanation_highlight-2x.png) 2x
+          "
+          sizes="(min-width: 992px) 647px, 309px"
+          src="{{url_base}}DIGEST(/images/explanation_highlight-1x.png)"
           alt="Highlight your experience and your ideal position"
         />
       </div>
@@ -81,10 +85,14 @@ _options:
       </div><!-- /.col-md-6 -->
       <div class="col-md-6">
         <img
-          class="hisrc c-explanation-showcase__companies-image"
-          src="{{url_base}}DIGEST(/images/explanation_companies.png)"
-          data-1x="{{url_base}}DIGEST(/images/explanation_companies-1x.png)"
-          data-2x="{{url_base}}DIGEST(/images/explanation_companies-2x.png)"
+          class="c-explanation-showcase__companies-image"
+          srcset="
+            {{url_base}}DIGEST(/images/explanation_companies.png) 300w,
+            {{url_base}}DIGEST(/images/explanation_companies-1x.png) 664w,
+            {{url_base}}DIGEST(/images/explanation_companies-2x.png) 2x
+          "
+          sizes="(min-width: 992px) 664px, 300px"
+          src="{{url_base}}DIGEST(/images/explanation_companies-1x.png)"
           alt="Companies request an interview with you"
         />
       </div>
