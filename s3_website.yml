@@ -29,13 +29,14 @@ cache_control:
   "*": public, max-age=<%= 60 * 60 * 24 %>
 s3_id: <%= ENV['S3_ID'] %>
 s3_secret: <%= ENV['S3_SECRET'] %>
-
 # change bucket based on travis ENV
 # chechk for PR required as branch in PR's always is master
 <% if ENV['TRAVIS_TAG'].to_s != '' %>
 s3_bucket: www2.honeypot.io
 cloudfront_distribution_id: E21RQMGDUM8ALN
 cloudfront_distribution_config:
+  default_cache_behavior:
+    min_TTL: <%= 60 * 60 * 24 %>
   aliases:
     quantity: 1
     items:
@@ -44,6 +45,8 @@ cloudfront_distribution_config:
 s3_bucket: staging.honeypot.io
 cloudfront_distribution_id: E3JUH1MUHO6XDX
 cloudfront_distribution_config:
+  default_cache_behavior:
+    min_TTL: <%= 60 * 60 * 24 %>
   aliases:
     quantity: 1
     items:
