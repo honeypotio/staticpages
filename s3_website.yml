@@ -1,3 +1,4 @@
+<% require 'uri' %>
 s3_endpoint: eu-west-1
 site: public
 gzip:
