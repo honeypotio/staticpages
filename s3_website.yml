@@ -155,3 +155,13 @@ routing_rules:
     redirect:
       host_name: <%= URI.parse(ENV['BLOG_HOST'].to_s).host || 'staging-blog-honeypot.herokuapp.com' %>
       replace_key_prefix_with: /
+  - condition:
+      key_prefix_equals: invite_requests
+    redirect:
+      host_name: <%= URI.parse(ENV['APP_HOST'].to_s).host %>
+      replace_key_prefix_with: invite_requests
+  - condition:
+      key_prefix_equals: users
+    redirect:
+      host_name: <%= URI.parse(ENV['APP_HOST'].to_s).host %>
+      replace_key_prefix_with: users
