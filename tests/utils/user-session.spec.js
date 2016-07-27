@@ -26,6 +26,12 @@ describe('UserSession', () => {
       const session = new UserSession(cookieMock);
       expect(session.isLoggedIn()).toEqual(false);
     });
+
+    it('returns false when authenticated key exists but is empty', () => {
+      const cookieMock = mockCookie({});
+      const session = new UserSession(cookieMock);
+      expect(session.isLoggedIn()).toEqual(false);
+    });
   })
 
   describe('#_getRole', () => {

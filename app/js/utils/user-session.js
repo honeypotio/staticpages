@@ -8,7 +8,7 @@ export default class UserSession {
   }
 
   isLoggedIn() {
-    return !!(this.data && this.data.authenticated);
+    return !!(this.data && !this._isEmpty(this.data.authenticated));
   }
 
   isTalent() {
@@ -47,5 +47,10 @@ export default class UserSession {
 
   _getSessionData() {
     return JSON.parse(this.cookieProvider.get('honeypot_esa'));
+  }
+
+  _isEmpty(object) {
+    if(!object) return true;
+    return Object.keys(object).length === 0;
   }
 }

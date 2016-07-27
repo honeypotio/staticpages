@@ -5,15 +5,31 @@ import PageNavigation from 'js/components/PageNavigation';
 import InviteRequestForm from 'js/components/InviteRequestForm';
 import Cookies from 'js-cookie';
 import FlashMessages from 'js/utils/flash-messages';
+import UserSession from 'js/utils/user-session';
+import buildUrl from 'js/utils/build-url';
+import parsePathname from 'js/utils/parse-pathname';
+
+const userSession = new UserSession();
+
+if (userSession.isLoggedIn()) {
+  if (parsePathname(window.location.pathname) === '/') {
+    let url;
+    if(userSession.isTalent()) {
+      url = buildUrl('/profile', 'app_host');
+    } else {
+      url = buildUrl('/company/talents/search', 'app_host');
+    }
+    window.location.href = buildUrl('/profile', 'app_host');
+  }
+}
 
 const router = {
   '/users/sign_up': SignupForm,
   '/invite_requests/new': InviteRequestForm
 };
-
 const load = () => {
-  const pathname = window.location.pathname.replace(/pr-[0-9]+\//, '');
-  if(router[pathname]) {
+  const pathname = parsePathname(window.location.pathname);
+  if(router[parsePathname(pathname)]) {
     ReactDOM.render(
       React.createElement(router[pathname]),
       document.querySelector('#app')
