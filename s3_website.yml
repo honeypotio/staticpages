@@ -14,7 +14,7 @@ gzip:
   - .woff2
   - .svg
 index_document: index.html
-error_document: pages/404
+error_document: errors/404
 cloudfront_wildcard_invalidation: true
 cloudfront_invalidate_root: true
 ignore_on_server: _DELETE_NOTHING_ON_THE_S3_BUCKET_
@@ -63,6 +63,10 @@ cloudfront_distribution_config:
 <% if ENV['PREFIX_FOLDER'] != '' %>
 s3_key_prefix: <%= ENV['PREFIX_FOLDER'] %>
 <% end %>
+
+redirects:
+  pages/404: errors/404
+  pages/500: errors/500
 
 routing_rules:
   - condition:
