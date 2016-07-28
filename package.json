@@ -11,7 +11,7 @@
     "start": "brunch watch --server",
     "test": "mocha 'tests/**/*.spec.js' --compilers js:babel-core/register --watch",
     "prod": "brunch build --production",
-    "postinstall": "mkdir -p vendor && cp node_modules/bootstrap-sass/assets/javascripts/bootstrap.js vendor/ && cp node_modules/hisrc/hisrc.js vendor/"
+    "postinstall": "mkdir -p vendor && cp node_modules/bootstrap-sass/assets/javascripts/bootstrap.js vendor/ && cp node_modules/picturefill/dist/picturefill.js vendor/"
   },
   "devDependencies": {
     "auto-reload-brunch": "^2.7.1",
@@ -25,6 +25,7 @@
     "clean-css-brunch": "^2.0.0",
     "css-brunch": "^2.0.0",
     "digest-brunch": "^1.5.1",
+    "envstatic-brunch": "^0.1.0",
     "es6-module-transpiler-brunch": "0.0.6",
     "expect": "^1.20.1",
     "express": "^4.14.0",
@@ -37,7 +38,7 @@
     "js-yaml": "^3.6.1",
     "mocha": "^2.5.3",
     "node-smushit": "^0.5.1",
-    "envstatic-brunch": "^0.1.0",
+    "picturefill": "^3.0.2",
     "react": "^15.1.0",
     "react-addons-test-utils": "^15.1.0",
     "react-bootstrap": "0.28.5",

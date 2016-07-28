@@ -30,14 +30,9 @@ const showNavigationLink = (page) => {
   }
 };
 
-const initResponsiveImages = () => {
-  $('img.hisrc').hisrc();
-};
-
 $(document).ready(() => {
   showNavigationLink(window.location.pathname);
   const flashMessagesService = new FlashMessages($('#flash-messages'));
   flashMessagesService.showCurrent();
   load();
-  initResponsiveImages();
 });
