@@ -19,7 +19,7 @@ if (userSession.isLoggedIn()) {
     } else {
       url = buildUrl('/company/talents/search', 'app_host');
     }
-    window.location.href = buildUrl('/profile', 'app_host');
+    window.location.href = url;
   }
 }
 
