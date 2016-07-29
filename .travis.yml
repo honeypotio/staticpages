@@ -17,6 +17,7 @@ env:
     - APP_HOST=$([ "$TRAVIS_TAG" != "" ] && echo "$PROD_APP_HOST" || echo "$STAGING_APP_HOST")
     - API_HOST=$([ "$TRAVIS_TAG" != "" ] && echo "$PROD_API_HOST" || echo "$STAGING_API_HOST")
     - BLOG_HOST=$([ "$TRAVIS_TAG" != "" ] && echo "$PROD_BLOG_HOST" || echo "$STAGING_BLOG_HOST")
+    - ROLLBAR_TOKEN=$([ "$TRAVIS_TAG" != "" ] && echo "$PROD_ROLLBAR_TOKEN" || echo "$STAGING_ROLLBAR_TOKEN")
     - URL_BASE=$([ "$PREFIX_FOLDER" != "" ] && echo "/$PREFIX_FOLDER")
     - GTM_ID=$([ "$TRAVIS_TAG" != "" ] && echo "$PROD_GTM_ID" || echo "$STAGING_GTM_ID")
     - GA_ID=$([ "$TRAVIS_TAG" != "" ] && echo "$PROD_GA_ID" || echo "$STAGING_GA_ID")

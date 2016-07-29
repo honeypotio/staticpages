@@ -45,6 +45,7 @@ module.exports =
             ga_id: process.env.GA_ID
             gtm_id: process.env.GTM_ID
             optimizely_id: process.env.OPTIMIZELY_ID
+            rollbar_token: process.env.ROLLBAR_TOKEN
           handlebars:
             enableProcessor:
               fileMatch: /\.static\.(hbs|handlebars)$/
