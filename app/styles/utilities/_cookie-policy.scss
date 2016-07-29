@@ -1,12 +1,12 @@
 #cookie-bar {
-  background: $very-light-gray-color;
-  color: $dark-gray-3-color;
+  background: $light-gray-6-color;
+  color: $dark-gray-color;
 
   a {
     margin-left: 3px;
 
     &:hover {
-      color: $dark-color;
+      color: $dark-gray-2-color;
       text-decoration: underline;
     }
   }
@@ -14,7 +14,7 @@
   a,
   a:hover {
     font-weight: $fw-bold;
-    color: $dark-gray-3-color;
+    color: $dark-gray-color;
   }
 
   span {
@@ -24,7 +24,7 @@
   .cb-enable {
     float: right;
     margin-right: $fs-jumbo-2;
-    font-size: $fs-13;
+    font-size: $fs-theta;
     font-weight: $fw-semibold;
   }
 }
