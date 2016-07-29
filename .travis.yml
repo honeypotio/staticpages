@@ -1,8 +1,8 @@
 language: node_js
 cache:
+  bundler: true
   directories:
     - node_modules
-    - bundler
 before_install:
   - ruby --version
 install:
