@@ -36,7 +36,6 @@ s3_bucket: www2.honeypot.io
 cloudfront_distribution_id: E21RQMGDUM8ALN
 cloudfront_distribution_config:
   default_cache_behavior:
-    min_TTL: <%= 60 * 60 * 24 * 7 %>
     forwarded_values:
       query_string: false
       cookies:
@@ -50,7 +49,6 @@ s3_bucket: staging.honeypot.io
 cloudfront_distribution_id: E3JUH1MUHO6XDX
 cloudfront_distribution_config:
   default_cache_behavior:
-    min_TTL: <%= 60 * 60 * 24 * 7 %>
     forwarded_values:
       query_string: false
       cookies:
