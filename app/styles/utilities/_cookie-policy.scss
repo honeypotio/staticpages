@@ -26,5 +26,18 @@
     margin-right: $fs-jumbo-2;
     font-size: $fs-theta;
     font-weight: $fw-semibold;
+    background: transparent;
+
+    &:hover {
+      background: transparent;
+    }
+  }
+
+  .cb-policy {
+    background: transparent;
+
+    &:hover {
+      background: transparent;
+    }
   }
 }
