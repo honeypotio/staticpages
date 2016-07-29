@@ -19,7 +19,10 @@ module.exports =
       path: 'images'
     sass:
       options:
-        includePaths: ['node_modules/bootstrap-sass/assets/stylesheets']
+        includePaths: [
+          'node_modules/bootstrap-sass/assets/stylesheets',
+          'node_modules/jquery-cookiebar'
+        ]
     digest:
       referenceFiles: /\.html|\.css|for_employers|404|how_does_it_work|terms_of_service|legal_notice|500|faq|sign_up|new$/
       # diges does not work with files without file extension

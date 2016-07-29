@@ -12,6 +12,7 @@
 @import 'utilities/mixins';
 @import 'utilities/shared';
 @import 'utilities/typography';
+@import 'utilities/cookie-policy';
 
 @import 'framework/overrides';
 
@@ -43,3 +44,6 @@
 @import 'components/sign-up-form';
 @import 'components/landing-pricing';
 @import 'components/landing-section';
+
+// Weird stuff
+@import '_jquery.cookiebar'
