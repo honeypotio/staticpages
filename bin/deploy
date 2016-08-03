@@ -4,8 +4,10 @@ then
   mkdir -p tmp
   brunch build --production 2>&1| tee tmp/output.txt
   if [ "$(cat tmp/output.txt | grep error)" == "" ]; then
-    [ -n "$S3_CFG" ] && bundle exec s3_website cfg apply --headless ; \
-      [ $? -gt 0 ] && echo 'failed to apply config'; exit 1
+    if [ -n "$S3_CFG" ]; then
+      bundle exec s3_website cfg apply --headless
+      [ $? -gt 0 ] && echo 'failed to apply config' && exit 1
+    fi
     bundle exec s3_website push $( [ -n "$S3_FORCE" ] && echo '--force')
   else
     exit 1
