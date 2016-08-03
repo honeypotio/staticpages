@@ -45,6 +45,11 @@ cloudfront_distribution_config:
     items:
       CNAME0: www.honeypot.io
       CNAME1: www2.honeypot.io
+  logging:
+    enabled: true
+    includes_cookies: false
+    bucket: logs-honeypot.s3.amazonaws.com
+    prefix: cf-prod
 <% else %>
 s3_bucket: staging.honeypot.io
 cloudfront_distribution_config:
@@ -57,6 +62,11 @@ cloudfront_distribution_config:
     quantity: 1
     items:
       CNAME: staging.honeypot.io
+  logging:
+    enabled: true
+    includes_cookies: false
+    bucket: logs-honeypot.s3.amazonaws.com
+    prefix: cf-staging
 <% end %>
 <% if ENV['PREFIX_FOLDER'] != '' %>
 s3_key_prefix: <%= ENV['PREFIX_FOLDER'] %>
