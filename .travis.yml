@@ -20,5 +20,6 @@ env:
     - URL_BASE=$([ "$PREFIX_FOLDER" != "" ] && echo "/$PREFIX_FOLDER")
     - GTM_ID=$([ "$TRAVIS_TAG" != "" ] && echo "$PROD_GTM_ID" || echo "$STAGING_GTM_ID")
     - GA_ID=$([ "$TRAVIS_TAG" != "" ] && echo "$PROD_GA_ID" || echo "$STAGING_GA_ID")
+    - CF_DISTRIBUTION=$([ "$TRAVIS_TAG" != "" ] && echo "$PROD_CF_DISTRIBUTION" || echo "$STAGING_CF_DISTRIBUTION")
     - S3_FORCE=$(git log -1 --pretty=%B | grep -E "^\[#s3 .*force.*]" --ignore-case)
     - S3_CFG=$(git log -1 --pretty=%B | grep -E "^\[#s3 .*configure.*]" --ignore-case)

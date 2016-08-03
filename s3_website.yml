@@ -31,9 +31,9 @@ s3_id: <%= ENV['S3_ID'] %>
 s3_secret: <%= ENV['S3_SECRET'] %>
 # change bucket based on travis ENV
 # chechk for PR required as branch in PR's always is master
+cloudfront_distribution_id: <%= CF_DISTRIBUTION %>
 <% if ENV['TRAVIS_TAG'].to_s != '' %>
-s3_bucket: www2.honeypot.io
-cloudfront_distribution_id: E21RQMGDUM8ALN
+s3_bucket: www.honeypot.io
 cloudfront_distribution_config:
   default_cache_behavior:
     forwarded_values:
@@ -41,12 +41,12 @@ cloudfront_distribution_config:
       cookies:
         forward: 'none'
   aliases:
-    quantity: 1
+    quantity: 2
     items:
-      CNAME: www2.honeypot.io
+      CNAME0: www.honeypot.io
+      CNAME1: www2.honeypot.io
 <% else %>
 s3_bucket: staging.honeypot.io
-cloudfront_distribution_id: E3JUH1MUHO6XDX
 cloudfront_distribution_config:
   default_cache_behavior:
     forwarded_values:
