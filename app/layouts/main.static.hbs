@@ -6,6 +6,7 @@ _options:
     - app/partials/favicons.static.hbs
     - app/partials/meta_tags.static.hbs
     - app/partials/analytics_optout.static.hbs
+    - app/partials/rollbar.static.hbs
     - app/partials/google_tag_manager.static.hbs
     - app/partials/optimizely.static.hbs
     - app/partials/navigation.static.hbs
@@ -15,6 +16,9 @@ _options:
   <head>
     <meta content='width=device-width, initial-scale=1.0' name='viewport'>
     <title>{{title}}</title>
+    {{#if rollbar_token}}
+      {{> rollbar rollbar_token=rollbar_token}}
+    {{/if}}
     {{#if optimizely_id}}
       {{> optimizely optimizely_id=optimizely_id}}
     {{/if}}
