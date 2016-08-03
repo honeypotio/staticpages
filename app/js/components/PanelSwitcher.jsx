@@ -1,13 +1,10 @@
 import React from 'react';
+import buildUrl from '../utils/build-url.js';
 
 export default (props) => {
   const cssNamespace = 'c-panel-switcher';
   const activeClass = `${cssNamespace}__item ${cssNamespace}__item--active`;
   const inactiveClass = `${cssNamespace}__item ${cssNamespace}__item--last`;
-  const buildUrl = (url) => {
-    const baseUrl = $PROCESS_ENV_URL_BASE || '';
-    return `${baseUrl}${url}`;
-  };
   if(props.activePane === 'talent') {
     return (
       <div className="c-panel-switcher clearfix">

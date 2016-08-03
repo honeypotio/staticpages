@@ -1,10 +1,11 @@
 import 'whatwg-fetch';
 import Cookies from 'js-cookie';
 import dataFetcher from './data-fetcher';
+import UserSession from './user-session';
+
+const userSession = new UserSession();
 
 export default {
-  cookieName: 'honeypot_esa',
-
   perform(values) {
     dataFetcher.setCookieForStaging();
     return fetch(dataFetcher.buildURL('/api/v1/users'), {
@@ -20,26 +21,7 @@ export default {
       })
     }).then(response => response.json())
     .then(({ user_id, token, email }) => {
-      this._writeToCookie(user_id, token, email);
+      userSession.persist(user_id, token, email, $PROCESS_ENV_COOKIE_DOMAIN);
     });
-  },
-
-  _writeToCookie(userId, token, email) {
-    Cookies.set(
-      this.cookieName,
-      this._generateCookie(userId, token, email),
-      { domain: $PROCESS_ENV_COOKIE_DOMAIN }
-    );
-  },
-
-  _generateCookie(userId, token, email) {
-    return {
-      authenticated: {
-        authenticator: "authenticator:devise",
-        email: email,
-        token: token,
-        user_id: userId
-      }
-    };
   }
 };
