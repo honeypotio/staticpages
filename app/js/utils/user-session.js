@@ -33,7 +33,8 @@ export default class UserSession {
         authenticator: "authenticator:devise",
         email: email,
         token: token,
-        user_id: userId
+        user_id: userId,
+        role: 'talent'
       }
     };
   }
