@@ -11,7 +11,7 @@
     "start": "brunch watch --server",
     "test": "mocha 'tests/**/*.spec.js' --compilers js:babel-core/register --watch",
     "prod": "brunch build --production",
-    "postinstall": "mkdir -p vendor && cp node_modules/bootstrap-sass/assets/javascripts/bootstrap.js vendor/ && cp node_modules/picturefill/dist/picturefill.js vendor/"
+    "postinstall": "./scripts/copy_vendor"
   },
   "devDependencies": {
     "auto-reload-brunch": "^2.7.1",
@@ -34,6 +34,7 @@
     "imageoptmizer-brunch": "0.0.6",
     "javascript-brunch": "^2.0.0",
     "jquery": "^2.2.4",
+    "jquery-cookiebar": "^1.0.5",
     "js-cookie": "^2.1.2",
     "js-yaml": "^3.6.1",
     "mocha": "^2.5.3",
