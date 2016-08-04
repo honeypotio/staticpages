@@ -19,11 +19,11 @@
   }
 
   a {
-    @include text($fs-5, $fw-normal, $dark-gray-2-color);
+    @include text($fs-2, $fw-normal, $dark-gray-2-color);
   }
 
   &__item {
-    @include text($fs-5, $fw-normal, $dark-gray-2-color);
+    @include text($fs-2, $fw-normal, $dark-gray-2-color);
     margin: 20px 10px 0 0;
     text-align: center;
     color: $gray-color;
@@ -44,7 +44,7 @@
   }
 
   &__company-name {
-    @include text($fs-5 - 1, $fw-light, $dark-gray-2-color);
+    @include text($fs-2 - 1, $fw-light, $dark-gray-2-color);
     display: block;
     margin: 10px 0;
     text-align: center;

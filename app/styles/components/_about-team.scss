@@ -24,15 +24,15 @@
   }
 
   &__name {
-    @include text-sizing($fs-12, $fw-light);
+    @include text-sizing($fs-3, $fw-light);
     margin-top: 20px;
 
     @media #{$md-up} {
-      font-size: $fs-theta;
+      font-size: $fs-8;
     }
   }
 
   &__description {
-    @include text($fs-5, $fw-light, $dark-gray-color);
+    @include text($fs-2, $fw-light, $dark-gray-color);
   }
 }
