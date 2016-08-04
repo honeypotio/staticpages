@@ -115,11 +115,17 @@
     }
   }
 
-  &__centered {
+  &--centered {
     margin: 0 auto;
 
     @media #{$md-up} {
       width: 550px;
+    }
+  }
+
+  &--wider {
+    @media #{$md-up} {
+      width: 738px;
     }
   }
 

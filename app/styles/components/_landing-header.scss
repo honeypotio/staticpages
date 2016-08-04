@@ -33,7 +33,8 @@
     padding-bottom: 125px;
     background: url('images/about_bg.png') no-repeat;
     background-color: $black-color;
-    background-position-y: -50px;
+    background-size: cover;
+    background-position-y: -30px;
   }
 
   &__heading {

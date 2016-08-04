@@ -1,0 +1,38 @@
+.c-about-team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &__item {
+    margin: 45px 27px 0;
+    flex-basis: 112px;
+    text-align: center;
+
+    @media #{$md-up} {
+      margin: 45px 31px 0;
+      flex-basis: 222px;
+      text-align: center;
+    }
+  }
+
+  &__avatar {
+    @include sizing(109px);
+
+    @media #{$md-up} {
+      @include sizing(181px);
+    }
+  }
+
+  &__name {
+    @include text-sizing($fs-12, $fw-light);
+    margin-top: 20px;
+
+    @media #{$md-up} {
+      font-size: $fs-theta;
+    }
+  }
+
+  &__description {
+    @include text($fs-5, $fw-light, $dark-gray-color);
+  }
+}
