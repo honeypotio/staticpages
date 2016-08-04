@@ -57,6 +57,7 @@ describe('UserSession', () => {
           authenticated: {
             authenticator: "authenticator:devise",
             email: 'email@email.com',
+            role: 'talent',
             token: 'SECRET_TOKEN',
             user_id: 1
           }
@@ -83,6 +84,7 @@ describe('UserSession', () => {
         authenticated: {
           authenticator: "authenticator:devise",
           email: 'email',
+          role: 'talent',
           token: 'token',
           user_id: 1
         }
