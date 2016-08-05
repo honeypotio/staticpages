@@ -52,3 +52,5 @@ module.exports =
               fileTransform: (f) -> f.replace(/\.static\.\w+$/, '')
         }
       ]
+  server:
+    path: 'app.js'
