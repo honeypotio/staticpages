@@ -35,4 +35,30 @@
   &__description {
     @include text($fs-2, $fw-light, $dark-gray-color);
   }
+
+  &__social {
+    margin-top: 5px;
+
+    a,
+    a:hover {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+
+  &__social-stack {
+    .fa-circle {
+      font-size: 20px;
+    }
+
+    .fa-stack-1x {
+      font-size: 11px;
+      line-height: 21px;
+    }
+  }
+
+  &__social-icon.fa {
+    margin: 0 4px;
+    font-size: 20px
+  }
 }

@@ -31,10 +31,14 @@
   &--about {
     padding-top: 172px;
     padding-bottom: 125px;
-    background: url('images/about_bg.png') no-repeat;
+    background: url('images/about_bg-mobile.png') no-repeat;
     background-color: $black-color;
     background-size: cover;
-    background-position-y: -30px;
+
+    @media #{$md-up} {
+      background-image: url('images/about_bg.png');
+      background-position-y: -30px;
+    }
   }
 
   &__heading {
@@ -47,7 +51,11 @@
     }
 
     &--about {
-      font-size: 60px;
+      font-size: $fs-12;
+
+      @media #{$md-up} {
+        font-size: $fs-big-header;
+      }
     }
   }
 

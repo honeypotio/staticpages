@@ -3,6 +3,7 @@ _options:
   layout: app/layouts/main.static.hbs
   partials:
     - app/partials/team_member.static.hbs
+    - app/partials/about_members.static.hbs
 ---
 <header class="o-hero-unit c-landing__header c-landing-header--about">
   <div class="container text-center">
@@ -36,46 +37,16 @@ _options:
   </div>
 
   <div class="container c-about-team">
+    {{> about_members}}
+  </div>
+</section>
 
-    {{> team_member
-      imageName="kaya_taner"
-      name="Kaya Taner"
-      description="Founder & CEO"
-    }}
-
-    {{> team_member
-      imageName="emma_tracey"
-      name="Emma Tracey"
-      description="Co-founder & Managing Director"
-    }}
-
-    {{> team_member
-      imageName="hugo_duksis"
-      name="Hugo Duksis"
-      description="Head of Engineering"
-    }}
-
-    <div class="c-about-team__item">
-      <div class="c-about-team__name">Denny Fitzer</div>
-      <div class="c-about-team__description">Head of Product</div>
-    </div>
-
-    {{> team_member
-      imageName="giovanni_capuano"
-      name="Giovanni Capuano"
-      description="Software Developer"
-    }}
-
-    {{> team_member
-      imageName="ewelina_grajko"
-      name="Ewelina Grajko"
-      description="Account Manager"
-    }}
-
-    <div class="c-about-team__item">
-      <div class="c-about-team__name">Katherine Nicolaisen</div>
-      <div class="c-about-team__description">Marketing Manager</div>
-    </div>
-
+<section class="c-landing-section c-landing-section--about">
+  <div class="container">
+    <p>
+      "But this isn’t just some Craigslist directory – far from it. Honeypot offers a Talent Rep to each person looking for work.
+      They’re like a guide to help you  land the best job to suit your current aspirations.
+      It’s a very straightforward system meant to target the best mid-to-advanced developers currently seeking employment.”
+    </p>
   </div>
 </section>
