@@ -5,7 +5,7 @@ const mockCookie = (authenticatedData) => {
   return {
     get() {
       if(!authenticatedData) {
-        return JSON.stringify({});
+        return undefined;
       }
 
       return JSON.stringify({ authenticated: authenticatedData });

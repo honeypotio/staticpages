@@ -6,11 +6,11 @@ const userSession = new UserSession();
 const showDeveloperEmployersLink = () => {
   if (window.location.pathname === '/pages/for_employers') {
     return [
-      <li><a href={buildUrl('/')}>For Developers</a></li>
+      <li key="for_developers"><a href={buildUrl('/')}>For Developers</a></li>
     ];
   } else {
     return [
-      <li><a href={buildUrl('/pages/for_employers')}>For Employers</a></li>
+      <li key="for_employers"><a href={buildUrl('/pages/for_employers')}>For Employers</a></li>
     ];
   }
 };

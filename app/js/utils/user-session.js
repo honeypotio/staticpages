@@ -47,7 +47,12 @@ export default class UserSession {
   }
 
   _getSessionData() {
-    return JSON.parse(this.cookieProvider.get('honeypot_esa'));
+    let data = this.cookieProvider.get('honeypot_esa');
+    if (data) {
+      return JSON.parse(data);
+    } else {
+      return null;
+    }
   }
 
   _isEmpty(object) {
