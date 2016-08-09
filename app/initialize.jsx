@@ -8,8 +8,10 @@ import FlashMessages from 'js/utils/flash-messages';
 import UserSession from 'js/utils/user-session';
 import buildUrl from 'js/utils/build-url';
 import parsePathname from 'js/utils/parse-pathname';
+import UTMParams from 'js/utils/utm-params';
 
 const userSession = new UserSession();
+const utmParams = new UTMParams(location.search, Cookies);
 
 if (userSession.isLoggedIn()) {
   if (parsePathname(window.location.pathname) === '/') {
