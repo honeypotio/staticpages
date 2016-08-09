@@ -11,7 +11,7 @@ import parsePathname from 'js/utils/parse-pathname';
 import UTMParams from 'js/utils/utm-params';
 
 const userSession = new UserSession();
-const utmParams = new UTMParams(location.search, Cookies);
+const utmParams = new UTMParams(location.search, Cookies, $PROCESS_ENV_COOKIE_DOMAIN);
 
 if (userSession.isLoggedIn()) {
   if (parsePathname(window.location.pathname) === '/') {
