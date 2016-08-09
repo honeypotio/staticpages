@@ -22,7 +22,8 @@ export default class UTMParams {
     queries.forEach( (query) => {
       let splitQuery = query.split('=');
       this.cookieProvider.set(splitQuery[0], splitQuery[1], {
-        expires: 30
+        expires: 30,
+        domain
       });
     });
   }
