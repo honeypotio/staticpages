@@ -1,10 +1,10 @@
 import Cookie from 'js-cookie';
 
 export default class UTMParams {
-  constructor(urlQuery, cookieProvider) {
+  constructor(urlQuery, cookieProvider, cookieDomain) {
     this.cookieProvider = cookieProvider;
     let utmQuery = this._parseParams(urlQuery);
-    this._setCookie(utmQuery);
+    this._setCookie(utmQuery, cookieDomain);
   }
 
   _parseParams(query) {
@@ -18,11 +18,12 @@ export default class UTMParams {
     return name.replace(/utm_/, 'u_');
   }
 
-  _setCookie(queries) {
+  _setCookie(queries, domain = location.hostname) {
     queries.forEach( (query) => {
       let splitQuery = query.split('=');
       this.cookieProvider.set(splitQuery[0], splitQuery[1], {
-        expires: 30
+        expires: 30,
+        domain
       });
     });
   }

@@ -16,7 +16,9 @@ const mockCookie = {
   clean() {
     this.cookie = {};
   }
-}
+};
+
+const mockCookieDomain = 'localhost';
 
 // Empties mock cookie
 afterEach(()=> {
@@ -27,7 +29,7 @@ describe('UTMParams', () => {
   describe('#UTMParams present', () => {
     it('should parse the correct params', () => {
       const mockParams = '?utm_medium=twitter&utm_campaign=fb&channel=berlin&ga=22';
-      const utmParams = new UTMParams(mockParams, mockCookie);
+      const utmParams = new UTMParams(mockParams, mockCookie, mockCookieDomain);
       expect(mockCookie.get()).toEqual({
         'u_medium': 'twitter',
         'u_campaign': 'fb'
@@ -38,7 +40,7 @@ describe('UTMParams', () => {
   describe('#UTMParams empty', () => {
     it('should have no set no utm params', () => {
       const emptyParams = '?';
-      const utmParams = new UTMParams(emptyParams, mockCookie);
+      const utmParams = new UTMParams(emptyParams, mockCookie, mockCookieDomain);
       expect(mockCookie.get()).toEqual({});
     });
   });
@@ -46,7 +48,7 @@ describe('UTMParams', () => {
   describe('#UTMParams absent', () => {
     it('should ignore the params', () => {
       const nonUTMQuery = '?test=fb&leads=twitter&from=google';
-      const utmParams = new UTMParams(nonUTMQuery, mockCookie);
+      const utmParams = new UTMParams(nonUTMQuery, mockCookie, mockCookieDomain);
       expect(mockCookie.get()).toEqual({});
     });
   })
