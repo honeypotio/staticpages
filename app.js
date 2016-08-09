@@ -3,7 +3,7 @@ var yaml    = require('js-yaml');
 var fs      = require('fs');
 var app     = express();
 
-module.exports = function() {
+module.exports = function(port, path, callback) {
     app.use(express.static('public', {
       setHeaders: function(res, path) {
         var regexp = /\.(.+)$/;
@@ -13,7 +13,5 @@ module.exports = function() {
       }
     }));
 
-    app.listen(4000, function () {
-      console.log('Running app on port 4000!');
-    });
+    return app.listen(4000, callback);
 }
