@@ -2,6 +2,7 @@ import Cookie from 'js-cookie';
 
 export default class UTMParams {
   constructor(urlQuery, cookieProvider) {
+    const $PROCESS_ENV_COOKIE_DOMAIN = $PROCESS_ENV_COOKIE_DOMAIN || undefined;
     this.cookieProvider = cookieProvider;
     let utmQuery = this._parseParams(urlQuery);
     this._setCookie(utmQuery, $PROCESS_ENV_COOKIE_DOMAIN);
