@@ -1,0 +1,66 @@
+.c-about-hero-unit {
+  display: flex;
+  justify-content: flex-end;
+  background: url('DIGEST(images/about_honeypot_bg-mobile.png)') bottom center no-repeat;
+  background-color: #f6f6f6;
+  background-position-y: 100%;
+  background-position-x: -21%;
+  padding: 0;
+  min-height: 709px;
+
+  @media #{$xs-up} {
+    background-size: 100%;
+  }
+
+  @media #{$sm-up} {
+    background: url('DIGEST(images/about_honeypot_bg-desktop.png)') bottom center no-repeat;
+    background-position: top right;
+    background-position-x: 30%;
+    min-height: 469px;
+  }
+
+  @media #{$lg-up} {
+    justify-content: flex-end;
+    background: url('DIGEST(images/about_honeypot_bg-desktop.png)') bottom center no-repeat;
+    background-size: cover;
+    background-position-x: 43%;
+    min-height: 469px;
+  }
+
+  @media #{$xl-up} {
+    justify-content: center;
+    background-size: 1590px;
+    background-position-x: 50%;
+    background-color: $light-gray-7-color;
+  }
+
+  &--aligned-right {
+    background: url('DIGEST(images/about_honeypot_bg_2-desktop.png)') bottom center no-repeat;
+    justify-content: flex-start;
+  }
+
+  &__text {
+    @include text($fs-4, $fw-light, $dark-gray-2-color);
+    padding: 60px 20px 0;
+    align-self: flex-start;
+    text-align: center;
+
+    @media #{$sm-up} {
+      width: 45%;
+      padding: 0 20px;
+      align-self: center;
+      font-size: $fs-5;
+    }
+
+    @media #{$md-up} {
+      @include text($fs-8, $fw-light, $dark-gray-2-color);
+      align-self: center;
+      width: 613px;
+    }
+
+    @media #{$xl-up} {
+      margin-left: 25%;
+    }
+  }
+
+}

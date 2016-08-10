@@ -10,7 +10,6 @@
 
 @import 'utilities/functions';
 @import 'utilities/mixins';
-@import 'utilities/shared';
 @import 'utilities/typography';
 @import '_jquery.cookiebar';
 @import 'utilities/cookie-policy';
@@ -46,4 +45,7 @@
 @import 'components/landing-pricing';
 @import 'components/landing-section';
 @import 'components/about-team';
+@import 'components/about-hero-unit';
+@import 'components/about-logos';
 
+@import 'utilities/shared';

@@ -1,9 +1,28 @@
-.c-about-team {
+$about-team-width: 251px;
+
+.c-about-team-flex-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
 
-  &__item {
+.c-about-team {
+  width: $about-team-width;
+  margin: 45px auto 0;
+  text-align: center;
+
+  @media #{$md-up} {
+    width: auto;
+    text-align: left;
+  }
+
+  @media #{$lg-up} {
+    width: $about-team-width;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &--flex {
     margin: 45px 27px 0;
     flex-basis: 112px;
     text-align: center;

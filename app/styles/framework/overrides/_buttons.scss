@@ -6,11 +6,6 @@
     text-decoration: none;
   }
 
-  &-blue {
-    @include button-variant($white-color, $blue-color, $blue-color);
-    text-transform: none;
-  }
-
   &-landing {
     @include text($fs-btn-landing, $fw-normal, $white-color);
     @include button-variant($white-color, $yellow-color, $yellow-color);
@@ -22,5 +17,15 @@
       padding: 12px 116px;
       border-radius: 36px;
     }
+  }
+
+  &-blue {
+    @include button-variant($white-color, $blue-color, $blue-color);
+    text-transform: none;
+  }
+
+  &-bigger {
+    padding: 15px 48px;
+    font-size: $fs-4;
   }
 }

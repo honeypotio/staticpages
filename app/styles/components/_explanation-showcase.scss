@@ -1,5 +1,4 @@
 .c-explanation-showcase {
-
   &__heading {
     @include text($fs-8, $fw-light, $almost-black-color);
 
@@ -127,10 +126,5 @@
     @media #{$md-up} {
       width: 738px;
     }
-  }
-
-  &__btn {
-    padding: 15px 48px;
-    font-size: $fs-4;
   }
 }
