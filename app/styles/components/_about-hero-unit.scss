@@ -35,8 +35,27 @@
   }
 
   &--aligned-right {
-    background: url('DIGEST(images/about_honeypot_bg_2-desktop.png)') bottom center no-repeat;
+    min-height: 700px;
+    background: url('DIGEST(images/about_honeypot_bg_2-mobile.png)') no-repeat;
+    background-size: 100%;
+    background-position-x: 10%;
+    background-position-y: bottom;
     justify-content: flex-start;
+    background-color: $light-gray-8-color;
+
+    @media #{$xs-up} {
+      background-size: 95%;
+      background-position-x: 100%;
+      background-position-y: bottom;
+    }
+
+    @media #{$sm-up} {
+      background: url('DIGEST(images/about_honeypot_bg_2-desktop.png)') no-repeat;
+      background-size: cover;
+      background-position-x: 75%;
+    }
+
+
   }
 
   &__text {
@@ -60,6 +79,16 @@
 
     @media #{$xl-up} {
       margin-left: 25%;
+    }
+
+    &--aligned-left {
+      @media #{$lg-up} {
+        margin-left: 10%;
+      }
+
+      @media #{$xl-up} {
+        margin-left: 30%;
+      }
     }
   }
 
