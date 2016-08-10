@@ -127,4 +127,12 @@
       width: 738px;
     }
   }
+
+  &--centered-small {
+    text-align: center;
+
+    @media #{$xs-up} {
+      text-align: left;
+    }
+  }
 }
