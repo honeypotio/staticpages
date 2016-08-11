@@ -10,7 +10,14 @@
       srcset="
         {{url_base}}DIGEST(/images/{{imageName}}-mobile.png) 109w,
         {{url_base}}DIGEST(/images/{{imageName}}-tablet.png) 145w,
+        {{url_base}}DIGEST(/images/{{imageName}}-desktop.png) 181w,
         {{url_base}}DIGEST(/images/{{imageName}}-2x.png) 2x
+      "
+      sizes="
+      (min-width: 480px) 109w,
+      (min-width: 768px) 145w,
+      (min-width: 992px) 181w,
+      181px
       "
       src="{{url_base}}DIGEST(/images/{{imageName}}-desktop.png)"
       class="c-about-team__avatar"
