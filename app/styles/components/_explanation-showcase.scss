@@ -131,7 +131,7 @@
   &--centered-small {
     text-align: center;
 
-    @media #{$xs-up} {
+    @media #{$md-up} {
       text-align: left;
     }
   }
