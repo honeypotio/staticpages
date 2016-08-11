@@ -86,8 +86,11 @@ $about-team-width: 251px;
   }
 
   &__content {
-    padding-left: 30px;
+    padding-left: 0;
 
+    @media #{$xs-up} {
+      padding-left: 30px;
+    }
     @media #{$md-up} {
       padding-left: 0;
     }
