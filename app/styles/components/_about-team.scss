@@ -11,7 +11,7 @@ $about-team-width: 251px;
   margin: 45px auto 0;
   text-align: center;
 
-  @media #{$md-up} {
+  @media #{$sm-up} {
     width: auto;
     text-align: left;
   }
@@ -53,6 +53,10 @@ $about-team-width: 251px;
 
   &__description {
     @include text($fs-2, $fw-light, $dark-gray-color);
+
+    &--darker {
+      color: $dark-gray-2-color;
+    }
   }
 
   &__social {
@@ -79,5 +83,13 @@ $about-team-width: 251px;
   &__social-icon.fa {
     margin: 0 4px;
     font-size: 20px
+  }
+
+  &__content {
+    padding-left: 30px;
+
+    @media #{$md-up} {
+      padding-left: 0;
+    }
   }
 }
