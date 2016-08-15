@@ -31,18 +31,9 @@
   &--about {
     padding-top: 172px;
     padding-bottom: 125px;
-    background: url('images/about_bg-mobile.png') no-repeat;
+    background-image: url('images/about_bg.png');
+    background-position: 50% 0;
     background-color: $black-color;
-    background-size: cover;
-
-    @media #{$xs-up} {
-      background-image: url('images/about_bg.png');
-      background-position-x: 50%;
-    }
-
-    @media #{$lg-up} {
-      background-position-x: 0;
-    }
   }
 
   &__heading {
