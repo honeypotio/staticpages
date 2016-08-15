@@ -35,9 +35,13 @@
     background-color: $black-color;
     background-size: cover;
 
-    @media #{$md-up} {
+    @media #{$xs-up} {
       background-image: url('images/about_bg.png');
-      background-position-y: -30px;
+      background-position-x: 50%;
+    }
+
+    @media #{$lg-up} {
+      background-position-x: 0;
     }
   }
 
