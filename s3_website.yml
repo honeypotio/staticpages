@@ -59,9 +59,10 @@ cloudfront_distribution_config:
       cookies:
         forward: 'none'
   aliases:
-    quantity: 1
+    quantity: 2
     items:
-      CNAME: staging.honeypot.io
+      CNAME0: staging.honeypot.io
+      CNAME1: staging.honeypot.co
   logging:
     enabled: true
     includes_cookies: false
