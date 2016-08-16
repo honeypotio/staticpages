@@ -3,7 +3,7 @@ import Cookies from 'js-cookie';
 export default class UserSession {
   constructor(cookieProvider = null) {
     this.cookieProvider = cookieProvider || Cookies;
-    this.cookieName = 'honeypot_esa';
+    this.cookieName = 'honeypot_esa_v1';
     this.data = this._getSessionData();
   }
 
@@ -47,7 +47,7 @@ export default class UserSession {
   }
 
   _getSessionData() {
-    let data = this.cookieProvider.get('honeypot_esa');
+    let data = this.cookieProvider.get('honeypot_esa_v1');
     if (data) {
       return JSON.parse(data);
     } else {

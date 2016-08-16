@@ -79,7 +79,7 @@ describe('UserSession', () => {
 
       const session = new UserSession(cookieMock);
       session.persist(1, 'token', 'email', 'honeypot');
-      expect(cookieMock.cookieName).toEqual('honeypot_esa');
+      expect(cookieMock.cookieName).toEqual('honeypot_esa_v1');
       expect(cookieMock.cookieContents).toEqual({
         authenticated: {
           authenticator: "authenticator:devise",
