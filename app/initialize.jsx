@@ -14,7 +14,8 @@ const userSession = new UserSession();
 const utmParams = new UTMParams(location.search, Cookies, $PROCESS_ENV_COOKIE_DOMAIN);
 
 if (userSession.isLoggedIn()) {
-  if (parsePathname(window.location.pathname) === '/') {
+  if (parsePathname(window.location.pathname) === '/' &&
+      !document.referrer.startsWith($PROCESS_ENV_APP_HOST)) {
     let url;
     if(userSession.isTalent()) {
       url = buildUrl('/profile', 'app_host');
