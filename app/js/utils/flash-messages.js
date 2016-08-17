@@ -8,11 +8,12 @@ const MessageHash = {
 }
 
 export default class FlashMessages {
-  constructor($container, cookieProvider = Cookies) {
+  constructor($container, cookieProvider = Cookies, domains = [window.location.pathname, $PROCESS_ENV_APP_HOST]) {
     this.$container = $container;
     this.timeout = 5000;
     this.type = 'warning';
     this._cookieProvider = cookieProvider;
+    this.domains = domains;
     this.messageList = [];
   }
 
@@ -52,19 +53,13 @@ export default class FlashMessages {
 
   setMessage(messageKey) {
     let currentCookie = Number(this._cookieProvider.get(cookieName));
-    this._cookieProvider.set(cookieName, updatedCookie, CookieDomainMonster([
-      window.location.hostname,
-      $PROCESS_ENV_APP_HOST
-    ]));
+    this._cookieProvider.set(cookieName, updatedCookie, CookieDomainMonster(this.domains));
   }
 
   _removeMessage(messageKey) {
     let currentCookie = Number(this._cookieProvider.get(cookieName));
     let updatedCookie = currentCookie - Number(messageKey);
-    this._cookieProvider.set(cookieName, updatedCookie, CookieDomainMonster([
-      window.location.hostname,
-      $PROCESS_ENV_APP_HOST
-    ]));
+    this._cookieProvider.set(cookieName, updatedCookie, CookieDomainMonster(this.domains));
   }
 
   _hideAfterDelay() {

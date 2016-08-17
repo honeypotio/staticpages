@@ -39,6 +39,8 @@ const mockContainer = {
   } 
 }
 
+const mockDomains = ['localhost:4000', 'localhost:3000'];
+
 beforeEach(() => {
   mockCookie.populate();
   mockContainer.addClass('hide');
@@ -47,14 +49,14 @@ beforeEach(() => {
 describe('Flash Messages', () => {
   describe('It displays the message', () => {
     it('should display the message and remove hide class', () => {
-      const flashMessage = new FlashMessages(mockContainer, mockCookie);
+      const flashMessage = new FlashMessages(mockContainer, mockCookie, mockDomains);
       flashMessage.showCurrent();
       expect(mockContainer.textContent).toEqual('You have been added to the waiting list.');
       expect(mockContainer.className).toNotMatch(/hide/);
     });
 
     it('should display the second message on a second call', () => {
-      const flashMessage = new FlashMessages(mockContainer, mockCookie);
+      const flashMessage = new FlashMessages(mockContainer, mockCookie, mockDomains);
       flashMessage.showCurrent();
       flashMessage.showCurrent();
       expect(mockContainer.textContent).toEqual('');
@@ -64,7 +66,7 @@ describe('Flash Messages', () => {
 
   describe('It Edits the cookie correctly', () => {
     it('should set the cookie value to undisplayed messages', () => {
-      const flashMessage = new FlashMessages(mockContainer, mockCookie);
+      const flashMessage = new FlashMessages(mockContainer, mockCookie, mockDomains);
       flashMessage.showCurrent();
       expect(mockCookie.get('honeypot_flash')).toEqual(10);
     });
