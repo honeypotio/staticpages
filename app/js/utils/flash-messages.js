@@ -1,5 +1,5 @@
 import Cookies from 'js-cookie';
-import CookieDomainMonster from 'coookie-domain-monster';
+import CookieDomainMonster from 'cookie-domain-monster';
 
 const cookieName = 'honeypot_flash';
 
@@ -52,7 +52,10 @@ export default class FlashMessages {
 
   setMessage(messageKey) {
     let currentCookie = Number(this._cookieProvider.get(cookieName));
-    this._cookieProvider.set(cookieName, updatedCookie,);
+    this._cookieProvider.set(cookieName, updatedCookie, CookieDomainMonster([
+      window.location.hostname,
+      $PROCESS_ENV_APP_HOST
+    ]));
   }
 
   _removeMessage(messageKey) {

@@ -24,6 +24,7 @@
     "brunch": "^2.8.2",
     "brunch-static": "^1.1.1",
     "clean-css-brunch": "^2.0.0",
+    "cookie-domain-monster": "github:honeypotio/cookie-domain-monster",
     "css-brunch": "^2.0.0",
     "digest-brunch": "^1.5.1",
     "envstatic-brunch": "^0.1.0",
@@ -50,8 +51,5 @@
     "sass-brunch": "^2.6.3",
     "uglify-js-brunch": "^2.0.0",
     "whatwg-fetch": "^1.0.0"
-  },
-  "dependencies": {
-    "cookie-domain-monster": "github:honeypotio/cookie-domain-monster"
   }
 }
