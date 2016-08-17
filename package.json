@@ -10,7 +10,7 @@
   "scripts": {
     "start": "brunch watch --server",
     "test": "mocha 'tests/**/*.spec.js' --compilers js:babel-core/register",
-    "test server": "mocha 'tests/**/*.spec.js' --compilers js:babel-core/register --watch" ,
+    "test server": "mocha 'tests/**/*.spec.js' --compilers js:babel-core/register --watch",
     "prod": "brunch build --production",
     "postinstall": "./scripts/copy_vendor"
   },
@@ -50,5 +50,8 @@
     "sass-brunch": "^2.6.3",
     "uglify-js-brunch": "^2.0.0",
     "whatwg-fetch": "^1.0.0"
+  },
+  "dependencies": {
+    "cookie-domain-monster": "github:honeypotio/cookie-domain-monster"
   }
 }

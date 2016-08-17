@@ -5,7 +5,7 @@ const mockCookie = {
   cookie: {},
   get(name) {
     if (name) {
-      this.cookie[name];
+      return this.cookie[name];
     } else {
       return this.cookie;
     }
