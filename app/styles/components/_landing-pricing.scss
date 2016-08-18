@@ -13,11 +13,11 @@
 
   &__heading {
     text-align: center;
-    font-size: $fs-7;
+    font-size: $fs-9;
     font-weight: $fw-light;
 
     @media #{$md-up} {
-      font-size: $fs-18;
+      font-size: $fs-12;
       margin-bottom: 27px;
     }
   }
@@ -26,13 +26,13 @@
     width: 70%;
     margin: 20px auto 23px;
     text-align: center;
-    font-size: $fs-5;
+    font-size: $fs-2;
     font-weight: $fw-light;
 
     @media #{$md-up} {
       margin: 0 auto 23px;
       width: 450px;
-      font-size: $fs-14;
+      font-size: $fs-4;
     }
   }
 
@@ -73,7 +73,7 @@
         padding-left: 7px;
         margin-top: -2px;
         text-indent: -7px;
-        font-size: $fs-12;
+        font-size: $fs-3;
       }
 
       li::before {
@@ -85,7 +85,7 @@
     }
 
     &-legend {
-      @include text($fs-5, $fw-normal, $dark-gray-color);
+      @include text($fs-2, $fw-normal, $dark-gray-color);
       text-align: left;
     }
   }
@@ -95,13 +95,13 @@
   }
 
   &__btn {
-    @include text($fs-12, $fw-semibold, $white-color);
+    @include text($fs-3, $fw-semibold, $white-color);
     padding: 12px 32px;
   }
 
   &__contact {
     margin: 15px auto 50px;
-    font-size: $fs-12;
+    font-size: $fs-3;
     text-align: center;
 
     @media #{$md-up} {

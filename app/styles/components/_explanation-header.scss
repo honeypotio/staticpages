@@ -1,26 +1,21 @@
 .c-explanation-header {
   &__heading {
-    @include text($fs-17, $fw-bold, $white-color);
+    @include text($fs-11, $fw-bold, $white-color);
     margin-bottom: 14px;
 
     @media #{$md-up} {
-      font-size: $fs-18;
+      font-size: $fs-12;
     }
   }
 
   &__text {
-    @include text($fs-12, $fw-normal, $white-color);
+    @include text($fs-3, $fw-normal, $white-color);
     width: 100%;
     margin: 0 auto 32px;
 
     @media #{$md-up} {
       width: 750px;
-      font-size: $fs-theta;
+      font-size: $fs-8;
     }
-  }
-
-  &__btn {
-    padding: 15px 48px;
-    font-size: $fs-14;
   }
 }

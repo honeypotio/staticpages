@@ -30,4 +30,8 @@
   &--no-bottom-padding {
     padding-bottom: 0;
   }
+
+  &--bordered {
+    border-bottom: 1px solid $light-gray-color;
+  }
 }

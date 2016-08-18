@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="181px" height="181px" viewBox="0 0 181 181" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 8 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <ellipse id="path-1" cx="90.2000001" cy="90.4" rx="90" ry="90"></ellipse>
+    </defs>
+    <g id="About-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="About-Honeypot-Copy" transform="translate(-1073.000000, -1101.000000)">
+            <g id="Group-20" transform="translate(153.000000, 1100.000000)">
+                <g id="Group-8-Copy" transform="translate(920.000000, 1.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Oval-19" fill="#E2E8F0" xlink:href="#path-1"></use>
+                    <path d="M83.0000016,194.381993 C62.8176826,193.354179 22.5938766,162.112309 22.5938766,162.112309 C22.5938766,162.112309 30.6198954,144.830468 37.9299953,141.161137 C45.1947526,137.514567 64.5321782,133.476593 64.5321782,133.476593 C64.5321782,133.476593 54.3107361,125.066803 50.6532734,113.015448 C42.9980416,87.7914286 44.0247426,48.2761738 86.8829925,48.1883527 C128.517384,48.1030395 135.548044,87.9675701 128.756856,113.015448 C125.217203,126.070719 116.948315,133.476592 116.948315,133.476592 C116.948315,133.476592 137.131405,135.683912 144.009061,141.161137 C149.134757,145.243137 155.3051,156.879384 155.3051,156.879384 C155.3051,156.879384 106.867938,195.597502 83.0000016,194.381993 Z" id="Path-88" fill="#C7CED9" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

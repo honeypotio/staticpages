@@ -24,7 +24,7 @@
   }
 
   > .c-checkbox__replacement-label {
-    @include text($fs-5, $fw-normal, $gray-color);
+    @include text($fs-2, $fw-normal, $gray-color);
     width: 90%;
     padding-left: 0;
     float: left;

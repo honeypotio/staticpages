@@ -1,0 +1,57 @@
+<div class="c-about-team c-about-team--flex">
+  {{#if svg}}
+    <img
+      src="{{url_base}}DIGEST(/images/{{svg}})"
+      alt="{{name}}"
+      class="c-about-team__avatar"
+    >
+  {{else}}
+    <img
+      srcset="
+        {{url_base}}DIGEST(/images/{{imageName}}-mobile.png) 109w,
+        {{url_base}}DIGEST(/images/{{imageName}}-tablet.png) 145w,
+        {{url_base}}DIGEST(/images/{{imageName}}-desktop.png) 181w,
+        {{url_base}}DIGEST(/images/{{imageName}}-2x.png) 2x
+      "
+      sizes="
+      (min-width: 480px) 109w,
+      (min-width: 768px) 145w,
+      (min-width: 992px) 181w,
+      181px
+      "
+      src="{{url_base}}DIGEST(/images/{{imageName}}-desktop.png)"
+      class="c-about-team__avatar"
+    />
+  {{/if}}
+  <div class="c-about-team__name">{{name}}</div>
+  <div class="c-about-team__description">{{description}}</div>
+  {{#if applyLink}}
+    <div class="c-about-team__apply">
+      <a href="https://jobs.lever.co/honeypot" target="_blank">Apply now &gt;</a>
+    </div>
+  {{else}}
+    <div class="c-about-team__social">
+      {{#if linkedin}}
+        <a href="{{linkedin}}" target="_blank">
+            <span class="fa-stack c-about-team__social-stack">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+          </span>
+        </a>
+      {{/if}}
+      {{#if twitter}}
+        <a href="{{twitter}}" target="_blank">
+          <span class="fa-stack c-about-team__social-stack">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+          </span>
+        </a>
+      {{/if}}
+      {{#if github}}
+        <a href="{{github}}" target="_blank">
+          <i class="c-about-team__social-icon fa fa-github"></i>
+        </a>
+      {{/if}}
+    </div>
+  {{/if}}
+</div>

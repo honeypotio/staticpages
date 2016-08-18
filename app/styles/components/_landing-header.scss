@@ -28,12 +28,29 @@
     }
   }
 
+  &--about {
+    padding-top: 172px;
+    padding-bottom: 125px;
+    background-image: url('images/about_bg.png');
+    background-position: 50% 0;
+    background-color: $black-color;
+  }
+
   &__heading {
-    @include text($fs-alpha, $fw-normal, $white-color);
-    margin: 0 0 5px;
+    @include text($fs-11, $fw-bold, $white-color);
+    margin-top: 0;
+    margin-bottom: 0;
 
     @media #{$md-up} {
-      @include text($fs-beta, $fw-normal, $white-color);
+      font-size: $fs-12;
+    }
+
+    &--about {
+      font-size: $fs-12;
+
+      @media #{$md-up} {
+        font-size: $fs-big-header;
+      }
     }
   }
 
@@ -47,11 +64,13 @@
   }
 
   &__body {
-    @include text($fs-gamma, $fw-light, $white-color);
-    margin: 0 0 36px;
+    @include text($fs-3, $fw-normal, $white-color);
+    margin-top: 14px;
+    margin-bottom: 23px;
 
     @media #{$md-up} {
-      @include text($fs-gamma, $fw-light, $white-color);
+      @include text($fs-8, $fw-normal, $white-color);
+      line-height: 32.5px;
     }
   }
 }

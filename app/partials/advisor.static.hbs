@@ -1,0 +1,39 @@
+<div class="row c-about-team">
+  <div class="text-center col-xs-12 col-sm-3 col-lg-12">
+    <img
+      srcset="
+        {{url_base}}DIGEST(/images/{{imageName}}-mobile.png) 108w,
+        {{url_base}}DIGEST(/images/{{imageName}}-1x.png) 181w,
+        {{url_base}}DIGEST(/images/{{imageName}}-2x.png) 2x
+      "
+      sizes="(min-width: 992px) 181px, 108px"
+      src="{{url_base}}DIGEST(/images/{{imageName}}-1x.png)"
+      alt=""
+    >
+  </div>
+  <div class="col-xs-12 col-sm-9 col-lg-12 ">
+    <div class="c-about-team__content">
+      <div class="c-about-team__name">{{name}}</div>
+      <div class="c-about-team__social">
+        <a href="{{linkedin}}" target="_blank">
+            <span class="fa-stack c-about-team__social-stack">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+          </span>
+        </a>
+        <a href="{{twitter}}" target="_blank">
+          <span class="fa-stack c-about-team__social-stack">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+          </span>
+        </a>
+        <a href="{{github}}" target="_blank">
+          <i class="c-about-team__social-icon fa fa-github"></i>
+        </a>
+      </div>
+      <p class="c-about-team__description c-about-team__description--darker">
+        {{description}}
+      </p>
+    </div>
+  </div>
+</div>

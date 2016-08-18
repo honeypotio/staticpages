@@ -8,7 +8,7 @@
   background-color: $white-color;
 
   &__item {
-    @include text($fs-12, $fw-normal, $light-gray-4-color);
+    @include text($fs-3, $fw-normal, $light-gray-4-color);
     display: block;
     float: left;
     width: 50%;

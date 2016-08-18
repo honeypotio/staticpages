@@ -1,10 +1,9 @@
 .c-explanation-showcase {
-
   &__heading {
-    @include text($fs-theta, $fw-light, $almost-black-color);
+    @include text($fs-8, $fw-light, $almost-black-color);
 
     @media #{$md-up} {
-      font-size: $fs-18;
+      font-size: $fs-12;
     }
 
     &--left {
@@ -13,12 +12,12 @@
   }
 
   &__copy {
-    @include text($fs-5, $fw-light, $dark-gray-2-color);
+    @include text($fs-2, $fw-light, $dark-gray-2-color);
     margin-top: 25px;
-    line-height: $fs-9 + 4px; // 30px
+    line-height: $fs-5 + 4px; // 30px
 
     @media #{$md-up} {
-      font-size: $fs-14;
+      font-size: $fs-4;
     }
 
     &__paragraph {
@@ -27,7 +26,7 @@
 
     &__cta {
       margin-top: 20px;
-      font-size: $fs-12;
+      font-size: $fs-3;
       font-weight: $fw-normal;
 
       @media #{$md-up} { font-size: inherit; }
@@ -115,7 +114,7 @@
     }
   }
 
-  &__centered {
+  &--centered {
     margin: 0 auto;
 
     @media #{$md-up} {
@@ -123,8 +122,17 @@
     }
   }
 
-  &__btn {
-    padding: 15px 48px;
-    font-size: $fs-14;
+  &--wider {
+    @media #{$md-up} {
+      width: 738px;
+    }
+  }
+
+  &--centered-small {
+    text-align: center;
+
+    @media #{$md-up} {
+      text-align: left;
+    }
   }
 }

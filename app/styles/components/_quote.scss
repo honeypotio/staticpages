@@ -6,7 +6,7 @@
   }
 
   &__content {
-    @include text($fs-gamma, $fw-light, $white-color);
+    @include text($fs-7, $fw-light, $white-color);
     position: relative;
     text-align: center;
 
@@ -28,7 +28,7 @@
 
 
   &__author {
-    @include text($fs-gamma, $fw-light, $white-color);
+    @include text($fs-7, $fw-light, $white-color);
     text-align: right;
     margin: 37px auto 0;
 
@@ -37,7 +37,7 @@
     }
 
     &__position {
-      @include text($fs-14, $fw-light, darken($blue-color, 20%));
+      @include text($fs-4, $fw-light, darken($blue-color, 20%));
     }
 
     &__company {

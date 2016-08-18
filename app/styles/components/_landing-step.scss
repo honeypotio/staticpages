@@ -32,16 +32,16 @@
     @include text(30px, $fw-light, $gray-2-color);
 
     @media #{$md-up} {
-      @include text($fs-jumbo-2, $fw-light, $gray-2-color);
+      @include text($fs-landing-heading, $fw-light, $gray-2-color);
     }
   }
 
   &__body {
-    @include text($fs-9, $fw-light, $dark-gray-color);
-    line-height: $fs-9 + 5px;
+    @include text($fs-5, $fw-light, $dark-gray-color);
+    line-height: $fs-5 + 5px;
 
     @media #{$md-up} {
-      @include text($fs-gamma, $fw-light, $dark-gray-color);
+      @include text($fs-7, $fw-light, $dark-gray-color);
     }
   }
 }
