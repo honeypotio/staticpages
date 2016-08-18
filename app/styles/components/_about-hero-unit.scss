@@ -35,7 +35,6 @@
   }
 
   &--aligned-right {
-    min-height: 700px;
     background: url('DIGEST(images/about_honeypot_bg_2-mobile.png)') no-repeat;
     background-size: 100%;
     background-position-x: 10%;
@@ -53,6 +52,12 @@
       background: url('DIGEST(images/about_honeypot_bg_2-desktop.png)') no-repeat;
       background-size: cover;
       background-position-x: 75%;
+    }
+
+    @media #{$lg-up} {
+      background-size: auto 100%;
+      background-position-x: 100%;
+      background-color: $light-gray-9-color;
     }
 
 

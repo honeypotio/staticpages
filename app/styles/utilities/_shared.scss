@@ -16,6 +16,14 @@ $directions: 'top', 'bottom', 'left', 'right';
 
     .push--#{$dir}--#{$name} {
       margin-#{$dir}: $val;
+
+      &--ignore-mobile {
+        margin-#{$dir}: 10px;
+
+        @media #{$md-up} {
+          margin-#{$dir}: $val;
+        }
+      }
     }
   }
 }

@@ -8,7 +8,7 @@ $about-team-width: 251px;
 
 .c-about-team {
   width: $about-team-width;
-  margin: 45px auto 0;
+  margin: 0 auto 45px;
   text-align: center;
 
   @media #{$sm-up} {
