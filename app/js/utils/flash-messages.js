@@ -8,7 +8,7 @@ const MessageHash = {
 }
 
 export default class FlashMessages {
-  constructor($container, cookieProvider = Cookies, urls = [window.location.pathname, $PROCESS_ENV_APP_HOST]) {
+  constructor($container, cookieProvider = Cookies, urls = [window.location.hostname, $PROCESS_ENV_APP_HOST]) {
     this.$container = $container;
     this.timeout = 5000;
     this.type = 'warning';
