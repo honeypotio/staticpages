@@ -10,7 +10,7 @@
   "scripts": {
     "start": "brunch watch --server",
     "test": "mocha 'tests/**/*.spec.js' --compilers js:babel-core/register",
-    "test server": "mocha 'tests/**/*.spec.js' --compilers js:babel-core/register --watch" ,
+    "test server": "mocha 'tests/**/*.spec.js' --compilers js:babel-core/register --watch",
     "prod": "brunch build --production",
     "postinstall": "./scripts/copy_vendor"
   },
@@ -24,6 +24,7 @@
     "brunch": "^2.8.2",
     "brunch-static": "^1.1.1",
     "clean-css-brunch": "^2.0.0",
+    "cookie-domain-monster": "^0.0.4",
     "css-brunch": "^2.0.0",
     "digest-brunch": "^1.5.1",
     "envstatic-brunch": "^0.1.0",
