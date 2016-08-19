@@ -15,6 +15,9 @@ $light-gray-3-color: #dddddd;
 $light-gray-4-color: #bebebe;
 $light-gray-5-color: #e3e8ef;
 $light-gray-6-color: #f9f9f9;
+$light-gray-7-color: #f3f3f3;
+$light-gray-8-color: #efefef;
+$light-gray-9-color: #f0f1f0;
 $gray-color: #94a2b3;
 $gray-2-color: #757575;
 $gray-3-color: #858b97;
@@ -33,29 +36,27 @@ $moat-color: $light-gray-color;
 // FONTS
 //==========================
 
-$fs-alpha: 36px;
-$fs-beta: 60px;
-$fs-gamma: 24px;
-$fs-theta: 25px;
-$fs-5: 14px;
+$fs-1: 12px;
+$fs-2: 14px;
+$fs-3: 16px;
+$fs-4: 18px;
+$fs-5: 20px;
 $fs-6: 22px;
-$fs-7: 26px;
-$fs-8: 36px;
-$fs-jumbo-2: 50px;
-$fs-9: 20px;
-$fs-11: 30px;
-$fs-12: 16px;
-$fs-13: 17px;
-$fs-14: 18px;
-$fs-15: 45px;
-$fs-16: 12px;
-$fs-17: 35px;
-$fs-18: 41px;
+$fs-7: 24px;
+$fs-8: 25px;
+$fs-9: 26px;
+$fs-10: 30px;
+$fs-11: 35px;
+$fs-12: 41px;
 
 //buttons
-$fs-btn: $fs-5;
+$fs-landing-heading: $fs-8 * 2; // 50px
+$fs-big-header: $fs-10 * 2; // 60px
+$fs-auth-heading: $fs-12 + 4px;
+$fs-btn: $fs-2;
 $fs-btn-landing: $fs-6;
-$fs-btn-landing-big: $fs-gamma;
+$fs-btn-landing-big: $fs-7;
+$fs-comission: $fs-2 + 1px;
 
 $fw-light: 100;
 $fw-normal: 400;

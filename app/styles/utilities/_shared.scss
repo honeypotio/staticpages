@@ -16,7 +16,21 @@ $directions: 'top', 'bottom', 'left', 'right';
 
     .push--#{$dir}--#{$name} {
       margin-#{$dir}: $val;
+
+      &--ignore-mobile {
+        margin-#{$dir}: 10px;
+
+        @media #{$md-up} {
+          margin-#{$dir}: $val;
+        }
+      }
     }
+  }
+}
+
+@each $dir in $directions {
+  .u-no-push-#{$dir} {
+    margin-#{$dir}: 0;
   }
 }
 
@@ -42,4 +56,8 @@ $directions: 'top', 'bottom', 'left', 'right';
 
 .u-semibold-text {
   font-weight: $fw-semibold;
+}
+
+.u-flex-container {
+  display: flex;
 }

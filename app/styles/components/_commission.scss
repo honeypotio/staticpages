@@ -20,17 +20,17 @@
   &__header {
     margin-bottom: 8px;
     padding: 32px 0 5px;
-    font-size: $fs-beta;
+    font-size: $fs-big-header;
     color: $blue-color;
     border-bottom: 1px solid $light-gray-color;
 
     small {
-      font-size: $fs-11;
+      font-size: $fs-10;
     }
 
     &__text {
       margin-top: -8px;
-      font-size: $fs-12;
+      font-size: $fs-3;
       text-transform: uppercase;
       color: $almost-black-color;
     }
@@ -46,7 +46,7 @@
   }
 
   &__legend {
-    @include text($fs-13, $fw-light, rgba($white-color, .5));
+    @include text($fs-comission, $fw-light, rgba($white-color, .5));
     margin-top: 31px;
   }
 

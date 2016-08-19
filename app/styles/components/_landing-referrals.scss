@@ -7,12 +7,12 @@
   }
 
   &__text {
-    @include text($fs-7, $fw-light, $dark-gray-color);
+    @include text($fs-9, $fw-light, $dark-gray-color);
     text-align: center;
     font-style: italic;
 
     @media #{$md-up} {
-      font-size: $fs-8;
+      font-size: $fs-11;
     }
   }
 

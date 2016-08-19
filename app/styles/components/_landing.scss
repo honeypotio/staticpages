@@ -3,7 +3,7 @@ $counter-size: 40px;
 .c-landing {
   &__header {
     padding: 51px 0;
-    background: url('DIGEST(images/header_talent_lp_new.jpg)') no-repeat;
+    background: url('DIGEST(images/header_talent_lp_new.jpg)') no-repeat $black-color;
     background-size: cover;
     background-position-x: -145px;
 
@@ -18,22 +18,22 @@ $counter-size: 40px;
     }
 
     &__heading {
-      @include text($fs-17, $fw-bold, $white-color);
+      @include text($fs-11, $fw-bold, $white-color);
       margin-top: 0;
 
       @media #{$md-up} {
-        font-size: $fs-18;
+        font-size: $fs-12;
       }
     }
 
 
     &__body {
-      @include text($fs-12, $fw-normal, $white-color);
+      @include text($fs-3, $fw-normal, $white-color);
       margin-top: 14px;
       margin-bottom: 23px;
 
       @media #{$md-up} {
-        @include text($fs-theta, $fw-normal, $white-color);
+        @include text($fs-8, $fw-normal, $white-color);
         line-height: 32.5px;
       }
     }
@@ -44,7 +44,7 @@ $counter-size: 40px;
   }
 
   &__btn {
-    @include text($fs-14, $fw-semibold, $white-color);
+    @include text($fs-4, $fw-semibold, $white-color);
     padding: 10px 39px;
   }
 
@@ -89,7 +89,7 @@ $counter-size: 40px;
 
     &__counter {
       @include sizing($counter-size);
-      @include text($fs-9, $fw-normal, $blue-color);
+      @include text($fs-5, $fw-normal, $blue-color);
       position: relative;
       margin: 0 auto;
       float: left;
@@ -106,7 +106,7 @@ $counter-size: 40px;
     }
 
     &__text {
-      @include text($fs-9, $fw-normal, $almost-black-2-color);
+      @include text($fs-5, $fw-normal, $almost-black-2-color);
       float: left;
       width: calc(100% - #{$counter-size});
       padding-left: 10px;
@@ -135,7 +135,7 @@ $counter-size: 40px;
   }
 
   &__partners__heading {
-    @include text($fs-12, $fw-semibold, $dark-gray-2-color);
+    @include text($fs-3, $fw-semibold, $dark-gray-2-color);
     text-transform: uppercase;
     margin: 0 0 30px;
     padding-left: 8px;

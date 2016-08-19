@@ -25,7 +25,7 @@
   }
 
   &__heading {
-    @include text($fs-15, $fw-normal, $blue-color);
+    @include text($fs-auth-heading, $fw-normal, $blue-color);
     text-align: center;
     margin-bottom: 22px;
   }
@@ -50,7 +50,7 @@
   }
 
   &__panel-description {
-    @include text($fs-12, $fw-light, $gray-2-color);
+    @include text($fs-3, $fw-light, $gray-2-color);
     margin-top: 41px;
     text-align: center;
 
@@ -60,7 +60,7 @@
     }
 
     &__heading {
-      @include text($fs-9, $fw-normal, $gray-2-color);
+      @include text($fs-5, $fw-normal, $gray-2-color);
     }
 
     &__list {
@@ -82,7 +82,7 @@
   }
 
   &__secondary-text {
-    @include text($fs-5, $fw-normal, $gray-color);
+    @include text($fs-2, $fw-normal, $gray-color);
     margin: 20px 0;
     text-align: center;
   }

@@ -1,0 +1,191 @@
+---
+_options:
+  layout: app/layouts/main.static.hbs
+  partials:
+    - app/partials/team_member.static.hbs
+    - app/partials/about_members.static.hbs
+    - app/partials/advisor.static.hbs
+---
+<header class="o-hero-unit c-landing__header c-landing-header--about">
+  <div class="container text-center">
+    <div class="o-hero-unit__content">
+      <h1 class="o-hero-unit__heading c-landing-header__heading c-landing-header__heading--about">
+        We, Honeypot
+      </h1>
+      <div class="o-hero-unit__body c-landing-header__body">
+        <div>
+          Honeypot exists to get every developer a great job
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="c-landing-section c-landing-section--bordered">
+  <div class="c-explanation-showcase c-explanation-showcase--centered c-explanation-showcase--wider">
+    <h2 class="text-center c-explanation-showcase__heading">About us</h2>
+    <p class="text-center c-explanation-showcase__copy">
+      Honeypot is a developer-focused job platform, on a mission to get every developer a great job.
+      We believe developers should have all the information they need to choose a job they love: whether that’s based on a cutting-edge tech stack, an inspiring team or just good old-fashioned salary.
+      In our world, that means no more spam and empty promises from headhunters, no more sending the same application to multiple companies - just one profile and the choice to receive  honest offers related to your job preferences direct from companies.
+    </p>
+  </div>
+</section>
+
+<section class="c-landing-section">
+  <div class="c-explanation-showcase c-explanation-showcase--centered">
+    <h2 class="text-center c-explanation-showcase__heading">Meet the team</h2>
+  </div>
+
+  <div class="container c-about-team-flex-container">
+    {{> about_members}}
+  </div>
+</section>
+
+<section class="c-landing-section c-about-hero-unit">
+  <div class="c-about-hero-unit__text">
+    <p>
+      "But this isn’t just some Craigslist directory – far from it. Honeypot offers a Talent Rep to each person looking for work.
+      They’re like a guide to help you  land the best job to suit your current aspirations.
+      It’s a very straightforward system meant to target the best mid-to-advanced developers currently seeking employment.”
+    </p>
+    <p class="push--top--double">
+      <img src="{{url_base}}DIGEST(/images/testimonial_1-1x.png)" alt="">
+    </p>
+  </div>
+</section>
+
+<section class="container c-landing-section">
+  <div class="c-explanation-showcase c-explanation-showcase--centered">
+    <h2 class="text-center c-explanation-showcase__heading">Meet our advisors</h2>
+  </div>
+  <div class="row push--top--quadruple">
+    <div class="col-md-12 col-lg-4 text-center">
+      {{> advisor
+        imageName="timo_rosner"
+        name="Timo Rößner"
+        description='
+          Timo is Head of Engineering at Blacklane, after holding numerous lead developer positions over his career.
+          Timo is an active contributor to open-source software and the current maintainer of "reek",
+          a code quality analyser popular in the Ruby community.
+          He is an avid evangelist of new technologies and has ample experience in developing and promoting team culture
+          within organizations.
+        '
+        linkedin="https://de.linkedin.com/in/timo-r%C3%B6%C3%9Fner-05ab1630"
+        twitter="https://twitter.com/troessner"
+        github="https://github.com/troessner"
+      }}
+    </div>
+    <div class="col-md-12 col-lg-4 text-center">
+      {{> advisor
+        imageName="konstantin_haase"
+        name="Konstantin Haase"
+        description="
+          Konstantin is a software developer, entrepreneur, author, speaker, and one of the busiest people in the open source community.
+          He is co-founder of Travis CI, a continuous integration-as- service-platform, used by GitHub, Twitter, Facebook
+          and many others. He is an active contributor to various open source projects, such as Sinatra, Rubinius,
+          Rack, and many more.
+        "
+        linkedin="https://linkedin.com/in/khaase"
+        twitter="https://twitter.com/konstantinhaase"
+        github="https://github.com/rkh"
+      }}
+    </div>
+    <div class="col-md-12 col-lg-4 text-center">
+      {{> advisor
+        imageName="torsten_curdt"
+        name="Torsten Curdt"
+        description="
+          Torsten is a software developer, founder, author, speaker, and blogger.
+          He specializes in scalable architectures, backend services, big data, iOS and Mac development.
+          Torsten is also an active and long-term contributor to open source.
+        "
+        linkedin="https://www.linkedin.com/in/tcurdt"
+        twitter="https://twitter.com/tcurdt"
+        github="https://github.com/tcurdt"
+      }}
+    </div>
+  </div>
+</section>
+
+<section class="c-landing-section c-about-hero-unit c-about-hero-unit--aligned-right">
+  <div class="c-about-hero-unit__text c-about-hero-unit__text--aligned-left">
+    <p>
+      "Tech recruiting in its current form is highly flawed.
+      Developers often get approached directly by companies or through middlemen with offers
+      that are not relevant for them. Honeypot provides a platform which solves these problems.”
+    </p>
+    <p class="push--top--double">
+      <img src="{{url_base}}DIGEST(/images/vb_logo_color-1x.png)" alt="">
+    </p>
+  </div>
+</section>
+
+<section class="c-landing-section c-landing-section--bordered">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-md-offset-2 c-explanation-showcase c-explanation-showcase--centered-small">
+        <h3 class="c-explanation-showcase__heading">Want to work here?</h3>
+        <p class="c-explanation-showcase__copy u-no-push-top">
+          We are always hiring smart, creative people! Find out more on our careers page.
+        </p>
+      </div>
+      <div class="col-md-4 text-center">
+        <a href="https://jobs.lever.co/honeypot" target="_blank" class="btn btn-primary btn-bigger btn-blue push push--top--quadruple push--top--quadruple--ignore-mobile">View Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="c-about-logos">
+  <a class="c-about-logos__item" href="http://www.forbes.com/sites/alisoncoleman/2015/11/17/digital-disruption-for-europes-hospitality-shipping-and-recruitment-sectors/2/#41216def7981" target="_blank">
+    <img
+      srcset="{{url_base}}DIGEST(/images/forbes_logo-2x.png) 2x"
+      src="{{url_base}}DIGEST(/images/forbes_logo-1x.png)"
+      alt=""
+    />
+  </a>
+  <a class="c-about-logos__item" href="https://techcrunch.com/2015/10/01/honeypot-wants-to-be-berlins-hired/" target="_blank">
+    <img
+      srcset="{{url_base}}DIGEST(/images/techcrunch_logo-2x.png) 2x"
+      src="{{url_base}}DIGEST(/images/techcrunch_logo-1x.png)"
+      alt=""
+    />
+  </a>
+  <a class="c-about-logos__item" href="http://venturebeat.com/2015/10/01/berlins-honeypot/" target="_blank">
+    <img
+      srcset="{{url_base}}DIGEST(/images/venture_beat_logo-2x.png) 2x"
+      src="{{url_base}}DIGEST(/images/venture_beat_logo-1x.png)"
+      alt=""
+    />
+  </a>
+  <a class="c-about-logos__item" href="http://t3n.de/news/bewerbung-mal-andersrum-honeypot-645113/" target="_blank">
+    <img
+      srcset="{{url_base}}DIGEST(/images/t3n_logo-2x.png) 2x"
+      src="{{url_base}}DIGEST(/images/t3n_logo-1x.png)"
+      alt=""
+    />
+  </a>
+  <a class="c-about-logos__item" href="http://www.deutsche-startups.de/2015/12/11/developer-recruiting-funktioniert-einfach-nicht-effizient/" target="_blank">
+    <img
+      srcset="{{url_base}}DIGEST(/images/deutsche_startups_logo-2x.png) 2x"
+      src="{{url_base}}DIGEST(/images/deutsche_startups_logo-1x.png)"
+      alt=""
+    />
+  </a>
+  <a class="c-about-logos__item" href="http://webdesignledger.com/honeypot-dev-jobs/" target="_blank">
+    <img
+      srcset="{{url_base}}DIGEST(/images/web_design_ledger_logo-2x.png) 2x"
+      src="{{url_base}}DIGEST(/images/web_design_ledger_logo-1x.png)"
+      alt=""
+    />
+  </a>
+  <a class="c-about-logos__item" href="http://www.gruenderszene.de/allgemein/honeypot-kaya-taner-applift" target="_blank">
+    <img
+      srcset="{{url_base}}DIGEST(/images/grunderszene_logo-2x.png) 2x"
+      src="{{url_base}}DIGEST(/images/grunderszene_logo-1x.png)"
+      height="23"
+      alt=""
+    />
+  </a>
+</section>
