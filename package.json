@@ -24,7 +24,7 @@
     "brunch": "^2.8.2",
     "brunch-static": "^1.1.1",
     "clean-css-brunch": "^2.0.0",
-    "cookie-domain-monster": "^0.0.4",
+    "cookie-domain-monster": "^0.0.5",
     "css-brunch": "^2.0.0",
     "digest-brunch": "^1.5.1",
     "envstatic-brunch": "^0.1.0",
