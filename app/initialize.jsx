@@ -9,6 +9,7 @@ import UserSession from 'js/utils/user-session';
 import buildUrl from 'js/utils/build-url';
 import parsePathname from 'js/utils/parse-pathname';
 import UTMParams from 'js/utils/utm-params';
+import String from 'js/utils/string-polyfill';
 
 const userSession = new UserSession();
 const utmParams = new UTMParams(location.search, Cookies, $PROCESS_ENV_COOKIE_DOMAIN);
