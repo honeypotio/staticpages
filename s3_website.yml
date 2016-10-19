@@ -76,6 +76,7 @@ s3_key_prefix: <%= ENV['PREFIX_FOLDER'] %>
 redirects:
   pages/404: errors/404
   pages/500: errors/500
+  pages/how_does_it_work: pages/how_it_works
 
 routing_rules:
   - condition:
