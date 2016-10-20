@@ -18,7 +18,7 @@ const showDeveloperEmployersLink = () => {
 
 const showLinks = () => {
   const base = [
-    <li key="how_does_it_work"><a href={buildUrl('/pages/how_does_it_work')}>How does it work</a></li>
+    <li key="how_it_works"><a href={buildUrl('/pages/how_it_works')}>How it works</a></li>
   ];
   let links;
   if(!userSession.isLoggedIn()) {
