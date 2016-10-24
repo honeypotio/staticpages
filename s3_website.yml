@@ -51,7 +51,7 @@ cloudfront_distribution_config:
     bucket: logs-honeypot.s3.amazonaws.com
     prefix: cf-prod
 <% else %>
-s3_bucket: staging.honeypot.io
+s3_bucket: staging.honeypot.co
 cloudfront_distribution_config:
   default_cache_behavior:
     forwarded_values:
@@ -59,10 +59,9 @@ cloudfront_distribution_config:
       cookies:
         forward: 'none'
   aliases:
-    quantity: 2
+    quantity: 1
     items:
-      CNAME0: staging.honeypot.io
-      CNAME1: staging.honeypot.co
+      CNAME: staging.honeypot.co
   logging:
     enabled: true
     includes_cookies: false
