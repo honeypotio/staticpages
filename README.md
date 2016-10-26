@@ -25,7 +25,7 @@ to the commit message.
 ### Feature Stagings
 
 Are being uploaded to a sub folder on the staging server containing
-the number of the PR eg `https://staging.honeypot.io/pr-10/`
+the number of the PR eg `https://staging.honeypot.co/pr-10/`
 
 ### Release staging
 
