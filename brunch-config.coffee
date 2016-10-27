@@ -33,7 +33,6 @@ module.exports =
       variables:
         APP_HOST: process.env.APP_HOST
         API_HOST: process.env.API_HOST
-        STAGING_AUTH: process.env.STAGING_AUTH
         COOKIE_DOMAIN: process.env.COOKIE_DOMAIN
         URL_BASE: process.env.URL_BASE
     static:
