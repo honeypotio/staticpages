@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+require 'fileutils'
+require 'json'
+
+class CreateLinks
+  LINK_DEFINITION_PATH = 'links.json'.freeze
+
+  def self.call
+    file = File.read(LINK_DEFINITION_PATH)
+    links = JSON.parse(file)
+    links.each do |source, destination|
+      FileUtils.mkdir_p(File.dirname(destination))
+      FileUtils.cp(source, destination)
+    end
+  end
+end
+
+CreateLinks.call if __FILE__ == $0
