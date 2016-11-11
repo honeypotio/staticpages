@@ -1,0 +1,4 @@
+# Ignore Landing Pages
+User-agent: *
+Disallow: /lp/
+
