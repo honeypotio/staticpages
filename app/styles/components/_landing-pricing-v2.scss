@@ -1,0 +1,100 @@
+.c-landing-pricing-v2 {
+  padding-top: 50px;
+  border-top: 1px solid $light-blue-color;
+
+  &__rate {
+    color: $blue-color;
+    font-size: $fs-big-header;
+    text-align: center;
+    margin-bottom: -10px;
+
+    @media #{$md-up} {
+      font-size: $fs-landing-rate;
+      margin-bottom: -20px;
+    }
+  }
+
+  &__commission {
+    font-size: $fs-4;
+    text-align: center;
+    color: $gray-color;
+  }
+
+  &__heading {
+    font-size: $fs-9;
+    font-weight: $fw-light;
+    text-align: center;
+
+    @media #{$md-up} {
+      font-size: $fs-12;
+    }
+  }
+
+  &__benefits-wrapper {
+    padding: 0 30px;
+
+    @media #{$md-up} {
+      max-width: 720px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+  }
+
+  &__benefits-item {
+    font-size: $fs-3;
+    font-weight: $fw-semilight;
+    margin: 20px 0;
+
+    @media #{$md-up} {
+      min-height: 50px;
+      margin: 25px 0;
+    }
+  }
+
+  &__check {
+    float: left;
+    margin-top: 2px;
+  }
+
+  &__benefits-text {
+    display: inline-block;
+    max-width: 90%;
+    margin-left: 10px;
+
+    &--commission {
+      color: $gray-color;
+
+      @media #{$md-up} {
+        margin-left: 27px;
+      }
+    }
+  }
+
+  &__footer {
+    margin-bottom: 40px;
+
+    @media #{$md-up} {
+      margin: 0 auto 100px;
+    }
+  }
+
+  &__btn {
+    display: block;
+    width: 140px;
+    margin: 20px auto;
+    padding: 12px 20px;
+    font-size: $fs-3;
+  }
+
+  &__contact {
+    text-align: center;
+    font-size: $fs-3;
+
+    a:link,
+    a:hover,
+    a:active {
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+}

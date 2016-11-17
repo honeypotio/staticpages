@@ -1,0 +1,223 @@
+---
+_options:
+  layout: app/layouts/main.static.hbs
+  partials:
+    - app/partials/img-container.static.hbs
+    - app/partials/landing_step.static.hbs
+    - app/partials/landing_references.static.hbs
+---
+
+<header class="o-hero-unit c-landing__header c-landing-header--employers">
+  <div class="container text-center">
+    <div class="o-hero-unit__content">
+      <h1 class="o-hero-unit__heading c-landing-header__heading">
+        Hire the best developers from around the world
+      </h1>
+      <div class="o-hero-unit__body c-landing-header__body">
+        <div>
+          The fastest companies on Honeypot hire within 1 week
+        </div>
+      </div>
+      <div>
+        <a href="{{url_base}}/invite_requests/new" class="btn btn-blue c-landing__btn">Start Hiring</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="container c-landing__steps-section">
+  <ol class="clearfix c-landing__steps">
+    {{> landing_step
+      counter=1
+      text='
+        Apply to join <span class="u-force-break">Honeypot!</span>
+      '
+    }}
+    {{> landing_step
+      counter=2
+      text='
+        We create your profile and then <span class="u-force-break">you\'re all set to search for </span><span class="u-force-break">developers</span>
+      '
+    }}
+    {{> landing_step
+      counter=3
+      text='
+        Identify candidates which <span class="u-force-break">interest you and invite them to</span><span class="u-force-break"> interview</span>
+      '
+    }}
+    {{> landing_step
+      counter=4
+      text='
+      Only pay when you have <span class="u-force-break">successfully hired a </span><span class="u-force-break">developer</span>
+      '
+    }}
+  </ol>
+</section>
+
+<section class="c-landing-perks">
+  <h2 class="c-landing-perks__heading">The keys to hiring success</h2>
+  <p class="c-landing-perks__text">We do the screening and analytics for you, so you can enjoy free visa support and speedy hiring.</p>
+
+  <div class="row c-landing-perks__list">
+    <div class="c-landing-perks__item col-sm-4">
+      <div class="c-landing-perks__icon">
+        <img src="{{url_base}}DIGEST(/images/globe.svg)" class="c-landing-perks__icon-image">
+      </div>
+      <p class="c-landing-perks__title">
+        Access to top tech talent from around the world with free visa support
+      </p>
+      <p class="c-landing-perks__description">Over two-thirds of our developers come from the EU. For those that don't, we offer free visa support so you can focus on finding the perfect candidate.</p>
+    </div>
+    <div class="c-landing-perks__item col-sm-4">
+      <div class="c-landing-perks__icon">
+        <img src="{{url_base}}DIGEST(/images/speed.svg)" class="c-landing-perks__icon-image">
+      </div>
+      <p class="c-landing-perks__title">Responsiveness and hiring speed</p>
+      <p class="c-landing-perks__description">Over 90% of interview invites are responded to within the first 48 hours after an invite is sent. Over 70% of sent interview invites are accepted.</p>
+    </div>
+    <div class="c-landing-perks__item col-sm-4">
+      <div class="c-landing-perks__icon">
+        <img src="{{url_base}}DIGEST(/images/sign.svg)" class="c-landing-perks__icon-image">
+      </div>
+      <p class="c-landing-perks__title">Only pay when you hire</p>
+      <p class="c-landing-perks__description">The usage of Honeypot platform is free. You only pay a 15% commission upon successfully hiring a developer. A three month full refund policy is included to ensure that you, and the developer, are happy with the decision.</p>
+    </div>
+  </div>
+  <div class="row c-landing-perks__list">
+    <div class="c-landing-perks__item col-sm-4">
+      <div class="c-landing-perks__icon">
+        <img src="{{url_base}}DIGEST(/images/graph.svg)" class="c-landing-perks__icon-image">
+      </div>
+      <p class="c-landing-perks__title">Honeypot recruiting insights</p>
+      <p class="c-landing-perks__description">Get insights into your recruiting process with our platform analytics. You will see developer feedback plus comparative industry statistics on developer salaries, average hiring speed and more.</p>
+    </div>
+    <div class="c-landing-perks__item col-sm-4">
+      <div class="c-landing-perks__icon">
+        <img src="{{url_base}}DIGEST(/images/search.svg)" class="c-landing-perks__icon-image">
+      </div>
+      <p class="c-landing-perks__title">Prescreened developers</p>
+      <p class="c-landing-perks__description">Only 22% of all developer that sign up pass our screening process, which consists of a Skype call and a code review.</p>
+    </div>
+  </div>
+  <div>
+    <a href="{{url_base}}/invite_requests/new" class="btn btn-blue c-landing-perks__btn">Start Hiring</a>
+  </div>
+</section>
+
+<section class="c-landing-testimonial clearfix">
+  <h2 class="c-landing-testimonial__heading">What our clients say</h2>
+
+  <div id="js-testimonial-carousel" class="carousel slide c-landing-testimonial__carousel" data-ride="carousel">
+    <div class="carousel-inner c-landing-testimonial__carousel-wrapper">
+      <div class="item active c-landing-testimonial__carousel-item">
+        <div class="media c-landing-testimonial__img-container">
+          <img class="c-landing-testimonial__img img-circle" src="{{url_base}}DIGEST(/images/paula-zimak-foodpanda.jpg)">
+        </div>
+        <p class="c-landing-testimonial__text">We're very happy with the Honeypot platform, we connected with 14 devs and ended up hiring two of them. The process was completed within 24 days. I can highly recommend using their platform, full visa support is also offered. </p>
+        <p class="c-landing-testimonial__name">Paula Zimak</p>
+        <p class="c-landing-testimonial__position"> HR Manager at foodpanda</p>
+      </div>
+      <div class="item c-landing-testimonial__carousel-item">
+        <div class="media c-landing-testimonial__img-container">
+          <img class="c-landing-testimonial__img img-circle" src="{{url_base}}DIGEST(/images/michal-franczak-vimeda.webp)">
+        </div>
+        <p class="c-landing-testimonial__text">Thanks to Honeypot and their match-making process, we were able to hire our Frontend Developer in only 8 days!</p>
+        <p class="c-landing-testimonial__name">Michal Franczak</p>
+        <p class="c-landing-testimonial__position">Head of IT at Vimeda</p>
+      </div>
+      <div class="item c-landing-testimonial__carousel-item">
+        <div class="media c-landing-testimonial__img-container">
+          <img class="c-landing-testimonial__img img-circle" src="{{url_base}}DIGEST(/images/raphael-seitz-optivo.png)">
+        </div>
+        <p class="c-landing-testimonial__text">I logged into Honeypot, screened ten profiles, and within two weeks found the ideal German-speaking candidate who we ended up hiring for our Java Developer position.</p>
+        <p class="c-landing-testimonial__name">Raphael Seitz</p>
+        <p class="c-landing-testimonial__position">Talent Manager at optivo</p>
+      </div>
+      <div class="item c-landing-testimonial__carousel-item">
+        <div class="media c-landing-testimonial__img-container">
+          <img class="c-landing-testimonial__img img-circle" src="{{url_base}}DIGEST(/images/selin-songur-glispa.png)">
+        </div>
+        <p class="c-landing-testimonial__text">We love Honeypot because it has put everything into one place and the team behind it is great! Thank you for creating a platform that's so easy to use and helping us hire a kickass developer :)</p>
+        <p class="c-landing-testimonial__name">Selin Songur</p>
+        <p class="c-landing-testimonial__position">International Talent Acquisition at Glispa</p>
+      </div>
+      <div class="item c-landing-testimonial__carousel-item">
+        <div class="media c-landing-testimonial__img-container">
+          <img class="c-landing-testimonial__img img-circle" src="{{url_base}}DIGEST(/images/maud-aertsen-mediamonks.jpg)">
+        </div>
+        <p class="c-landing-testimonial__text">Very innovative way of Recruitment. High quality candidates. The profiles we look for continuously change and by Honeypot I don't have to inform an agency, because we are free to approach the people that are interesting for us at that particular time.</p>
+        <p class="c-landing-testimonial__name">Maud Aertsen</p>
+        <p class="c-landing-testimonial__position">Talent Manager at MediaMonks</p>
+      </div>
+    </div>
+
+    <ol class="carousel-indicators c-landing-testimonial__indicators">
+      <li data-target="#js-testimonial-carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#js-testimonial-carousel" data-slide-to="1"></li>
+      <li data-target="#js-testimonial-carousel" data-slide-to="2"></li>
+      <li data-target="#js-testimonial-carousel" data-slide-to="3"></li>
+      <li data-target="#js-testimonial-carousel" data-slide-to="4"></li>
+    </ol>
+
+    <a class="left carousel-control c-landing-testimonial__carousel-control" href="#js-testimonial-carousel" role="button" data-slide="prev">
+      <span class="fa fa-angle-left c-landing-testimonial__carousel-control-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control c-landing-testimonial__carousel-control" href="#js-testimonial-carousel" role="button" data-slide="next">
+      <span class="fa fa-angle-right c-landing-testimonial__carousel-control-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</section>
+
+<section class="c-landing-pricing-v2">
+  <p class="c-landing-pricing-v2__rate">15%</p>
+  <p class="c-landing-pricing-v2__commission">Commission*</p>
+  <h2 class="c-landing-pricing-v2__heading">Simple transparent pricing!</h2>
+  <div class="row c-landing-pricing-v2__benefits-wrapper">
+    <div class="col-sm-6 c-landing-pricing-v2__benefits-list">
+      <p class="c-landing-pricing-v2__benefits-item clearfix">
+        <img src="{{url_base}}DIGEST(/images/check-circle-o.svg)" class="c-landing-pricing-v2__check">
+        <span class="c-landing-pricing-v2__benefits-text">Browse and contact developers for free.</span>
+      </p>
+      <p class="c-landing-pricing-v2__benefits-item clearfix">
+        <img src="{{url_base}}DIGEST(/images/check-circle-o.svg)" class="c-landing-pricing-v2__check">
+        <span class="c-landing-pricing-v2__benefits-text">Full visa support for non-EU talents</span>
+      </p>
+      <p class="c-landing-pricing-v2__benefits-item clearfix">
+        <img src="{{url_base}}DIGEST(/images/check-circle-o.svg)" class="c-landing-pricing-v2__check">
+        <span class="c-landing-pricing-v2__benefits-text">Personalized data reports</span>
+      </p>
+    </div>
+    <div class="col-sm-6 c-landing-pricing-v2__benefits-list">
+      <p class="c-landing-pricing-v2__benefits-item clearfix">
+        <img src="{{url_base}}DIGEST(/images/check-circle-o.svg)" class="c-landing-pricing-v2__check">
+        <span class="c-landing-pricing-v2__benefits-text">100% refund if the talent leaves in the first 3 months after hire</span>
+      </p>
+      <p class="c-landing-pricing-v2__benefits-item clearfix">
+        <img src="{{url_base}}DIGEST(/images/check-circle-o.svg)" class="c-landing-pricing-v2__check">
+        <span class="c-landing-pricing-v2__benefits-text">Payment upon hire</span>
+      </p>
+      <p class="c-landing-pricing-v2__benefits-item--commission">
+        <span class="c-landing-pricing-v2__benefits-text c-landing-pricing-v2__benefits-text--commission">*Commision is calculated based on the yearly gross salary of the hired developer</span>
+      </p>
+    </div>
+  </div>
+  <div class="c-landing-pricing-v2__footer">
+    <a href="{{url_base}}/invite_requests/new" class="btn btn-blue c-landing-pricing-v2__btn">Start Hiring</a>
+    <p class="c-landing-pricing-v2__contact">Questions? <a href="mailto:partners@honeypot.io">Contact us ></a></p>
+  </div>
+</section>
+
+<section class="c-landing__partners-section">
+  <div class="container">
+    <h4 class="c-landing__partners__heading">They are already hiring</h4>
+    <div class="row c-landing__logo-container">
+      {{> landing_references}}
+    </div>
+  </div><!-- ./container -->
+</section>
+
+<section class="visible-xs visible-sm container text-center">
+    <a href="{{url_base}}/invite_requests/new" class="btn btn-blue c-landing__btn">Start hiring</a>
+</section>
