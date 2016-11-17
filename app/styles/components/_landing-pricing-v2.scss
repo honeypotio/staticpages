@@ -33,6 +33,14 @@
   &__benefits-wrapper {
     padding: 0 30px;
 
+    @media #{$xs-up} {
+      padding: 0 50px;
+    }
+
+    @media #{$sm-up} {
+      padding: 0 20px;
+    }
+
     @media #{$md-up} {
       max-width: 720px;
       padding: 20px;
