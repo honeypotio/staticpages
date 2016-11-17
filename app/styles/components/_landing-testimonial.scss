@@ -68,7 +68,8 @@
   &__text {
     font-size: $fs-4;
     font-weight: $fw-light;
-    margin: 20px 0;
+    margin: 20px auto;
+    max-width: 650px;
   }
 
   &__name {
