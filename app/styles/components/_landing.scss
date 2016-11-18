@@ -106,7 +106,7 @@ $counter-size: 40px;
     }
 
     &__text {
-      @include text($fs-5, $fw-normal, $almost-black-2-color);
+      @include text($fs-4, $fw-normal, $almost-black-2-color);
       float: left;
       width: calc(100% - #{$counter-size});
       padding-left: 10px;

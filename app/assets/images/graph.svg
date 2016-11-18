@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="40px" height="38px" viewBox="0 0 40 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>graph</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Landing-Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="company-opt2-pricing" transform="translate(-218.000000, -1288.000000)" stroke="#FFFFFF" stroke-width="0.576" fill="#3685D6">
+            <g id="graph" transform="translate(219.000000, 1288.000000)">
+                <rect id="Rectangle-path" x="0" y="35.265625" width="38" height="1.734375"></rect>
+                <rect id="Rectangle-path" x="5.18181818" y="21.390625" width="1.72727273" height="12.140625"></rect>
+                <rect id="Rectangle-path" x="13.8181818" y="16.1875" width="1.72727273" height="17.34375"></rect>
+                <polygon id="Shape" points="14.7854503 8.97966616 23.3251674 13.368355 36.4911537 3.20496277 35.4384031 1.82995738 23.1321711 11.3197107 14.7183786 6.98609608 1.40572564 15.0240132 2.29582315 16.5103692 3.03595784 16.0634905"></polygon>
+                <polygon id="Shape" points="37.1683669 1.54401679 36.0875469 8.39610466 34.3815398 8.12478863 35.1921548 2.98572274 30.0741334 2.17177467 30.3443383 0.458752693"></polygon>
+                <rect id="Rectangle-path" x="22.4545455" y="19.65625" width="1.72727273" height="13.875"></rect>
+                <rect id="Rectangle-path" x="31.0909091" y="10.984375" width="1.72727273" height="22.546875"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,81 @@
+.c-landing-perks {
+  margin: 0 auto;
+  padding: 30px 20px;
+  border-top: 1px solid $light-blue-color;
+
+  @media #{$md-up} {
+    padding-top: 50px;
+  }
+
+  &__heading {
+    font-size: $fs-9;
+    font-weight: $fw-semilight;
+    margin: 20px 10px 10px;
+
+    @media #{$md-up} {
+      font-weight: $fw-light;
+      text-align: center;
+      font-size: $fs-12;
+    }
+  }
+
+  &__text {
+    margin: 10px 10px 23px;
+    font-size: $fs-3;
+    font-weight: $fw-semilight;
+
+    @media #{$md-up} {
+      width: 70%;
+      margin: 0 auto 23px;
+      text-align: center;
+      font-size: $fs-4;
+    }
+  }
+
+  &__list {
+    margin: 0 -25px;
+    
+    @media #{$md-up} {
+      margin: 20px auto;
+      padding: 0 40px;
+    }
+  }
+
+  &__item {
+    font-size: $fs-2;
+    padding: 0 40px;
+
+    @media #{$md-up} {
+      padding: 10px 60px;
+    }
+  }
+
+  &__icon {
+    padding: 20px 0;
+  }
+
+  &__title {
+    font-weight: $fw-bold;
+    font-size: $fs-3;
+
+    @media #{$md-up} {
+      font-size: $fs-2;
+    }
+  }
+
+  &__description {
+    font-weight: $fw-light;
+  }
+
+  &__btn {
+    display: block;
+    width: 140px;
+    margin: 20px auto;
+    padding: 12px 20px;
+    font-size: $fs-3;
+
+    @media #{$md-up} {
+      margin: 0 auto 100px;
+    }
+  }
+}

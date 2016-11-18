@@ -1,0 +1,88 @@
+.c-landing-testimonial {
+  margin: 0 auto;
+  padding-top: 50px;
+  border-top: 1px solid $light-blue-color;
+  background-color: $light-gray-7-color;
+
+  &__heading {
+    font-size: $fs-9;
+    font-weight: $fw-light;
+    text-align: center;
+
+    @media #{$md-up} {
+      font-size: $fs-12;
+    }
+  }
+
+  &__carousel {
+    padding-top: 40px;
+  }
+
+  &__carousel-wrapper {
+    max-width: 70%;
+    margin: 0 auto 60px;
+  }
+
+  &__carousel-item {
+    text-align: center;
+    min-height: 300px;
+  }
+
+  &__indicators {
+    position: relative;
+
+    li {
+      background-color: $gray-3-color;
+      border: none;
+
+      &.active {
+        background-color: $blue-color;
+      }
+    }
+  }
+
+  &__carousel-control {
+    &.right,
+    &.left {
+      background-image: none;
+    }
+  }
+
+  &__carousel-control-icon {
+    &.fa {
+      font-size: $fs-12;
+      font-weight: $fw-light;
+      color: $gray-3-color;
+      margin-top: 100px;
+    }
+  }
+
+  &__img-container {
+    max-height: 120px;
+  }
+
+  &__img {
+    height: 100%;
+  }
+
+  &__text {
+    font-size: $fs-4;
+    font-weight: $fw-light;
+    margin: 20px auto;
+    max-width: 650px;
+  }
+
+  &__name {
+    font-weight: $fw-bold;
+    font-size: $fs-3;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  &__position {
+    font-size: $fs-3;
+    font-weight: $fw-light;
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
