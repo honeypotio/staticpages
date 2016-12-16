@@ -26,7 +26,7 @@ const showLinks = () => {
       ...showDeveloperEmployersLink(),
       <li key="blog"><a href="http://blog.honeypot.io/" target="_blank">Blog</a></li>,
       <li key="sign_in"><a href={buildUrl('/users/sign_in', 'app_host')}>Login</a></li>,
-      <li key="sign up"><a href={buildUrl('/users/sign_up')}>Sign up</a></li>
+      <li key="sign up"><span><a href={buildUrl('/users/sign_up')} className="btn btn-primary navbar-btn">Sign up</a></span></li>
     ];
   }
 
