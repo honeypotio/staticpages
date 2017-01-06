@@ -4,6 +4,10 @@
     background-color: $dark-blue-color;
   }
 
+  &--talent-lp {
+    background-color: transparent;
+  }
+
   &__logo-link { padding: 9px 15px; }
   &__logo { @include sizing(131px 33px); }
 }
