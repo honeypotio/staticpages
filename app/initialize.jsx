@@ -35,17 +35,22 @@ const router = {
 };
 const load = () => {
   const pathname = parsePathname(window.location.pathname);
-  if(router[parsePathname(pathname)]) {
+  const appShell = document.getElementById('app');
+  const pageNavigationShell = document.getElementById('navigation');
+
+  if(appShell && router[parsePathname(pathname)]) {
     ReactDOM.render(
       React.createElement(router[pathname]),
       document.querySelector('#app')
     );
   }
-
-  ReactDOM.render(
-    React.createElement(PageNavigation),
-    document.querySelector('#navigation')
-  );
+  
+  if (pageNavigation) {
+    ReactDOM.render(
+      React.createElement(PageNavigation),
+      pageNavigationShell
+    );
+  }
 };
 
 $(document).ready(() => {
