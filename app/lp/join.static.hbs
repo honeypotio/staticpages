@@ -9,6 +9,7 @@ _options:
     - app/partials/rollbar.static.hbs
     - app/partials/google_tag_manager.static.hbs
     - app/partials/optimizely.static.hbs
+    - app/partials/scripts.static.hbs
 ---
 <html>
   <head>
@@ -64,30 +65,31 @@ _options:
         </div>
 
         <div class="col-md-6">
-          <form class="c-talent-landing__form" action="{{url_base}}/api/v1/users" method="POST">
+          <div id="app">
+          <form class="c-talent-landing__form">
             <h3 class="text-center c-talent-landing__form-header">Just one profile, no job applications</h3>
             <p class="text-center c-talent-landing__form-tagline">Sign up, it only takes 5 minutes!</p>
             <div class="form-group">
-              <input type="text" class="form-control c-talent-landing__input" name="firstName" placeholder="First name" />
+              <input type="text" class="form-control c-talent-landing__input" name="firstName" placeholder="First name" disabled>
             </div>
             <div class="form-group">
-              <input type="text" class="form-control c-talent-landing__input" name="lastName" placeholder="Last name" />
+              <input type="text" class="form-control c-talent-landing__input" name="lastName" placeholder="Last name" disabled>
             </div>
             <div class="form-group">
-              <input type="email" class="form-control c-talent-landing__input" name="email" placeholder="Email" />
+              <input type="email" class="form-control c-talent-landing__input" name="email" placeholder="Email" disabled>
             </div>
             <div class="form-group">
-              <input type="password" class="form-control c-talent-landing__input" name="password" placeholder="Password" />
+              <input type="password" class="form-control c-talent-landing__input" name="password" placeholder="Password" disabled>
             </div>
             <div class="form-group">
-              <input type="password" class="form-control c-talent-landing__input" name="repeatPassword" placeholder="Repeat password" />
+              <input type="password" class="form-control c-talent-landing__input" name="repeatPassword" placeholder="Repeat password" disabled>
             </div>
-            <div class="checkbox">
-              <label class="c-talent-landing__tos">
-                <input type="checkbox"> I agree to the <a href="/pages/terms_of_service">Terms of Service</a> and the <a href="/pages/legal_notice#privacy_policy">Privacy Policy</a>
-              </label>
+            <div class="control-label c-checkbox">
+              <input type="checkbox" class="c-checkbox__replace" disabled>
+              <label class="c-checkbox__label"></label>
+              <span class="c-checkbox__replacement-label">I agree to the <a href="/pages/terms_of_service#talents" target="_blank">Terms of Service</a> and the <a href="/pages/legal_notice#privacy_policy" target="_blank">Privacy Policy</a></span>
             </div>
-            <button type="submit" class="btn btn-primary c-talent-landing__btn">Join Honeypot</button>
+            <button type="submit" class="btn btn-primary c-talent-landing__btn" disabled>Join Honeypot</button>
           </form>
           <p class="c-talent-landing__employer"><a href="/invite_requests/new">Are you an employer?</a></p>
 
@@ -113,7 +115,7 @@ _options:
             <img
               class="c-talent-landing__logo c-talent-landing__logo--zalando"
               src="{{url_base}}DIGEST(/images/zalando_logo.svg)"
-              height="30px"
+              height="30"
               alt="Zalando"
             />
           </div>
@@ -121,18 +123,16 @@ _options:
             <img
               class="c-talent-landing__logo c-talent-landing__logo--travis"
               src="{{url_base}}DIGEST(/images/travis_logo.svg)"
-              data-1x="{{url_base}}DIGEST(/images/travis_logo-1x.svg)"
-              data-2x="{{url_base}}DIGEST(/images/travis_logo-2x.svg)"
-              height="40px"
+              height="40"
               alt="Travis CI"
             />
           </div>
           <div class="col-md-2 col-sm-4 col-xs-6">
             <img
               class="c-talent-landing__logo c-talent-landing__logo--zenmate"
-              srcset="{{url_base}}DIGEST(/images/zenmate_logo-2x.png) 2x"
               src="{{url_base}}DIGEST(/images/zenmate_logo.png)"
-              height="40px"
+              srcset="{{url_base}}DIGEST(/images/zenmate_logo-2x.png) 2x"
+              height="40"
               alt="Zenmate"
             />
           </div>
@@ -141,7 +141,7 @@ _options:
               class="c-talent-landing__logo c-talent-landing__logo--hitfox"
               src="{{url_base}}DIGEST(/images/hitfox_logo.png)"
               srcset="{{url_base}}DIGEST(/images/hitfox_logo-2x.png) 2x"
-              height="40px"
+              height="40"
               alt="HitFox jobs"
             />
           </div>
@@ -149,7 +149,7 @@ _options:
             <img
               class="c-talent-landing__logo c-talent-landing__logo--helpling"
               src="{{url_base}}DIGEST(/images/helpling_logo.svg)"
-              height="45px"
+              height="45"
               alt="Helpling"
             />
           </div>
@@ -158,7 +158,7 @@ _options:
               class="c-talent-landing__logo c-talent-landing__logo--kiwi"
               src="{{url_base}}DIGEST(/images/kiwi_logo.png)"
               srcset="{{url_base}}DIGEST(/images/kiwi_logo-2x.png) 2x"
-              height="24px"
+              height="24"
               alt="KIWI"
             />
           </div>
@@ -174,5 +174,6 @@ _options:
         </div>
       </div>
     </footer>
+    {{> scripts}}
   </body>
 </html>

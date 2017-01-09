@@ -1,6 +1,7 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
 import SignupForm from 'js/components/SignupForm';
+import JoinForm from 'js/components/JoinForm';
 import PageNavigation from 'js/components/PageNavigation';
 import InviteRequestForm from 'js/components/InviteRequestForm';
 import Cookies from 'js-cookie';
@@ -23,14 +24,17 @@ if (userSession.isLoggedIn()) {
     } else {
       url = buildUrl('/company/talents/search', 'app_host');
     }
+    console.log(url);
     window.location.href = url;
   }
 }
 
 const router = {
   '/users/sign_up': SignupForm,
-  '/invite_requests/new': InviteRequestForm
+  '/invite_requests/new': InviteRequestForm,
+  '/lp/join': JoinForm
 };
+
 const load = () => {
   const pathname = parsePathname(window.location.pathname);
   if(router[parsePathname(pathname)]) {

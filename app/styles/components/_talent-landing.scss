@@ -151,5 +151,9 @@
     &--kiwi {
       margin-top: 10px;
     }
+    &--zenmate {
+      filter: invert(100%);
+      opacity: 0.4;
+    }
   }
 }
