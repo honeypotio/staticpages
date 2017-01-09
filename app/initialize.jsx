@@ -24,7 +24,6 @@ if (userSession.isLoggedIn()) {
     } else {
       url = buildUrl('/company/talents/search', 'app_host');
     }
-    console.log(url);
     window.location.href = url;
   }
 }
@@ -34,7 +33,6 @@ const router = {
   '/invite_requests/new': InviteRequestForm,
   '/lp/join': JoinForm
 };
-
 const load = () => {
   const pathname = parsePathname(window.location.pathname);
   if(router[parsePathname(pathname)]) {
