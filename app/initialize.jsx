@@ -41,11 +41,11 @@ const load = () => {
   if(appShell && router[parsePathname(pathname)]) {
     ReactDOM.render(
       React.createElement(router[pathname]),
-      document.querySelector('#app')
+      appShell
     );
   }
-  
-  if (pageNavigation) {
+
+  if (pageNavigationShell) {
     ReactDOM.render(
       React.createElement(PageNavigation),
       pageNavigationShell
