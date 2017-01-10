@@ -143,17 +143,22 @@
 
   &__logo {
     margin-bottom: 30px;
+    filter: brightness(0) invert(1);
+    opacity: 0.58;
 
     @media #{$sm-up} {
       margin-bottom: 50px;
     }
 
+    &--zalando {
+      margin-top: 5px;
+    }
     &--kiwi {
       margin-top: 10px;
     }
-    &--zenmate {
-      filter: invert(100%);
-      opacity: 0.4;
+    &--travis {
+      filter: none;
+      opacity: 1;
     }
   }
 }
