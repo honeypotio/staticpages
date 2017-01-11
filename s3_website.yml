@@ -76,6 +76,7 @@ redirects:
   pages/404: errors/404
   pages/500: errors/500
   pages/how_does_it_work: pages/how_it_works
+  join: lp/join
 
 routing_rules:
   - condition:
