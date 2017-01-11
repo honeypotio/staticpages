@@ -1,6 +1,7 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
 import SignupForm from 'js/components/SignupForm';
+import JoinForm from 'js/components/JoinForm';
 import PageNavigation from 'js/components/PageNavigation';
 import InviteRequestForm from 'js/components/InviteRequestForm';
 import Cookies from 'js-cookie';
@@ -29,21 +30,27 @@ if (userSession.isLoggedIn()) {
 
 const router = {
   '/users/sign_up': SignupForm,
-  '/invite_requests/new': InviteRequestForm
+  '/invite_requests/new': InviteRequestForm,
+  '/lp/join': JoinForm
 };
 const load = () => {
   const pathname = parsePathname(window.location.pathname);
-  if(router[parsePathname(pathname)]) {
+  const appShell = document.getElementById('app');
+  const pageNavigationShell = document.getElementById('navigation');
+
+  if(appShell && router[parsePathname(pathname)]) {
     ReactDOM.render(
       React.createElement(router[pathname]),
-      document.querySelector('#app')
+      appShell
     );
   }
 
-  ReactDOM.render(
-    React.createElement(PageNavigation),
-    document.querySelector('#navigation')
-  );
+  if (pageNavigationShell) {
+    ReactDOM.render(
+      React.createElement(PageNavigation),
+      pageNavigationShell
+    );
+  }
 };
 
 $(document).ready(() => {

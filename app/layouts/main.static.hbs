@@ -11,6 +11,7 @@ _options:
     - app/partials/optimizely.static.hbs
     - app/partials/navigation.static.hbs
     - app/partials/footer.static.hbs
+    - app/partials/scripts.static.hbs
 ---
 <html>
   <head>
@@ -43,8 +44,6 @@ _options:
       {{content}}
     </main>
     {{> footer class_name=footer_class_name}}
-    <script type="text/javascript" src="{{url_base}}DIGEST(/vendor.js)"></script>
-    <script type="text/javascript" src="{{url_base}}DIGEST(/app.js)"></script>
-    <script>require('initialize');</script>
+    {{> scripts}}
   </body>
 </html>

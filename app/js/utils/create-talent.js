@@ -7,7 +7,6 @@ const userSession = new UserSession();
 
 export default {
   perform(values) {
-    dataFetcher.setCookieForStaging();
     return fetch(dataFetcher.buildURL('/api/v1/users'), {
       method: 'POST',
       credentials: 'include',

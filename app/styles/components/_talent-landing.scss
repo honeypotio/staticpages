@@ -1,0 +1,164 @@
+.c-talent-landing {
+  color: $white-color;
+  max-width: 100%;
+
+  &__header {
+    font-weight: $fw-bold;
+    font-size: $fs-13;
+  }
+
+  &__tagline {
+    font-size: $fs-4;
+  }
+
+  &__divider {
+    width: 50%;
+    margin-left: 0;
+    border-color: $gray-2-color;
+    display: none;
+
+    @media #{$sm-up} {
+      display: block;
+    }
+  }
+
+  &__quote {
+    display: none;
+
+    @media #{$sm-up} {
+      display: block;
+    }
+
+    &--mobile {
+      display: block;
+      margin-top: 30px;
+
+      @media #{$sm-up} {
+        display: none;
+      }
+    }
+  }
+
+  &__quote-text {
+    font-size: $fs-3;
+    width: 80%;
+    position: relative;
+    margin-left: 30px;
+
+    &:before {
+      content: "“";
+      font-size: $fs-14;
+      position: absolute;
+      left: -30px;
+      top: -20px;
+    }
+
+    @media #{$md-up} {
+      margin: 30px 0 20px;
+    }
+  }
+
+  &__author {
+    padding-top: 10px;
+  }
+
+  &__author-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    float: left;
+  }
+
+  &__form {
+    background-color: $white-color;
+    padding: 20px 20px 15px;
+    border-radius: 5px;
+    color: $almost-black-2-color;
+    margin-top: 30px;
+
+    @media #{$md-up} {
+      max-width: 450px;
+      margin: 0 auto;
+    }
+  }
+
+  &__form-header {
+    font-size: $fs-5;
+    font-weight: $fw-bold;
+    color: $black-color;
+    margin-top: 5px;
+  }
+
+  &__form-tagline {
+    color: $black-color;
+  }
+
+  &__input {
+    height: 42px;
+  }
+
+  &__tos {
+    color: $dark-gray-color;
+  }
+
+  &__btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px 0;
+    font-size: $fs-4;
+    font-weight: $fw-normal;
+  }
+
+  &__employer {
+    text-align: center;
+    font-size: $fs-3;
+    margin-top: 10px;
+
+    a {
+      color: $white-color;
+    }
+  }
+
+  &__footer {
+    margin: 50px 0 20px;
+
+    @media #{$sm-up} {
+      margin-top: 30px;
+    }
+  }
+
+  &__footer-item {
+    font-size: $fs-3;
+    margin-right: 20px;
+    color: $white-color;
+
+    &:hover {
+      text-decoration: none;
+      color: $light-gray-2-color;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 30px;
+    filter: brightness(0) invert(1);
+    opacity: 0.58;
+
+    @media #{$sm-up} {
+      margin-bottom: 50px;
+    }
+
+    &--zalando {
+      margin-top: 5px;
+    }
+    &--kiwi {
+      margin-top: 10px;
+    }
+    &--travis {
+      filter: none;
+      opacity: 1;
+    }
+  }
+}
