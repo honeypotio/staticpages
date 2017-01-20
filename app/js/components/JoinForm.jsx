@@ -5,8 +5,6 @@ import { Form, ValidatedInput } from 'react-bootstrap-validation';
 import createTalent from '../utils/create-talent';
 import FormBase from './FormBase';
 
-const url = window.location.href;
-
 export default class JoinForm extends FormBase {
   constructor(props) {
     super(props);
