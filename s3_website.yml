@@ -178,8 +178,10 @@ routing_rules:
     redirect:
       host_name: <%= URI.parse(ENV['APP_HOST'].to_s).host %>
       replace_key_prefix_with: users
+
+  # redirect /join to /lp/join including query string
   - condition:
       key_prefix_equals: join
     redirect:
-      host_name: <%= URI.parse(ENV['APP_HOST'].to_s).host %>
+      host_name: <%= URI.parse(ENV['HOST'].to_s).host %>
       replace_key_prefix_with: lp/join

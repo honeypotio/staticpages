@@ -31,6 +31,7 @@ module.exports =
       prefix: '$PROCESS_ENV_'
       pattern: /\$PROCESS_ENV_(\w+)/gi
       variables:
+        HOST: process.env.HOST
         APP_HOST: process.env.APP_HOST
         API_HOST: process.env.API_HOST
         COOKIE_DOMAIN: process.env.COOKIE_DOMAIN
