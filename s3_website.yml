@@ -37,7 +37,7 @@ s3_bucket: www.honeypot.io
 cloudfront_distribution_config:
   default_cache_behavior:
     forwarded_values:
-      query_string: ture
+      query_string: true
       cookies:
         forward: 'none'
   aliases:
@@ -55,7 +55,7 @@ s3_bucket: staging.honeypot.co
 cloudfront_distribution_config:
   default_cache_behavior:
     forwarded_values:
-      query_string: false
+      query_string: true
       cookies:
         forward: 'none'
   aliases:
