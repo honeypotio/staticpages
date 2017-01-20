@@ -5,9 +5,11 @@ then
   npm run build 2>&1| tee tmp/output.txt
   if [ "$(cat tmp/output.txt | grep error)" == "" ]; then
     if [ -n "$S3_CFG" ]; then
+      echo "applying configuration ..."
       bundle exec s3_website cfg apply --headless
       [ $? -gt 0 ] && echo 'failed to apply config' && exit 1
     fi
+    [ -n "$S3_FORCE" ] && echo 'uploading with --force'
     bundle exec s3_website push $( [ -n "$S3_FORCE" ] && echo '--force')
   else
     exit 1
