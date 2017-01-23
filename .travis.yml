@@ -9,6 +9,7 @@ install:
   - npm install node-smushit -g
   - npm install
   - bundle install
+
 script: npm test && travis_wait ./bin/deploy
 
 env:
@@ -24,5 +25,5 @@ env:
     - GA_ID=$([ "$TRAVIS_TAG" != "" ] && echo "$PROD_GA_ID" || echo "$STAGING_GA_ID")
     - COOKIE_DOMAIN=$([ "$TRAVIS_TAG" != "" ] && echo "$PROD_COOKIE_DOMAIN" || echo "$STAGING_COOKIE_DOMAIN")
     - CF_DISTRIBUTION=$([ "$TRAVIS_TAG" != "" ] && echo "$PROD_CF_DISTRIBUTION" || echo "$STAGING_CF_DISTRIBUTION")
-    - S3_FORCE=$(git log -1 --pretty=%B | grep -E "^\[#s3 .*force.*]" --ignore-case)
-    - S3_CFG=$(git log -1 --pretty=%B | grep -E "^\[#s3 .*configure.*]" --ignore-case)
+    - S3_FORCE=$(git log $TRAVIS_PULL_REQUEST_SHA -1 --pretty=%B | grep -E "^\[#s3 .*force.*]" --ignore-case)
+    - S3_CFG=$(git log $TRAVIS_PULL_REQUEST_SHA -1 --pretty=%B | grep -E "^\[#s3 .*configure.*]" --ignore-case)
