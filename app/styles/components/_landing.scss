@@ -84,7 +84,7 @@ $counter-size: 40px;
 
     &:last-child {
       padding-bottom: 0;
-      
+
       &:after {
         content: none;
       }
@@ -125,6 +125,18 @@ $counter-size: 40px;
 
     &__emph {
       font-weight: $fw-semibold;
+    }
+  }
+
+  &__testimonials-section {
+    &-heading,
+    &-sub-heading {
+      text-align: center;
+      font-weight: $fw-semilight;
+    }
+
+    &-heading {
+      font-size: $fs-12;
     }
   }
 
