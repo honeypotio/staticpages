@@ -9,11 +9,9 @@ export default class JoinForm extends FormBase {
   constructor(props) {
     super(props);
     this.state = {
-      tosAgreed: false,
       formSubmitted: false,
       isSaving: false,
-      error: false,
-      tosError: false
+      error: false
     };
     this.inputs = [
       { type: 'text', name: 'firstName', placeholder: "First name", validate: "required" },
@@ -26,34 +24,23 @@ export default class JoinForm extends FormBase {
 
   _onValidSubmit(values) {
     this.setState({ formSubmitted: true });
-    if (this.state.tosAgreed) {
-      this.setState({
-        isSaving: true,
-        tosError: false
-      });
-      createTalent.perform(values).then(() => {
-        window.location.href = `${$PROCESS_ENV_APP_HOST}/profile/signed-up`;
-      }).catch((err) => {
-        this.setState({ isSaving: false });
-        this._showError('There has been a problem. Please try again later.');
-      });
-    } else {
-      this._showError('Please fill in all required fields!');
-      this.setState({ tosError: true });
-    }
+    this.setState({
+      isSaving: true
+    });
+    createTalent.perform(values).then(() => {
+      window.location.href = `${$PROCESS_ENV_APP_HOST}/profile/signed-up`;
+    }).catch((err) => {
+      this.setState({ isSaving: false });
+      this._showError('There has been a problem. Please try again later.');
+    });
   }
 
   _onInvalidSubmit() {
     this._showError('Please fill in all required fields!');
   }
 
-  _onTosCheck(e) {
-    this.setState({ tosAgreed: e.target.checked, tosError: false });
-  }
-
   render() {
     const inputClass = `c-talent-landing__input`;
-    const tosRequiredInfo = <div className="alert alert-danger">You must accept terms of service!</div>;
     return (
       <Form
         className="c-talent-landing__form"
@@ -70,19 +57,12 @@ export default class JoinForm extends FormBase {
           })()}
         </div>
         {this._buildValidatedInputs(inputClass)}
-        <Checkbox
-          label="agree"
-          onCheck={this._onTosCheck.bind(this)}
-          hasError={this.state.formSubmitted && !this.state.tosAgreed}
-        >
-          I agree to the <a href="/pages/terms_of_service#talents" target="_blank" className="m-auth__checkbox-link">Terms of Service</a>
+        <div className="control-label c-checkbox">
+        <label className="c-checkbox__replacement-label">
+          By signing up you agree to the <a href="/pages/terms_of_service#talents" target="_blank" className="m-auth__checkbox-link">Terms of Service</a>
           &nbsp;and the <a href="/pages/legal_notice#privacy_policy" target="_blank" className="m-auth__checkbox-link">Privacy Policy</a>
-        </Checkbox>
-        {(() => {
-          if (this.state.tosError) {
-            return (<p className="text-danger">This field is required.</p>)
-          }
-        })()}
+        </label>
+        </div>
         <ButtonInput
           type="submit"
           className="btn btn-primary c-talent-landing__btn"
