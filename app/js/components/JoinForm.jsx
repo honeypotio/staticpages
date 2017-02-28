@@ -18,7 +18,7 @@ export default class JoinForm extends FormBase {
       { type: 'text', name: 'lastName', placeholder: "Last name", validate: "required" },
       { type: 'email', name: 'email', placeholder: "Email", validate: "required,isEmail" },
       { type: 'password', name: 'password', placeholder: "Password", validate: "required,isLength:8" },
-      { type: 'password', name: 'repeatPassword', placeholder: "Repeat Password", validate: (val, context) => val && val === context.password  },
+      { type: 'password', name: 'repeatPassword', placeholder: "Repeat password", validate: (val, context) => val && val === context.password  },
     ];
   }
 
@@ -57,11 +57,10 @@ export default class JoinForm extends FormBase {
           })()}
         </div>
         {this._buildValidatedInputs(inputClass)}
-        <div className="control-label c-checkbox">
-        <label className="c-checkbox__replacement-label">
-          By signing up you agree to the <a href="/pages/terms_of_service#talents" target="_blank" className="m-auth__checkbox-link">Terms of Service</a>
-          &nbsp;and the <a href="/pages/legal_notice#privacy_policy" target="_blank" className="m-auth__checkbox-link">Privacy Policy</a>
-        </label>
+        <div className="text-center">
+          <small className="text-muted">
+            By signing up you agree to the <a href="/pages/terms_of_service#talents" target="_blank">Terms of Service</a> and the <a href="/pages/legal_notice#privacy_policy" target="_blank">Privacy Policy</a>
+          </small>
         </div>
         <ButtonInput
           type="submit"
