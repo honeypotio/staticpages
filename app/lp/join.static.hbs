@@ -69,6 +69,19 @@ _options:
             <form class="c-talent-landing__form">
               <h3 class="text-center c-talent-landing__form-header">Just one profile, no job applications</h3>
               <p class="text-center c-talent-landing__form-tagline">Sign up, it only takes 5 minutes!</p>
+              <div class="form-actions row">
+                <div class="col-xs-6 c-talent-landing__oauth-wrapper">
+                  <a class="btn btn-default c-talent-landing__oauth-btn c-talent-landing__oauth-btn--linkedin" href="{{$PROCESS_ENV_APP_HOST}}/users/auth/linkedin?intent=login">
+                    <i class="fa fa-linkedin"></i>LinkedIn
+                  </a>
+                </div>
+                <div class="col-xs-6 c-talent-landing__oauth-wrapper">
+                  <a class="btn btn-default c-talent-landing__oauth-btn c-talent-landing__oauth-btn--github" href="{{$PROCESS_ENV_APP_HOST}}/users/auth/github?intent=login">
+                    <i class="fa fa-github"></i>GitHub
+                  </a>
+                </div>
+              </div>
+              <div class="c-talent-landing__oauth-divider">or</div>
               <div class="form-group">
                 <input type="text" class="form-control c-talent-landing__input" name="firstName" placeholder="First name" disabled>
               </div>
