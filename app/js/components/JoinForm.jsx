@@ -49,6 +49,19 @@ export default class JoinForm extends FormBase {
       >
         <h3 className="text-center c-talent-landing__form-header">Just one profile, no job applications</h3>
         <p className="text-center c-talent-landing__form-tagline">Sign up, it only takes 5 minutes!</p>
+        <div className="form-actions row">
+          <div className="col-xs-6 c-talent-landing__oauth-wrapper">
+            <a className="btn btn-default c-talent-landing__oauth-btn c-talent-landing__oauth-btn--linkedin" href={`${$PROCESS_ENV_APP_HOST}/users/auth/linkedin?intent=sign_up`}>
+              <i className="fa fa-linkedin"></i>LinkedIn
+            </a>
+          </div>
+          <div className="col-xs-6 c-talent-landing__oauth-wrapper">
+            <a className="btn btn-default c-talent-landing__oauth-btn c-talent-landing__oauth-btn--github" href={`${$PROCESS_ENV_APP_HOST}/users/auth/github?intent=sign_up`}>
+              <i className="fa fa-github"></i>GitHub
+            </a>
+          </div>
+        </div>
+        <div className="c-talent-landing__oauth-divider">or</div>
         <div>
           {(() => {
             if (this.state.error) {

@@ -112,6 +112,59 @@
     font-weight: $fw-normal;
   }
 
+  &__oauth-wrapper {
+    margin-top: 10px;
+    padding-left: 5px;
+
+    &:first-child {
+      padding-left: 15px;
+      padding-right: 5px;
+    }
+  }
+
+  &__oauth-btn {
+    font-size: $fs-2;
+    font-weight: normal;
+    width: 100%;
+    padding: 15px 0;
+    border-color: $light-gray-3-color;
+    
+    .fa {
+      margin-right: 5px;
+    }
+
+    &--linkedin {
+      .fa {
+        color: $blue-color;
+      }
+    }
+  }
+
+  &__oauth-divider {
+    position: relative;
+    margin: 15px 0;
+    text-align: center;
+    overflow: hidden;
+    color: $gray-color;
+
+    &::before,
+    &::after {
+      content: " ";
+      position: absolute;
+      top: 50%;
+      width: 50%;
+      border-top: 1px solid $light-gray-3-color;
+    }
+
+    &::before {
+      left: -20px;
+    }
+
+    &::after {
+      right: -20px;
+    }
+  }
+
   &__employer {
     text-align: center;
     font-size: $fs-3;
