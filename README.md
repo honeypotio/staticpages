@@ -10,7 +10,7 @@ Development
 ## starting server in dev mode
 
 ```shell
-brunch watch --server
+npm start
 ```
 
 Deployment
