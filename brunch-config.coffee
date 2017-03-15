@@ -55,3 +55,4 @@ module.exports =
       ]
   server:
     path: 'app.js'
+    port: 4000
