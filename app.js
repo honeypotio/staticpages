@@ -13,5 +13,5 @@ module.exports = function(port, path, callback) {
       }
     }));
 
-    return app.listen(4000, callback);
+    return app.listen(port, callback);
 }

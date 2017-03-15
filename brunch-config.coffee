@@ -32,16 +32,16 @@ module.exports =
       pattern: /\$PROCESS_ENV_(\w+)/gi
       variables:
         HOST: process.env.HOST
-        APP_HOST: process.env.APP_HOST
-        API_HOST: process.env.API_HOST
-        COOKIE_DOMAIN: process.env.COOKIE_DOMAIN
+        APP_HOST: process.env.APP_HOST || 'http://localhost:5000'
+        API_HOST: process.env.API_HOST || 'http://localhost:5000'
+        COOKIE_DOMAIN: process.env.COOKIE_DOMAIN || 'localhost'
         URL_BASE: process.env.URL_BASE
     static:
       processors: [
         require('html-brunch-static') {
           defaultContext:
             url_base: process.env.URL_BASE
-            app_host: process.env.APP_HOST || 'http://localhost:3000'
+            app_host: process.env.APP_HOST || 'http://localhost:5000'
             ga_id: process.env.GA_ID
             gtm_id: process.env.GTM_ID
             optimizely_id: process.env.OPTIMIZELY_ID

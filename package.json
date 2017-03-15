@@ -8,7 +8,7 @@
     "url": ""
   },
   "scripts": {
-    "start": "brunch watch --server",
+    "start": "brunch watch --server --port 4000",
     "test": "mocha 'tests/**/*.spec.js' --compilers js:babel-core/register",
     "test server": "mocha 'tests/**/*.spec.js' --compilers js:babel-core/register --watch",
     "build": "brunch build --production && ./scripts/create_links",
