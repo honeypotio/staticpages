@@ -5,6 +5,21 @@ import { Form, ValidatedInput } from 'react-bootstrap-validation';
 import createTalent from '../utils/create-talent';
 import FormBase from './FormBase';
 
+const locales  = {
+  en: {
+    header: 'Just one profile, no job applications',
+    tagline: 'Sign up, it only takes 5 minutes!',
+    disclaimer: `By signing up you agree to the <a href="/pages/terms_of_service#talents" target="_blank">Terms of Service</a> and the <a href="/pages/legal_notice#privacy_policy" target="_blank">Privacy Policy</a>`
+  },
+  de: {
+    header: 'Nur ein Profil - keine Bewerbung.',
+    tagline: 'Melde dich jetzt an. Es dauert nur 5 Minuten!',
+    disclaimer: `Durch deine Anmeldung akzeptierst du die <a href="/pages/terms_of_service#talents" target="_blank">AGBs</a> und die <a href="/pages/legal_notice#privacy_policy" target="_blank">Datenschutzerklärung</a>.`
+  }
+};
+
+const locale = window.location.pathname.indexOf('de') ? 'de' : 'en';
+
 export default class JoinForm extends FormBase {
   constructor(props) {
     super(props);
@@ -47,8 +62,8 @@ export default class JoinForm extends FormBase {
         onValidSubmit={this._onValidSubmit.bind(this)}
         onInvalidSubmit={this._onInvalidSubmit.bind(this)}
       >
-        <h3 className="text-center c-talent-landing__form-header">Just one profile, no job applications</h3>
-        <p className="text-center c-talent-landing__form-tagline">Sign up, it only takes 5 minutes!</p>
+        <h3 className="text-center c-talent-landing__form-header">{locales[locale].header}</h3>
+        <p className="text-center c-talent-landing__form-tagline">{locales[locale].tagline}</p>
         <div className="form-actions row">
           <div className="col-xs-6 c-talent-landing__oauth-wrapper">
             <a className="btn btn-default c-talent-landing__oauth-btn c-talent-landing__oauth-btn--linkedin" href={`${$PROCESS_ENV_APP_HOST}/users/auth/linkedin?intent=sign_up`}>
@@ -71,8 +86,7 @@ export default class JoinForm extends FormBase {
         </div>
         {this._buildValidatedInputs(inputClass)}
         <div className="text-center">
-          <small className="text-muted">
-            By signing up you agree to the <a href="/pages/terms_of_service#talents" target="_blank">Terms of Service</a> and the <a href="/pages/legal_notice#privacy_policy" target="_blank">Privacy Policy</a>
+          <small className="text-muted" dangerouslySetInnerHTML={{__html: locales[locale].disclaimer}}>
           </small>
         </div>
         <ButtonInput
