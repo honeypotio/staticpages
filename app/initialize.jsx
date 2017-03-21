@@ -32,7 +32,7 @@ const router = {
   '/users/sign_up': SignupForm,
   '/invite_requests/new': InviteRequestForm,
   '/lp/join': JoinForm,
-  '/lp/de': JoinForm
+  '/lp/join-de': JoinForm
 };
 const load = () => {
   const pathname = parsePathname(window.location.pathname);

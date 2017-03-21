@@ -3,7 +3,6 @@ import Checkbox from './Checkbox';
 import FormWrapper from './FormWrapper';
 import { ButtonInput, Alert } from 'react-bootstrap';
 import { Form, ValidatedInput } from 'react-bootstrap-validation';
-import errorMessages from '../utils/error-messages';
 import createTalent from '../utils/create-talent';
 import FormBase from './FormBase';
 

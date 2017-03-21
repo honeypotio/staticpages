@@ -3,6 +3,12 @@ import { ValidatedInput } from 'react-bootstrap-validation';
 import errorMessages from '../utils/error-messages';
 
 export default class FormBase extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.locale = 'en';
+  }
+
   _buildValidatedInputs(inputClass) {
     return this.inputs.map((data) => {
       return (
@@ -15,7 +21,7 @@ export default class FormBase extends React.Component {
           className={inputClass}
           key={data.name}
           disabled={this.state.isSaving}
-          errorHelp={errorMessages}
+          errorHelp={errorMessages[this.locale]}
           validationEvent="onBlur"
         />
       );

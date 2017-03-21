@@ -3,7 +3,6 @@ import { ButtonInput } from 'react-bootstrap';
 import { Form, ValidatedInput } from 'react-bootstrap-validation';
 import FormWrapper from './FormWrapper';
 import Checkbox from './Checkbox';
-import errorMessages from '../utils/error-messages';
 import createInvite from '../utils/create-invite';
 import FormBase from './FormBase';
 import FlashMessages from '../utils/flash-messages';

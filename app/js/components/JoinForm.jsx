@@ -9,31 +9,50 @@ const locales  = {
   en: {
     header: 'Just one profile, no job applications',
     tagline: 'Sign up, it only takes 5 minutes!',
-    disclaimer: `By signing up you agree to the <a href="/pages/terms_of_service#talents" target="_blank">Terms of Service</a> and the <a href="/pages/legal_notice#privacy_policy" target="_blank">Privacy Policy</a>`
+    disclaimer: `By signing up you agree to the <a href="/pages/terms_of_service#talents" target="_blank">Terms of Service</a> and the <a href="/pages/legal_notice#privacy_policy" target="_blank">Privacy Policy</a>`,
+    inputs: {
+      firstName: 'First Name',
+      lastName: 'Last Name',
+      email: 'Email',
+      password: 'Password',
+      repeatPw: 'Repeat password'
+    },
+    submitWarning: 'Please fill in all required fields!',
+    serverError: 'There was a problem, please try again later'
   },
   de: {
     header: 'Nur ein Profil - keine Bewerbung.',
     tagline: 'Melde dich jetzt an. Es dauert nur 5 Minuten!',
-    disclaimer: `Durch deine Anmeldung akzeptierst du die <a href="/pages/terms_of_service#talents" target="_blank">AGBs</a> und die <a href="/pages/legal_notice#privacy_policy" target="_blank">Datenschutzerklärung</a>.`
+    disclaimer: `Durch deine Anmeldung akzeptierst du die <a href="/pages/terms_of_service#talents" target="_blank">AGBs</a> und die <a href="/pages/legal_notice#privacy_policy" target="_blank">Datenschutzerklärung</a>.`,
+    inputs: {
+      firstName: 'Vorname',
+      lastName: 'Nachname',
+      email: 'Email',
+      password: 'Passwort',
+      repeatPw: 'Passwort wiederholen'
+    },
+    submitWarning: 'Bitte fülle alle Pflichtfelder aus',
+    serverError: 'Es ist ein Fehler aufgetreten. Bitter versuche es später erneut.'
   }
 };
 
-const locale = window.location.pathname.indexOf('de') ? 'de' : 'en';
+const locale = window.location.pathname === '/lp/join-de' ? 'de' : 'en';
 
 export default class JoinForm extends FormBase {
   constructor(props) {
     super(props);
+    this.locale = locale;
     this.state = {
       formSubmitted: false,
       isSaving: false,
       error: false
     };
     this.inputs = [
-      { type: 'text', name: 'firstName', placeholder: "First name", validate: "required" },
-      { type: 'text', name: 'lastName', placeholder: "Last name", validate: "required" },
-      { type: 'email', name: 'email', placeholder: "Email", validate: "required,isEmail" },
-      { type: 'password', name: 'password', placeholder: "Password", validate: "required,isLength:8" },
-      { type: 'password', name: 'repeatPassword', placeholder: "Repeat password", validate: (val, context) => val && val === context.password  },
+      { type: 'text', name: 'firstName', placeholder: locales[locale].inputs.firstName, validate: "required" },
+      { type: 'text', name: 'lastName', placeholder: locales[locale].inputs.lastName, validate: "required" },
+      { type: 'email', name: 'email', placeholder: locales[locale].inputs.email, validate: "required,isEmail" },
+      { type: 'password', name: 'password', placeholder: locales[locale].inputs.password, validate: "required,isLength:8" },
+      { type: 'password', name: 'repeatPassword', placeholder: locales[locale].inputs.repeatPw, validate: (val, context) => val && val === context.password  },
     ];
   }
 
@@ -46,12 +65,12 @@ export default class JoinForm extends FormBase {
       window.location.href = `${$PROCESS_ENV_APP_HOST}/profile/signed-up`;
     }).catch((err) => {
       this.setState({ isSaving: false });
-      this._showError('There has been a problem. Please try again later.');
+      this._showError(locales[locale].serverError);
     });
   }
 
   _onInvalidSubmit() {
-    this._showError('Please fill in all required fields!');
+    this._showError(locales[locale].submitWarning);
   }
 
   render() {
@@ -76,7 +95,7 @@ export default class JoinForm extends FormBase {
             </a>
           </div>
         </div>
-        <div className="c-talent-landing__oauth-divider">or</div>
+        <div className="c-talent-landing__oauth-divider">oder</div>
         <div>
           {(() => {
             if (this.state.error) {
@@ -94,7 +113,7 @@ export default class JoinForm extends FormBase {
           className="btn btn-primary c-talent-landing__btn"
           disabled={this.state.isSaving}
         >
-          {this.state.isSaving ? 'Saving ... ' : 'Join Honeypot'}
+          {this.state.isSaving ? 'Saving ... ' : 'Jetzt registrieren'}
         </ButtonInput>
 
       </Form>
