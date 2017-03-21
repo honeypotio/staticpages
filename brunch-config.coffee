@@ -24,8 +24,8 @@ module.exports =
           'node_modules/jquery-cookiebar'
         ]
     digest:
-      referenceFiles: /\.html|\.css|for_employers|404|join|de|how_it_works|terms_of_service|legal_notice|500|faq|sign_up|new|about$/
-      # diges does not work with files without file extension
+      referenceFiles: /\.html|\.css|for_employers|404|join|join-de|how_it_works|terms_of_service|legal_notice|500|faq|sign_up|new|about$/
+      # digest does not work with files without file extension
       #referenceFiles: /\.html|\.css|^[^.]+$/
     envstatic:
       prefix: '$PROCESS_ENV_'
