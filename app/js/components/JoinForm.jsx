@@ -5,7 +5,7 @@ import { Form, ValidatedInput } from 'react-bootstrap-validation';
 import createTalent from '../utils/create-talent';
 import FormBase from './FormBase';
 
-const locales  = {
+const locales = {
   en: {
     header: 'Just one profile, no job applications',
     tagline: 'Sign up, it only takes 5 minutes!',
@@ -36,7 +36,7 @@ const locales  = {
   }
 };
 
-const locale = window.location.pathname === '/lp/join-de' ? 'de' : 'en';
+const locale = window.location.pathname.indexOf('/lp/join-de') > -1 ? 'de' : 'en';
 
 export default class JoinForm extends FormBase {
   constructor(props) {
