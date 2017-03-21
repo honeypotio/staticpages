@@ -31,7 +31,8 @@ if (userSession.isLoggedIn()) {
 const router = {
   '/users/sign_up': SignupForm,
   '/invite_requests/new': InviteRequestForm,
-  '/lp/join': JoinForm
+  '/lp/join': JoinForm,
+  '/lp/join-de': JoinForm
 };
 const load = () => {
   const pathname = parsePathname(window.location.pathname);

@@ -1,0 +1,197 @@
+---
+description: "Honeypot ist eine Job-Plattform speziell für Software-Entwickler. Firmen bewerben sich bei dir statt andersrum. Jedes Angebot enthält einen Gehaltsvorschlag und den Techstack der Firma."
+title: "Honeypot - Erhalte Jobangebote von Europas besten Tech Firmen!"
+_options:
+  partials:
+    - app/partials/favicons.static.hbs
+    - app/partials/meta_tags.static.hbs
+    - app/partials/analytics_optout.static.hbs
+    - app/partials/rollbar.static.hbs
+    - app/partials/google_tag_manager.static.hbs
+    - app/partials/optimizely.static.hbs
+    - app/partials/scripts.static.hbs
+---
+<html>
+  <head>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <title>{{title}}</title>
+    {{#if rollbar_token}}
+      {{> rollbar rollbar_token=rollbar_token}}
+    {{/if}}
+    {{#if optimizely_id}}
+      {{> optimizely optimizely_id=optimizely_id}}
+    {{/if}}
+    <link rel="stylesheet" href="{{url_base}}DIGEST(/app.css)">
+    {{#if ga_id}}
+      {{> analytics_optout ga_id=ga_id}}
+    {{/if}}
+    {{> favicons}}
+    <meta charset="utf-8">
+    <meta name="description" content="{{description}}" />
+    {{> meta_tags}}
+  </head>
+  <body class="o-talent-landing">
+    {{#if gtm_id}}
+      {{> google_tag_manager tracker=gtm_id}}
+    {{/if}}
+    <header class="c-navigation c-navigation--talent-lp">
+      <nav class="navbar navbar-static-top">
+        <div class="container">
+          <div class="navbar-header">
+            <a href="{{url_base}}/" class="navbar-brand c-navigation__logo-link c-navigation__logo-link--talent-lp">
+              <img src="{{url_base}}DIGEST(/images/logo_white.svg)" class="c-navigation__logo c-navigation__logo--talent-lp" alt="Honeypot" />
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="c-talent-landing container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1 class="c-talent-landing__header">Erhalte Jobangebote von Europas besten Tech Firmen!</h1>
+          <p class="c-talent-landing__tagline">Firmen bewerben sich bei dir - und du wählst bequem aus <br> (Gehälter zwischen 40k und 130k).</p>
+          <hr class="c-talent-landing__divider">
+
+          <div class="c-talent-landing__quote">
+            <div class="c-talent-landing__quote-text">
+              <p>Nachdem mein Profil live geschaltet wurde haben mich direkt drei Firmen angeschrieben, gefolgt von vier weiteren.  Honeypot ist noch relativ jung, daher war ich überrascht, dass schon so viele kleine als auch große Firmen dort zu finden sind.</p>
+              <div>
+                <img src="{{url_base}}DIGEST(/images/nico.png)" srcset="{{url_base}}DIGEST(/images/nico@2x.png) 2x" class="c-talent-landing__author-img" />
+                <p class="c-talent-landing__author"><img src="{{url_base}}DIGEST(/images/Nico-Ulbrecht.svg)"></p>
+                <p class="c-talent-landing__author-info">Entwickler, FreightHub</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div id="app">
+            <form class="c-talent-landing__form">
+              <h3 class="text-center c-talent-landing__form-header">Nur ein Profil - keine Bewerbung.</h3>
+              <p class="text-center c-talent-landing__form-tagline">Melde dich jetzt an. Es dauert nur 5 Minuten!</p>
+              <div class="form-actions row">
+                <div class="col-xs-6 c-talent-landing__oauth-wrapper">
+                  <a class="btn btn-default c-talent-landing__oauth-btn c-talent-landing__oauth-btn--linkedin" href="{{$PROCESS_ENV_APP_HOST}}/users/auth/linkedin?intent=sign_up">
+                    <i class="fa fa-linkedin"></i>LinkedIn
+                  </a>
+                </div>
+                <div class="col-xs-6 c-talent-landing__oauth-wrapper">
+                  <a class="btn btn-default c-talent-landing__oauth-btn c-talent-landing__oauth-btn--github" href="{{$PROCESS_ENV_APP_HOST}}/users/auth/github?intent=sign_up">
+                    <i class="fa fa-github"></i>GitHub
+                  </a>
+                </div>
+              </div>
+              <div class="c-talent-landing__oauth-divider">oder</div>
+              <div class="form-group">
+                <input type="text" class="form-control c-talent-landing__input" name="firstName" placeholder="First name" disabled>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control c-talent-landing__input" name="lastName" placeholder="Last name" disabled>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control c-talent-landing__input" name="email" placeholder="Email" disabled>
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control c-talent-landing__input" name="password" placeholder="Password" disabled>
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control c-talent-landing__input" name="repeatPassword" placeholder="Repeat password" disabled>
+              </div>
+              <div class="text-center">
+                <small class="text-muted">
+                  Durch deine Anmeldung akzeptierst du die <a href="/pages/terms_of_service#talents" target="_blank">AGBs</a> und die <a href="/pages/legal_notice#privacy_policy" target="_blank">Datenschutzerklärung</a>.
+                </small>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary c-talent-landing__btn" disabled>Jetzt registrieren</button>
+              </div>
+            </form>
+          </div>
+          <p class="c-talent-landing__employer"><a href="/invite_requests/new">Arbeitgeber?</a></p>
+
+          <div class="c-talent-landing__quote c-talent-landing__quote--mobile">
+            <div class="c-talent-landing__quote-text">
+              <p>Nachdem mein Profil live geschaltet wurde haben mich direkt drei Firmen angeschrieben, gefolgt von vier weiteren.  Honeypot ist noch relativ jung, daher war ich überrascht, dass schon so viele kleine als auch große Firmen dort zu finden sind.</p>
+              <div>
+                <img src="{{url_base}}DIGEST(/images/nico@2x.png)" class="c-talent-landing__author-img" />
+                <p class="c-talent-landing__author"><img src="{{url_base}}DIGEST(/images/Nico-Ulbrecht.svg)"></p>
+                <p class="c-talent-landing__author-info">Entwickler, FreightHub</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <footer class="c-talent-landing__footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 col-sm-4 col-xs-6">
+            <img
+              class="c-talent-landing__logo c-talent-landing__logo--zalando"
+              src="{{url_base}}DIGEST(/images/zalando_logo.svg)"
+              height="30"
+              alt="Zalando"
+            />
+          </div>
+          <div class="col-md-2 col-sm-4 col-xs-6">
+            <img
+              class="c-talent-landing__logo c-talent-landing__logo--travis"
+              src="{{url_base}}DIGEST(/images/travis_logo--talent-landing.svg)"
+              height="40"
+              alt="Travis CI"
+            />
+          </div>
+          <div class="col-md-2 col-sm-4 col-xs-6">
+            <img
+              class="c-talent-landing__logo c-talent-landing__logo--zenmate"
+              src="{{url_base}}DIGEST(/images/zenmate_logo.png)"
+              srcset="{{url_base}}DIGEST(/images/zenmate_logo-2x.png) 2x"
+              height="40"
+              alt="Zenmate"
+            />
+          </div>
+          <div class="col-md-2 col-sm-4 col-xs-6">
+            <img
+              class="c-talent-landing__logo c-talent-landing__logo--hitfox"
+              src="{{url_base}}DIGEST(/images/hitfox_logo.png)"
+              srcset="{{url_base}}DIGEST(/images/hitfox_logo-2x.png) 2x"
+              height="40"
+              alt="HitFox jobs"
+            />
+          </div>
+          <div class="col-md-2 col-sm-4 col-xs-6">
+            <img
+              class="c-talent-landing__logo c-talent-landing__logo--helpling"
+              src="{{url_base}}DIGEST(/images/helpling_logo.svg)"
+              height="45"
+              alt="Helpling"
+            />
+          </div>
+          <div class="col-md-2 col-sm-4 col-xs-6">
+            <img
+              class="c-talent-landing__logo c-talent-landing__logo--kiwi"
+              src="{{url_base}}DIGEST(/images/kiwi_logo.png)"
+              srcset="{{url_base}}DIGEST(/images/kiwi_logo-2x.png) 2x"
+              height="24"
+              alt="KIWI"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <a href="{{url_base}}/pages/terms_of_service" class="c-talent-landing__footer-item">Terms of Service</a>
+            <a href="{{url_base}}/pages/legal_notice" class="c-talent-landing__footer-item">Legal Notice</a>
+            <a href="{{url_base}}/pages/legal_notice#privacy_policy" class="c-talent-landing__footer-item">Privacy Policy</a>
+            <a href="https://jobs.lever.co/honeypot" class="c-talent-landing__footer-item" target="_blank">Careers</a>
+            <a href="{{url_base}}/pages/faq" class="c-talent-landing__footer-item">FAQ</a>
+            <a href="http://blog.honeypot.io" class="c-talent-landing__footer-item" target="_blank">Blog</a>
+            <a href="{{url_base}}/pages/about" class="c-talent-landing__footer-item">About us</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    {{> scripts}}
+  </body>
+</html>
