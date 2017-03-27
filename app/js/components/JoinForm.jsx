@@ -17,6 +17,8 @@ const locales = {
       password: 'Password',
       repeatPw: 'Repeat password'
     },
+    or: 'or',
+    join: 'Join Honeypot',
     submitWarning: 'Please fill in all required fields!',
     serverError: 'There was a problem, please try again later'
   },
@@ -31,6 +33,8 @@ const locales = {
       password: 'Passwort',
       repeatPw: 'Passwort wiederholen'
     },
+    or: 'oder',
+    join: 'Jetzt registrieren',
     submitWarning: 'Bitte fülle alle Pflichtfelder aus',
     serverError: 'Es ist ein Fehler aufgetreten. Bitter versuche es später erneut.'
   }
@@ -95,7 +99,7 @@ export default class JoinForm extends FormBase {
             </a>
           </div>
         </div>
-        <div className="c-talent-landing__oauth-divider">oder</div>
+        <div className="c-talent-landing__oauth-divider">{locales[locale].or}</div>
         <div>
           {(() => {
             if (this.state.error) {
@@ -113,7 +117,7 @@ export default class JoinForm extends FormBase {
           className="btn btn-primary c-talent-landing__btn"
           disabled={this.state.isSaving}
         >
-          {this.state.isSaving ? 'Saving ... ' : 'Jetzt registrieren'}
+          {this.state.isSaving ? 'Saving ... ' : locales[locale].join}
         </ButtonInput>
 
       </Form>
