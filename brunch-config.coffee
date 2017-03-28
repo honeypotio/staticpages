@@ -20,11 +20,12 @@ module.exports =
     sass:
       options:
         includePaths: [
+          'node_modules',
           'node_modules/bootstrap-sass/assets/stylesheets',
           'node_modules/jquery-cookiebar'
         ]
     digest:
-      referenceFiles: /\.html|\.css|for_employers|404|join|join-de|how_it_works|terms_of_service|legal_notice|500|faq|sign_up|new|about$/
+      referenceFiles: /\.html|\.css|for_employers|404|join|join-de|how_it_works|terms_of_service|legal_notice|500|faq|sign_up|new|about|company_invite_request_received$/
       # digest does not work with files without file extension
       #referenceFiles: /\.html|\.css|^[^.]+$/
     envstatic:

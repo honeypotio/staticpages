@@ -1,0 +1,37 @@
+@import 'honeycss-layout/index';
+@import 'honeycss-utilities/index';
+@import 'honeycss-core/step-list/step-list';
+
+.company-invite-request-received-container {
+  background-color: $light-gray-color;
+  padding: 90px 10px 0 10px;
+}
+
+.company-invite-request-received {
+  background-color: color(white);
+  border: 1px solid color(blue, light);
+  border-radius: $global-border-radius;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 40px;
+
+  &__header-circle {
+    margin-top: -70px;
+  }
+
+  &__header-divider {
+    border-color: color(blue, light);
+    margin-left: -50px;
+    margin-right: -50px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+
+  .step-list {
+    padding: 0;
+    margin-top: 30px;
+  }
+  .step-list__item:before {
+    font-size: 20px;
+  }
+}
