@@ -19,12 +19,33 @@
     margin-top: -70px;
   }
 
+  &__header-heading {
+    font-weight: $fw-bold;
+  }
+
+  &__header-subheading {
+    font-size: $fs-3;
+
+    @media #{$sm-up} {
+      font-size: $fs-4;
+    }
+  }
+
   &__header-divider {
     border-color: color(blue, light);
     margin-left: -50px;
     margin-right: -50px;
     margin-top: 30px;
     margin-bottom: 40px;
+  }
+
+  &__next-steps {
+    font-weight: $fw-semibold;
+    text-align: left;
+
+    @media #{$sm-up} {
+      text-align: center;
+    }
   }
 
   .step-list {
