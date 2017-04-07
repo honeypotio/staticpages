@@ -1,5 +1,11 @@
 .c-navigation {
   background-color: $white-color;
+  z-index: $z-index-3;
+
+  &__clear {
+    height: 51px;
+  }
+
   &--inverse {
     background-color: $dark-blue-color;
   }
