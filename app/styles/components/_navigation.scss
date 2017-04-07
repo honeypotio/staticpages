@@ -1,5 +1,28 @@
 .c-navigation {
   background-color: $white-color;
+  z-index: $z-index-3;
+  border-bottom: 1px solid $light-blue-color;
+
+  #cookie-bar ~ & {
+    margin-top: 54px;
+
+    @media #{$sm-up} {
+      margin-top: 30px;
+    }
+  }
+
+  &__clear {
+    height: 51px;
+
+    #cookie-bar ~ & {
+      height: 101px;
+
+      @media #{$sm-up} {
+        height: 81px;
+      }
+    }
+  }
+
   &--inverse {
     background-color: $dark-blue-color;
   }
