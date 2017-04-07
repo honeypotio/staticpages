@@ -1,6 +1,9 @@
 #cookie-bar {
   background: $light-gray-6-color;
   color: $dark-gray-color;
+  position: fixed;
+  z-index: $z-index-3;
+  width: 100%;
 
   a {
     margin-left: 3px;
