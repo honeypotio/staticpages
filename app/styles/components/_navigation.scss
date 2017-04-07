@@ -1,6 +1,7 @@
 .c-navigation {
   background-color: $white-color;
   z-index: $z-index-3;
+  border-bottom: 1px solid $light-blue-color;
 
   #cookie-bar ~ & {
     margin-top: 54px;
