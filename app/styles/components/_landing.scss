@@ -189,9 +189,10 @@ $counter-size: 40px;
       opacity: .7;
     }
 
-    &--hitfox {
-      margin-top: 16px;
-      opacity: .7;
+    &--coup {
+      margin-top: 20px;
+      height: 40px;
+      opacity: .8;
     }
 
     &--liqid {
@@ -204,6 +205,11 @@ $counter-size: 40px;
 
     &--glispa {
       margin-top: 9px;
+    }
+
+    &--zeiss {
+      height: 50px;
+      opacity: .8;
     }
 
     &--crowdpark {
@@ -230,12 +236,17 @@ $counter-size: 40px;
       opacity: .7;
     }
 
+    &--moovel {
+      margin-top: 10px;
+      height: 48px;
+      opacity: 0.7;
+    }
+
     /*
      * Desktop sizing
     */
 
     $margins: (
-      ('carmudi', 12px),
       ('kiwi', 12px),
       ('triprebel', 17px),
       ('liqid', 16px),
@@ -245,8 +256,7 @@ $counter-size: 40px;
       ('onefootball', 10px),
       ('kauferportal', 15px),
       ('optivo', 10px),
-      ('helpling', 10px),
-      ('hitfox', 5px)
+      ('helpling', 10px)
     );
 
     @each $margin in $margins {
@@ -259,11 +269,6 @@ $counter-size: 40px;
         }
       }
     }
-
-    &--meedoc {
-      height: 55px;
-    }
-
   }
 
   &__force-break {
