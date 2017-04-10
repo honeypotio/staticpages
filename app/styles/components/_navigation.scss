@@ -36,6 +36,10 @@
       text-align: right;
       padding-top: 8px;
       padding-bottom: 8px;
+
+      &:hover {
+        color: $blue-color;
+      }
     }
 
     > li {
