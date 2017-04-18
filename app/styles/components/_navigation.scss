@@ -30,6 +30,10 @@
   &--talent-lp {
     background-color: transparent;
     border-bottom: none;
+
+    #cookie-bar ~ & {
+      margin-top: 0;
+    }
   }
 
   .nav > &__company {
