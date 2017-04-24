@@ -171,6 +171,7 @@ $counter-size: 40px;
   }
 
   &__logo-block {
+    float: left;
     flex-grow: 1;
     align-self: center;
     width: 50%;
