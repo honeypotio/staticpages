@@ -1,5 +1,11 @@
 .quote-card-list {
   margin-top: 60px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
 
   @media #{$md-up} {
     padding: 0 5%;
@@ -14,17 +20,12 @@
   font-size: 15px;
 
   @media #{$sm-up} {
+    width: 48%;
     margin-bottom: 30px;
-    min-height: 210px;
   }
   @media #{$md-up} {
+    width: 30%;
     margin-bottom: 50px;
-    min-height: 260px;
-  }
-
-  @media #{$lg-up} {
-    margin-bottom: 50px;
-    min-height: 220px;
   }
 
   &:before {
