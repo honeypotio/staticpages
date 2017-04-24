@@ -162,19 +162,14 @@ $counter-size: 40px;
   }
 
   &__logo-container {
-    display: flex;
-    flex-wrap: wrap;
-
     &::before {
       content: none;
     }
   }
 
   &__logo-block {
-    flex-grow: 1;
-    align-self: center;
-    width: 50%;
     text-align: center;
+    min-height: 120px;
 
     @media #{$md-up} {
       width: 20%;
