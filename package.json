@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "auto-reload-brunch": "^2.7.1",
+    "autoprefixer": "^6.7.7",
     "babel-brunch": "^6.1.1",
     "babel-preset-env": "^1.4.0",
     "babel-preset-react": "^6.24.1",
@@ -41,6 +42,7 @@
     "mocha": "^2.5.3",
     "node-smushit": "^0.5.1",
     "picturefill": "^3.0.2",
+    "postcss-brunch": "0.5.0",
     "react": "^15.1.0",
     "react-addons-test-utils": "^15.1.0",
     "react-bootstrap": "0.28.5",

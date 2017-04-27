@@ -24,6 +24,10 @@ module.exports =
           'node_modules/bootstrap-sass/assets/stylesheets',
           'node_modules/jquery-cookiebar'
         ]
+    postcss:
+      processors: [
+        require('autoprefixer')(['last 8 versions'])
+      ]
     digest:
       referenceFiles: /\.html|\.css|for_employers|404|join|join-de|how_it_works|terms_of_service|legal_notice|500|faq|sign_up|new|about|company_invite_request_received$/
       # digest does not work with files without file extension
