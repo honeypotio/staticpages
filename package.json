@@ -49,7 +49,7 @@
     "react-bootstrap-validation": "^0.1.11",
     "react-dom": "^15.1.0",
     "revalidator": "^0.3.1",
-    "sass-brunch": "^2.6.3",
+    "sass-brunch": "^2.10.4",
     "uglify-js-brunch": "^2.0.0",
     "whatwg-fetch": "^1.0.0"
   }
