@@ -162,9 +162,7 @@ $counter-size: 40px;
   }
 
   &__logo-container {
-    display: -webkit-flex;
     display: flex;
-    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
 
     &::before {
@@ -173,9 +171,7 @@ $counter-size: 40px;
   }
 
   &__logo-block {
-    -webkit-flex-grow: 1;
     flex-grow: 1;
-    -webkit-align-self: center;
     align-self: center;
     width: 50%;
     text-align: center;

@@ -1,10 +1,8 @@
 .quote-card-list {
   margin-top: 60px;
-  display: -webkit-flex;
+
   display: flex;
-  -webkit-justify-content: space-between;
   justify-content: space-between;
-  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 
   @media #{$md-up} {
