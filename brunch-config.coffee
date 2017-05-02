@@ -13,7 +13,15 @@ module.exports =
       jQuery: 'jquery'
   plugins:
     babel:
-      presets: ['env', 'react']
+      presets: [
+        [
+          'env', {
+            'targets':
+              'browsers': ['last 2 versions', 'safari >= 8']
+          }
+        ],
+        'react'
+      ]
     imageoptimizer:
       smushit: true
       path: 'images'
