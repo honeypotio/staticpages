@@ -24,14 +24,13 @@ const showLinks = () => {
   if(!userSession.isLoggedIn()) {
     links = [
       ...showDeveloperEmployersLink(),
+      <li key="blog"><a href="http://blog.honeypot.io/">Blog</a></li>,
       <li key="about" className="c-navigation__mobile"><a href={buildUrl('/pages/about')}>About</a></li>,
-      <li key="blog" className="c-navigation__mobile"><a href="http://blog.honeypot.io/">Blog</a></li>,
       <li key="autotech" className="c-navigation__mobile"><a href="https://honeypotio.github.io/research/">Research</a></li>,
       <li key="dropdown" className="c-navigation__company dropdown">
         <a href="#" className="dropdown-toggle text-primary" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Company <span className="caret"></span> </a>
         <ul className="c-navigation__dropdown  dropdown-menu">
           <li><a href={buildUrl('/pages/about')}>About</a></li>
-          <li><a href="http://blog.honeypot.io/">Blog</a></li>
           <li><a href="https://honeypotio.github.io/research/">Research</a></li>
         </ul>
       </li>,
