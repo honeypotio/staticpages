@@ -21,7 +21,7 @@
     "babel-preset-env": "^1.4.0",
     "babel-preset-react": "^6.24.1",
     "bootstrap-sass": "^3.3.6",
-    "brunch": "^2.8.2",
+    "brunch": "2.8.2",
     "brunch-static": "^1.1.1",
     "clean-css-brunch": "^2.0.0",
     "cookie-domain-monster": "^0.0.5",
