@@ -5,7 +5,7 @@ export default {
   perform(values) {
     return fetch(dataFetcher.buildURL('/api/v1/invite_requests'), {
       method: 'POST',
-      credentials: 'include',
+      credentials: 'omit',
       headers: {
         'Content-Type': 'application/json;charset=UTF-8'
       },
