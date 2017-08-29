@@ -6,6 +6,9 @@ export default {
     return fetch(dataFetcher.buildURL('/api/v1/invite_requests'), {
       method: 'POST',
       credentials: 'include',
+      headers: {
+        'Content-Type': 'application/json;charset=UTF-8'
+      },
       body: JSON.stringify({
         invite_request: {
           name: values.companyName,
