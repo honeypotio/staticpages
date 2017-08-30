@@ -22,6 +22,8 @@ Thumbs.db
 # NPM packages folder.
 node_modules/
 vendor/
+npm-debug.*
+package-lock.json
 
 # Brunch output folder.
 public/

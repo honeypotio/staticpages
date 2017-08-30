@@ -9,7 +9,7 @@ export default {
   perform(values) {
     return fetch(dataFetcher.buildURL('/api/v1/users'), {
       method: 'POST',
-      credentials: 'omit',
+      credentials: 'include',
       headers: {
         'Content-Type': 'application/json;charset=UTF-8'
       },
