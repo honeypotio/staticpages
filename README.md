@@ -1,4 +1,4 @@
-Staticpages
+Staticpages [![Build Status](https://travis-ci.org/honeypotio/staticpages.svg?branch=master)](https://travis-ci.org/honeypotio/staticpages)
 ----------
 
 honeypot.io static pages. maintenance, error and others
