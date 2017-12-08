@@ -8,7 +8,6 @@ _options:
     - app/partials/analytics_optout.static.hbs
     - app/partials/rollbar.static.hbs
     - app/partials/google_tag_manager.static.hbs
-    - app/partials/optimizely.static.hbs
     - app/partials/scripts.static.hbs
 ---
 <html>
@@ -18,13 +17,7 @@ _options:
     {{#if rollbar_token}}
       {{> rollbar rollbar_token=rollbar_token}}
     {{/if}}
-    {{#if optimizely_id}}
-      {{> optimizely optimizely_id=optimizely_id}}
-    {{/if}}
     <link rel="stylesheet" href="{{url_base}}DIGEST(/app.css)">
-    {{#if ga_id}}
-      {{> analytics_optout ga_id=ga_id}}
-    {{/if}}
     {{> favicons}}
     <meta charset="utf-8">
     <meta name="description" content="{{description}}" />
@@ -192,6 +185,9 @@ _options:
         </div>
       </div>
     </footer>
+    {{#if ga_id}}
+      {{> analytics_optout ga_id=ga_id}}
+    {{/if}}
     {{> scripts}}
   </body>
 </html>
