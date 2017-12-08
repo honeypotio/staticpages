@@ -9,7 +9,6 @@ _options:
     - app/partials/rollbar.static.hbs
     - app/partials/google_tag_manager.static.hbs
     - app/partials/optimizely.static.hbs
-    - app/partials/heap_analytics.static.hbs
     - app/partials/navigation.static.hbs
     - app/partials/footer.static.hbs
     - app/partials/scripts.static.hbs
@@ -25,7 +24,6 @@ _options:
     {{#if optimizely_id}}
       {{> optimizely optimizely_id=optimizely_id}}
     {{/if}}
-    {{> heap_analytics}}
     <link rel="stylesheet" href="{{url_base}}DIGEST(/app.css)">
     {{#if ga_id}}
       {{> analytics_optout ga_id=ga_id}}
