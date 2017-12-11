@@ -1,7 +1,16 @@
 ---
+description: "Honeypot is a Developer-Focused Job Platform. Companies apply to you with salary and tech stack upfront."
+title: "Honeypot - The Developer-Focused Job Platform"
 _options:
-  layout: app/layouts/main.static.hbs
   partials:
+    - app/partials/favicons.static.hbs
+    - app/partials/meta_tags.static.hbs
+    - app/partials/analytics_optout.static.hbs
+    - app/partials/rollbar.static.hbs
+    - app/partials/google_tag_manager.static.hbs
+    - app/partials/navigation.static.hbs
+    - app/partials/footer.static.hbs
+    - app/partials/scripts.static.hbs
     - app/partials/landing_references.static.hbs
     - app/partials/landing_step.static.hbs
     - app/partials/landing_read_more.static.hbs
@@ -10,110 +19,140 @@ _options:
     - app/partials/quote_card.static.hbs
     - app/partials/avatar.static.hbs
 ---
-<header class="o-hero-unit c-landing__header">
-  <div class="container text-center">
-    <div class="o-hero-unit__content">
-      <h1 class="o-hero-unit__heading c-landing-header__heading">
-        Get job offers from Europe’s best tech companies
-      </h1>
-      <div class="o-hero-unit__body c-landing-header__body">
-        <div>
-          We help programmers find great jobs at great companies.
-          <span class="c-landing__force-break"></span>
-          No applications, just one profile and your code.
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <title>{{title}}</title>
+    {{#if rollbar_token}}
+      {{> rollbar rollbar_token=rollbar_token}}
+    {{/if}}
+    <link rel="stylesheet" href="{{url_base}}DIGEST(/landing.css)">
+    {{#if ga_id}}
+      {{> analytics_optout ga_id=ga_id}}
+    {{/if}}
+    {{> favicons}}
+    <meta name="description" content="{{description}}" />
+    {{> meta_tags}}
+  </head>
+  <body>
+    {{#if gtm_id}}
+      {{> google_tag_manager tracker=gtm_id}}
+    {{/if}}
+    <!-- TODO: flash -->
+    {{> navigation logo=nav_logo class_name=header_class_name}}
+    <main role="main">
+      <div class="alert alert-warning u-no-margin text-center hide" id="flash-messages">
+      </div>
+      <header class="o-hero-unit c-landing__header">
+        <div class="container text-center">
+          <div class="o-hero-unit__content">
+            <h1 class="o-hero-unit__heading c-landing-header__heading">
+              Get job offers from Europe’s best tech companies
+            </h1>
+            <div class="o-hero-unit__body c-landing-header__body">
+              <div>
+                We help programmers find great jobs at great companies.
+                <span class="c-landing__force-break"></span>
+                No applications, just one profile and your code.
+              </div>
+            </div>
+            <div>
+              <a href="{{url_base}}/users/sign_up" class="btn btn-blue c-landing__btn">Sign up</a>
+            </div>
+          </div>
         </div>
-      </div>
-      <div>
-        <a href="{{url_base}}/users/sign_up" class="btn btn-blue c-landing__btn">Sign up</a>
-      </div>
-    </div>
-  </div>
-</header>
+      </header>
 
-<section class="c-landing-section c-landing-section--bordered c-landing__steps-section">
-  <div class="container">
-    <ol class="clearfix c-landing__steps">
-      {{> landing_step
-        counter=1
-        text='
-          <span class="c-landing__step__emph">Sign up,</span> it only takes <span class="u-force-break">5 minutes!</span>
-        '
-      }}
-      {{> landing_step
-        counter=2
-        text='
-          <span class="c-landing__step__emph">Have a call</span> with us <span class="force-break"></span>
-          and complete a <span class="u-force-break">technical screening</span>
-        '
-      }}
-      {{> landing_step
-        counter=3
-        text='
-          <span class="c-landing__step__emph u-force-break">Receive job offers</span> based on your preferences
-        '
-      }}
-      {{> landing_step
-        counter=4
-        text='
-          <span class="c-landing__step__emph">Get hired</span>
-        '
-      }}
-    </ol>
-  </div>
-</section>
+      <section class="c-landing-section c-landing-section--bordered c-landing__steps-section">
+        <div class="container">
+          <ol class="clearfix c-landing__steps">
+            {{> landing_step
+              counter=1
+              text='
+                <span class="c-landing__step__emph">Sign up,</span> it only takes <span class="u-force-break">5 minutes!</span>
+              '
+            }}
+            {{> landing_step
+              counter=2
+              text='
+                <span class="c-landing__step__emph">Have a call</span> with us <span class="force-break"></span>
+                and complete a <span class="u-force-break">technical screening</span>
+              '
+            }}
+            {{> landing_step
+              counter=3
+              text='
+                <span class="c-landing__step__emph u-force-break">Receive job offers</span> based on your preferences
+              '
+            }}
+            {{> landing_step
+              counter=4
+              text='
+                <span class="c-landing__step__emph">Get hired</span>
+              '
+            }}
+          </ol>
+        </div>
+      </section>
 
-<section class="c-landing-section c-landing__testimonials-section container">
-  <h3 class="c-landing__testimonials-section-heading">We don't like talking about ourselves</h3>
-  <h4 class="c-landing__testimonials-section-sub-heading">But we don't mind if our developers do!</h4>
-  <div class="quote-card-list">
-    {{> quote_card
-      quote="After only two weeks I received 13 interview invites from a great selection of companies. From these I could choose the ones that best suited me and wound up finding the perfect startup job."
-      name="Emil Ahlbäck"
-      image="emil-ahlbaeck"
-      role="Sr. Frontend, Weissmaler"
-    }}
-    {{> quote_card
-      quote="Honeypot makes me feel valued and supported in my search for new opportunities at interesting technological and modern companies."
-      name="Alvean Ekman"
-      image="alvean-ekman"
-      role="Java, Idealo"
-    }}
-    {{> quote_card
-      quote="Honeypot helps with every aspect of the hiring process. It feels so great to have a bunch of companies interested in your profile and all the information about the role and salary upfront."
-      name="Hemerson Carlin"
-      image="hermerson-carlin"
-      role="Fullstack, Signavio"
-    }}
-    {{> quote_card
-      quote="Getting interviews through Honeypot was a breeze. For a person who wanted to find a job and relocate first time it was superb experience!"
-      name="Tõnis Anton"
-      image="tonis-anton"
-      role="JavaScript, ProfitBricks"
-    }}
-    {{> quote_card
-      quote="I like Honeypot because companies offer interviews with minimum salary. It saved the effort of applying for jobs, doing interviews, getting offers, and finally finding out that the salary didn't meet my requirements."
-      name="Shuhei Kagawa"
-      image="shuhei-kagawa"
-      role="Frontend, Zalando"
-    }}
-    {{> quote_card
-      quote="Honeypot helped me find my dream job in my dream country!  Honeypot puts their developers first - even the CEO called me personally to address all my queries!"
-      name="Nilufar Bafa"
-      image="nilufar-bava"
-      role="Frontend, Glispa"
-    }}
-  </div>
-</section>
+      <section class="c-landing-section c-landing__testimonials-section container">
+        <h3 class="c-landing__testimonials-section-heading">We don't like talking about ourselves</h3>
+        <h4 class="c-landing__testimonials-section-sub-heading">But we don't mind if our developers do!</h4>
+        <div class="quote-card-list">
+          {{> quote_card
+            quote="After only two weeks I received 13 interview invites from a great selection of companies. From these I could choose the ones that best suited me and wound up finding the perfect startup job."
+            name="Emil Ahlbäck"
+            image="emil-ahlbaeck"
+            role="Sr. Frontend, Weissmaler"
+          }}
+          {{> quote_card
+            quote="Honeypot makes me feel valued and supported in my search for new opportunities at interesting technological and modern companies."
+            name="Alvean Ekman"
+            image="alvean-ekman"
+            role="Java, Idealo"
+          }}
+          {{> quote_card
+            quote="Honeypot helps with every aspect of the hiring process. It feels so great to have a bunch of companies interested in your profile and all the information about the role and salary upfront."
+            name="Hemerson Carlin"
+            image="hermerson-carlin"
+            role="Fullstack, Signavio"
+          }}
+          {{> quote_card
+            quote="Getting interviews through Honeypot was a breeze. For a person who wanted to find a job and relocate first time it was superb experience!"
+            name="Tõnis Anton"
+            image="tonis-anton"
+            role="JavaScript, ProfitBricks"
+          }}
+          {{> quote_card
+            quote="I like Honeypot because companies offer interviews with minimum salary. It saved the effort of applying for jobs, doing interviews, getting offers, and finally finding out that the salary didn't meet my requirements."
+            name="Shuhei Kagawa"
+            image="shuhei-kagawa"
+            role="Frontend, Zalando"
+          }}
+          {{> quote_card
+            quote="Honeypot helped me find my dream job in my dream country!  Honeypot puts their developers first - even the CEO called me personally to address all my queries!"
+            name="Nilufar Bafa"
+            image="nilufar-bava"
+            role="Frontend, Glispa"
+          }}
+        </div>
+      </section>
 
-<section class="c-landing__partners-section">
-  <div class="container">
-    <h4 class="c-landing__partners__heading">Featured partners</h4>
-    <div class="row c-landing__logo-container">
-      {{> landing_references}}
-    </div>
-  </div><!-- ./container -->
-</section>
+      <section class="c-landing__partners-section">
+        <div class="container">
+          <h4 class="c-landing__partners__heading">Featured partners</h4>
+          <div class="row c-landing__logo-container">
+            {{> landing_references}}
+          </div>
+        </div><!-- ./container -->
+      </section>
 
-<section class="visible-xs visible-sm container text-center">
-    <a href="{{url_base}}/users/sign_up" class="btn btn-blue c-landing__btn">Sign up</a>
-</section>
+      <section class="visible-xs visible-sm container text-center">
+          <a href="{{url_base}}/users/sign_up" class="btn btn-blue c-landing__btn">Sign up</a>
+      </section>
+    </main>
+    {{> footer class_name=footer_class_name}}
+    {{> scripts}}
+  </body>
+</html>
