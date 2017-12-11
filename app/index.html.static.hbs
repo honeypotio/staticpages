@@ -28,6 +28,9 @@ _options:
       {{> rollbar rollbar_token=rollbar_token}}
     {{/if}}
     <link rel="stylesheet" href="{{url_base}}DIGEST(/landing.css)">
+    <style type="text/css">
+      .c-landing__header{background:url("DIGEST(images/header_talent_lp.jpg)") no-repeat #000;}
+    </style>
     {{#if ga_id}}
       {{> analytics_optout ga_id=ga_id}}
     {{/if}}
