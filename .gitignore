@@ -28,6 +28,11 @@ package-lock.json
 # Brunch output folder.
 public/
 
+# PR Page
+!public/de
+!public/nl
+!public/women-in-tech-2018
+
 # Other
 tmp/
 .env
