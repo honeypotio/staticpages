@@ -66,7 +66,7 @@ export default class JoinForm extends FormBase {
       isSaving: true
     });
     createTalent.perform(values).then(() => {
-      window.location.href = `${$PROCESS_ENV_APP_HOST}/profile/signed-up`;
+      window.location.href = `https://staging-honeypot-pr-2404.herokuapp.com/profile/signed-up`;
     }).catch((err) => {
       this.setState({ isSaving: false });
       this._showError(locales[locale].serverError);
