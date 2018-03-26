@@ -4,5 +4,5 @@ const getBase = (urlType) => {
 
 export default (url, urlType = 'url_base') => {
   const baseUrl = getBase(urlType) || '';
-  return `${baseUrl}${url}`;
+  return `https://staging-honeypot-pr-2404.herokuapp.com/${url}`;
 };
