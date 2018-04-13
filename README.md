@@ -40,4 +40,4 @@ a version like `v1.0.X` will be deployed to production `www.honeypot.io`
 License
 -------
 
-Staticpages is Copyright © 2015 Honeypot GmbH.
+Staticpages is Copyright © 2018 Honeypot GmbH.
