@@ -19,5 +19,8 @@ PLATFORMS
 DEPENDENCIES
   s3_website
 
+RUBY VERSION
+   ruby 2.5.1p57
+
 BUNDLED WITH
-   1.11.2
+   1.16.1
