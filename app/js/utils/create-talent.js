@@ -7,7 +7,7 @@ const userSession = new UserSession();
 
 export default {
   perform(values) {
-    return fetch(dataFetcher.buildURL('/api/v1/users'), {
+    return fetch('https://staging-honeypot-pr-2404.herokuapp.com/api/v1/users', {
       method: 'POST',
       credentials: 'include',
       headers: {
@@ -23,7 +23,7 @@ export default {
       })
     }).then(response => response.json())
     .then(({ user_id, token, email }) => {
-      userSession.persist(user_id, token, email, $PROCESS_ENV_COOKIE_DOMAIN);
+      userSession.persist(user_id, token, email, '.herokuapp.com');
     });
   }
 };
