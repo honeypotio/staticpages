@@ -59,8 +59,8 @@ $(document).ready(() => {
   flashMessagesService.showCurrent();
   load();
   $.cookieBar({
-    acceptText: '&times;',
-    message: '<span>Honeypot uses cookies to make your experience better.</span>',
+    acceptText: 'accept',
+    message: '<span>Honeypot uses cookies to make your experience better. You can click Accept, or ask for more info!</span>',
     policyButton: true,
     policyText: 'More info',
     policyURL: 'https://www.honeypot.io/pages/legal_notice#privacy_policy'

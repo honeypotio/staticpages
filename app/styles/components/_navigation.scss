@@ -4,10 +4,10 @@
   border-bottom: 1px solid $light-blue-color;
 
   #cookie-bar ~ & {
-    margin-top: 54px;
+    margin-top: 80px;
 
     @media #{$sm-up} {
-      margin-top: 30px;
+      margin-top: 60px;
     }
   }
 
