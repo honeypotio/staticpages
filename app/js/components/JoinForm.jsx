@@ -56,29 +56,40 @@ export default class JoinForm extends FormBase {
       { type: 'text', name: 'lastName', placeholder: locales[locale].inputs.lastName, validate: "required" },
       { type: 'email', name: 'email', placeholder: locales[locale].inputs.email, validate: "required,isEmail" },
       { type: 'password', name: 'password', placeholder: locales[locale].inputs.password, validate: "required,isLength:8" },
-      { type: 'password', name: 'repeatPassword', placeholder: locales[locale].inputs.repeatPw, validate: (val, context) => val && val === context.password  },
+      { type: 'password', name: 'repeatPassword', placeholder: locales[locale].inputs.repeatPw, validate: (val, context) => val && val === context.password  }
     ];
   }
 
   _onValidSubmit(values) {
     this.setState({ formSubmitted: true });
-    this.setState({
-      isSaving: true
-    });
-    createTalent.perform(values).then(() => {
-      window.location.href = `${$PROCESS_ENV_APP_HOST}/profile/signed-up`;
-    }).catch((err) => {
-      this.setState({ isSaving: false });
-      this._showError(locales[locale].serverError);
-    });
+    if (this.state.tosAgreed) {
+      this.setState({
+        isSaving: true,
+        tosError: false
+      });
+      createTalent.perform(values).then(() => {
+        window.location.href = `${$PROCESS_ENV_APP_HOST}/profile/signed-up`;
+      }).catch((err) => {
+        this.setState({ isSaving: false });
+        this._showError('There has been a problem. Please try again later.');
+      });
+    } else {
+      this._showError('Please fill in all required fields!');
+      this.setState({ tosError: true });
+    }
   }
 
   _onInvalidSubmit() {
     this._showError(locales[locale].submitWarning);
   }
 
+  _onTosCheck(e) {
+    this.setState({ tosAgreed: e.target.checked, tosError: false });
+  }
+
   render() {
     const inputClass = `c-talent-landing__input`;
+    const tosRequiredInfo = <div className="alert alert-danger">You must accept terms of service!</div>;
     return (
       <Form
         className="c-talent-landing__form"
@@ -87,14 +98,27 @@ export default class JoinForm extends FormBase {
       >
         <h3 className="text-center c-talent-landing__form-header">{locales[locale].header}</h3>
         <p className="text-center c-talent-landing__form-tagline">{locales[locale].tagline}</p>
+        <Checkbox
+          label="agree"
+          onCheck={this._onTosCheck.bind(this)}
+          hasError={this.state.formSubmitted && !this.state.tosAgreed}
+        >
+          I agree to the <a href="/pages/terms_of_service#talents" target="_blank" className="m-auth__checkbox-link">Terms of Service</a>
+          &nbsp;and the <a href="/pages/legal_notice#privacy_policy" target="_blank" className="m-auth__checkbox-link">Privacy Policy</a>
+        </Checkbox>
+        {(() => {
+          if (this.state.tosError) {
+            return (<p className="text-danger">This field is required.</p>)
+          }
+        })()}
         <div className="form-actions row">
           <div className="col-xs-6 c-talent-landing__oauth-wrapper">
-            <a className="btn btn-default c-talent-landing__oauth-btn c-talent-landing__oauth-btn--linkedin" href={`${$PROCESS_ENV_APP_HOST}/users/auth/linkedin?intent=sign_up`}>
+            <a className={`btn btn-default c-talent-landing__oauth-btn c-talent-landing__oauth-btn--linkedin ${ (this.state.tosAgreed ? '' : 'disabled') }`} href={`${$PROCESS_ENV_APP_HOST}/users/auth/linkedin?intent=sign_up`}>
               <i className="fa fa-linkedin"></i>LinkedIn
             </a>
           </div>
           <div className="col-xs-6 c-talent-landing__oauth-wrapper">
-            <a className="btn btn-default c-talent-landing__oauth-btn c-talent-landing__oauth-btn--github" href={`${$PROCESS_ENV_APP_HOST}/users/auth/github?intent=sign_up`}>
+            <a className={`btn btn-default c-talent-landing__oauth-btn c-talent-landing__oauth-btn--github ${ (this.state.tosAgreed ? '' : 'disabled') }`} href={`${$PROCESS_ENV_APP_HOST}/users/auth/github?intent=sign_up`}>
               <i className="fa fa-github"></i>GitHub
             </a>
           </div>
@@ -108,10 +132,6 @@ export default class JoinForm extends FormBase {
           })()}
         </div>
         {this._buildValidatedInputs(inputClass)}
-        <div className="text-center">
-          <small className="text-muted" dangerouslySetInnerHTML={{__html: locales[locale].disclaimer}}>
-          </small>
-        </div>
         <ButtonInput
           type="submit"
           className="btn btn-primary c-talent-landing__btn"

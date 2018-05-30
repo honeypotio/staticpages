@@ -18,10 +18,17 @@ export default {
           firstname: values.firstName,
           lastname: values.lastName,
           email: values.email,
-          password: values.password
+          password: values.password,
+          terms_of_service: true,
+          commit: 'Join Honeypot'
         }
       })
-    }).then(response => response.json())
+    }).then(response => {
+      if (!response.ok) {
+        throw new Error(response.responseText);
+      }
+      return response.json();
+    })
     .then(({ user_id, token, email }) => {
       userSession.persist(user_id, token, email, $PROCESS_ENV_COOKIE_DOMAIN);
     });
