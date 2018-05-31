@@ -19,9 +19,9 @@ export default {
           lastname: values.lastName,
           email: values.email,
           password: values.password,
-          terms_of_service: true,
-          commit: 'Join Honeypot'
-        }
+          terms_of_service: 1
+        },
+        commit: 'Join Honeypot'
       })
     }).then(response => {
       if (!response.ok) {
