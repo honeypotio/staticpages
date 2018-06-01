@@ -36,7 +36,7 @@ export default class SignupForm extends FormBase {
         tosError: false
       });
       createTalent.perform(values).then(() => {
-        window.location.href = `${$PROCESS_ENV_APP_HOST}/profile/signed-up`;
+        window.location.href = `https://reina-stg-honeypot-2506.herokuapp.com/profile/signed-up`;
       }).catch((err) => {
         this.setState({ isSaving: false });
         this._showError('There has been a problem. Please try again later.');
