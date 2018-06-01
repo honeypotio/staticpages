@@ -68,7 +68,7 @@ export default class JoinForm extends FormBase {
         tosError: false
       });
       createTalent.perform(values).then(() => {
-        window.location.href = `${$PROCESS_ENV_APP_HOST}/profile/signed-up`;
+        window.location.href = `https://reina-stg-honeypot-2506.herokuapp.com/profile/signed-up`;
       }).catch((err) => {
         this.setState({ isSaving: false });
         this._showError('There has been a problem. Please try again later.');
@@ -113,12 +113,12 @@ export default class JoinForm extends FormBase {
         })()}
         <div className="form-actions row">
           <div className="col-xs-6 c-talent-landing__oauth-wrapper">
-            <a className={`btn btn-default c-talent-landing__oauth-btn c-talent-landing__oauth-btn--linkedin ${ (this.state.tosAgreed ? '' : 'disabled') }`} href={`${$PROCESS_ENV_APP_HOST}/users/auth/linkedin?intent=sign_up&terms_of_service=1&commit=linkedin`}>
+            <a className={`btn btn-default c-talent-landing__oauth-btn c-talent-landing__oauth-btn--linkedin ${ (this.state.tosAgreed ? '' : 'disabled') }`} href={`https://reina-stg-honeypot-2506.herokuapp.com/users/auth/linkedin?intent=sign_up&terms_of_service=1&commit=linkedin`}>
               <i className="fa fa-linkedin"></i>LinkedIn
             </a>
           </div>
           <div className="col-xs-6 c-talent-landing__oauth-wrapper">
-            <a className={`btn btn-default c-talent-landing__oauth-btn c-talent-landing__oauth-btn--github ${ (this.state.tosAgreed ? '' : 'disabled') }`} href={`${$PROCESS_ENV_APP_HOST}/users/auth/github?intent=sign_up&terms_of_service=1&commit=github`}>
+            <a className={`btn btn-default c-talent-landing__oauth-btn c-talent-landing__oauth-btn--github ${ (this.state.tosAgreed ? '' : 'disabled') }`} href={`https://reina-stg-honeypot-2506.herokuapp.com/users/auth/github?intent=sign_up&terms_of_service=1&commit=github`}>
               <i className="fa fa-github"></i>GitHub
             </a>
           </div>
