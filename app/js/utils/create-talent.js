@@ -7,7 +7,7 @@ const userSession = new UserSession();
 
 export default {
   perform(values) {
-    return fetch(dataFetcher.buildURL('/api/v1/users'), {
+    return fetch('https://reina-stg-honeypot-2506.herokuapp.com/api/v1/users', {
       method: 'POST',
       credentials: 'include',
       headers: {
