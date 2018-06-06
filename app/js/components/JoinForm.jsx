@@ -3,42 +3,9 @@ import Checkbox from './Checkbox';
 import { ButtonInput, Alert } from 'react-bootstrap';
 import { Form, ValidatedInput } from 'react-bootstrap-validation';
 import createTalent from '../utils/create-talent';
+import errorMessages from '../utils/error-messages';
 import FormBase from './FormBase';
-
-const locales = {
-  en: {
-    header: 'Just one profile, no job applications',
-    tagline: 'Sign up, it only takes 5 minutes!',
-    disclaimer: `By signing up you agree to the <a href="/pages/terms_of_service#talents" target="_blank">Terms of Service</a> and the <a href="/pages/legal_notice#privacy_policy" target="_blank">Privacy Policy</a>`,
-    inputs: {
-      firstName: 'First Name',
-      lastName: 'Last Name',
-      email: 'Email',
-      password: 'Password',
-      repeatPw: 'Repeat password'
-    },
-    or: 'or',
-    join: 'Join Honeypot',
-    submitWarning: 'Please fill in all required fields!',
-    serverError: 'There was a problem, please try again later'
-  },
-  de: {
-    header: 'Nur ein Profil - keine Bewerbung.',
-    tagline: 'Melde dich jetzt an. Es dauert nur 5 Minuten!',
-    disclaimer: `Durch deine Anmeldung akzeptierst du die <a href="/pages/terms_of_service#talents" target="_blank">AGBs</a> und die <a href="/pages/legal_notice#privacy_policy" target="_blank">Datenschutzerklärung</a>.`,
-    inputs: {
-      firstName: 'Vorname',
-      lastName: 'Nachname',
-      email: 'Email',
-      password: 'Passwort',
-      repeatPw: 'Passwort wiederholen'
-    },
-    or: 'oder',
-    join: 'Jetzt registrieren',
-    submitWarning: 'Bitte fülle alle Pflichtfelder aus',
-    serverError: 'Es ist ein Fehler aufgetreten. Bitter versuche es später erneut.'
-  }
-};
+import locales from '../utils/locales';
 
 const locale = window.location.pathname.indexOf('/lp/join-de') > -1 ? 'de' : 'en';
 
@@ -67,14 +34,14 @@ export default class JoinForm extends FormBase {
         isSaving: true,
         tosError: false
       });
-      createTalent.perform(values).then(() => {
+      createTalent.perform(values, locale).then(() => {
         window.location.href = `${$PROCESS_ENV_APP_HOST}/profile/signed-up`;
       }).catch((err) => {
         this.setState({ isSaving: false });
         this._showError('There has been a problem. Please try again later.');
       });
     } else {
-      this._showError('Please fill in all required fields!');
+      this._showError(locales[locale].submitWarning);
       this.setState({ tosError: true });
     }
   }
@@ -103,12 +70,11 @@ export default class JoinForm extends FormBase {
           onCheck={this._onTosCheck.bind(this)}
           hasError={this.state.formSubmitted && !this.state.tosAgreed}
         >
-          I agree to the <a href="/pages/terms_of_service#talents" target="_blank" className="m-auth__checkbox-link">Terms of Service</a>
-          &nbsp;and the <a href="/pages/legal_notice#privacy_policy" target="_blank" className="m-auth__checkbox-link">Privacy Policy</a>
+          <span dangerouslySetInnerHTML={ {__html: locales[locale].tos} }></span>
         </Checkbox>
         {(() => {
           if (this.state.tosError) {
-            return (<p className="text-danger">This field is required.</p>)
+            return (<p className="text-danger">{ errorMessages[locale].required }</p>)
           }
         })()}
         <div className="form-actions row">

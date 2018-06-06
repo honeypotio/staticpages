@@ -2,11 +2,13 @@ import 'whatwg-fetch';
 import Cookies from 'js-cookie';
 import dataFetcher from './data-fetcher';
 import UserSession from './user-session';
+import locales from './locales';
 
 const userSession = new UserSession();
 
 export default {
-  perform(values) {
+  perform(values, locale) {
+    console.log(locales[locale].join)
     return fetch(dataFetcher.buildURL('/api/v1/users'), {
       method: 'POST',
       credentials: 'include',
@@ -21,7 +23,7 @@ export default {
           password: values.password,
           terms_of_service: 1
         },
-        commit: 'Join Honeypot'
+        commit: locales[locale].join
       })
     }).then(response => {
       if (!response.ok) {
