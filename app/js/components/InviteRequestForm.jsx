@@ -51,7 +51,7 @@ export default class InviteRequestForm extends FormBase {
           <div className="panel-footer c-sign-up-form__footer">
             <div className="m-auth__secondary-text">
               By requesting an invite you agree to the <a href="/pages/terms_of_service#companies" target="_blank" className="m-auth__checkbox-link">Terms of Service</a>
-              &nbsp; and the <a href="/pages/legal_notice#privacy_policy" target="_blank" className="m-auth__checkbox-link">Privacy Policy</a>
+              &nbsp; and the <a href="/pages/privacy" target="_blank" className="m-auth__checkbox-link">Privacy Policy</a>
             </div>
             <ButtonInput
               type="submit"
