@@ -2,6 +2,10 @@
   background-color: $light-gray-color;
   padding-top: 41px;
 
+  @media #{$md-up} {
+    min-height: calc(100vh - 170px);
+  }
+
   &__heading {
     @include text($fs-7, $fw-bold, $almost-black-color);
     margin-bottom: 20px;
