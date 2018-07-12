@@ -5,11 +5,7 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 1s ease-in-out;
-  background: {
-    image: url(DIGEST('/images/elixir_banner.png'));
-    size: cover;
-    repeat: no-repeat;
-  }
+  background: url(DIGEST('images/elixir_banner.png')) no-repeat $blue-color;
 
   &--show {
     max-height: 200px;
