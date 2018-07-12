@@ -6,6 +6,7 @@ import PageNavigation from 'js/components/PageNavigation';
 import InviteRequestForm from 'js/components/InviteRequestForm';
 import Cookies from 'js-cookie';
 import FlashMessages from 'js/utils/flash-messages';
+import Banner from 'js/utils/banner';
 import UserSession from 'js/utils/user-session';
 import buildUrl from 'js/utils/build-url';
 import parsePathname from 'js/utils/parse-pathname';
@@ -65,4 +66,5 @@ $(document).ready(() => {
     policyText: 'More info',
     policyURL: 'https://www.honeypot.io/pages/privacy'
   });
+  Banner.show();
 });

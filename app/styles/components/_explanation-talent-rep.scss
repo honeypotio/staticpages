@@ -14,7 +14,7 @@ $avatar-sizing-desktop: 180px;
     @include sizing(129px 123px);
     @include absolute(top 3px right 13px);
     content: '';
-    background: url('DIGEST(images/talent_rep_upper.svg)') no-repeat;
+    background: url(DIGEST('images/talent_rep_upper.svg')) no-repeat;
     background-size: contain;
 
     @media #{$md-up} {
@@ -27,7 +27,7 @@ $avatar-sizing-desktop: 180px;
     @include sizing(120px 112px);
     @include absolute(top 175px left 20px);
     content: '';
-    background: url('DIGEST(images/talent_rep_lower.svg)') no-repeat;
+    background: url(DIGEST('images/talent_rep_lower.svg')) no-repeat;
     background-size: contain;
 
     @media #{$md-up} {

@@ -1,0 +1,82 @@
+.c-landing-banner {
+  position: fixed;
+  z-index: $z-index-1;
+  width: 100vw;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease-in-out;
+  background: {
+    image: url(DIGEST('/images/elixir_banner.png'));
+    size: cover;
+    repeat: no-repeat;
+  }
+
+  &--show {
+    max-height: 200px;
+    padding: 0 10px;
+
+    @media #{$sm-up} {
+      padding: 0 25px;
+    }
+  }
+
+  &__text {
+    padding: 15px 0;
+    font-size: $fs-3;
+    color: $white-color;
+    font-weight: $fw-semibold;
+    padding-left: 15px;
+
+    @media #{$sm-up} {
+      font-size: $fs-9;
+      padding-left: 30px;
+    }
+  }
+
+  &__actions {
+    margin-top: -10px;
+
+    @media #{$sm-up} {
+      margin-right: 40px;
+      margin-top: 0;
+    }
+  }
+
+  &__watch {
+    border: 2px solid $white-color;
+    color: $white-color;
+    font-size: $fs-2;
+    padding: 6px;
+
+    @media #{$sm-up} {
+      font-size: $fs-4;
+      padding: 10px;
+    }
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      color: $white-color;
+      opacity: .8;
+    }
+  }
+
+  &__close {
+    margin-left: 10px;
+    padding-top: 5px;
+    color: $white-color;
+    font-size: $fs-9;
+    padding: 10px;
+
+    @media #{$sm-up} {
+      margin-left: 20px;
+    }
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      color: $white-color;
+      opacity: .8;
+    }
+  }
+}

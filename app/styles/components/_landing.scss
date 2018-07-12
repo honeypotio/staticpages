@@ -3,7 +3,7 @@ $counter-size: 40px;
 .c-landing {
   &__header {
     padding: 51px 0;
-    background: url('DIGEST(images/header_talent_lp.jpg)') no-repeat $black-color;
+    background: url(DIGEST('images/header_talent_lp.jpg')) no-repeat $black-color;
     background-size: cover;
     background-position-x: -145px;
 

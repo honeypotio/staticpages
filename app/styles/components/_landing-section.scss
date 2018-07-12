@@ -7,11 +7,11 @@
 
   &--explanation {
     padding: 37px 0;
-    background: url('DIGEST(images/explanation_header_mobile.jpg)') no-repeat;
+    background: url(DIGEST('images/explanation_header_mobile.jpg')) no-repeat;
     background-size: cover;
 
     @media #{$xs-up} {
-      background: url('DIGEST(images/explanation_header.jpg)') no-repeat;
+      background: url(DIGEST('images/explanation_header.jpg')) no-repeat;
       background-position-x: 0;
       background-size: cover;
     }
