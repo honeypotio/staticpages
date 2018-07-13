@@ -11,6 +11,10 @@
     }
   }
 
+  .c-landing-banner--show ~ & {
+    margin-top: 77px;
+  }
+
   &__clear {
     height: 51px;
 
@@ -20,6 +24,10 @@
       @media #{$sm-up} {
         height: 81px;
       }
+    }
+
+    .c-landing-banner--show ~ & {
+      height: 129px;
     }
   }
 

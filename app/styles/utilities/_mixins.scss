@@ -60,14 +60,14 @@
     @include sizing(166px 263px);
     @include absolute(top $before-top left -200px);
     content: '';
-    background-image: url('DIGEST(images/more-info-before.svg)');
+    background-image: url('DIGEST(/images/more-info-before.svg)');
   }
 
   &::after {
     @include sizing(181px 212px);
     @include absolute(top $after-top right -200px);
     content: '';
-    background-image: url('DIGEST(images/more-info-after.svg)');
+    background-image: url('DIGEST(/images/more-info-after.svg)');
   }
 }
 

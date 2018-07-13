@@ -18,6 +18,7 @@ _options:
     - app/partials/commission.static.hbs
     - app/partials/quote_card.static.hbs
     - app/partials/avatar.static.hbs
+    - app/partials/banner.static.hbs
 ---
 <html>
   <head>
@@ -29,7 +30,7 @@ _options:
     {{/if}}
     <link rel="stylesheet" href="{{url_base}}DIGEST(/app.css)">
     <style type="text/css">
-      .c-landing__header{background:url("DIGEST(images/header_talent_lp.jpg)") no-repeat #000;}
+      .c-landing__header{background:url("DIGEST(/images/header_talent_lp.jpg)") no-repeat #000;}
     </style>
     {{#if ga_id}}
       {{> analytics_optout ga_id=ga_id}}
@@ -43,6 +44,7 @@ _options:
       {{> google_tag_manager tracker=gtm_id}}
     {{/if}}
     <!-- TODO: flash -->
+    {{> banner}}
     {{> navigation logo=nav_logo class_name=header_class_name}}
     <main role="main">
       <div class="alert alert-warning u-no-margin text-center hide" id="flash-messages">

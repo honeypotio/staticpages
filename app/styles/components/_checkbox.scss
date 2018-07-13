@@ -10,15 +10,15 @@
 
     &:checked + .c-checkbox__label,
     &:checked:hover + .c-checkbox__label {
-      @include checkbox-replacement("DIGEST(images/checkbox-state-clicked.svg)", 3px);
+      @include checkbox-replacement("DIGEST(/images/checkbox-state-clicked.svg)", 3px);
     }
 
     &:hover + .c-checkbox__label {
-      @include checkbox-replacement("DIGEST(images/checkbox-state-hovered.svg)", 3px);
+      @include checkbox-replacement("DIGEST(/images/checkbox-state-hovered.svg)", 3px);
     }
 
     + .c-checkbox__label {
-      @include checkbox-replacement("DIGEST(images/checkbox-state-inactive.svg)", 3px);
+      @include checkbox-replacement("DIGEST(/images/checkbox-state-inactive.svg)", 3px);
       color: $gray-color;
     }
   }

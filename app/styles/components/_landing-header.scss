@@ -2,7 +2,7 @@
   padding: 90px 0;
   text-align: center;
   background: {
-    image: url('/images/lp_header.png');
+    image: url('DIGEST(/images/lp_header.png)');
     color: $blue-color;
     size: cover;
     position-x: -250px;
@@ -18,7 +18,7 @@
   }
 
   &--employers {
-    background: url('images/employers_bg.jpg') no-repeat;
+    background: url('DIGEST(/images/employers_bg.jpg)') no-repeat;
     background-color: $black-color;
     background-position-x: -800px;
 
@@ -31,7 +31,7 @@
   &--about {
     padding-top: 172px;
     padding-bottom: 125px;
-    background-image: url('images/about_bg.png');
+    background-image: url('DIGEST(/images/about_bg.png)');
     background-position: 50% 0;
     background-color: $black-color;
   }
