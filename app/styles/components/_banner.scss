@@ -5,7 +5,7 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 1s ease-in-out;
-  background: url(DIGEST('images/elixir_banner.png')) no-repeat $blue-color;
+  background: url('DIGEST(/images/elixir_banner.png)') no-repeat, linear-gradient(to bottom, rgba(54, 133, 214, 1), rgba(54, 133, 214, 0.5)) no-repeat;
 
   &--show {
     max-height: 200px;
