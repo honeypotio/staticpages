@@ -27,11 +27,24 @@ package-lock.json
 
 # Brunch output folder.
 public/
+!public/landing.css
+!public/maintenance.html
 
-# PR Page
+# New Static Pages
 !public/de
 !public/nl
 !public/women-in-tech-2018
+!public/hive-conference-2018
+public/de/.DS_Store
+public/nl/.DS_Store
+public/women-in-tech-2018/.DS_Store
+public/hive-conference-2018/.DS_Store
+!public/app-*.js
+!public/commons-*.js
+!public/path---*.js
+!public/component---*.js
+!public/build-js-styles.css
+
 
 # Other
 tmp/
