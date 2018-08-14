@@ -1,2 +1,2 @@
-webpackJsonp([56646042813054],{725:function(n,e){n.exports={pathContext:{slug:"/women-in-tech-2018/gbp/",langKey:"en"}}}});
+webpackJsonp([56646042813054],{724:function(n,e){n.exports={pathContext:{slug:"/women-in-tech-2018/gbp/",langKey:"en"}}}});
 //# sourceMappingURL=path---women-in-tech-2018-gbp-04a934967dd1f471b4b1.js.map
