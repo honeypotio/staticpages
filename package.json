@@ -7,6 +7,9 @@
     "type": "git",
     "url": ""
   },
+  "engines": {
+    "node": "5.7.1"
+  },
   "scripts": {
     "start": "brunch watch --server",
     "test": "mocha 'tests/**/*.spec.js' --compilers js:babel-core/register",
