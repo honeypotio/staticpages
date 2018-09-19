@@ -1,0 +1,23 @@
+{
+  "de": {
+    "hive-con": "Hive Konferenz",
+    "legal-notice": "Impressum",
+    "pricing": "Preismodelle",
+    "privacy-policy": "Datenschutzrichtlinien",
+    "terms-of-service": "AGB"
+  },
+  "en": {
+    "hive-con": "Hive Conference",
+    "legal-notice": "Legal Notice",
+    "pricing": "Pricing",
+    "privacy-policy": "Privacy Policy",
+    "terms-of-service": "Terms of Service"
+  },
+  "nl": {
+    "hive-con": "Hive Conference",
+    "legal-notice": "Legal Notice",
+    "pricing": "Pricing",
+    "privacy-policy": "Privacybeleid",
+    "terms-of-service": "Gebruikersvoorwaarden"
+  }
+}

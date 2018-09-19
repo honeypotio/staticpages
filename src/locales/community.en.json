@@ -1,0 +1,15 @@
+{
+  "meet": {
+    "headline": "Meet the Community",
+    "tagline": "We are active organizers of events across Europe, from cozy meetups to large, international conferences.",
+    "footline": "{{year}} $t(general:comapny-fullname). Privacy, Terms and Legal",
+    "graphql-europe": {
+      "title": "GraphQL Europe",
+      "text": "$t(title) is a conference with speakers from all around the world. Organized in collaboration with Prisma and the founding team of the GraphQL technology, GraphQL Europe is the largest GraphQL conference east of the Atlantic. Learn about GraphQL best practices from industry experts and become part of the thriving GraphQL community."
+    },
+    "hive-conference": {
+      "title": "Hive Conference",
+      "text": "Hive is a conference for HR Leaders, Technical Hiring Managers, CTOs and VPs of Engineering focused on all aspects of building and scaling great engineering teams."
+    }
+  }
+}

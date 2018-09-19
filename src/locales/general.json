@@ -1,0 +1,4 @@
+{
+  "company-name": "Honeypot",
+  "company-fullname": "$t(company-name) GmbH"
+}
