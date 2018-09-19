@@ -7,6 +7,10 @@
   transition: max-height 1s ease-in-out;
   background: url('DIGEST(/images/elixir_banner.png)') no-repeat, linear-gradient(to bottom, $blue-color, $light-blue-2-color) no-repeat;
 
+  &--lp {
+    top: 0;
+  }
+
   &--show {
     max-height: 200px;
     padding: 0 10px;
