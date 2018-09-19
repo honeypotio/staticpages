@@ -11,7 +11,7 @@
 *.sass-cache
 
 # OS or Editor folders
-.DS_Store
+**/.DS_Store
 .cache
 .project
 .settings
@@ -35,10 +35,6 @@ public/
 !public/nl
 !public/women-in-tech-2018
 !public/hive-conference-2018
-public/de/.DS_Store
-public/nl/.DS_Store
-public/women-in-tech-2018/.DS_Store
-public/hive-conference-2018/.DS_Store
 !public/app-*.js
 !public/commons-*.js
 !public/path---*.js
