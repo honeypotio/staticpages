@@ -9,6 +9,7 @@ _options:
     - app/partials/rollbar.static.hbs
     - app/partials/google_tag_manager.static.hbs
     - app/partials/scripts.static.hbs
+    - app/partials/banner.static.hbs
 ---
 <html>
   <head>
@@ -27,6 +28,7 @@ _options:
     {{#if gtm_id}}
       {{> google_tag_manager tracker=gtm_id}}
     {{/if}}
+    {{> banner lp=true}}
     <header class="c-navigation c-navigation--talent-lp">
       <nav class="navbar navbar-static-top">
         <div class="container">

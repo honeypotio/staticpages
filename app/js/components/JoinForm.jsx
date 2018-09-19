@@ -26,9 +26,12 @@ export default class JoinForm extends FormBase {
       { type: 'password', name: 'repeatPassword', placeholder: locales[locale].inputs.repeatPw, validate: (val, context) => val && val === context.password  }
     ];
     // set referrer - in case they use oAuth
-    if (typeof ga !== "undefined") {
-      ga('set', 'referrer', location.host);
-    }
+    const setGAReferrer = window.setInterval(() => {
+      if (typeof window.ga !== "undefined") {
+        window.ga('set', 'referrer', location.host);
+        window.clearInterval(setGAReferrer);
+      }
+    }, 500);
   }
 
   _onValidSubmit(values) {
