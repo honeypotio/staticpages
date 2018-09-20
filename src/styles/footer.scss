@@ -14,9 +14,36 @@
   text-transform: uppercase;
 }
 
+.footer__wrapper {
+  text-align: center;
+}
+
+.footer__logo {
+  width: 50px;
+}
+
 .footer__link-list {
   margin: 0;
   padding: 0;
+}
+
+.footer__lang-switch {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer__lang-item {
+  padding: 0 5px;
+  border-right: 1px solid $almost-black-color;
+  float: left;
+  &:last-child {
+    border-right: none;
+  }
+  &--active {
+    font-weight: bold;
+  }
 }
 
 .footer__link-item {

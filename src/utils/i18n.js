@@ -4,8 +4,8 @@ import general from '../locales/general.json';
 import footer from '../locales/footer.json';
 import header from '../locales/header.json';
 
+export const languages = ['de', 'en', 'nl'];
 const path = (typeof window !== 'undefined' ? window.location.pathname : '');
-const languages = ['de', 'en', 'nl'];
 const defaultLang = 'en';
 
 i18n.init({

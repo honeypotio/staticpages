@@ -2,6 +2,7 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
 }
 .header__lang-switch {}
 .header__link-list {
@@ -26,8 +27,7 @@
   }
 }
 .header__logo {
-  //flex: 1 1;
-  height: 45px;
+  height: 35px;
 }
 .header__nav {
   flex: 2 1 auto;
