@@ -1,0 +1,24 @@
+.footer {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer__column {
+  flex-grow: 1;
+}
+
+.footer__headline {
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.footer__link-list {
+  margin: 0;
+  padding: 0;
+}
+
+.footer__link-item {
+  list-style-type: none;
+}

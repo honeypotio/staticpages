@@ -8,7 +8,9 @@ export default ({ children }) => (
   <I18nextProvider i18n={ i18n } initialLanguage={ getLang() }>
     <div>
       <Header />
-      {children}
+      <div className="body container">
+        {children}
+      </div>
       <Footer />
     </div>
   </I18nextProvider> 

@@ -7,6 +7,7 @@ module.exports = {
       options: {
         includePaths: [
           './node_modules/bootstrap-sass/assets/stylesheets',
+          './app/assets',
           './app/styles'
         ]
       }
