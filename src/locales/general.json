@@ -1,4 +1,6 @@
 {
   "company-name": "Honeypot",
-  "company-fullname": "$t(company-name) GmbH"
+  "company-fullname": "$t(company-name) GmbH",
+  "copyright": "© {{year}} $t(company-fullname)"
+
 }

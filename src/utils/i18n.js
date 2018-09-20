@@ -11,6 +11,8 @@ const defaultLang = 'en';
 i18n.init({
   lng: defaultLang,
   fallbackLng: defaultLang,
+  defaultNS: 'general',
+  fallbackNS: 'general',
   resources: {
     de: {
       footer: footer.de,
