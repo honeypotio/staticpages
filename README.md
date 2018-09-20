@@ -4,13 +4,24 @@ Staticpages [![Build Status](https://travis-ci.org/honeypotio/staticpages.svg?br
 honeypot.io static pages. maintenance, error and others
 
 
-Development
+Development for old handlebars pages
 -----------
 
 ## starting server in dev mode
 
 ```shell
 npm start
+```
+
+Development for new gatsby/react SSR pages
+-----------
+
+## WARNING: ALWAYS MAKE SURE YOU DELETE THE RESPECTIVE HANDLEBARS PAGE BEFORE ADDING A NEW ONE FOR GATSBY/REACT
+
+## starting server in dev mode
+
+```shell
+npm run gdev
 ```
 
 Deployment

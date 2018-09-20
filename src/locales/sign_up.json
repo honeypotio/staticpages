@@ -1,0 +1,22 @@
+{
+  "de": {
+    "join": "Werde Teil von Honeypot",
+    "create": "Erstelle Dein kostenloses Honeypot-Profil und Unternehmen werden sich direkt bei dir bewerben.",
+    "talent-agree": "Ich erkläre mich mit den AGBs von Honeypot GmbH einverstanden.",
+    "or": "oder",
+    "firstname": "Vorname",
+    "lastname": "Nachname",
+    "email": "E-Mail",
+    "password": "Passwort",
+    "repeat-password": "Wiederhole $t(password)",
+    "create-account": "Erstelle ein Profil",
+    "already-account": "Du hast bereits ein Honeypot Profil?",
+    "employer": "Arbeitgeber",
+    "company-name": "Firmenname",
+    "hiring-location": "Einstellungsort",
+    "number-employees": "Anzahl der Mitarbeiter",
+    "contact-person": "Kontaktperson",
+    "contact-email": "$t(email) Kontakt",
+    "employer-agree": "Telefonnummer",
+  }
+}

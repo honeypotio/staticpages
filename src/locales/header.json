@@ -1,0 +1,23 @@
+{
+  "de": {
+    "about-us": "Über uns",
+    "for-employers": "Für Arbeitgeber",
+    "for-talents": "Für Entwickler",
+    "login": "Einloggen",
+    "sign-up": "Registrieren"
+  },
+  "en": {
+    "about-us": "About Us",
+    "for-employers": "For Employes",
+    "for-talents": "For Talents",
+    "login": "Login",
+    "sign-up": "Sign Up"
+  },
+  "nl": {
+    "about-us": "Over Ons",
+    "for-employers": "Voor Bedrijven",
+    "for-talents": "Voor Talenten",
+    "login": "Inloggen",
+    "sign-up": "Inschrijven"
+  }
+}

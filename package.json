@@ -14,8 +14,10 @@
     "start": "brunch watch --server",
     "test": "mocha 'tests/**/*.spec.js' --compilers js:babel-core/register",
     "test server": "mocha 'tests/**/*.spec.js' --compilers js:babel-core/register --watch",
-    "build": "brunch build --production && ./scripts/create_links",
-    "postinstall": "./scripts/copy_vendor"
+    "build": "gatsby build && brunch build --production && ./scripts/create_links",
+    "postinstall": "./scripts/copy_vendor",
+    "gdev": "gatsby develop",
+    "gbuild": "gatsby build"
   },
   "devDependencies": {
     "auto-reload-brunch": "^2.7.1",
@@ -25,8 +27,8 @@
     "babel-preset-react": "^6.24.1",
     "bootstrap-sass": "^3.3.6",
     "brunch": "2.8.2",
-    "brunch-static": "^1.1.1",
-    "clean-css-brunch": "^2.0.0",
+    "brunch-static": "1.1.1",
+    "clean-css-brunch": "2.0.0",
     "cookie-domain-monster": "^0.0.5",
     "css-brunch": "^2.0.0",
     "digest-brunch": "^1.5.1",
@@ -43,9 +45,10 @@
     "js-cookie": "^2.1.2",
     "js-yaml": "^3.6.1",
     "mocha": "^2.5.3",
-    "node-smushit": "^0.5.1",
+    "node-smushit": "0.5.1",
     "picturefill": "^3.0.2",
     "postcss-brunch": "0.5.0",
+    "ptz-i18n": "^0.4.0",
     "react": "^15.1.0",
     "react-addons-test-utils": "^15.1.0",
     "react-bootstrap": "0.28.5",
@@ -55,5 +58,13 @@
     "sass-brunch": "2.10.4",
     "uglify-js-brunch": "^2.0.0",
     "whatwg-fetch": "^1.0.0"
+  },
+  "dependencies": {
+    "gatsby": "^1.9.277",
+    "gatsby-link": "^1.6.45",
+    "gatsby-plugin-i18n": "^0.4.2",
+    "gatsby-plugin-sass": "1.0.18",
+    "i18next": "^11.9.0",
+    "react-i18next": "^7.12.0"
   }
 }
