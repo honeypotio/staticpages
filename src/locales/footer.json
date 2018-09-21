@@ -1,5 +1,6 @@
 {
   "de": {
+    "careers": "Karriere",
     "hive-con": "Hive Konferenz",
     "legal-notice": "Impressum",
     "pricing": "Preismodelle",
@@ -7,6 +8,7 @@
     "terms-of-service": "AGB"
   },
   "en": {
+    "careers": "Careers",
     "hive-con": "Hive Conference",
     "legal-notice": "Legal Notice",
     "pricing": "Pricing",
@@ -14,6 +16,7 @@
     "terms-of-service": "Terms of Service"
   },
   "nl": {
+    "careers": "Careers",
     "hive-con": "Hive Conference",
     "legal-notice": "Legal Notice",
     "pricing": "Pricing",

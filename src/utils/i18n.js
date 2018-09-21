@@ -41,3 +41,7 @@ export default i18n;
 export function getLang() {
   return getCurrentLangKey(languages, defaultLang, path);
 }
+
+export function getPathLang() {
+  return getCurrentLangKey(languages, '', path);
+}
