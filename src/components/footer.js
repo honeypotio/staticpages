@@ -75,7 +75,7 @@ export default () => (
             <li className="footer__link-item">Linkedin</li>
             <li className="footer__link-item">Github</li>
             <li className="footer__link-item">Instagram</li>
-            <li className="footer__link-item">Youtub</li>
+            <li className="footer__link-item">Youtube</li>
           </ul>
         </div>
       </footer>

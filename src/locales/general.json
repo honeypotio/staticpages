@@ -1,6 +1,14 @@
 {
   "company-name": "Honeypot",
   "company-fullname": "$t(company-name) GmbH",
-  "copyright": "© {{year}} $t(company-name)"
-
+  "copyright": "© {{year}} $t(company-name)",
+  "de": {
+    "tagline": "Europas tech- und developer-fokussierte Job Plattform"
+  },
+  "en": {
+    "tagline": "Europe's Tech & Developer-Focused Job Platform"
+  },
+  "nl": {
+    "tagline": "Europe's Tech & Developer-Focused Job Platform"
+  }
 }

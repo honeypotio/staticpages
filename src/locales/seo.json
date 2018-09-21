@@ -1,0 +1,68 @@
+{
+  "de": {
+    "index": {
+      "title": "$t(general:company-name) | $t(general:de.tagline)",
+      "description": "Europas tech-fokussierte Job Plattform für Softwareentwickler, DevOps, Data Scientists, Product Owner, QA and Engineering Leader. Erhalte Zugriff auf top Tech Jobs in Deutschland und den Niederlanden!"
+    },
+    "for-employers": {
+      "title": "Finde Top Tech Talente in Deutschland, den Niederlanden und Europa | $t(general:company-name)",
+      "description": "Honeypot ist die einfachste und effizienteste Art Softwareentwickler, DevOps Engineers, Data Scientists, Product Owner, QA Tester und Engineering Leads zu finden."
+    },
+    "about-us": {
+      "title": "Über uns - $t(general:company-name) | $t(general:de.tagline)",
+      "description": "Honeypot ist Europas tech-fokussierte Job Plattform für Softwareentwickler, DevOps, Data Scientists, Product Owner, QA and Engineering Leader. Lerne mehr über Honeypot, unsere Mission & unser Team."
+    },
+    "community": {
+      "title": "Community - $t(general:company-name) | $t(general:de.tagline)",
+      "description": "Wir sind stolze Organisatoren der Konferenzen Hive und GraphQL Europe! Halte Dich auf dem Laufenden über unsere bevorstehenden Events und Konferenzen und schau Dir unser neuesten Dokumentarfilme oder Open Source Contributions an."
+    },
+    "faq": {
+      "title": "FAQ - $t(general:company-name) | $t(general:de.tagline)",
+      "description": "Finde heraus wie die Honeypot Plattform funktioniert.  Lerne mehr über unseren Screening Prozess, Deinen Talent Rep & Deine Interviewanfragen."
+    }
+  },
+  "en": {
+    "index": {
+      "title": "$t(general:company-name) | $t(general:en.tagline)",
+      "description": "Europe's tech-focused job platform for Software Developers, DevOps, Data Scientists, Product Owners, QA and Engineering Leaders. Get access to top tech jobs in Germany and the Netherlands!"
+    },
+    "for-employers": {
+      "title": "Hire Top Tech Talent in Germany, the Netherlands and Europe | $t(general:company-name)",
+      "description": "Honeypot is the easiest and most efficient way to find skilled Software Developers, DevOps Engineers, Data Scientists, Product Owners, QA Testers and Engineering Leaders."
+    },
+    "about-us": {
+      "title": "About Us - $t(general:company-name) | $t(general:en.tagline)",
+      "description": "Honeypot is Europe's tech job platform for Software Developers, DevOps, Data Scientists, Product Owners, QA and Engineering Leaders. Find out more about Honeypot, our mission & our team."
+    },
+    "community": {
+      "title": "Community - $t(general:company-name) | $t(general:en.tagline)",
+      "description": "We’re proud organizers of Hive by Honeypot and GraphQL Europe! Stay up to date with our upcoming talks and conferences and check out our latest documentaires, open source stories and contributions."
+    },
+    "faq": {
+      "title": "FAQ - $t(general:company-name) | $t(general:en.tagline)",
+      "description": "Find out how the Honeypot platform works including more information about our screening process, your Talent Rep & your interview offers."
+    }
+  },
+  "nl": {
+    "index": {
+      "title": "$t(general:company-name) | $t(general:nl.tagline)",
+      "description": "Honeypot is Europa's Tech-Focused Job Platform voor Software Developers, DevOps Engineers, Data Scientists, Product Owners, QA Testers, Engineering Leaders en CTOs. Krijg toegang tot de beste tech banen van Nederland en Duitsland."
+    },
+    "for-employers": {
+      "title": "Neem Top Tech Talent aan in Duitsland, Nederland and Europa | $t(general:company-name)",
+      "description": "Honeypot is is de makkelte en meest efficiënte manier om ervaren Software Developers, DevOps Engineers, Data Scientists, Product Owners, QA Testers en Engineering Leaders aan te nemen."
+    },
+    "about-us": {
+      "title": "Over ons - $t(general:company-name) | $t(general:nl.tagline)",
+      "description": "Honeypot is Europa's Tech Job Platform voor Software Developers, DevOps, Data Scientists, Product Owners, QA en Engineering Leaders. Kom meer te weten over Honeypot, onze missie & ons team."
+    },
+    "community": {
+      "title": "Community - $t(general:company-name) | $t(general:nl.tagline)",
+      "description": "We zijn de trotse organisatoren van Hive by Honeypot en GraphQL Europe! Blijf op de hoogte van onze aankomende events en conferenties en bekijk onze nieuwste documentaires en open source projecten."
+    },
+    "faq": {
+      "title": "FAQ - $t(general:company-name) | $t(general:en.tagline)",
+      "description": "Ontdek hoe het Honeypot-platform werkt. Leer meer over ons screeningsproces, jouw Talent Rep & interview uitnodigingen."
+    }
+  }
+}

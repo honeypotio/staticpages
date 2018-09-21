@@ -3,6 +3,7 @@ import { getCurrentLangKey } from 'ptz-i18n';
 import general from '../locales/general.json';
 import footer from '../locales/footer.json';
 import header from '../locales/header.json';
+import seo from '../locales/seo.json';
 
 export const languages = ['de', 'en', 'nl'];
 const path = (typeof window !== 'undefined' ? window.location.pathname : '');
@@ -17,17 +18,20 @@ i18n.init({
     de: {
       footer: footer.de,
       header: header.de,
-      general
+      general,
+      seo: seo.de
     },
     en: {
       footer: footer.en,
       header: header.en,
-      general
+      general,
+      seo: seo.en
     },
     nl: {
       footer: footer.nl,
       header: header.nl,
-      general
+      general,
+      seo: seo.nl
     }
   }
 });
