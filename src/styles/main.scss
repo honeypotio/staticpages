@@ -1,21 +1,32 @@
+// Overrides
 @import 'bootstrap/variables';
 @import 'settings/variables';
-@import 'framework/variables';
+@import './variables';
+
+// Bootstrap
+@import 'bootstrap/mixins';
+@import 'bootstrap/normalize';
+@import 'bootstrap/type';
+@import 'bootstrap/grid';
+@import 'bootstrap/buttons';
+
 @import 'settings/z-index-variables';
 @import 'settings/breakpoint-variables';
 @import 'utilities/proxima-nova';
-@import 'utilities/mixins';
-@import 'components/_navigation';
-@import 'bootstrap/normalize';
-@import 'bootstrap/mixins';
-@import 'bootstrap/grid';
-@import 'bootstrap/forms';
-@import 'bootstrap/navbar';
 
+// Locals
 @import './header';
 @import './footer';
 
 body {
   line-height: 1.5em;
   font-family: 'Proxima-Nova';
+  color: $text-color;
+}
+
+p {
+}
+
+.btn-info {
+  text-decoration: underline;
 }

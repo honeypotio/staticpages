@@ -1,10 +1,21 @@
 .header {
+  padding-top: 20px;
+  width: 100%;
+  background: no-repeat top right url('../assets/index.header.svg');
+  height: 600px;
+}
+
+.header__controls {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+}
+.header__introduction {
+  box-sizing: border-box;
+  padding: 0 40px;
 }
 .header__lang-switch {}
+
 .header__link-list {
   float: right;
   margin: 0 auto;
@@ -14,7 +25,7 @@
   list-style-type: none;
 }
 .header__link-item {
-  color: $gray-4-color;
+  color: #999999;
   padding: 5px 8px;
   &--active {
     font-weight: bold;
