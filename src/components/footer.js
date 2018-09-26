@@ -28,7 +28,7 @@ const createLanguageSwitch = (lang, active) => {
 export default () => (
   <I18n ns={ ['footer', 'header'] }>
     { t => 
-    <footer className="footer container">
+    <footer className="footer">
       <div className="footer__column">
         <div className="footer__wrapper">
           <Link to="/">

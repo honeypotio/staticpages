@@ -5,7 +5,7 @@ import { I18n } from 'react-i18next';
 export default ({name, company, position, index}) =>
   <I18n ns={ 'index' }>
     { t =>
-    <div className="testimonial__wrapper">
+    <div className="wrapper">
       <div className="testimonial">
         <div className="testimonial__text">
           "{t(`testimonial.${index}`)}"

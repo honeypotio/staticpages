@@ -3,7 +3,7 @@ import Wrapper from './wrapper';
 import { I18n } from 'react-i18next';
 
 export default () =>
-  <Wrapper>
+  <div className="wrapper">
     <I18n ns={ 'index' }>
       { t =>
       <div className="newsletter">
@@ -20,4 +20,4 @@ export default () =>
         </div>
       </div>}
     </I18n>
-  </Wrapper>
+  </div>

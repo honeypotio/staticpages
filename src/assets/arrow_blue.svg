@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="8px" viewBox="0 0 11 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Current-Version" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="talents01" transform="translate(-867.000000, -2083.000000)" fill="#3685D6" fill-rule="nonzero">
+            <g id="techstack" transform="translate(292.000000, 1838.000000)">
+                <g transform="translate(437.000000, 64.000000)" id="button">
+                    <g transform="translate(0.000000, 173.000000)">
+                        <path d="M148.779536,11.3964497 L145.693038,8.24852071 C145.368143,7.91715976 144.834388,7.91715976 144.49789,8.24852071 C144.172996,8.57988166 144.172996,9.12426036 144.49789,9.46745562 L146.133966,11.1360947 L138.847046,11.1360947 C138.382911,11.1360947 138,11.5266272 138,12 C138,12.4733728 138.382911,12.8639053 138.847046,12.8639053 L146.14557,12.8639053 L144.49789,14.5325444 C144.172996,14.8639053 144.172996,15.408284 144.49789,15.7514793 C144.660338,15.9171598 144.880802,16 145.089662,16 C145.310127,16 145.518987,15.9171598 145.681435,15.7514793 L148.756329,12.6153846 C148.918776,12.4497041 149,12.2366864 149,12.0118343 C149,11.7869822 148.93038,11.5502959 148.779536,11.3964497 Z" id="arrow"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

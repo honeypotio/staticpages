@@ -1,6 +1,7 @@
 import React from 'react';
 import { I18n } from 'react-i18next';
 import Link from 'gatsby-link';
+import arrow from '../assets/arrow_blue.svg';
 
 //{/*<button type="button" className="btn btn-link">{t('sign-up')}</button>*/}
 export default ({ page, topic, sign }) => 
@@ -11,7 +12,10 @@ export default ({ page, topic, sign }) =>
         <h2 className="text-box__headline">{t(`${topic}.headline`)}</h2>
         <p className="text-box__text">{t(`${topic}.text`)}</p>
         { sign && 
-            <Link to={'sign_up'}>{t('sign-up')}</Link>
+            <Link className="text-box__link" to={'sign_up'}>
+              {t('sign-up')}
+              <img className="text-box__arrow" src={ arrow } />
+            </Link>
         }
       </div>
     }

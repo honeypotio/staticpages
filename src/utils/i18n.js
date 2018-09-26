@@ -6,7 +6,7 @@ import header from '../locales/header.json';
 import seo from '../locales/seo.json';
 import index from '../locales/index.json';
 
-export const languages = ['de', 'en', 'nl'];
+export const languages = ['en', 'de', 'nl'];
 const path = (typeof window !== 'undefined' ? window.location.pathname : '');
 const defaultLang = 'en';
 

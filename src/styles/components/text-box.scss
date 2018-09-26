@@ -1,3 +1,12 @@
 .text-box { }
 .text-box__headline { }
 .text-box__text { }
+.text-box__link {
+  font-weight: 600;
+  text-decoration: none;
+  color: $brand-primary;
+}
+
+.text-box__arrow {
+  margin-left: 5px;
+}
