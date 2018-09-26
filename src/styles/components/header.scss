@@ -1,7 +1,6 @@
 .header {
   padding-top: 20px;
   width: 100%;
-  background: no-repeat top right url('../assets/index.header.svg');
   height: 600px;
 
   &__controls {
@@ -43,5 +42,13 @@
 
   &__nav {
     flex: 2 1 auto;
+  }
+
+  &--index {
+    background: no-repeat top right url('../assets/index.header.svg');
+  }
+  
+  &--tech-hiring {
+    background: no-repeat top right url('../assets/tech-hiring.header.svg');
   }
 }

@@ -16,7 +16,7 @@ export default () => {
   const extendedHeader = (page === 'index' || page === 'tech-hiring');
   return (
     <div>
-      <header className="header">
+      <header className={`header header--${page}`}>
         <div className="header__controls wrapper">
           {/*Company Logo*/}
           <Link to="/">

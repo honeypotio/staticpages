@@ -18,23 +18,6 @@ import TestimonialGroup from '../components/testimonial-group';
 
 import '../styles/main.scss';
 
-const testimonialGroup = [
-  {
-    name: 'Emil Ahlbäck',
-    company: 'Weissmaler',
-    position: 'Senior Frontend Developer',
-    image: null,
-    index: 2
-  },
-  {
-    name: 'Veronica Hannibal',
-    company: 'finAPI',
-    position: 'Senior Frontend Developer',
-    image: null,
-    index: 2
-  }
-]
-
 export default () => (
   <Layout>
     <TextImageWrapper
@@ -53,7 +36,7 @@ export default () => (
       img={ techStack }
       sign />
 
-    <Testimonial page="index" index="1" />
+    <Testimonial left page="index" index="1" />
 
     <TextImageWrapper
       page="index"
@@ -70,7 +53,7 @@ export default () => (
       img={ support }
       sign />
 
-    <Testimonial page="index" index="5" />
+    <Testimonial left right page="index" index="5" />
 
     <TextImageWrapper
       page="index"

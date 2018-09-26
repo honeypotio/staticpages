@@ -1,6 +1,29 @@
 // Testimonial
+.testimonial-wrapper {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.side-background {
+  position: absolute;
+  width: 267px;
+  height: 322px;
+  top: 0;
+
+  &--left {
+    left: 0;
+  }
+
+  &--right {
+    right: 0;
+    transform: rotate(180deg);
+  }
+
+  &--index {
+    background: no-repeat left top url('../assets/cables.svg');
+  }
+}
 .testimonial {
-  //width: 100%;
   margin: 0 auto;
   width: 805px;
 
