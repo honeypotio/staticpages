@@ -18,12 +18,10 @@ export default () => {
     <div>
       <header className={`header header--${page}`}>
         <div className="header__controls wrapper">
-          {/*Company Logo*/}
           <Link to="/">
             <img src={ logo } className="header__logo"/>
           </Link>
           <Navigation />
-          {/*Language Sellection*/}
           <div className="header__lang-switch">{lang.toUpperCase()}</div>
         </div>
 

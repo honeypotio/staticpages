@@ -3,7 +3,6 @@ import { I18n } from 'react-i18next';
 import Link from 'gatsby-link';
 import arrow from '../assets/arrow_blue.svg';
 
-//{/*<button type="button" className="btn btn-link">{t('sign-up')}</button>*/}
 export default ({ page, topic, sign }) => 
   <I18n ns={ page }>
     {
