@@ -3,25 +3,25 @@
   width: 400px;
   display: flex;
   flex-direction: column;
-}
 
-.page-intro__headline {
-  color: #0F2A48;
-  font-weight: 400;
-  > b {
-    font-weight: 600;
-    line-height: 150%;
+  &__headline {
+    color: #0F2A48;
+    font-weight: 400;
+    > b {
+      font-weight: 600;
+      line-height: 150%;
+    }
   }
-}
 
-.page-intro__tagline {
-  font-size: 1.429em;
-  line-height: 30px;
-  width: 350px;
-  margin-bottom: 30px;
-}
+  &__tagline {
+    font-size: 1.429em;
+    line-height: 30px;
+    width: 350px;
+    margin-bottom: 30px;
+  }
 
-.page-intro__note {
-  background-color: #F8F9FB;
-  border-radius: 11px;
+  &__note {
+    background-color: #F8F9FB;
+    border-radius: 11px;
+  }
 }

@@ -1,28 +1,82 @@
-.testimonial__wrapper {
-  //background: no-repeat left top url('../assets/cables.svg');
-  min-height: 300px;
-}
+// Testimonial
 .testimonial {
   //width: 100%;
   margin: 0 auto;
   width: 805px;
+
+  &__avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+
+  &__name {
+    font-weight: 600;
+  }
+
+  &__person {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 805px;
+  }
+
+  &__text {
+    color: black;
+    text-align: center;
+    font-size: 1.786em;
+    line-height: 37px;
+    margin-bottom: 50px;
+  }
 }
 
-.testimonial__text {
-  color: black;
+// SmallTestimonila
+
+.small-testimonial {
+  height: 100%;
   text-align: center;
-  font-size: 1.786em;
-  line-height: 37px;
-  margin-bottom: 50px;
+  border-radius: 8px;
+  box-shadow: 0 2px 20px 0 rgba(0,0,0,0.06);
+  padding: 0 23px 23px 23px;
+
+  &__avatar {
+    border-radius: 50%;
+    border: 8px solid white;
+    box-shadow: 0 2px 13px 0 rgba(0,0,0,0.06);
+    margin: 0 auto;
+    margin-top: -35px;
+    width: 70px;
+    height: 70px;
+  }
+
+  &__name {
+    color: $black-color;
+  }
+
+  &__text {
+    color: $black-color;
+  }
 }
 
-.testimonial__person {
-  display: flex;
-  justify-content: center;
+// TestimonialGroup
+
+.testimonial-group {
+  width: 820px;
   margin: 0 auto;
-  width: 805px;
-}
 
-.testimonial__name {
-  font-weight: 600;
+  &__headline, &__tagline {
+    text-align: center;
+  }
+
+  &__wrapper {
+    margin-top: 85px;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+
+  &__testimonial {
+    width: 260px;
+  }
 }

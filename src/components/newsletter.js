@@ -16,7 +16,9 @@ export default () =>
             className="newsletter__email" />
           <button
             type="button"
-            className="button button--yellow button--large newsletter__button">{t('newsletter.join')}</button>
+            className="button button--yellow button--large newsletter__button">
+            { t('newsletter.join') }
+          </button>
         </div>
       </div>}
     </I18n>

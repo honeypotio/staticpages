@@ -1,23 +1,27 @@
 import React from 'react';
-import Wrapper from './wrapper';
 import { I18n } from 'react-i18next';
 
-export default ({name, company, position, index}) =>
-  <I18n ns={ 'index' }>
+export default ({ index, page }) =>
+  <I18n ns={ page }>
     { t =>
     <div className="wrapper">
       <div className="testimonial">
         <div className="testimonial__text">
-          "{t(`testimonial.${index}`)}"
+          "{t(`testimonial.${index}.text`)}"
         </div>
         <div className="testimonial__person">
-          <div className="testimonial__avatar"></div>
+          <img
+            className="testimonial__avatar"
+            src={ t(`testimonial.${index}.image`) } />
           <div className="testimonial__description">
             <div className="testimonial__name">
-              <p>{name}</p>
+              <p>{t(`testimonial.${index}.name`)}</p>
             </div>
             <div className="testimonial__position">
-              { position }<br/>{ company }
+              <p
+                dangerouslySetInnerHTML={
+                  {__html: t(`testimonial.${index}.position`).replace(/\n/g, '<br />')}
+                }></p>
             </div>
           </div>
         </div>

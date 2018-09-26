@@ -4,16 +4,25 @@
   margin: 0 auto;
   box-shadow: 2px 2px 31px 1px rgba(0,0,0,0.05);
   background: no-repeat right bottom url('../assets/graph-bg.svg');
-}
 
-.newsletter__email {
-  background-color: #F8F9FB;
-  border: none;
-  border-radius: 4px 0 0 4px;
-  padding: 18px 22px;
-  min-width: 280px;
-}
+  &__button {
+    border-radius: 0 4px 4px 0;
+  }
 
-.newsletter__button {
-  border-radius: 0 4px 4px 0;
+  &__headline {
+    margin-top: 0;
+  }
+
+  &__email {
+    background-color: #F8F9FB;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    padding: 18px 22px;
+    min-width: 280px;
+  }
+
+  &__text {
+    // Break the text
+    width: 450px;
+  }
 }

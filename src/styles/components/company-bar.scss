@@ -1,0 +1,13 @@
+.company-bar {
+  display: flex;
+  justify-content: space-between;
+
+  &__tagline {
+    flex: 0 0 200px;
+  }
+
+  &__logo {
+    height: 20px;
+  }
+}
+

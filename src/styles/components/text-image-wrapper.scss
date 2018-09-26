@@ -2,17 +2,18 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+
+  &__image {
+    //width: 50%;
+    //flex: 1 1 auto;
+  }
+
+  &__text {
+    width: 380px;
+  }
+
+  &--image-right {
+    flex-direction: row-reverse;
+  }
 }
 
-.text-image-wrapper--image-right {
-  flex-direction: row-reverse;
-}
-
-.text-image-wrapper__image {
-  //width: 50%;
-  //flex: 1 1 auto;
-}
-
-.text-image-wrapper__text {
-  width: 380px;
-}

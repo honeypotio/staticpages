@@ -14,8 +14,10 @@
 @import 'settings/breakpoint-variables';
 @import 'utilities/proxima-nova';
 
-// Locals
+// Components
 @import './components/index';
+
+@import './utils';
 
 * {
   box-sizing: border-box;
@@ -47,15 +49,4 @@ h2 {
 
 h3 {
   font-size: 1.785em;
-}
-
-
-.wrapper, .page {
-  width: 1234px;
-  margin: 0 auto;
-  margin-bottom: 100px;
-}
-
-.content {
-  margin: 0 80px;
 }

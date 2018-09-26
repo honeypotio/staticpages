@@ -1,35 +1,35 @@
-.sign-up { }
+.sign-up {
 
-.sign-up__step {
-  display: flex;
-  margin-bottom: 15px;
+  &__step {
+    display: flex;
+    margin-bottom: 15px;
+  }
+
+  &__step-position {
+    width: 32px;
+    margin-right: 30px;
+  }
+
+  &__position-nr {
+    line-height: 2.4em;
+    font-weight: 600;
+    color: #CEA000;
+    width: 32px;
+    height: 32px;
+    background-color: #FFF2C6;
+    text-align: center;
+  }
+
+  &__step-headline {
+    color: black;
+    margin-top: 0;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &__arrow {
+    display: block;
+    margin: 10px auto;
+  }
+
 }
-
-.sign-up__step-position {
-  width: 32px;
-  margin-right: 30px;
-}
-
-.sign-up__position-nr {
-  line-height: 2.4em;
-  font-weight: 600;
-  color: #CEA000;
-  width: 32px;
-  height: 32px;
-  background-color: #FFF2C6;
-  text-align: center;
-}
-
-.sign-up__step-headline {
-  color: black;
-  margin-top: 0;
-  font-size: 18px;
-  line-height: 22px;
-}
-
-.sign-up__arrow {
-  display: block;
-  margin: 10px auto;
-}
-
-.sign-up__step-content { }
