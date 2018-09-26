@@ -1,6 +1,72 @@
 {
   "en": {
-    "title": "Hello"
+    "sign-up": "Signup to Honeypot",
+    "page-intro": {
+      "headline1": "Choose a",
+      "headline2": "Job You Love",
+      "tagline": "Honeypot is Europe’s tech-focused job platform. Create a profile and let companies apply to you.",
+      "button1": "Find Me a Job!",
+      "button2": "I'm Hiring"
+    },
+    "company-bar": {
+      "tagline": "Over 1000 Companies Are Hiring on Honeypot"
+    },
+    "join": {
+      "headline": "Join an Engineering Team in Your Ideal Role",
+      "text": "On Honeypot, over 1000 companies are hiring Software Developers, DevOps Engineers, Data Scientists, Product Owners, QA Testers and Engineering Leaders just like you!"
+    },
+    "process": {
+      "headline": "A Simple and Quick Sign Up Process!",
+      "step1": {
+        "headline": "Create a Profile",
+        "text": "It’s your chance to tell us what you want in your next role - and it takes less than 5 minutes!"
+      },
+      "step2": {
+        "headline": "Complete our Screening",
+        "text": "Pass our code screening and take an optional call with your Talent Rep, who positions you to receive the best offers!"
+      },
+      "step3": {
+        "headline": "Become Visible",
+        "text": "Become visible on Honeypot so that companies can find your profile and make you offers with salary and tech stack up front."
+      },
+      "step4": {
+        "headline": "Get Hired!",
+        "text": "Interview with companies that interest you! And choose the one you like the best!"
+      }
+    },
+    "stack": {
+      "headline": "Work with a Tech Stack You Love",
+      "text": "Whether it’s Ruby, Scala, JavaScript or anything else, on Honeypot you only get offers from companies for your preferred tech stack and desired salary."
+    },
+    "location": {
+      "headline": "Choose the Locations that Suit You",
+      "text": "Honeypot operates in Europe’s most exciting tech cities. Set your location preference and companies apply to you!"
+    },
+    "support": {
+      "headline": "Free Career Support and Guidance",
+      "text": "Your Talent Rep will guide you through from start to finish, providing guidance on resume and interviews, helping you benchmark your salary, evaluate offers and find a job you love"
+    },
+    "worth": {
+      "headline": "Know Your Worth!",
+      "text": "Companies apply directly to you so you can compare offers side by side. No more job applications or clumsy back and forths with headhunters."
+    },
+    "newsletter": {
+      "headline": "Subscribe to our newsletter",
+      "text": "Get careers tips, documentary previews, discounts for conferences and exclusive content!"
+    },
+    "testimonial": {
+      "1": "I like Honeypot because companies offer interviews with minimum salary. It saved the effort of applying for jobs, doing interviews, getting offers, and finally finding out that the salary didn't meet my requirements",
+      "2": "After only two weeks I received 13 interview invites from a great selection of companies. From these I could choose the ones that best suited me and ended up finding the perfect startup job",
+      "3": "Within a few weeks I received multiple job offers and landed an awesome job right after finishing my degree. Compared to my experience with job recruiters on other platforms, my experience on Honeypot felt much more personal.",
+      "4": "The user experience was amazing, the site was really easy to use. The platform does all the heavy lifting for you, you don't need to search or keep track of where you apply. Their system is really efficient in the sense that companies find you, making this a really simple and painless platform to use.",
+      "5": "Honeypot was fantastic! I was surprised by the sheer amount of interview offers and the diversity of companies. My Talent Rep gave me solid advice on how to structure a professional-looking CV, which is something I've always struggled with in the past."
+    },
+    "newsletter": {
+      "headline": "Subscribe to our newsletter ",
+      "text": "Get careers tips, documentary previews, discounts for conferences and exclusive content! ",
+      "email-placeholder": "Your email",
+      "join": "Join"
+    }
   },
   "de": {
     "title": "Hallo"

@@ -15,18 +15,47 @@
 @import 'utilities/proxima-nova';
 
 // Locals
-@import './header';
-@import './footer';
+@import './components/index';
+
+html {
+  font-size: 100%; // 16px
+}
 
 body {
   line-height: 1.5em;
   font-family: 'Proxima-Nova';
+  font-size: 0.875em; // 14px 
   color: $text-color;
 }
 
-p {
+h2, h3 {
+  color: $black-color;
 }
+
+h1 {
+  font-size: 3.213em;
+}
+
+h2 {
+  font-size: 2.5em; // 35px
+  margin: 20px 0;
+}
+
+h3 {
+  font-size: 1.785em;
+}
+
 
 .btn-info {
   text-decoration: underline;
+}
+
+.wrapper, .page {
+  width: 1234px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.content {
+  margin: 0 80px;
 }

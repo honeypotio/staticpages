@@ -1,0 +1,31 @@
+.button {
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  padding: 12px 20px;
+
+  &--yellow {
+    background-color: #FFF2C6;
+    color: #CEA000;
+  }
+
+  &--blue {
+    background-color: #E1F0FF;
+    color: #3685D6;
+  }
+
+  &--primary {
+    background-color: #3685D6;
+    color: #FFFFFF;
+  }
+
+  &--link {
+    background-color: transparent;
+    color: $text-color;
+    text-decoration: underline;
+  }
+
+  &--large {
+    padding: 16px 22px;
+  }
+}

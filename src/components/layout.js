@@ -10,7 +10,7 @@ export default ({ children }) => (
     <div>
       <Seo />
       <Header />
-      <div className="body container">
+      <div className="body">
         {children}
       </div>
       <Footer />

@@ -1,0 +1,28 @@
+.testimonial__wrapper {
+  //background: no-repeat left top url('../assets/cables.svg');
+  min-height: 300px;
+}
+.testimonial {
+  //width: 100%;
+  margin: 0 auto;
+  width: 805px;
+}
+
+.testimonial__text {
+  color: black;
+  text-align: center;
+  font-size: 1.786em;
+  line-height: 37px;
+  margin-bottom: 50px;
+}
+
+.testimonial__person {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 805px;
+}
+
+.testimonial__name {
+  font-weight: 600;
+}

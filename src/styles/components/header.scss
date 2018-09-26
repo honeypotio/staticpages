@@ -12,7 +12,6 @@
 }
 .header__introduction {
   box-sizing: border-box;
-  padding: 0 40px;
 }
 .header__lang-switch {}
 
@@ -27,13 +26,11 @@
 .header__link-item {
   color: #999999;
   padding: 5px 8px;
+  font-weight: bold;
   &--active {
-    font-weight: bold;
     color: $almost-black-color;
   }
   &--button {
-    border-radius: 3px;
-    background-color: $brand-primary;
     color: $white-color;
   }
 }
@@ -42,4 +39,16 @@
 }
 .header__nav {
   flex: 2 1 auto;
+}
+
+.company-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.company-bar__tagline {
+  flex: 0 0 200px;
+}
+.company-bar__logo {
+  height: 20px;
 }

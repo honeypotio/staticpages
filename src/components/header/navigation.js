@@ -11,7 +11,8 @@ export default () => (
         {links.map(i =>
           <li key={ i } className="header__link-item">{t(i)}</li>
         )}
-        <li className="header__link-item header__link-item--button">{t('sign-up')}</li>
+        <li
+          className="button button--primary header__link-item header__link-item--button">{t('sign-up')}</li>
       </ul>
     </nav>
     }

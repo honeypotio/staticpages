@@ -10,9 +10,15 @@
   font-weight: 400;
   > b {
     font-weight: 600;
-    font-size: 150%;
     line-height: 150%;
   }
+}
+
+.page-intro__tagline {
+  font-size: 1.429em;
+  line-height: 30px;
+  width: 350px;
+  margin-bottom: 30px;
 }
 
 .page-intro__note {

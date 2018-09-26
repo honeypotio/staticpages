@@ -4,6 +4,7 @@ import general from '../locales/general.json';
 import footer from '../locales/footer.json';
 import header from '../locales/header.json';
 import seo from '../locales/seo.json';
+import index from '../locales/index.json';
 
 export const languages = ['de', 'en', 'nl'];
 const path = (typeof window !== 'undefined' ? window.location.pathname : '');
@@ -19,19 +20,22 @@ i18n.init({
       footer: footer.de,
       header: header.de,
       general,
-      seo: seo.de
+      seo: seo.de,
+      index: index.de
     },
     en: {
       footer: footer.en,
       header: header.en,
       general,
-      seo: seo.en
+      seo: seo.en,
+      index: index.en
     },
     nl: {
       footer: footer.nl,
       header: header.nl,
       general,
-      seo: seo.nl
+      seo: seo.nl,
+      index: index.nl
     }
   }
 });
