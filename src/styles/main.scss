@@ -1,6 +1,7 @@
 // Overrides
 @import 'bootstrap/variables';
-@import 'settings/variables';
+@import '../../app/styles/utilities/mixins';
+@import '../../app/styles/settings/variables';
 @import './variables';
 
 // Bootstrap

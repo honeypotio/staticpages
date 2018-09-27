@@ -1,0 +1,535 @@
+{
+  "en": {
+    "title": "Frequently Asked Questions",
+    "talents": {
+      "type": "For Talents",
+      "signing-up": {
+        "title": "Signing up",
+        "text": [{
+          "qn": "What is Honeypot?",
+          "ans": "Honeypot is a developer-focused job platform, linking screened tech talent with approved companies. The idea of the platform is to switch the power dynamic of traditional recruiting. You create a profile  and companies apply directly to you with transparent job offers.  The entry criteria on both sides creates a transparent and efficient marketplace, open only to those pre-approved, allowing talent and companies to focus on finding the right fit."
+        },{
+          "qn": "What type of skills do you look for on Honeypot?",
+          "ans": "Demand for skillsets varies. Currently we are seeing a strong need for mobile development and for frontend and backend web development. We also have positions in devops, for data-scientists, for CTOs and more. Experience in startups is a bonus, though not a prerequisite. A good level of English is important for most jobs too, though some positions may be advertised in different languages."
+        },{
+          "qn": "How does the Honeypot process work?",
+          "ans": "Signup to Honeypot and create a profile. Before becoming visible to companies, we will check your code and have a quick call with you to establish your salary and tech preferences.  Once this is complete and your profile is fully filled in, you will enter a batch. Batches start every Monday and run for three weeks and during this time you are visible to companies.  This creates urgency for companies who are motivated to move fast to send you interview invites. You accept the interviews for the positions which interest you, interview with those companies, and choose the role that's closest to your ideal."
+        },{
+          "qn": "What is a Talent Rep?",
+          "ans": "A Talent Rep is your personal guide to Honeypot. They will lead you through the entire process, from sign up to job offer, answer any questions you have along the way and help you navigate company profiles, interview invites, and job offers. Your Talent Rep is experienced in tech and startup recruitment so feel free to ask for support when you need it."
+        },{
+          "qn": "Do I need to pay a fee for using Honeypot? ",
+          "ans": "Honeypot is a completely free service for job seekers! You don’t have to pay a fee at any time on the platform."
+        }]
+      },
+      "creating-profile": {
+        "title": "Creating your profile",
+        "text": [
+          {
+            "qn": "What information is included on my profile?",
+            "ans": "Aside from the basics like name, contact information, experience and skills, you can add your salary expectations, prefered location and contract type, and desired roles. We also provide plenty of space for a personal summary plus room to fill in links to your work as demonstrable on platforms like GitHub, Behance, StackOverflow and others. And don’t forget your Talent Rep is there for support if needed."
+          },{
+            "qn": "I am currently employed and must give notice before leaving, can I include this information in my profile?",
+            "ans": "You can include your earliest start date in your profile. Companies offer you interview invites with this in mind."
+          },{
+            "qn": "I am currently employed and don’t want my company to see me, can I hide my profile?",
+            "ans": "We block your current employer by default. You can add other companies you may wish to block through the privacy tab."
+          },{
+            "qn": "I am currently a student but will soon graduate. When should I create a profile?",
+            "ans": "You can sign up to Honeypot  when you decide you are ready to enter the job market. The hiring process usually goes pretty fast once your profile becomes visible so be sure you have enjoyed your final student days before joining! While Honeypot is geared towards experienced developers, we also recognize fresh graduates have big potential. If there are some experience gaps on your profile we ask you to complete our code challenge. If you prove what you know we let the other entry criteria slide."
+          },{
+            "qn": "What should I include in my personal summary? Can I just skip it?",
+            "ans": "Resist that familiar temptation to simply cut an old bio from elsewhere and paste it here. Companies really do read the personal summaries and generally use it as a complement to your tech skills to judge cultural fit. A well-written summary should be between 50 and 200 words long and answer three important questions: who are you, what do you want from your next role, and what demonstrates your ability to progress to that position. Tell us what excites you as a developer and what you would love to do. Don’t forget your Talent Rep is on standby to help when needed."
+          },{
+            "qn": "What types of skills should I include in the skills section?",
+            "ans": "This part is all about your technical expertise. Include programming languages, frameworks and important tools with which you are familiar. You should be comfortable with the skills you list, meaning you don’t necessarily need to be an expert, but you do need to have more than a basic knowledge. If you feel your soft skills also deserve a mention, we encourage you to incorporate them into the ‘About Me’ section of your profile."
+          },{
+            "qn": "How do I determine my ideal salary?",
+            "ans": "This depends on you, though you should try to be realistic in your assumptions, taking into account your own level of experience as well as living costs in the city to which you are applying. The ideal salary is used as an indicator for companies and is not necessary a fixed criterion."
+          },{
+            "qn": "Can I select multiple locations for my ideal position?",
+            "ans": "Yes, you can choose as many locations as you like from the listed areas for your ideal position. You will receive job offers from companies situated in all of these locations. But please don’t select a location unless you really intend to relocate there. If you want to work remotely please select the remote option. However, we do not currently have companies hiring for remote positions."
+          },{
+            "qn": "I don’t currently live in any of the locations listed. Can I still join Honeypot?",
+            "ans": "Yes, you are still welcome to join Honeypot. If you fancy relocating then mark the cities that interest you. If you don’t want to relocate then add a city in the  ‘other’ section in your ideal position.  We are expanding rapidly and will keep you updated on our movements. The final option is remote positions, though we do not currently have companies hiring for remote positions."
+          },{
+            "qn": "I want to apply for a position in Berlin but I don’t speak German. Is this a problem?",
+            "ans": "English is the working language of many of the companies using Honeypot, so it shouldn’t be a problem."
+          },{
+            "qn": "Do companies sponsor visas for relocation?",
+            "ans": "Many companies on our platform do sponsor relocation visas. They will take care of the paperwork and the cost involved. Because your work authorization is included in your profile companies who send you interview invites are those who are generally willing to help you resettle."
+          },{
+            "qn": "Do companies help with relocation costs?",
+            "ans": "Some companies will offer a relocation bonus for candidates but few will organize accommodation. We recommend you discuss these points directly with the company once you accept the interview invite."
+          }
+        ] 
+      },
+      "getting-approved": {
+        "title": "Getting Approved to Honeypot",
+        "text": [
+          {
+            "qn": "I have completed my profile for Honeypot, what's next?",
+            "ans": "After you complete your profile, submit it for review. Your Talent Rep screens your profile to make sure we have jobs and companies which fit your skillset.  They will email you to let you know when you have been accepted."
+          },{
+            "qn": "How long does it take to have my profile reviewed on Honeypot?",
+            "ans": "Submit your profile and your Talent Rep will usually complete a review within one to two working days, or in very exceptional cases longer. Incomplete profiles delay the process."
+          },{
+            "qn": "What do you look for when reviewing profiles for Honeypot?",
+            "ans": "To be accepted you must have a complete profile plus a certain level of demonstrable experience in your given field. If you cannot demonstrate your experience we will ask  you to complete a code challenge."
+          },{
+            "qn": "My profile was approved on Honeypot but it looks different now. What happened?",
+            "ans": "During the approval process your Talent Rep adds a headline which summarizes your profile for companies.  You have full control over the headline and we can edit it if you aren’t happy. Occasionally, your Talent Rep  will also clean up some aspects of the profile to better showcase your skills. Don’t worry, it's just a matter of rejigging for maximum impact, we won’t delete any important information."
+          },{
+            "qn": "My profile was not accepted to Honeypot, can I resubmit?",
+            "ans": "If your profile isn’t accepted your Talent Rep will send you an email to explain why. They will be open to answer any questions you may have."
+          }
+        ] 
+      },
+      "receiving-invites": {
+        "title": "Receiving interview invites",
+        "text": [
+          {
+            "qn": "When do I become visible to companies on Honeypot?",
+            "ans": "New talent becomes visible in batches. This allows companies to track and organize to whom they have sent interview invites. Once your profile has been reviewed and accepted, your Talent Rep will email you telling you the date of the next batch. Your profile will automatically be included and from that point you are visible to companies. If you want to delay entry to the batch, contact your Talent Rep."
+          },{
+            "qn": "I don’t want to be visible to companies on Honeypot just yet. How do I do this?",
+            "ans": "Just send your Talent Rep a quick email explaining your requirements and they will sort it out for you."
+          },{
+            "qn": "How do I contact my Talent Rep on Honeypot?",
+            "ans": "When you are accepted onto the platform your Talent Rep will email you directly. You can use that email to contact them whenever you need help or advice. If you have lost your Talent Rep’s email you can contact them at <a href='mailto:hello@honeypot.io'>hello@honeypot.io</a>"
+          },{
+            "qn": "How do companies find my profile on Honeypot?",
+            "ans": "Companies search for candidates by filtering for specific criteria, such as skillset, location, work authorization, and contract type. This brings up profiles of candidates to whom the companies can then send interview invites."
+          },{
+            "qn": "What is an interview invite?",
+            "ans": "An interview invite is a request from a company to interview you for a specific role. It indicates that a company likes your profile and is interested in talking to you about a position. Accepting an interview invite does not bind you to the company and you may accept as many interview invites as you like."
+          },{
+            "qn": "What information is included in an interview invite?",
+            "ans": "Interview invites list role-specific information. You can think of them as a more transparent version of a traditional job posting. They include regular items, such as a role description and skill specification, but also salary and other benefits plus a personalized message from the CEO, CTO or hiring manager, depending on the size of the company. For more company specific information you can click into the company profiles."
+          },{
+            "qn": "What is a company profile?",
+            "ans": "Each company on the platform has an individual company profile. It is a detailed overview  of tech credentials and work culture and is accessible through the interview invite. Company profiles include information about the development team, products, tech stack, hiring procedure, as well as a timeline of major developments and a direct message from the CTO, CEO or HR manager, depending on the size of the company. You can use company profiles as a resource to decide which companies are most appealing to you."
+          },{
+            "qn": "I like the company but the salary on the interview invite is too low. What should I do?",
+            "ans": "The salary listed on the interview invite should be taken as a ballpark guide. If the figure is within a 20% range of your desired salary then we recommend you accept the interview invite and negotiate directly with the company. Your Talent Rep can help with negotiations."
+          },{
+            "qn": "Can I accept more than one interview invite?",
+            "ans": "Sure you can, but don’t overdo it either.  You want to leave yourself enough time to properly prepare for each interview."
+          },{
+            "qn": "What format do the interviews take?",
+            "ans": "The interviews are arranged directly between you and the company. Companies are generally flexible to the schedules and requirements of talent. Common interview formats are face-to-face, Skype/Hangout, phone and online pair-coding."
+          },{
+            "qn": "Is it possible to do interviews remotely?",
+            "ans": "Yes, most companies are happy to interview talent by phone, over Skype/Hangouts or by other such means."
+          },{
+            "qn": "What should I prepare for the interview?",
+            "ans": "You should fully understand the role that you are applying for by revisiting the interview invite and company profile. Identify the skills the company is looking for and have a clear link to your own profile. Its also helpful to think about which direction you want your career to go in and how that aligns with the future plans of the company.  Check out our blog for information on interview tactics."
+          },{
+            "qn": "If I accept an interview invite, will I still be eligible to receive invites from other companies?",
+            "ans": "Yes, you will be eligible to receive interview invites from multiple companies until a paper offer for a job role is signed."
+          },{
+            "qn": "My profile has been visible to companies on Honeypot for some time, why haven’t I received any interview invites?",
+            "ans": "In the unlikely event that you get no interview invites we suggest you contact your Talent Rep."
+          },{
+            "qn": "Can I decline interview invites on Honeypot?",
+            "ans": "Yes, if interview invites are not interesting for you, you can decline them. In these cases you can also specify why the invite was not interesting."
+          },{
+            "qn": "I don’t like the role being offered but I like the company. Can I decline an interview invite for a specific role but still receive invites for other positions within the same company?",
+            "ans": "You can decline a specific role and still receive interview invites for different roles within the same company. At the point when you decline an interview invite you are offered the option to block the company. There is no need to block that company if you are still interested in working there."
+          },{
+            "qn": "How do I block a company from sending me interview invites on Honeypot?",
+            "ans": "At the point when you decline an interview invite you are offered the option to block the company from sending future invites. Alternatively, click on the privacy tab in your account settings and add the unwanted company to your list of blocked companies."
+          },{
+            "qn": "I declined an interview invite but have now changed my mind. Can I get back in contact with the company?",
+            "ans": "We encourage you to fully evaluate interview invites before declining them.  If you change your mind after declining an invite get in touch with your Talent Rep. In some cases the role may have already been filled and hence the interview invite is void, in other cases it may still be open. If it is still possible to interview we will help in whatever way we can."
+          }
+        ] 
+      },
+      "job-refer": {
+        "title": "Getting Job Offers and Referring Friends",
+        "text": [
+          {
+            "qn": "How do I claim my referral bonus on Honeypot?",
+            "ans": "The referral bonus is €512 and is distributed once the person whom you referred has been hired. You will receive an email notification upon hiring and we will transfer the money to you on their first day."
+          },{
+            "qn": "I recently got hired on Honeypot. What happens to my profile now?",
+            "ans": "First of all, congrats on getting hired! Drop us an email to let us now and we will hide your profile. You will no longer receive interview invites."
+          }
+        ] 
+      }
+    },
+    "employers": {
+      "type": "For Employers",
+      "joining-honeypot": {
+        "title": "Joining Honeypot",
+        "text": [
+          {
+            "qn": "What is Honeypot?",
+            "ans": "Honeypot is an invite-only developer-focused job platform, linking screened tech talent with approved companies. Tech talent are vetted for skills and experience and only upon meeting certain standards are eligible to join. The entry criteria on both sides creates a transparent and efficient marketplace, open only to those pre-approved, which cuts sourcing time, allowing talent and companies to focus on finding the right fit."
+          },{
+            "qn": "How does the Honeypot process work?",
+            "ans": "After your company is approved to join Honeypot, we create a company profile for you based on the information you submit.  Once the company profile is finalized you can immediately start searching for talent using specific parameters and keywords. To contact talent directly for a job role you send an interview invite, which they can accept or reject.  As soon as candidates accept an interview invite, the recruitment process proceeds as per your company’s internal procedures."
+          },{
+            "qn": "Who should sign up for Honeypot?",
+            "ans": "Any company with tech needs to fulfill can sign up to Honeypot. We require that companies on Honeypot are transparent in job offers. HR managers tend to lead the process though we also strongly encourage involvement from the tech team, in particular the lead developer or the CTO, in screening candidates."
+          },{
+            "qn": "In which cities is Honeypot active?",
+            "ans": "We are currently active in Germany, the Netherlands and the UK, namely in Berlin, Hamburg, Frankfurt, Cologne, Stuttgart, Munich, Amsterdam, Rotterdam-The Hague, Eindhoven and London. Watch this space closely though as we’re continuously expanding!"
+          },{
+            "qn": "From where does Honeypot source talent?",
+            "ans": "Honeypot is an invite-only platform.  Talent comes through direct-invite, referral and community events. Direct-invite talent is sourced by our talent acquisition team. We have a strong pipeline of referrals through talents which have been successfully placed. And finally, we focus on building strong local networks which inspire talents to proactively request invite to the platform."
+          },{
+            "qn": "How is talent screened on Honeypot?",
+            "ans": "Talent submit a profile which is screened by our Talent Reps. We do a first assessment of their background and experience and check their coding skills. No engineer gets accepted without some code being reviewed by us. This can be from projects which they have worked on or through an internal code challenge. The code challenge allows us to evaluate candidates who don’t have demonstrable experience. If talent do not have sufficient experience or skill with code they are not accepted onto the platform."
+          },{
+            "qn": "What is the cost of using Honeypot ?",
+            "ans": "We charge a commission based on the salary of the talents we place. For pricing get in touch <a href='mailto:partners@honeypot.io'>partners@honeypot.io</a>"
+          },{
+            "qn": "Why Honeypot?",
+            "ans": "We match companies with pre-screened tech talents who are actively looking for new employment. Every week you have access to hundreds new candidates on our platform.Our mission is to get every developer a great job. Our success depends on the success of the users, which is why in addition, we support the developer community with events, blog articles, and even care packages. ;) We like to think of ourselves as the go-to platform for tech recruitment, but we have no intentions of locking you down! Searching for talents on our platform is free, so why not just give us a try?"
+          }
+        ]
+      },
+      "tech-talents": {
+        "title": "Tech Talents on Honeypot",
+        "text": [
+          {
+            "qn": "Where do the talents on Honeypot come from? ",
+            "ans": "Talents on Honeypot come from all over the world. On average more than 50% of candidates are from from the EU with 20-25% German speaking talents and approximately 10% Dutch speaking talents."
+          },{
+            "qn": "How many talents are there on Honeypot?",
+            "ans": "Instead of using a classic database we work with a smart batch style system which makes candidates live for a fixed amount of time, during which they are actively looking for a new position and are highly responsive towards interview invites. Currently we batch over 140+ new candidates every week for a total of +400 candidate. Be sure to check Monday morning for new talents."
+          },{
+            "qn": "Is Honeypot open for freelance, part-time, full-time talents?",
+            "ans": "Yes we are. Every developer on Honeypot indicates clearly in their profile which sort of contract they are open to. Most developers, however, are looking for a full-time position."
+          },{
+            "qn": "Does Honeypot have local or international talents?",
+            "ans": "We are very open to international tech talents and proud to have placed a considerable number of international tech talents in Germany, Netherlands and the United Kingdom. Nevertheless, we always have at least 50% or more European talents active on the platform and at least 20% German speaking and 10% Dutch speaking candidates. "
+          },{
+            "qn": "Which languages do Honeypot developers speak?",
+            "ans": "Honeypot tech talents speak all sorts of languages depending on their background, but all candidates are screened for their English language skills. "
+          },{
+            "qn": "How many German and Dutch speaking talents are there?",
+            "ans": "Since Germany and the Netherlands are our key markets, we aim to have as many local candidates as possible. Currently we aim to have at least 20% German speaking talents and 10% Dutch speaking talents. Companies with local language requirements can apply the language filter when searching to find the right candidates."
+          },{
+            "qn": "Does Honeypot provide free visa support for international talents? ",
+            "ans": "Yes! Honeypot was the first platform to offer free visa support for international talents. We want our clients to have access to the best gloabl talent and hence takes care of the whole visa process!"
+          },{
+            "qn": "Does Honeypot create the developer headline and who fills in the developers’ profiles?",
+            "ans": "The profiles are filled in by the developers themselves but our Talent Reps help them along the way and provides tips and suggestions for the headlines. "
+          }
+        ]
+      },
+      "search-talents": {
+        "title": "Searching for Tech Talents",
+        "text": [
+          {
+            "qn": "I am not exactly sure which type of tech skills are best suited for our company. Can you offer any advice?",
+            "ans": "Your Customer Success Manager is experienced in tech recruiting and has a firm understanding of the different programming languages and frameworks. They are happy to help with any questions."
+          }
+        ]
+      },
+      "interviewing-talents": {
+        "title": "Inviting, Interviewing & Hiring Tech Talents",
+        "text": [
+          {
+            "qn": "What is an interview invite?",
+            "ans": "An interview invite is a personalized request to tech talents to interview for a specific role. Tech talent can accept or reject your interview invite and you can send out multiple invites for the same role."
+          },{
+            "qn": "What is included in an interview invite?",
+            "ans": "Interview invites combine elements of a traditional job posting, such as a concise job description and skill requirements, with some extra elements to encourage greater transparency, such as salary and a personalized message from you to the talent."
+          },{
+            "qn": "I have multiple positions to fill, can we send multiple interview invites?",
+            "ans": "Yes you can send multiple invites for multiple positions. But you can only send a maximum of one invite to any given candidate."
+          },{
+            "qn": "What should I do if my interview invites are declined?",
+            "ans": "It is normal for some invites to be declined. All declined invites include a reason. In some cases you can re-submit the interview invite, altering some aspects, such as salary. In the unlikely case that all your interview invites are declined we recommend you contact your Customer Success Manager."
+          },{
+            "qn": "How is the interview process organized on Honeypot?",
+            "ans": "The interview process is organized between your company and the talent directly and can follow your usual internal procedures."
+          },{
+            "qn": "Do all tech talents get hired in the batch?",
+            "ans": "Within 3 weeks, tech talents either get a job offer with Honeypot, or through their own channels. In some cases we allow developers to participate in another batch in the future (rebatch)"
+          },{
+            "qn": "Can I reach out to talents not indicated where my office is at? ",
+            "ans": "If you have a great opportunity for a tech talent who didn’t indicate the city your office is in, you can still send them an Invite. Please be aware though that the chance of acceptance is low as this might be a hard requirement for the talent."
+          },{
+            "qn": "What happens when a talent accepts my offer? ",
+            "ans": "After a talent accepts your offer, please get in touch with your Customer Success Manager who will then direct you to our billing department and if necessary start the Visa process. "
+          },{
+            "qn": "What happens if a hired developer doesn’t live up to the expectations? ",
+            "ans": "If you happen to split with one of our talents we offer a refund policy to reduce your risk entirely. This policy refunds 100% if the contract was terminated within 3 months of the starting date (exceptions to this policy are structural changes, such as downsizing) "
+          },{
+            "qn": "How long does my company have to pay?",
+            "ans": "Please check the terms of your contract."
+          }
+        ]
+      }
+    }
+  },
+  "de": {
+    "title": "Frequently Asked Questions",
+    "talents": {
+      "type": "Für Talente",
+      "signing-up": {
+        "title": "Anmeldung",
+        "text": [{
+          "qn": "Was ist Honeypot?",
+          "ans": "Honeypot ist Europas tech-fokussierte Job Plattform für Softwareentwickler, DevOps Engineers, Data Scientists, Product Owner, QA Tester, Engineering Leads und CTOs."
+        },{
+          "qn": "Wie funktioniert der Honeypot Prozess?",
+          "ans": "Melde Dich bei Honeypot an und erstelle ein Profil. Bevor Du für Unternehmen sichtbar wirst, werden wir Deinen Code checken und kurz mit Dir telefonieren um Deine Gehaltsvorstellungen und Tech-Präferenzen zu besprechen. Sobald das erledigt ist und Dein Profil vollständig ausgefüllt ist, wirst Dein Profil Teil eines Bündels. Jeden Montag wird ein neues Bündel freigeschaltet und ist dann drei Wochen lang für Unternehmen sichtbar. Das schafft eine Dynamik, in der Firmen bestrebt sind, Dir zeitnah Interviewanfragen zu senden. Du akzeptierst dann Interviews für Positionen, die Dich interessieren, wirst von diesen Unternehmen interviewed und wählst die Rolle, die am meisten Deinen Vorstellungen entspricht. "
+        },{
+          "qn": "Welche Art von Skills werden auf Honeypot gesucht?",
+          "ans": "Honeypot ist offen für eine große Bandweite und Tech-Profile. Manche Skill-Sets sind natürlich gefragter als andere. Momentan suchen die Unternehmen mit denen wir zusammenarbeiten nach Frontend, Backend und Fullstack Developern, aber auch Team Leads, CTOs,, Data Scientists, Data Engineers, System Administrators, DevOps Engineers, Architects und Product Managers… P.S.: Die Liste geht weiter!"
+        },{
+          "qn": "Was ist ein/e Talent Berater/in?",
+          "ans": "Ein/e Talent Berater/in ist Dein/e persönliche/r Ratgeber/in bei Honeypot. Sie führen Dich durch den ganzen Prozess, von der Anmeldung bis zum Jobangebot, sie beantworten alle auftauchenden Fragen und helfen Dir bei der Navigation durch die Unternehmensprofile, Interview Einladungen und Jobangebote. Dein/e Talent Berater/in ist erfahren im Tech- und Startup Recruiting, also zögere nicht nach Unterstützung zu fragen, wenn Du sie brauchst. "
+        },{
+          "qn": "Muss ich für die Benutzung von Honeypot eine Gebühr bezahlen?",
+          "ans": "Honeypot ist ein komplett kostenloser Service für Jobsuchende! Du musst zu keiner Zeit etwas auf der Plattform bezahlen."
+        }]
+      },
+      "creating-profile": {
+        "title": "Dein Profil erstellen",
+        "text": [
+          {
+            "qn": "Welche Informationen gehören in mein Profil?",
+            "ans": "Neben den Basics wie Name, Kontaktinformation, Erfahrung und Fähigkeiten, kannst Du auch deine Gehaltsvorstellungen, bevorzugter Standort, Vertragsform und gewünschte Rolle hinzufügen. Wir bieten auch genug Platz für eine persönliche Zusammenfassung und Platz für Links zu Arbeiten von Dir auf Plattformen wie GitHub, Behance, StackOverflow und anderen. Und vergiss nicht, Dein/e Talent Berater/in ist für Dich da, um Dich zu unterstützen."
+          },{
+            "qn": "Ich bin momentan noch beschäftigt und muss erst kündigen. Kann ich diese Information in meinem ProfiI einfügen?",
+            "ans": "Du kannst Deinen frühestmöglichen Arbeitsbeginn im Profil angeben. Unternehmen bieten Dir dann entsprechende Interviews an."
+          },{
+            "qn": "Ich bin momentan noch beschäftigt und möchte nicht, dass mein Unternehmen mich sieht. Kann ich mein Profil verbergen? ",
+            "ans": "Wir blockieren Dein/e momentane/n Arbeitgeber/in automatisch. Du kannst durch den Privatsphäre Tab zusätzliche Unternehmen blockieren."
+          },{
+            "qn": "Ich bin noch im Studium aber mein Abschluss steht kurz bevor. Wann soll ich ein Profil erstellen? ",
+            "ans": "Du kannst Dich dann bei Honeypot anmelden, wenn Du Dich dazu entschließt, in den Arbeitsmarkt einzutreten."
+          },{
+            "qn": "Was soll ich in meiner persönlichen Zusammenfassung schreiben? Kann ich sie auch einfach überspringen? ",
+            "ans": "Bei Honeypot bewerben sich Unternehmen bei Dir. Deine persönliche Zusammenfassung ist eine Art Motivationsschreiben:es ist der richtige Ort an dem Du mehr über Dich erzählen kannst! In welcher Arbeitsumgebung Du gerne arbeitest, was Deine ideale nächste Position wäre, worin Deine Stärken liegen. Dein/e Talent Berater/in ist auch da, um Dir zu helfen und stellt Dir zusätzliche Ressourcen zur Verfügung. Wir stellen auch viel Platz für Links zu Github, Behance, StackOverflow undanderen zur Verfügung. Um loszulegen, schau Dir unseren Blog Post auf How to make a Honeypot profile in seven easy steps! an."
+          },{
+            "qn": "Welche Art von Skills soll ich im Skills Abschnitt eintragen? ",
+            "ans": "In diesem Abschnitt geht es um Deine technische Expertise. Dazu gehören Programmiersprachen, Frameworks und wichtige Tools, mit denen Du vertraut bist. Du musst nicht unbedingt ein/e Expert/in darin sein, aber Du brauchst mehr als nur Grundwissen in dem jeweiligen Bereich. Wenn Du denkst, dass Deine Soft Skills erwähnt werden sollten, füge sie dem „About Me“ / „Über mich“ Abschnitt hinzu"
+          },{
+            "qn": "Wie bestimme ich mein ideales Gehalt? ",
+            "ans": "Das kommt auf Dich an. Du solltest versuchen realistisch zu sein: Berücksichtige Deine Erfahrung, Nachfrage auf dem Markt und die Lebenshaltungskosten in der Stadt, in der Du Dich bewirbst. Dein genanntes Gehalt wird von den Unternehmen als Hinweis zur Kenntnis genommen, ist aber nicht notwendig ein festes Kriterium. Um Dich weiter zu informieren, kannst Du nützliche Infos auf unserem Blog. (http://blog.honeypot.io) HYPERLINK"
+          },{
+            "qn": "Kann ich mehrere Standorte für meine ideale Position wählen?",
+            "ans": "Ja, Du kannst so viele Standorte aus den gelisteten Städten wählen, wie Du möchtest. Du wirst Jobangebote von Unternehmen erhalten, die sich an all diesen Standorten befinden. Aber bitte wähle nur Standorte aus, an die Du tatsächlich umziehen möchtest. Wenn Du Remote arbeiten möchtest, wähle bitte die Remote Option. Allerdings haben wir momentan keine Unternehmen die Remote Positionen anbieten"
+          },{
+            "qn": "Ich wohne momentan an keinem der gelisteten Standorte. Kann ich Honeypot trotzdem beitreten?",
+            "ans": "Ja, Du kannst Dich gerne bei Honeypot anmelden. Wenn Du gerne umziehen möchtest, markiere, die Städte, die Dich interessieren. Wenn Du nicht umziehen möchtest, dann füge eine Stadt in der „andere“ /“other“ Sektion für Deine ideale Position hinzu. Wir expandieren schnell und wir halten Dich über unsere Entwicklungen auf dem Laufenden. Die letzte Möglichkeit ist Remote zu arbeiten, obwohl wir momentan keine Unternehmen haben, die Remote Positionen zu besetzen haben."
+          },{
+            "qn": "Ich möchte mich für eine Position in Berlin bewerben, aber ich spreche kein Deutsch. Ist das ein Problem? ",
+            "ans": "Englisch ist die Arbeitssprache vieler Unternehmen, die Honeypot benutzen, daher sollte das kein Problem sein."
+          },{
+            "qn": "Übernehmen Unternehmen die Visa Kosten für den Umzug?",
+            "ans": "Viele Unternehmen auf unserer Plattform übernehmen die VisaKosten bei einem Umzug. Wir bieten unseren Unternehmen bei Bedarf auch einen vollständigen und kostenlosen Visa Service an. Viele größere Unternehmen haben aber ihre eigenen Visa Abteilungen. Da Dein Honeypot Profil klare Auskunft über Deinen Visa Status gibt,wissen die Unternehmen bereits, ob Du eine Visa Unterstützung brauchst oder nicht. Mehr Infos zum Visa Bewerbungsprozess findest Du in diesem Ratgeber: EU Blue Card for software developers"
+          },{
+            "qn": "Helfen Unternehmen mit den Umzugskosten?",
+            "ans": "Manche Unternehmen bieten einen Umzugsbonus für Kandidat/innen an, aber nur wenige werden eine Unterkunft organisieren. Wir empfehlen diese Punkte direkt mit dem Unternehmen zu klären, sobald Du die Interview Einladung angenommen hast."
+          }
+        ] 
+      },
+      "getting-approved": {
+        "title": "Bei Honeypot zugelassen werden",
+        "text": [
+          {
+            "qn": "Ich habe mein Profil für Honeypot ausgefüllt. Was kommt als Nächstes?",
+            "ans": "Nachdem Du Dein Profil ausgefüllt hast, sende es uns zur Überprüfung. Dein/e Talent Berater/in sieht Dein Profil durch, um sicherzugehen, dass wir Jobs und Unternehmen haben, die zu Deinem Skill-Set passen. Sie werden Dir eine E-Mail schicken, sobald Du akzeptiert wurdest."
+          },{
+            "qn": "Wie lange dauert es bis mein Profil auf Honeypot überprüft wird?",
+            "ans": "Sende Dein Profil ein und dein/e Talent Berater/in wird die Überprüfung meistens innerhalb von ein bis zwei Arbeitstagen, in seltenen Fällen später, vornehmen. Unvollständig ausgefüllte Profile verzögern den Prozess."
+          },{
+            "qn": "Wonach sucht Ihr, wenn Ihr die Profile von Honeypot überprüft?",
+            "ans": "Um akzeptiert zu werden, musst Du ein komplettes Profil und ein gewisses Niveau an nachweisbarer Erfahrung in Deinem jeweiligen Feld vorzeigen. Wenn Du Deine Erfahrung nicht nachweisen kannst, werden wir Dir eine Code Challenge geben."
+          },{
+            "qn": "Mein Profil auf Honeypot wurde akzeptiert, aber es sieht jetzt anders aus. Was ist passiert?",
+            "ans": "Während des Anerkennungsprozesses fügt dein/e Talent Berater/in eine Titelzeile hinzu, die Dein Profil für die Unternehmen zusammenfasst. Du hast volle Kontrolle über die Titelzeile und wir können sie verändern, wenn Du nicht zufrieden bist. Gelegentlich verändert Dein/e Talenberater/in einige Aspekte in Deinem Profil um Deine Skills besser darzustellen. Keine Sorge, es geht nur um kleinste Verbesserungen in der Formulierung, um eine optimale Wirkung Deines Profils zu erzielen, wir werden keine wichtige Informationen löschen."
+          },{
+            "qn": "Mein Profil wurde nicht akzeptiert. Kann ich es von Neuem einreichen?",
+            "ans": "Wenn Dein Profil nicht akzeptiert wird, wird Dir Dein/e Talent Berater/in eine E-Mail mit einer Begründung senden. Er oder Sie wird offen sein, Dir weitere Fragen zu beantworten."
+          }
+        ] 
+      },
+      "receiving-invites": {
+        "title": "Interview Einladungen erhalten",
+        "text": [
+          {
+            "qn": "Wann werde ich auf Honeypot für Unternehmen sichtbar?",
+            "ans": "Neue Talente werden in Bündeln sichtbar. Das erlaubt es den Firmen, einen besseren Überblick darüber zu haben, wem sie bereits Interview Einladungen gesendet haben. Sobald Dein Profil durchgesehen und akzeptiert wurde, wird Dir Dein/e Talent Berater/in eine E-Mail senden und das Datum für das neue Bündel mitteilen. Dein Profil wird automatisch beigefügt und von dem Moment an bist Du für Unternehmen sichtbar. Wenn Du den Eintritt ins Bündel verzögern möchtest, kontaktiere deine/n Talent Berater/in."
+          },{
+            "qn": "Ich möchte für Unternehmen auf Honeypot noch nicht sichtbar sein. Wie kann ich das machen?",
+            "ans": "Sende Deiner/em Talent Berater/in einfach eine kurze E-Mail und erkläre Deine Bedingungen und sie werden es für Dich arrangieren. "
+          },{
+            "qn": "Wie kontaktiere ich meine/n Talent Berater/in von Honeypot?",
+            "ans": "Wenn Du auf die Plattform aufgenommen wirst, wird sich Dein/e Talentberater/in per E-Mail bei Dir melden. Du kannst diese E-Mail Adresse jederzeit nutzen, wenn Du Hilfe oder Rat brauchst. Wenn Du die E-Mail Adresse Deines/r Talent Berater/in nicht mehr hast, kannst Du sie auf hello@honeypot.io kontaktieren."
+          },{
+            "qn": "Wie finden Unternehmen mein Profil auf Honeypot?",
+            "ans": "Unternehmen suchen Kandidat/innen in dem sie nach spezifischen Kriterien, wie Skill-Set, Standort, Arbeitsgenehmigung und Vertragsart filtern. Dann erscheinen ihnen die Profile der Kandidat/innen, denen sie dann Interview Einladungen senden können. "
+          },{
+            "qn": "Was ist eine Interview Einladung?",
+            "ans": "Eine Interview Einladung ist eine personalisierte Anfrage, die Du von einem Unternehmen erhältst, um für eine spezifische Rolle interviewt zu werden. Als Tech-Talent kannst Du eine Interview Einladung annehmen oder ablehnen, und als Unternehmen kannst Du mehrere Einladungen für dieselbe Rolle versenden. Die Einladung wird für sieben Tage (nicht Arbeitstage!) nach der Erstellung der Einladung verfügbar sein. Nach dieser Zeit verfällt sie."
+          },{
+            "qn": "Welche Informationen enthält eine Interview Einladung?",
+            "ans": "Interview Einladungen beinhalten Informationen, die sich auf die Position beziehen. Du kannst es Dir wie eine transparentere Version von traditionellen Jobausschreibungen vorstellen. Sie beinhalten die typischen Bestandteile, wie eine Rollenbeschreibung und eine Spezifizierung der gefragten Skills, aber auch das Gehalt und andere Benefits, sowie eine personalisierte Nachricht vom CEO, CTO oder HR Manager, je nach Größe des Unternehmens. Für mehr unternehmensspezifische Information kannst Du auf das Unternehmensprofil klicken. "
+          },{
+            "qn": "Was ist ein Unternehmensprofil? ",
+            "ans": "Jedes Unternehmen auf der Plattform hat ein individuelles Unternehmensprofil. Es ist eine detaillierte Übersicht über die Tech Referenzen und Arbeitskultur und ist zugänglich durch die Interview Einladung. Unternehmensprofile beinhalten Information über das Developer Team, Produkte, Tech-Stack, Einstellungsprozess, sowie eine Timeline von größeren Entwicklungen und eine direkte Nachricht vom CTO, CEO oder HR Manager, je nach Größe des Unternehmens. Du kannst das Unternehmensprofil als eine Quelle nutzen, um zu entscheiden, welches Unternehmen Dir am meisten zusagt. "
+          },{
+            "qn": "Ich mag das Unternehmen, aber das Gehalt auf der Interview Einladung ist viel zu niedrig. Was soll ich tun?",
+            "ans": "Das genannte Gehalt ist auf der Interview Einladung sollte als ein ungefähre Einschätzung gesehen werden. Wenn der Betrag nicht mehr als 20% von Deinem gewünschten Gehalt abweicht, empfehlen wir Dir die Interview Einladung anzunehmen und direkt mit dem Unternehmen zu verhandeln. Dein/e Talentberater/in kann Dir gerne mit den Verhandlungen helfen. "
+          },{
+            "qn": "Kann ich mehr als eine Interview Einladung annehmen?",
+            "ans": "Absolut! Wenn Du eine Interview Einladung annimmst, bist Du weiterhin berechtigt auch Einladungen anderer Unternehmen anzunehmen. Je mehr, desto besser! Denk daran: Du hast es selbst in der Hand für welche Unternehmen Du Dich entscheidest und für welche Du Dich schließlich doch nicht entscheidest."
+          },{
+            "qn": "In welchem Format finden die Interviews statt? ",
+            "ans": "Die Interviews werden direkt zwischen Dir und dem Unternehmen vereinbart. Unternehmen sind in der Regel flexibel bezüglich des Zeitpunkts und den Vorstellungen des Talents. Übliche Interviewformate sind persönliche Treffen, Skype/Hangout, Telefon und Online Pair-Coding."
+          },{
+            "qn": "Ist es möglich Interviews Remote durchzuführen?",
+            "ans": "Ja, die meisten Unternehmen führen das Interview gerne per Telefon oder Skype/Hangouts o.ä. durch. "
+          },{
+            "qn": "Was sollte ich fürs Interview vorbereiten?",
+            "ans": "Du solltest die beschriebene Position, auf die Du Dich bewirbst, genau verstehen, indem Du die Interview Einladung und das Unternehmensprofil genau durchliest. Finde heraus, nach welchen Skills das Unternehmen sucht und schaffe eine klare Verbindung zu Deinem eigenen Profil. Es hilft auch daran zu denken, in welche Richtung Du Dich mit deiner Karriere bewegen willst und wie das in Einklang mit der zukünftigen Richtung des Unternehmens steht. Schau auf unseren Blog für mehr Informationen zu Interview Techniken."
+          },{
+            "qn": "Wenn ich eine Interview Einladung akzeptiere, werde ich trotzdem noch Einladungen von anderen Unternehmen bekommen? ",
+            "ans": "Ja, Du kannst solange Interview Einladungen von mehreren Unternehmen bekommen, bis ein von Dir unterzeichnetes Angebot auf Papier vorliegt. "
+          },{
+            "qn": "Mein Profil war schon eine Weile sichtbar auf Honeypot, aber ich habe noch keine Interview Einladungen erhalten. Warum?",
+            "ans": "Für den unwahrscheinlichen Fall, dass Du keine Interview Einladungen erhältst, empfehlen wir Dir Deine/n Talent Berater/in zu kontaktieren. "
+          },{
+            "qn": "Kann ich Interview Einladungen auf Honeypot ablehnen?",
+            "ans": "Ja. Wenn Dich eine Interview Einladung nicht interessiert, kannst Du sie ablehnen. In diesem Fall kannst Du auch spezifizieren, warum die Einladung für Dich nicht interessant war."
+          },{
+            "qn": "Wie kann ich ein Unternehmen blockieren, damit sie mir auf Honeypot keine Interview Einladungen mehr senden? ",
+            "ans": "Immer wenn Du eine Interview Einladung ablehnst, hast Du die Möglichkeit das Unternehmen zu blockieren, damit sie Dir keine weiteren Einladungen senden. Alternativ kannst Du auf den Privatsphäre Tab in deinen Account Einstellungen klicken und die unerwünschten Unternehmen zu Deiner Liste von blockierten Unternehmen hinzufügen."
+          },{
+            "qn": "Ich habe eine Interview Einladung abgelehnt, aber jetzt meine Meinung geändert. Kann ich mit dem Unternehmen wieder in Kontakt kommen? ",
+            "ans": "Wir empfehlen Euch die Interview Einladungen stets vollständig in Betracht zu ziehen, bevor Ihr sie ablehnt. Wenn Du Deine Meinung nach dem Ablehnen einer Einladung änderst, dann nimm Kontakt mit deiner/m Talent Berater/in auf. In manchen Fällen wurde die Position bereits besetzt, in manchen Fällen könnte sie noch frei sein. Wenn es noch möglich ist, ein Interview zu bekommen, werden wir Dir so gut wie möglich helfen. "
+          }
+        ] 
+      },
+      "job-refer": {
+        "title": "Job Angebote bekommen und Freunde empfehlen",
+        "text": [
+          {
+            "qn": "Wie kann ich meinen Empfehlungsbonus bei Honeypot bekommen? ",
+            "ans": "Der Empfehlungsbonus beträgt 512€ und wird ausgegeben, sobald die Person, die Du empfohlen hast, angestellt wurde. Du wirst eine E-Mail Bestätigung bekommen, sobald die Person angestellt wurde und wir überweisen Dir das Geld an deren ersten Arbeitstag."
+          },{
+            "qn": "Ich wurde vor kurzem über Honeypot eingestellt. Was passiert jetzt mit meinem Profil?",
+            "ans": "Erst mal: Gratulation zum neuen Job! Schick uns eine E-Mail, lass es uns wissen und wir werden Dein Profil verbergen. Du wirst keine weiteren Interview Einladungen mehr erhalten."
+          }
+        ] 
+      }
+    },
+    "employers": {
+      "type": "Für Unternehmen",
+      "joining-honeypot": {
+        "title": "Honeypot beitreten & Allgemeine Fragen",
+        "text": [
+          {
+            "qn": "Was ist Honeypot? ",
+            "ans": "Honeypot ist eine auf Tech fokussierte Job-Plattform, die geprüfte Tech-Talente mit überprüften Unternehmen zusammenbringt. Hier bei Honeypot stellen wir das traditionelle Modell des Einstellungsprozesses auf den Kopf, in dem sich die Unternehmen direkt bei den Kandidat/innen bewerben, statt umgekehrt. Unsere Tech-Talente sind auf Fähigkeiten und Erfahrung geprüft und werden nur dann ein Teil der Plattform, wenn sie unseren strengen Standards entsprechen. Die Gewährleistung von Qualität auf beiden Seiten schafft einen transparenten und effizienten Markt. So kann Zeit gespart werden und es wird Talenten und Unternehmen ermöglicht, sich darauf zu konzentrieren, ob Position und Bewerber/in zusammenpassen. "
+          },{
+            "qn": "Wie funktioniert der Honeypot Prozess?",
+            "ans": "Nachdem Dein Unternehmen für die Zusammenarbeit mit Honeypot geprüft wurde, erstellen wir Euren Account und Unternehmensprofil und laden Euch auf die Plattform ein. Sobald Ihr eingeloggt seid, könnt Ihr mit Hilfe von speziellen Filtern und Keywords gleich mit der Suche nach Talenten beginnen. Um Kandidat/innen zu kontaktieren, kannst Du ihnen einfach eine Interview Einladung senden, die sie annehmen oder ablehnen können. Sobald Kandidaten/innen Interview Einladungen annehmen, hast Du die Möglichkeit mit ihnen über die Plattform oder per E-Mail zu kommunizieren. Falls Talente Deine Einladungen ablehnen, nennen sie Dir einen Begründung und Du hast die Möglichkeit ihnen ein Gegenangebot zu machen. "
+          },{
+            "qn": "Wer kann sich bei Honeypot anmelden?",
+            "ans": "Jedes Unternehmen, das sein Tech-Team vergrößern will, kann sich bei Honeypot anmelden. Wir verlangen, dass Unternehmen auf Honeypot vollständige Transparenz in den Job Angeboten walten lassen und den Kandidat/innen so viele Informationen wie möglich geben. Oft sind es die HR Manager/innen, die den Einstellungsprozess durchführen. Wir empfehlen dabei das Tech-Team stark in die Auswahl der Kandidat/innen mit einzubeziehen, besonders Engineering Manager/innen wie Lead Developers oder CTOs."
+          },{
+            "qn": "In welchen Städten ist Honeypot aktiv?",
+            "ans": "Wir sind momentan in Deutschland, den Niederlanden und Großbritannien aktiv: in Berlin, Hamburg, Frankfurt, Köln, Stuttgart, München, Amsterdam, Rotterdam, DenHaag, Eindhoven und London. Schau öfters mal rein, da wir uns ständig vergrößern!"
+          },{
+            "qn": "Woher akquiriert Honeypot Talente?",
+            "ans": "Honeypot akquiriert Kandidat/innen nicht aktiv. Stattdessen erfahren Kandidat/innen hauptsächlich durch Empfehlungen und Community Events von Honeypot. Tatsächlich haben wir einen besonders starken Zulauf durch Empfehlungen von Talenten, die erfolgreich vermittelt wurden. Wir fokussieren uns auch auf den Aufbau staker lokaler Netzwerke, die Talente inspirieren proaktiv Betrittsanfragen bei unserer Plattform zu stellen."
+          },{
+            "qn": "Wie werden die Talente auf Honeypot vor-ausgewählt?",
+            "ans": "Talente reichen ein Profil ein, welches von unseren Talent Berater/innen durchgesehen wird. Wir haben ein dreifaches Screening, das die Coding Skills testet, die Motivation für den neuen Job erfragt und die Kommunikation Skills prüft. Wir führen einen Hintergrund- und Referenzencheck durch und überprüfen dann die Coding Skills. Das kann durch Einschätzung von Projekten, an denen sie bereits gearbeitet haben, geschehen, oder durch eine interne Code Challenge. Die Code Challenge erlaubt es uns Kandidat/innen zu evaluieren, die über keine oder wenig vorzeigbare Erfahrung verfügen. Wenn Talente nicht genug Erfahrung oder Skills haben, werden sie nicht auf die Plattform mit aufgenommen."
+          },{
+            "qn": "Was kostet die Benutzung von Honeypot?",
+            "ans": "Wir berechnen 15% Kommission basierend auf dem Jahresbruttogehalt der Talente, die wir vermitteln. Für Freelance Projekte beträgt die Gebühr 30% des Stundenlohns. Für Pricing Anfragen, wende Dich bitte an partners@honeypot.io"
+          },{
+            "qn": "Warum Honeypot?",
+            "ans": "Wir vermitteln Firmen an im Vorfeld geprüfte Tech-Talente, die aktiv nach einer neuen Anstellung suchen. Jede Woche erhältst Du Zugang zu über 140 neuen Kandidat/innen auf unserer Plattform. Es ist unsere Mission, jeder Entwicklerin und jedem Entwickler einen Job zu verschaffen. Unser Erfolg hängt von dem Erfolg der Nutzer/innen ab. Das ist der Grund, warum wir die Entwickler Community mit Veranstaltungen, Blog Artikeln und sogar Care Paketen versorgen ;) Wir sehen uns selbst als DIE Plattform für Tech-Recruiting, wir wollen Dich aber nicht festnageln! Auf unserer Plattform kannst Du kostenlos die Profile von Talenten durchsehen, warum probierst Du es nicht einfach?"
+          }
+        ]
+      },
+      "tech-talents": {
+        "title": "Tech Talente auf Honeypot",
+        "text": [
+          {
+            "qn": "Woher kommen die Talente auf Honeypot?",
+            "ans": "Die Talente auf Honeypot kommen aus der ganzen Welt. Wir versuchen mindestens 50% der Kandidat/innen aus der EU, sowie 20-25% deutsch- bzw. 10% niederländischsprachige Talente zu haben. Die tatsächlichen Zahlen können allerdings variieren."
+          },{
+            "qn": "Wie viele Talente sind auf Honeypot?",
+            "ans": "Statt eine klassische Datenbank zu nutzen, arbeiten wir mit einem cleveren Bündelsystem, das Kandidat/innen für eine festgelegte Zeit freischaltet. In dieser Zeit suchen sie aktiv nach einer neuen Position und reagieren schnell auf Interview Einladungen. Momentan bündeln wir jede Woche über 140 neue Kandidat/innen aus über 400 Kandidat/innen. Jeden Montagmorgen kannst du nach neuen Talenten suchen."
+          },{
+            "qn": "Ist Honeypot offen für Freelance, Teilzeit und Vollzeit Talente?",
+            "ans": "Ja das sind wir. Jede/r Entwickler/in auf Honeypot gibt im Profil an, für welche Art von Vertrag er oder sie offen sind. Die meisten Entwickler/innen suchen allerdings eine Vollzeit Stelle."
+          },{
+            "qn": "Hat Honeypot internationale Talente oder Talente aus den jeweiligen Ländern?",
+            "ans": "Wir sind sehr offen für internationale Tech-Talente und wir sind stolz darauf, eine beachtliche Anzahl and internationalen Tech-Talenten in Deutschland, den Niederlanden und Großbritannien vermittelt zu haben. Wir versuchen immer mindestens 50% oder mehr europäische Kandidat/innen aktiv auf der Plattform zu haben, sowie mindestens 20% deutsch- bzw. 10% niederländischsprachige Kandidat/innen zu haben. "
+          },{
+            "qn": "Welche Sprachen sprechen die Honeypot Entwickler/innen?",
+            "ans": "Honeypots Tech-Talente sprechen alle möglichen Sprachen, je nach Hintergrund. Allerdings werden alle Kandidat/innen auf ihre Englischkenntnisse getestet."
+          },{
+            "qn": "Wie viele deutsch- und niederländischsprachige Talente gibt es?",
+            "ans": "Da Deutschland und die Niederlande unsere Hauptmärkte sind, versuchen wir so viele Kandidat/innen wie möglich aus diesen Ländern zu haben. Momentan ist es unser Ziel mindestens 20% deutschsprachige und 10% niederländischsprachige Talente zu haben. Unternehmen mit Bedarf an Kandidat/innen mit Kenntnissen der Landessprache können den Sprachfilter bei der Suche verwenden, um die richtigen Kandidat/innen zu finden ."
+          },{
+            "qn": "Haben internationale Talente ein Visum?",
+            "ans": "Die meisten internationalen Kandidat/innen werden vorab kein Visum haben. Doch keine Sorge: Honeypot bietet einen kostenlosen Visa Service für alle internationalen Talente und übernimmt daher den ganzen Visa Prozess."
+          },{
+            "qn": "Wer erstellt die Titelzeile der Entwickler/innen und wer füllt deren Profile aus?",
+            "ans": "Die Profile werden von den Entwickler/innen selbst ausgefüllt. Unser Talent Management Team hilft ihnen dabei und bietet Tipps und Anregungen für die Titelzeile."
+          }
+        ]
+      },
+      "search-talents": {
+        "title": "Tech Talentsuche",
+        "text": [
+          {
+            "qn": "Ich bin nicht sicher welche Tech-Skills am besten zu unserer Firma passen. Könnt ihr uns beraten?",
+            "ans": "Dein/e Customer Success Manager/innen sind im Bereich Tech-Recruiting erfahren und haben eine gute Vorstellung von den verschiedenen Programmiersprachen und Frameworks. Sie freuen sich Dir bei jeder Frage zur Seite zu stehen."
+          }
+        ]
+      },
+      "interviewing-talents": {
+        "title": "Einladen, Interviewen und Tech Talente einstellen",
+        "text": [
+          {
+            "qn": "Was ist eine Interview Einladung?",
+            "ans": "Eine Interview Einladung ist eine personalisierte Anfrage an Tech-Talente, für ein Interview auf eine spezifische Position. Tech-Talente können Deine Einladung annehmen oder ablehnen und Du kannst mehrere Einladungen zur gleichen Position verschicken. "
+          },{
+            "qn": "Was beinhaltet eine Interview Einladung?",
+            "ans": "Interview Einladungen kombinieren die Elemente traditioneller Job Ausschreibungen, wie z.B. eine konkrete Jobbeschreibung und Skill-Anforderungen, mit einigen weiteren Elementen, die eine größere Transparenz fördern, wie z.B. die Nennung der Höhe des Gehalts und eine personalisierte Nachricht von Dir an das Talent. "
+          },{
+            "qn": "Ich habe mehrere Positionen zu besetzen. Können wir mehrere Interview Einladungen versenden?",
+            "ans": "Ja es ist möglich mehrere Einladungen für mehrere Positionen zu versenden. Aber Du kannst maximal eine Einladung pro Kandidat/in versenden."
+          },{
+            "qn": "Was soll ich tun, wenn meine Interview Einladungen abgelehnt werden?",
+            "ans": "Es ist normal, das einige Einladungen abgelehnt werden. Für jede abgelehnte Einladung gibt es einen Grund. In manchen Fällen kannst du eine Einladung erneut einreichen, wenn Du einige Aspekte, wie z.B. die Höhe des Gehalts geändert hast. Für den unwahrscheinlichen Fall, dass all Deine Interview Einladungen abgelehnt wurden, empfehlen wir Dir Deine/n Customer Success Manager/in zu kontaktieren. "
+          },{
+            "qn": "Wie wird der Interview Prozess bei Honeypot organisiert?",
+            "ans": "Der Interview Prozess wird direkt zwischen Deinem Unternehmen und dem Talent organisiert und kann Eurem üblichen internen Prozedere folgen."
+          },{
+            "qn": "Werden alle Tech-Talente in einem Bündel eingestellt? ",
+            "ans": "Innerhalb von drei Wochen erhalten Tech-Talente gewöhnlich entweder über Honeypot, oder durch ihre eigenen Kontakte, ein Job Angebot. In einigen Fällen erlauben wir Entwickler/innen an einem weiteren Bündel (rebatch) teilzunehmen. "
+          },{
+            "qn": "Kann ich Talente kontaktieren, die unseren Unternehmensstandort nicht in ihrem Profil angegeben haben? ",
+            "ans": "Wenn Du ein tolles Jobangebot für ein Tech-Talent hast, das die Stadt Deines Unternehmensstandort nicht angegeben hat, kannst Du ihm trotzdem eine Einladung senden. Sei Dir jedoch darüber im Klaren, dass die Chance einer Annahme relativ gering ist, da der Standort ein wichtiges Kriterium für das Talent sein kann. "
+          },{
+            "qn": "Was passiert, wenn ein Talent unser Angebot annimmt? ",
+            "ans": "Nachdem ein Talent Dein Angebot angenommen hat, nimm bitte Kontakt mit Deinem CSM auf, die oder der Dich an unsere Billing Abteilung weiterleitet und ggf. den Visa Antrag bearbeitet."
+          },{
+            "qn": "Was passiert wenn ein/e eingestellte/r Entwickler/in nicht unseren Erwartungen entspricht?",
+            "ans": "Wenn Du Dich von einem unserer Talente trennst, bieten haben wir eine Erstattungsklausel, um Dein Risiko auszuschließen. Die Klausel erstattet Dir 100% Deiner Kosten, wenn der Vertrag innerhalb der ersten drei Monate gekündigt wird (Ausnahmen sind strukturelle Veränderungen in Deinem Unternehmen, wie z.B. Stellenabbau) "
+          },{
+            "qn": "Wie lange müssen wir bezahlen?",
+            "ans": "Bitte überprüfe Deine Vertragsbedingungen"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -11,12 +11,13 @@ import Wrapper from '../wrapper';
 const links = ['for-talents', 'for-employers', 'Comunity']
 const lang = getLang();
 
-export default () => {
+export default ({ smallerHeader }) => {
   const page = getCurrentPage();
-  const extendedHeader = (page === 'index' || page === 'tech-hiring');
+  const extendedHeader = !smallerHeader && (page === 'index' || page === 'tech-hiring');
+
   return (
     <div>
-      <header className={`header header--${page}`}>
+      <header className={`header header--${ !smallerHeader && page }`}>
         <div className="header__controls wrapper">
           <Link to="/">
             <img src={ logo } className="header__logo"/>

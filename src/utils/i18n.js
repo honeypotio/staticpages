@@ -5,6 +5,7 @@ import footer from '../locales/footer.json';
 import header from '../locales/header.json';
 import seo from '../locales/seo.json';
 import index from '../locales/index.json';
+import faq from '../locales/faq.json';
 
 export const languages = ['en', 'de', 'nl'];
 const path = (typeof window !== 'undefined' ? window.location.pathname : '');
@@ -21,14 +22,16 @@ i18n.init({
       header: header.de,
       general,
       seo: seo.de,
-      index: index.de
+      index: index.de,
+      faq: faq.de
     },
     en: {
       footer: footer.en,
       header: header.en,
       general,
       seo: seo.en,
-      index: index.en
+      index: index.en,
+      faq: faq.en
     },
     nl: {
       footer: footer.nl,
