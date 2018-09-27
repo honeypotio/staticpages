@@ -1,7 +1,7 @@
 import React from 'react';
 import { I18n } from 'react-i18next';
 
-const links = ['for-talents', 'for-employers', 'Community']
+const links = ['for-talents', 'for-employers', 'Community', 'login'];
 
 export default () => (
   <I18n ns={ ['header'] }>

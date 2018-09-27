@@ -7,8 +7,8 @@ import PageIntro from './page-intro';
 import CompanyBar from './company-bar';
 import getCurrentPage from '../../utils/page'
 import Wrapper from '../wrapper';
+import LangSwitch from '../lang-switch';
 
-const links = ['for-talents', 'for-employers', 'Comunity']
 const lang = getLang();
 
 export default () => {
@@ -22,7 +22,7 @@ export default () => {
             <img src={ logo } className="header__logo"/>
           </Link>
           <Navigation />
-          <div className="header__lang-switch">{lang.toUpperCase()}</div>
+          <LangSwitch />
         </div>
 
         { extendedHeader && <Wrapper><PageIntro /></Wrapper> }

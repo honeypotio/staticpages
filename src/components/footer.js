@@ -4,6 +4,7 @@ import logo from '../../app/assets/images/logo-bear.svg';
 import { languages, getLang, getPathLang } from '../utils/i18n';
 import Link from 'gatsby-link';
 import getCurrentPage from '../utils/page';
+import LangSwitch from './lang-switch';
 
 const column = ['for-talents', 'for-employers', 'community']
 const year = (new Date()).getFullYear();
@@ -37,9 +38,16 @@ export default () => (
           <p>
             { t('copyright', { year }) }
           </p>
+          <LangSwitch />
+          {
+            /*
+             *
           <ul className="footer__lang-switch">
             { languages.map(i => createLanguageSwitch(i, i === lang)) }
           </ul>
+             *
+             */
+          }
         </div>
       </div> 
       <div className="footer__column">
@@ -69,7 +77,7 @@ export default () => (
           </Link>
         </h5>
         <ul className="footer__link-list">
-          <li className="footer__link-item">
+          <li className="footer__link-item footer__link-item--careers">
             <a className="footer__link" href={
               "https://jobs.lever.co/honeypot" }>
               { t('careers') }

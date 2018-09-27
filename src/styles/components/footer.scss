@@ -16,34 +16,6 @@
     text-transform: uppercase;
   }
 
-  &__lang-item {
-    padding: 0 5px;
-    border-right: 1px solid #E2E8F0;
-    float: left;
-    font-size: 0.857em;
-
-    &:last-child {
-      border-right: none;
-    }
-
-    &--active {
-      font-weight: bold;
-    }
-  }
-
-  &__lang-switch {
-    display: inline-block;
-    margin: 0 auto;
-    padding: 0;
-    list-style-type: none;
-  }
-
-  &__link {
-    display: inline;
-    color: $text-color;
-    text-decoration: none;
-  }
-
   &__link-list {
     margin: 0;
     padding: 0;
@@ -51,6 +23,20 @@
 
   &__link-item {
     list-style-type: none;
+
+    &--careers {
+      position: relative;
+      
+      &:before {
+        content: '';
+        background: no-repeat top left url('../assets/were-hiring.png');
+        position: absolute;
+        width: 88px;
+        height: 24px;
+        top: 0;
+        right: 30px;
+      }
+    }
   }
 
   &__logo {
