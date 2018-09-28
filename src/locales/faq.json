@@ -134,9 +134,6 @@
             "qn": "Can I decline interview invites on Honeypot?",
             "ans": "Yes, if interview invites are not interesting for you, you can decline them. In these cases you can also specify why the invite was not interesting."
           },{
-            "qn": "I don’t like the role being offered but I like the company. Can I decline an interview invite for a specific role but still receive invites for other positions within the same company?",
-            "ans": "You can decline a specific role and still receive interview invites for different roles within the same company. At the point when you decline an interview invite you are offered the option to block the company. There is no need to block that company if you are still interested in working there."
-          },{
             "qn": "How do I block a company from sending me interview invites on Honeypot?",
             "ans": "At the point when you decline an interview invite you are offered the option to block the company from sending future invites. Alternatively, click on the privacy tab in your account settings and add the unwanted company to your list of blocked companies."
           },{
@@ -156,6 +153,21 @@
             "ans": "First of all, congrats on getting hired! Drop us an email to let us now and we will hide your profile. You will no longer receive interview invites."
           }
         ] 
+      },
+      "misc": {
+        "title": "Miscellaneous",
+        "text": [
+          {
+            "qn": "How can I be visible to companies again?",
+            "ans": "There is a “rebatch” option when you go on your profile “Click here” to be visible again. Your Talent rep will contact you and let you know about the next steps before being live again."
+          },{
+            "qn": "What industries/types of companies are present on your platform? (industries and companies’ size)",
+            "ans": "We are currently working with 1000+ companies in Europe! There are a multitude of industries, such as companies in eCommerce, Marketing, Service, FinTech, Travel, Apps, Software, Health... "
+          },{
+            "qn": "I accepted an interview invite from a company but they did not contact me back. What can I do?",
+            "ans": "First make sure you checked your spam folder, from time to time, recruiters’ email can end up there. You can also contact the recruiter through our Honeypot chat! You can access it on your profile, in the inbox section. Otherwise you should definitely contact your Talent Rep to let him/her know, so as to solve the miscommunication as fast as possible."
+          }
+        ]
       }
     },
     "employers": {
@@ -421,6 +433,21 @@
             "ans": "Erst mal: Gratulation zum neuen Job! Schick uns eine E-Mail, lass es uns wissen und wir werden Dein Profil verbergen. Du wirst keine weiteren Interview Einladungen mehr erhalten."
           }
         ] 
+      },
+      "misc": {
+        "title": "Misc",
+        "text": [
+          {
+            "qn": "Wie kann ich für Unternehmen wieder sichtbar werden?",
+            "ans": "Es gibt eine „rebatch“ Option, wenn Du auf Dein Profil gehst “klick hier”, um wieder sichtbar zu sein. Dein/e Talent Berater/in wird Dich kontaktieren und lässt Dich wissen, was die nächsten Schritte sind, bevor Du wieder online sein wirst. "
+          },{
+            "qn": "Welche Art von Unternehmen sind auf Eurer Plattform präsent? Welche Branchen und welche Unternehmensgrößen? ",
+            "ans": "Wir arbeiten momentan mit über 1000 Unternehmen in Europa zusammen! Es gibt eine Vielfalt an Branchen, wie Unternehmen in eCommerce, Marketing, Service, FinTech, Reisen, Apps, Software, Gesundheit... "
+          },{
+            "qn": "Ich habe eine Interview Einladung angenommen, aber sie haben mich danach nicht mehr kontaktiert. Was kann ich tun?",
+            "ans": "Stelle zuerst sicher, dass Du in Deinem Spam Ordner nachgesehen hast. Manchmal landen die E-Mails von Recruiter/innen dort. Ansonsten solltest Du Dich bei deiner/m Talent Berater/in melden und es sie oder ihn wissen lassen, um die Misskommunikation so schnell wie möglich aufzuheben."
+          }
+        ]
       }
     },
     "employers": {
@@ -527,6 +554,286 @@
           },{
             "qn": "Wie lange müssen wir bezahlen?",
             "ans": "Bitte überprüfe Deine Vertragsbedingungen"
+          }
+        ]
+      }
+    }
+  },
+  "nl": {
+    "title": "Frequently Asked Questions",
+    "talents": {
+      "type": "Voor Talenten",
+      "signing-up": {
+        "title": "Aanmelden",
+        "text": [{
+          "qn": "Wat is Honeypot?",
+          "ans": "Honeypot is Europa's Tech-Focused Job Platform voor Software Developers, DevOps Engineers, Data Scientists, Product Owners, QA Testers, Engineering Leaders en CTOs"
+        },{
+          "qn": "Hoe werkt het proces van Honeypot?",
+          "ans": "Meld je aan bij Honeypot en maak een profiel aan. Voordat je zichtbaar wordt voor bedrijven, checken we je code en hebben we een korte call met je om je salaris- en tech-voorkeuren vast te stellen. Zodra dit is voltooid en je profiel volledig is ingevuld, wordt je onderdeel van een batch. Batches starten elke maandag en duren drie weken en gedurende deze tijd ben je zichtbaar voor bedrijven. Dit creëert urgentie voor bedrijven die gemotiveerd zijn om snel te handelen om je interview uitnodigingen te sturen. Je accepteert de sollicitaties voor de functies die je interesseren, gaat in gesprek met die bedrijven en kiest de baan die het best bij jou past. "
+        },{
+          "qn": "Naar wat voor soort skills zoeken jullie op Honeypot?",
+          "ans": "Honeypot staat open voor een grote verscheidenheid aan technische profielen maar naar bepaalde soorten skills is er een grotere vraag dan andere. Momenteel zijn de bedrijven waar we mee werken op zoek naar Frontend, Backend en Fullstack Developers, maar ook Team Leads, CTO’s, Data Scientists, Data Engineers, System Administrators, DevOps Engineers, Architecten en Product Managers… p.s. De lijst is nog langer! "
+        },{
+          "qn": "Wat is een Talent Rep?",
+          "ans": "Een Talent Rep is je persoonlijke gids op Honeypot. Deze leidt je door het gehele proces, van aanmelden tot offer, beantwoordt vragen die je onderweg hebt en helpt je bij het omgaan met bedrijfsprofielen, interview uitnodigingen en aanbiedingen. Je Talent Rep is ervaren in tech- en startuprecruitment dus vraag gerust om ondersteuning als je het nodig hebt. "
+        },{
+          "qn": "Moet ik betalen voor het gebruik van Honeypot?",
+          "ans": "Honeypot is een service die helemaal gratis is als je een baan zoekt! Je hoeft nooit te betalen op het platform."
+        }]
+      },
+      "creating-profile": {
+        "title": "Je profiel aanmaken",
+        "text": [
+          {
+            "qn": "Welke informatie staat er op mijn profiel?",
+            "ans": "Behalve de basiszaken zoals naam, contactinformatie, ervaring en vaardigheden, kun je jouw salarisindicatie, voorkeurslocatie en contractvorm, en gewenste functies toevoegen. We bieden ook voldoende ruimte voor een persoonlijke samenvatting plus een plaats om links naar je werk op te geven zoals het te zien is op platforms zoals GitHub, Behance, StackOverflow enzovoorts. En vergeet niet dat je Talent Rep klaar staat voor ondersteuning, indien nodig. "
+          },{
+            "qn": "Ich bin momentan noch beschäftigt und muss erst kündigen. Kann ich diese Information in meinem ProfiI Ik heb momenteel een baan en een opzegtermijn, kan ik deze informatie op mijn profiel zetten?",
+            "ans": "Je kunt je vroegst mogelijke startdatum op je profiel zetten. Bedrijven kunnen daar dan rekening mee houden in hun interview uitnodigingen.   "
+          },{
+            "qn": "Ich bin momentan noch beschäftigt und möchte nicht, dass mein Unternehmen mich sieht. Kann ich mein Profil verbergen? Ik heb momenteel een baan en ik wil niet dat mijn bedrijf me ziet, kan ik mijn profiel verbergen?",
+            "ans": "We blokkeren standaard je huidige werkgever. Je kunt andere bedrijven die je wilt blokkeren toevoegen via de privacytab. "
+          },{
+            "qn": "Ik ben nu nog student maar studeer binnenkort af. Wanneer zal ik een profiel aanmaken?",
+            "ans": "Je kunt je aanmelden bij Honeypot wanneer je besluit dat je klaar bent om de arbeidsmarkt te betreden. Het sollicitatieproces verloopt meestal vrij snel zodra je profiel zichtbaar wordt, zorg er dus voor dat je van je laatste studentendagen hebt genoten voordat je lid wordt! Hoewel Honeypot is gericht op ervaren developers, erkennen we ook dat pas afgestudeerden een groot potentieel hebben. Als er wat ervaring op je profiel ontbreekt, vragen we je onze code challenge te doen. Als je bewijst wat je kunt, laten we de andere toegangscriteria vallen. "
+          },{
+            "qn": "Wat zal ik in mijn persoonlijke samenvatting zetten? Kan ik dit overslaan?",
+            "ans": "Op Honeypot benaderen bedrijven jou, dus je kunt je samenvatting zien als motivatiebrief: het is de perfecte plaats om meer over jezelf te vertellen! In wat voor omgeving wil je graag werken, wat is je ideale volgende baan, wat zijn je sterktes… Je toegewijde Talent Rep staat ook klaar om te helpen, en zal je aanvullende ondersteuning geven. We bieden ook voldoende ruimte voor links zoals je Github, Behance, StackOverflow enzovoorts. Om te beginnen, bekijk onze blogpost Hoe maak ik een profiel op Honeypot aan in zeven simpele stappen! http://blog.honeypot.io/how-to-make-a-honeypot-profile-in-seven-easy-steps/"
+          },{
+            "qn": "Wat voor soort vaardigheden moet ik in de skills sectie plaatsen?",
+            "ans": "Dit onderdeel gaat geheel over technische expertise. Inclusief programmeertalen, frameworks en belangrijke tools waar je bekend mee bent. Je moet de vaardigheden die je opsomt goed beheersen, wat niet per se betekent dat je een expert bent, maar je moet meer dan basiskennis hebben. Als je vindt dat je soft skills ook benoemd mogen worden, moedigen we je aan om ze in het onderdeel ‘About Me’ in je profiel te zetten.  "
+          },{
+            "qn": "Hoe stel ik mijn ideale salaris vast?",
+            "ans": "Dat hangt van jou af, maar probeer realistisch te zijn in je verwachtingen: houd rekening met je ervaringsniveau, de vraag van de markt en de levenskosten in de stad waar je solliciteert. Het ideale salaris wordt gebruikt als indicator voor bedrijven en is niet per se een vast criterium. Om je te helpen, kun je nuttige informatie vinden in onze blogpost: Hoeveel verdienen developers in Duitsland? Hoeveel verdienen developers in Amsterdam? HYPERLINK"
+          },{
+            "qn": "Kan ik meerdere locaties selecteren voor mijn ideale baan?",
+            "ans": "Ja, je kunt zoveel locaties kiezen als je wilt uit de gebieden in de lijst voor je ideale baan. Je kunt aanbiedingen ontvangen van bedrijven gevestigd op al die locaties. Maar selecteer alsjeblieft geen locaties tenzij je echt van plan bent om daar te werken. Als je op afstand wilt werken kies dan alsjeblieft voor die optie. Echter hebben we op het moment geen bedrijven die banen op afstand aanbieden. "
+          },{
+            "qn": "Ik woon momenteel niet op een van de locaties uit de lijst. Kan ik me toch aanmelden bij Honeypot?",
+            "ans": "Ja, je bent nog steeds welkom om lid te worden van Honeypot. Als je zou willen verhuizen selecteer dan de steden die je interesseren. Als je niet wilt verhuizen voeg dan een stad toe in het onderdeel ‘overige’ voor jouw ideale baan. We breiden snel uit en houden je op de hoogte van onze bezigheden. De laatste optie is remote werken, hoewel we momenteel geen bedrijven hebben die banen op afstand aanbieden. "
+          },{
+            "qn": "Ik wil solliciteren naar een baan in Berlijn maar ik spreek geen Duits. Is dat een probleem?",
+            "ans": "Engels is de voertaal van veel van de bedrijven die Honeypot gebruiken, dus dit zou geen probleem moeten zijn. "
+          },{
+            "qn": "Bieden bedrijven visa aan voor immigratie?",
+            "ans": "Veel bedrijven op ons platform ondersteunen relocation, en wij bieden ook volledige en gratis visumondersteuning aan voor onze bedrijven als ze dat nodig hebben. Dat gezegd hebbende, de meeste van de grotere bedrijven hebben hun eigen visumafdelingen. Aangezien je profiel op Honeypot duidelijk je visumstatus aangeeft, zijn bedrijven die contact met je opnemen er zich bewust van of je visumondersteuning nodig hebt of niet. "
+          },{
+            "qn": "Helpen bedrijven met verhuiskosten?",
+            "ans": "Sommige bedrijven bieden een verhuisbonus aan voor kandidaten maar weinig zullen woonruimte regelen. We raden je aan om deze dingen direct met het bedrijf te bespreken zodra je de interview uitnodiging accepteert. "
+          }
+        ] 
+      },
+      "getting-approved": {
+        "title": "Bei Honeypot zugelassen werden",
+        "text": [
+          {
+            "qn": "Ik heb mijn profiel voor Honeypot voltooid, wat nu?",
+            "ans": "Nadat je jouw profiel hebt voltooid, dien je het in ter beoordeling. Je Talent Rep screent je profiel om er zeker van te zijn dat we banen en bedrijven hebben die passen bij jouw vaardigheden. Je wordt gemaild om te laten weten wanneer je bent geaccepteerd. "
+          },{
+            "qn": "Hoe lang duurt het voordat mijn profiel wordt beoordeeld op Honeypot?",
+            "ans": "Dien je profiel in en je Talent Rep zal meestal de beoordeling afronden binnen één tot twee werkdagen, of in uitzonderlijke gevallen langer. Onvolledige profielen vertragen het proces.  "
+          },{
+            "qn": "Waar kijken jullie naar bij het beoordelen van profielen voor Honeypot?",
+            "ans": "Om geaccepteerd te worden moet je een compleet profiel hebben en een bepaald niveau van aantoonbare ervaring in jouw vakgebied. Als je geen ervaring kun aantonen vragen je om een code challenge te voltooien. "
+          },{
+            "qn": "Mijn profiel is goedgekeurd door Honeypot maar ziet er nu anders uit. Wat is er gebeurd?",
+            "ans": "Gedurende het goedkeuringsproces voegt je Talent Rep een headline toe die je profiel samenvat voor bedrijven. Je hebt volledige controle over de headline en we kunnen hem aanpassen als je niet tevreden bent. Soms zal je Talent Rep ook wat aspecten van je profiel opschonen om je vaardigheden beter uit te laten komen. Maak je geen zorgen, het is slechts een kwestie van aanpassen voor maximale impact, we verwijderen geen belangrijke informatie. "
+          },{
+            "qn": "Mijn profiel is niet geaccepteerd door Honeypot, kan ik het opnieuw indienen?",
+            "ans": "Als je profiel niet wordt geaccepteerd stuurt je Talent Rep je een e-mail met uitleg. Ze staan open voor je eventuele vragen."
+          }
+        ] 
+      },
+      "receiving-invites": {
+        "title": "Interview uitnodigingen ontvangen",
+        "text": [
+          {
+            "qn": "Wanneer word ik zichtbaar voor bedrijven op Honeypot?",
+            "ans": "Nieuw talent wordt zichtbaar in batches. Dit stelt bedrijven in staat om bij te houden en te organiseren naar wie ze interview uitnodigingen hebben verstuurd. Zodra je profiel is beoordeeld en geaccepteerd, zal je Talent Rep je mailen om je de datum te geven van de volgende batch. Je profiel wordt automatisch toegevoegd en vanaf dan ben je zichtbaar voor bedrijven. Als je je deelname aan de batch wilt uitstellen, neem dan contact op met je Talent Rep. "
+          },{
+            "qn": "Ik wil nog niet zichtbaar zijn voor bedrijven op Honeypot. Hoe regel ik dat?",
+            "ans": "Stuur je Talent Rep een korte e-mail waarin je jouw verzoek uitlegt en het wordt geregeld."
+          },{
+            "qn": "Hoe bereik ik mijn Talent Rep van Honeypot?",
+            "ans": "Als je geaccepteerd wordt op het platform zal je Talent Rep je direct mailen. Je kunt dat e-mailadres gebruiken om contact op te nemen als je hulp of advies nodig hebt. Als je het e-mailadres van je Talent Rep kwijt bent geraakt kun je contact opnemen via hello@honeypot.io  "
+          },{
+            "qn": "Hoe vinden bedrijven mijn profiel op Honeypot?",
+            "ans": "Bedrijven zoeken naar kandidaten door te filteren op specifieke criteria zoals vaardigheden, locatie, visumsituatie en contractvorm. Dit laat profielen zien van kandidaten waarnaar de bedrijven dan interview uitnodigingen kunnen sturen. "
+          },{
+            "qn": "Wat is een interview uitnodiging?",
+            "ans": "Een interview uitnodiging is een gepersonaliseerd verzoek dat je kunt ontvangen van een bedrijf om een eerste gesprek te voeren over een specifieke functie. Als tech-talent, kun je de interview uitnodiging accepteren of afwijzen, en als bedrijf kun je meerdere aanvragen versturen voor dezelfde functie. De aanvraag zal 7 dagen actief blijven na het aanmaken (let op: niet 7 werkdagen!). Daarna is hij verlopen."
+          },{
+            "qn": "Welke informatie bevat een interview uitnodiging?",
+            "ans": "interview uitnodigingen benoemen specifieke informatie over de functie. Je kunt ze beschouwen als een transparantere versie van een traditionele vacature. Ze bevatten vaste onderdelen, zoals een functiebeschrijving en functievereisten, maar ook salaris en andere arbeidsvoorwaarden plus een gepersonaliseerd bericht van de CEO, CTO of HR manager, afhankelijk van de grootte van het bedrijf. Voor meer bedrijfsspecifieke informatie kun je klikken op het bedrijfsprofiel. "
+          },{
+            "qn": "Wat is een bedrijfsprofiel?",
+            "ans": "Elk bedrijf op het platform heeft een individueel bedrijfsprofiel. Het is een gedetailleerd overzicht van tech credentials en werkcultuur en is toegankelijk via de interview uitnodiging. Bedrijfsprofielen bevatten informatie over het development team, producten, technology stack, sollicitatieprocedure, en een tijdlijn van belangrijke ontwikkelingen en een direct bericht van de CEO, CTO of HR manager, afhankelijk van de grootte van het bedrijf. Je kunt bedrijfsprofielen gebruiken als bron om te bepalen welke bedrijven je het meest aanspreken. "
+          },{
+            "qn": "Het bedrijf spreekt me aan maar het salaris in de interview uitnodiging is te laag. Wat moet ik doen?",
+            "ans": "Het salaris genoemd in de interview uitnodiging moet worden beschouwd als eerste indicatie. Als het bedrag minder dan 20% afwijkt van je gewenste salaris dan raden we je aan om de interview uitnodiging te accepteren en direct te onderhandelen met het bedrijf zelf. Je Talent Rep kan helpen met de onderhandelingen. "
+          },{
+            "qn": "Kan ik meer dan één interview uitnodiging accepteren?",
+            "ans": "Absoluut! Als je een interview uitnodiging accepteert, kun je nog steeds aanvragen van andere bedrijven ontvangen. Hoe meer, hoe beter! Onthoud: jij hebt altijd de controle over met welke bedrijven je besluit verder te gaan."
+          },{
+            "qn": "Welke vorm hebben de sollicitatiegesprekken?",
+            "ans": "De gesprekken worden rechtstreeks tussen jou en het bedrijf geregeld. Bedrijven zijn over het algemeen flexibel wat betreft het rooster en de voorkeuren van talenten. Veel voorkomende sollicitatievormen zijn face-to-face, Skype/Hangout, telefonisch en online pair-coding.  "
+          },{
+            "qn": "Is het mogelijk om sollicitatiegesprekken op afstand te doen?",
+            "ans": "Ja, de meeste bedrijven vinden het prima om talenten te spreken via de telefoon, Skype/Hangout of andere soortgelijke manieren.  "
+          },{
+            "qn": "Wat moet ik voorbereiden voor het sollicitatiegesprek?",
+            "ans": "Je moet de functie waar je op solliciteert volledig begrijpen door het nalezen van de interview uitnodiging en het bedrijfsprofiel. Achterhaal naar welke vaardigheden het bedrijf op zoek is en verbind deze met je eigen profiel. Het is ook handig om na te denken over welke richting je op wilt met je carrière en hoe dat samenhangt met de toekomstplannen van het bedrijf. Bekijk onze blog voor meer informatie over sollicitatietactieken.  "
+          },{
+            "qn": "Als ik een interview uitnodiging accepteer, kan ik dan nog steeds aanvragen van andere bedrijven ontvangen?",
+            "ans": "Ja, je kunt nog steeds interview uitnodigingen van meerdere bedrijven ontvangen, totdat er schriftelijke aanbieding voor een baan is ondertekend.  "
+          },{
+            "qn": "Mijn profiel is al een tijdje zichtbaar voor bedrijven op Honeypot, waarom heb ik nog geen interview uitnodigingen ontvangen?",
+            "ans": "In het onwaarschijnlijke geval dat je geen interview uitnodigingen ontvangt raden we je aan om contact op te nemen met je Talent Rep. "
+          },{
+            "qn": "Kan ik interview uitnodigingen op Honeypot afwijzen?",
+            "ans": "Ja, als interview uitnodigingen niet interessant voor je zijn, kun je ze afwijzen. In deze gevallen kan je ook aangeven waarom de aanvraag niet interessant was. "
+          },{
+            "qn": "Hoe blokkeer ik een bedrijf van het sturen van interview uitnodigingen op Honeypot?",
+            "ans": "Klik op het tabblad privacy bij je account settings en voeg de bedrijven toe aan jouw lijst van geblokkeerde bedrijven. "
+          },{
+            "qn": "Ik heb een interview uitnodiging afgewezen maar nu ben ik van gedachten veranderd. Kan ik opnieuw in contact komen met het bedrijf?",
+            "ans": "We raden je aan om interview uitnodigingen goed te overwegen voor je ze afwijst. Als je van gedachten verandert na het afwijzen van een aanvraag, neem dan contact op met je Talent Rep. In sommige gevallen is de functie al vervuld en is de interview uitnodiging verlopen, in andere gevallen staat hij nog open. Als het nog mogelijk is om te solliciteren helpen we waar mogelijk. "
+          }
+        ] 
+      },
+      "job-refer": {
+        "title": "Aanbiedingen ontvangen en vrienden doorverwijzen",
+        "text": [
+          {
+            "qn": "Hoe claim ik mijn referral bonus op Honeypot?",
+            "ans": "De referral bonus bedraagt €512 en wordt uitbetaald op het moment dat de persoon die je hebt doorwezen is aangenomen. Je ontvangt dan een e-mailnotificatie en we maken het geld de volgende dag naar je over.  "
+          },{
+            "qn": "Ik werd onlangs aangenomen via Honeypot. Wat gebeurt er nu met mijn profiel?",
+            "ans": "Allereerst, gefeliciteerd met je nieuwe baan! Stuur ons een e-mail om ons op de hoogte te stellen en we verbergen je profiel. Je zult geen interview uitnodigingen meer ontvangen."
+          }
+        ] 
+      },
+      "misc": {
+        "title": "Overig",
+        "text": [
+          {
+            "qn": "Hoe word ik weer zichtbaar voor bedrijven?",
+            "ans": "Er is een “rebatch” optie op je profiel klik op “Click here” om weer zichtbaar te worden. Je Talent Rep zal contact met je opnemen en je informeren over de volgende stappen voordat je weer live bent. "
+          },{
+            "qn": "Welk type bedrijven zijn actief op jullie platform? (sectoren en bedrijfsgrootte)",
+            "ans": "We werken momenteel met meer dan 1000 bedrijven in Europa! Er zijn allerlei sectoren zoals bedrijven in eCommerce, marketing, dienstverlening, FinTech, reizen, apps, software, gezondheidszorg, etc."
+          },{
+            "qn": "Ik heb een interview uitnodiging geaccepteerd van een bedrijf maar ze laten niks meer weten. Wat kan ik doen?",
+            "ans": "Zorg er eerst voor dat je je ongewenste mail hebt gecontroleerd, soms worden e-mails van recruiters daarin geplaatst. Als daar niets in staat, neem dan zeker even contact op met je Talent Rep om het haar/hem te laten weten, zodat de miscommunicatie zo snel mogelijk opgelost kan worden. "
+          }
+        ]
+      }
+    },
+    "employers": {
+      "type": "Voor Werkgevers",
+      "joining-honeypot": {
+        "title": "Lid Worden van Honeypot & Algemene Vragen",
+        "text": [
+          {
+            "qn": "Wat is Honeypot?",
+            "ans": "Honeypot is een tech-focused job platform, dat vooraf gescreend tech-talent met goedgekeurde bedrijven in contact brengt. Hier bij Honeypot zetten we het traditionele recruitmentsysteem op zijn kop door bedrijven rechtstreeks te laten solliciteren bij kandidaten in plaats van andersom. Tech-talenten worden gescreend wat betreft hun vaardigheden en ervaring en komen alleen in aanmerking om het platform te betreden als zij aan strikte eisen voldoen. Door de waarborging van kwaliteit aan beide kanten wordt een transparante en efficiënte marktplaats gecreëerd, hierdoor wordt de doorlooptijd voor recruitment verkort en worden talenten en bedrijven in staat gesteld zich te richten op het vinden van de juiste match."
+          },{
+            "qn": "Hoe werkt het proces van Honeypot?",
+            "ans": "Nadat je bedrijf is goedgekeurd om lid te worden van Honeypot, maken we jouw account en bedrijfsprofiel aan. Nadat je bent ingelogd kun je onmiddellijk beginnen met het zoeken naar talenten door middel van specifieke filters en trefwoorden. Om contact op te nemen met kandidaten voor een functie stuur je simpelweg een interview uitnodiging via het platform, die ze kunnen accepteren of afwijzen. Zodra een kandidaat een interview uitnodiging accepteert, heb je de mogelijkheid om met diegene te communiceren, direct op het platform of via e-mail. Als een talent onverhoopt je uitnodiging afwijst, geeft hij/zij een reden op en kun je nog een tegenbod sturen."
+          },{
+            "qn": "Wie zou zich aan moeten melden voor Honeypot?",
+            "ans": "Elk bedrijf dat zijn tech-team wil laten groeien kan zich aanmelden voor Honeypot. We eisen dat bedrijven op Honeypot volledig transparant zijn in het doen van aanbiedingen en daarbij zoveel mogelijk informatie aan kandidaten bieden. HR professionals geven meestal leiding aan het proces maar wij raden sterk aan ook het tech-team te betrekken, met name de engineering managers zoals lead developers of CTO’s, bij het screenen van kandidaten. "
+          },{
+            "qn": "In welke steden is Honeypot actief? ",
+            "ans": "We zijn momenteel actief in Duitsland, Nederland en het Verenigd Koninkrijk, in de steden Berlijn, Frankfurt, Keulen, Stuttgart, München, Amsterdam, Rotterdam, Den Haag, Delft, Eindhoven en Londen. Maar houd dit goed in de gaten, want we breiden continu uit! "
+          },{
+            "qn": "Hoe komt Honeypot aan haar talenten? ",
+            "ans": "Honeypot is sterk geworteld in de developer community - we organiseren conferenties, ondersteunen open source-projecten en maken documentaires over de software development gemeenschap. Honeypot 'sourcet' geen kandidaten; kandidaten leren Honeypot voornamelijk kennen via bijvoorbeeld referrals en evenementen. We hebben een bijzonder sterk netwerk door de talenten die succesvol zijn geplaatst. We richten ons ook op het bouwen van sterke lokale netwerken die talenten inspireren om proactief lid te worden van het platform. "
+          },{
+            "qn": "Hoe worden talenten vooraf gescreend door Honeypot?",
+            "ans": "Alle talenten op Honeypot ondergaan een strikt screeningsproces dat zich richt op drie componenten: coding skills, communicatie- & taalvaardigheden en de intentie om een nieuwe baan te vinden. We doen een eerste beoordeling van achtergrond en ervaring en controleren hun coding skills. Dit kan worden gedaan door het beoordelen van open source projecten waar ze aan hebben gewerkt of middels een coding challenge. Deze coding challenge stelt ons in staat om kandidaten te evalueren die geen aantoonbare ervaring hebben. Als talenten niet voldoende ervaring of vaardigheden hebben worden ze niet toegelaten tot het platform."
+          },{
+            "qn": "Wat zijn de kosten voor het gebruiken van Honeypot?",
+            "ans": "We rekenen 15% commissie gebaseerd op het jaarlijkse bruto salaris van de talenten die we plaatsen. Voor freelance projecten is de vergoeding 30% van het uurtarief. Voor klanten die meerdere mensen willen aannemen bieden we op maat gemaakte plannen. Voor vragen over deze pricing, mail naar partners@honeypot.io"
+          },{
+            "qn": "Waarom Honeypot?",
+            "ans": "We matchen bedrijven met vooraf geselecteerde tech-talenten die actief op zoek zijn naar een nieuwe baan. Elke week heb je toegang tot honderden nieuwe kandidaten op ons platform. "
+          }
+        ]
+      },
+      "tech-talents": {
+        "title": "Tech-talenten op Honeypot",
+        "text": [
+          {
+            "qn": "Waar komen de talenten op Honeypot vandaan?",
+            "ans": "Talenten op Honeypot komen van over de hele wereld. Gemiddeld komt meer dan 50% van de kandidaten uit de EU, waarvan 20-25% van de talenten Duits spreekt en ongeveer 10% Nederlands. "
+          },{
+            "qn": "Hoeveel talenten zijn er op Honeypot?",
+            "ans": "In plaats van een klassieke database te gebruiken, werken wij met een slim systeem waarin kandidaten ‘live’ worden gezet gedurende een vaste periode, waarin ze actief op zoek zijn naar een nieuwe functie en zeer snel reageren op interview uitnodigingen. Momenteel bieden we meer dan 140 nieuwe kandidaten aan per week, en hebben we totaal meer dan 400 kandidaten. Zorg ervoor dat je op maandagmorgen inlogt om de nieuwe talenten te zien."
+          },{
+            "qn": "Staan jullie open voor freelance, parttime of fulltime talenten? ",
+            "ans": "Jazeker. Elke developer op Honeypot geeft duidelijk aan in zijn/haar profiel voor welke contractvorm ze openstaan. De meeste developers zijn echter op zoek naar een fulltime baan. "
+          },{
+            "qn": "Heeft Honeypot lokale of internationale talenten?",
+            "ans": "We staan heel erg open voor internationale tech-talenten en we zijn er trots op dat we een aanzienlijk aantal internationale tech-talenten hebben geplaatst in Duitsland, Nederland en het Verenigd Koninkrijk. We zorgen er echter voor dat we altijd tenminste 50% of meer Europese talenten hebben die actief zijn op het platform en tenminste 20% Duitssprekende en 10% Nederlandssprekende kandidaten. "
+          },{
+            "qn": "Welke talen spreken Honeypot developers?",
+            "ans": "Honeypot tech-talenten spreken allerlei talen, afhankelijk van hun achtergrond, maar alle kandidaten worden gescreend op hun Engelse taalvaardigheden. "
+          },{
+            "qn": "Hoeveel Duits- & Nederlandssprekende talenten zijn er?",
+            "ans": "Omdat Duitsland en Nederland onze belangrijkste markten zijn, streven we er naar om zoveel mogelijk lokale kandidaten te hebben. Momenteel streven we er naar om tenminste 20% Duitssprekende en 10% Nederlandssprekende talenten te hebben. Bedrijven met lokale taalbehoeften kunnen de taalfilter aanzetten tijdens het zoeken, om de juiste kandidaten te vinden."
+          },{
+            "qn": "Krijgen alle internationale talenten gratis visum support van Honeypot?",
+            "ans": "Ja! Honeypot was het eerste platform dat gratis visum support aanbood voor internationaal talent. Wij willen dat onze klanten toegang krijgen tot het beste internationale tech talent en daarom bieden wij visa support. "
+          },{
+            "qn": "Schrijft Honeypot de headline voor de developer en wie schrijft de profielen? ",
+            "ans": "De profielen worden gevuld door de developers zelf, maar ons Talent Rep team helpt ze op weg en biedt tips en suggesties voor de headlines. "
+          }
+        ]
+      },
+      "search-talents": {
+        "title": "Zoeken naar tech-talenten",
+        "text": [
+          {
+            "qn": "Ik weet niet zeker welke soort tech-vaardigheden het meest geschikt zijn voor ons bedrijf. Kun je advies geven?",
+            "ans": "Jouw Success Manager is ervaren in tech recruitment en heeft een uitstekend begrip van de verschillende programmeertalen en frameworks. Deze helpt graag als je vragen hebt."
+          }
+        ]
+      },
+      "interviewing-talents": {
+        "title": "Uitnodigen, Interviewen & Aannemen van Tech-talenten",
+        "text": [
+          {
+            "qn": "Wat is een interview uitnodiging?",
+            "ans": "Een interview uitnodiging is een gepersonaliseerd verzoek aan tech-talenten om te solliciteren op een specifieke functie. Tech-talent kan je interview uitnodiging accepteren of afwijzen en je kunt meerdere aanvragen voor dezelfde functie versturen. "
+          },{
+            "qn": "Wat staat er in een interview uitnodiging?",
+            "ans": "interview uitnodigingen combineren elementen van een traditionele vacature, zoals een beknopte functieomschrijving en vereisten, met wat extra elementen om meer transparantie aan te moedigen, zoals salaris en een persoonlijk bericht van jou aan het talent. "
+          },{
+            "qn": "Ik heb meerdere functies te vervullen, kunnen we meerdere interview uitnodigingen versturen?",
+            "ans": "Ja, je kunt meerdere aanvragen voor meerdere functies versturen. Maar je kunt er maximaal één sturen naar een bepaalde kandidaat."
+          },{
+            "qn": "Wat moet ik doen als mijn interview uitnodigingen worden afgewezen?",
+            "ans": "Het is normaal dat sommige aanvragen worden afgewezen. Alle afgewezen aanvragen bevatten een reden. In sommige gevallen kan je de interview uitnodiging opnieuw versturen, waarbij sommige aspecten worden aangepast, zoals salaris. In het onwaarschijnlijke geval dat al je interview uitnodigingen worden afgewezen raden we je aan om contact op te nemen met je Customer Success Manager. "
+          },{
+            "qn": "Hoe is het sollicitatieproces geregeld op Honeypot?",
+            "ans": "Het sollicitatieproces wordt direct afgesproken tussen jouw bedrijf en het talent en kan volgens de normale interne procedures verlopen."
+          },{
+            "qn": "Worden alle tech-talenten uit de batch aangenomen?",
+            "ans": "Binnen 3 weken krijgen tech-talenten een baanaanbieding via Honeypot, of via hun eigen kanalen. In sommige gevallen staan we developers toe om deel te nemen aan een nieuwe batch (rebatch) in de toekomst."
+          },{
+            "qn": "Kan ik contact opnemen met talenten die niet staan ingeschreven voor de locatie van mijn kantoor? ",
+            "ans": "Als je een geweldige kans hebt voor een tech-talent die niet staat ingeschreven voor de stad waar jouw kantoor zich bevindt, kan je nog steeds een uitnodiging sturen. Houd er echter rekening mee dat de kans op acceptatie klein is, omdat dit een harde eis voor het talent kan zijn."
+          },{
+            "qn": "Wat gebeurt er als een talent mijn aanbieding accepteert? ",
+            "ans": "Neem nadat een talent je aanbieding accepteert contact op met je Customer Success Manager, die je dan zal doorverwijzen naar onze facturatieafdeling en indien nodig met het visumproces beginnen. "
+          },{
+            "qn": "Wat gebeurt er als een aangenomen developer de verwachtingen niet waarmaakt? ",
+            "ans": "Als je niet verder wilt met een van onze talenten bieden we een terugbetalingsbeleid om je risico tot nul te verkleinen. Dit beleid betekent dat wij 100% terugbetalen indien het contract wordt beëindigd binnen 3 maanden na de startdatum (uitzonderingen op dit beleid zijn structurele veranderingen, zoals een reorganisatie). "
+          },{
+            "qn": "Hoe lang moet mijn bedrijf betalen?",
+            "ans": "Controleer dit alsjeblieft in de voorwaarden van je contract."
           }
         ]
       }

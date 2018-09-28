@@ -38,7 +38,8 @@ i18n.init({
       header: header.nl,
       general,
       seo: seo.nl,
-      index: index.nl
+      index: index.nl,
+      faq: faq.nl
     }
   }
 });
