@@ -7,6 +7,7 @@ const component = 'page-intro';
 export default class PageIntro extends Component {
   render() {
     const page = getCurrentPage();
+    const color = page === 'tech-hiring' ? 'blue' : 'yellow'
     return (
       <I18n ns={ `${page}` }>
         {t =>
@@ -18,8 +19,12 @@ export default class PageIntro extends Component {
             </h1>
             <p className="page-intro__tagline">{t(`${component}.tagline`)}</p>
             <span className="page-intro__button-bar">
-              <button type="button" className="button button--yellow">{t(`${component}.button1`)}</button>
-              <button type="button" className="button button--link">{t(`${component}.button2`)}</button>
+              <button type="button" className={ `button button--${color}` }>
+                {t(`${component}.button1`)}
+              </button>
+              <button type="button" className="button button--link">
+                {t(`${component}.button2`)}
+              </button>
             </span>
           </div>
         }

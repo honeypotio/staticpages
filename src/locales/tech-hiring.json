@@ -1,0 +1,106 @@
+{
+  "en": {
+    "page-intro": {
+      "headline1": "Build Your",
+      "headline2": "Tech Team",
+      "tagline": "Honeypot is the easiest way to hire Software Developers, DevOps Engineers, Data Scientists, Product Owners, QA Testers and Engineering Leaders.",
+      "button1": "Start Hiring!",
+      "button2": "I'm Looking for a Job!"
+    },
+    "company-bar": {
+      "tagline": "Over 1000 Companies Are Hiring on Honeypot"
+    },
+    "access": {
+      "headline": "Access Active Tech Talents Every Monday",
+      "text": "Each Monday, new tech talents appear in your search list. Connect with the ones you like!"
+    },
+    "hire": {
+      "headline": "Hire Quicker",
+      "text": "With 95% response rates, you can fill your pipeline and build your team quicker than other channels. 80% of companies hire within 4 weeks."
+    },
+    "visa": {
+      "headline": "Free Visa Support to Hire the World's Best Engineers",
+      "text": "Want to reach the best of global tech talent? We have your back!  When you hire somebody from outside the EU, we offer full visa support for free!"
+    },
+    "skills": {
+      "headline": "Verified Skills",
+      "text": "Only the top 10% of candidates make it onto Honeypot. All candidates are verified through a code challenge and a call with our Talent Management team, meaning less time wasted for technical hiring managers."
+    },
+    "employer": {
+      "1": {
+        "headline": "Innovative Recruitment of Tech Talent",
+        "text": "The workplace is changing. Honeypot focuses on candidate-led recruitment."
+      },
+      "2": {
+        "headline": "Tech Recruitment Education",
+        "text": "Benchmark your salaries and hiring practices with our dedicated Customer Success Managers"
+      },
+      "3": {
+        "headline": "Build your Employer Brand",
+        "text": "Find candidates when they want to be found! No more brand-damaging direct sourcing."
+      }
+    },
+    "payment-options": {
+      "headline": "Honeypot has Payment Options Depending on Your Hiring Plan",
+      "basic": {
+        "name": "Basic",
+        "start": "Start Now",
+        "list": {
+          "1": "15% Commission Per Hire (of yearly gross salary)",
+          "2": "Free Visa Support",
+          "3": "Full Refund Guarantee",
+          "4": "Unlimited Seats",
+          "5": "Dedicated Customer Success Manager",
+          "6": "Custom Employer Branding "
+        }
+      },
+      "member": {
+        "name": "Membership",
+        "start": "Start Now",
+        "list": {
+          "1": "Favourable Custom Pricing For Larger Hiring Plans",
+          "2": "Free Visa Support",
+          "3": "Full Refund Guarantee",
+          "4": "Unlimited Seats",
+          "5": "Dedicated Key Account Manager",
+          "6": "Custom Employer Branding ",
+          "7": "Access to Honeypot’s Tech Recruitment Training Academy",
+          "8": "Free Employer Branding Video"
+        }
+      }
+    },
+    "position": {
+      "headline": "Honeypot Helps You Build Great Engineering Teams",
+      "1": {
+        "headline": "Hire Software Developers",
+        "text": "Find frontend, backend, devops, mobile and game developers on Honeypot, with skills ranging from JavaScript, Ruby, PHP, Android, iOS, Scala, Java and many more."
+      },
+      "2": {
+        "headline": "Hire Product Talent",
+        "text": "Build your pipeline of QA Testers and Product Owners to give vision and direction to your product."
+      },
+      "3": {
+        "headline": "Hire Engineering Leaders",
+        "text": "Hire CTOs, VPs of Engineering, Technical Leads and all other senior Engineering Leaders on Honeypot."
+      },
+      "4": {
+        "headline": "Hire Data Experts",
+        "text": "Hire Data Scientists and Data Engineers to help you draw actionable insights from your company’s data."
+      }
+    },
+    "testimonial": {
+      "1": {
+        "image": "/assets/avatar.jpg",
+        "name": "Maud Aertsen",
+        "position": "Talent Manager \n MediaMonks",
+        "text": "Very innovative way of recruitment. High quality candidates.  The profiles we look for continuously change and with Honeypot I don't have to inform an agency, because we are free to approach the people that are interesting for us at any time"
+      }, 
+      "2": {
+        "image": "/assets/avatar.jpg",
+        "name": "Thijs Slijkhuis",
+        "position": "CTO \n United Wardrobe",
+        "text": "We love Honeypot, not only for their refreshing view on developer recruitment, but also for their active participation in the developer community."
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.side-bg {
+  position: absolute;
+  width: 267px;
+  height: 322px;
+  //top: 0;
+
+  &--left {
+    left: 0;
+    bottom: 0;
+  }
+
+  &--right {
+    right: 0;
+    transform: rotate(180deg);
+  }
+
+  &--index {
+    background: no-repeat left top url('../assets/cables.svg');
+  }
+
+  &--tech-hiring {
+    background: no-repeat left top url('../assets/leaf.svg');
+  }
+}
+

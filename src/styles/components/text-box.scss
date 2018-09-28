@@ -1,5 +1,12 @@
 .text-box {
 
+  &__headline {
+    &--small {
+      margin: 46px 0 10px 0;
+      font-size: 1.286em;
+    }
+  }
+
   &__link {
     font-weight: 600;
     text-decoration: none;

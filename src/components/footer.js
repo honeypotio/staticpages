@@ -9,22 +9,8 @@ import LangSwitch from './lang-switch';
 const column = ['for-talents', 'for-employers', 'community']
 const year = (new Date()).getFullYear();
 // currently chosen language
-const lang = getLang();
 const plang = getPathLang();
 const prefix = '/' + (plang === '' ? '' : plang + '/');
-const page = getCurrentPage();
-const createLanguageSwitch = (lang, active) => { 
-  const style = 'footer__lang-item ' + (active
-    ? 'footer__lang-item--active'
-    : '');
-  let content = lang.toUpperCase();
-  if(!active) {
-    content = (<Link className="footer__link" to={ '/'+lang+'/'+page }>
-      {content}
-    </Link>);
-  }
-  return (<li key={ lang } className={ style }>{ content }</li>);
-}
 
 export default () => (
   <I18n ns={ ['footer', 'header'] }>
@@ -39,15 +25,6 @@ export default () => (
             { t('copyright', { year }) }
           </p>
           <LangSwitch />
-          {
-            /*
-             *
-          <ul className="footer__lang-switch">
-            { languages.map(i => createLanguageSwitch(i, i === lang)) }
-          </ul>
-             *
-             */
-          }
         </div>
       </div> 
       <div className="footer__column">

@@ -1,0 +1,15 @@
+.position-overview {
+  margin-bottom: 100px;
+  &__headline {
+    width: 424px;
+    margin: 60px auto;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  &__item {
+    width: 300px;
+    padding: 20px;
+  }
+}

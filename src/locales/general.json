@@ -2,6 +2,7 @@
   "company-name": "Honeypot",
   "company-fullname": "$t(company-name) GmbH",
   "copyright": "© {{year}} $t(company-name)",
+  "sign-up": "Signup to Honeypot",
   "de": {
     "tagline": "Europas tech- und developer-fokussierte Job Plattform",
     "tagline2": "Europas tech-fokussierte Job Plattform"

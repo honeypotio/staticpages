@@ -1,4 +1,5 @@
 import React from 'react';
+import SideBackground from './side-bg';
 import { I18n } from 'react-i18next';
 
 const injectHTML = (t, index) => (
@@ -9,12 +10,12 @@ const injectHTML = (t, index) => (
 )
 
 export default ({ index, page, left, right }) => {
-  const classes = `side-background side-background--${page}`;
+  //const classes = `side-background side-background--${page}`;
   return <I18n ns={ page }>
     { t =>
     <div className="testimonial-wrapper">
-      { left && <div className={ `${classes} side-background--left` }></div>}
-      { right && <div className={ `${classes} side-background--right` }></div>}
+      { left && <SideBackground position="left" page={ page } />}
+      { right && <SideBackground position="right" page={ page } />}
       <div className="testimonial">
         <div className="testimonial__text">
           "{t(`testimonial.${index}.text`)}"

@@ -1,0 +1,49 @@
+.payment-options {
+  position: relative;
+  margin: 100px 0;
+  &__headline {
+    text-align: center;
+    width: 577px;
+    margin: 50px auto;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+}
+.payment-option {
+  width: 276px;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 6px 6px 18px 5px rgba(0,0,0,0.07);
+  margin: 23px;
+
+  &__divider {
+    border-top: 1px solid #ECEEF1;
+    color: transparent;
+  }
+
+  &__name {
+    font-weight: 600;
+    text-transform: uppercase;
+    &--yellow {
+      color: #F6C724;
+    }
+    &--blue {
+      color: $brand-primary;
+    }
+  }
+
+  &__start {
+    width: 100%;
+  }
+
+  &__list {
+    &--yellow {
+      list-style-image: url('../assets/check-yellow.svg');
+    }
+    &--blue {
+      list-style-image: url('../assets/check-blue.svg');
+    }
+  }
+}

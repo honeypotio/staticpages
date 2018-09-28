@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="499px" height="349px" viewBox="0 0 499 349" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>code</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M168.766184,43.2005329 C110.698684,68.5465245 6.9187429,160.948824 1.93051229,195.469906 C-5.25113457,245.170539 6.20626128,279.016496 60.1031829,318.894585 C144.744349,381.520201 230.501379,325.381243 396.11315,332.714239 C444.300737,334.8479 545.608367,287.641652 473.228488,195.469906 C400.84861,103.29816 456.890589,-82.5634264 168.766184,43.2005329 Z" id="path-1"></path>
+        <pattern id="pattern-2" width="27.84" height="27.84" x="-27.84" y="-26.9444762" patternUnits="userSpaceOnUse">
+            <use xlink:href="#image-3" transform="scale(0.58,0.58)"></use>
+        </pattern>
+        <image id="image-3" width="48" height="48" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAEGWlDQ1BrQ0dDb2xvclNwYWNlR2VuZXJpY1JHQgAAOI2NVV1oHFUUPrtzZyMkzlNsNIV0qD8NJQ2TVjShtLp/3d02bpZJNtoi6GT27s6Yyc44M7v9oU9FUHwx6psUxL+3gCAo9Q/bPrQvlQol2tQgKD60+INQ6Ium65k7M5lpurHeZe58853vnnvuuWfvBei5qliWkRQBFpquLRcy4nOHj4g9K5CEh6AXBqFXUR0rXalMAjZPC3e1W99Dwntf2dXd/p+tt0YdFSBxH2Kz5qgLiI8B8KdVy3YBevqRHz/qWh72Yui3MUDEL3q44WPXw3M+fo1pZuQs4tOIBVVTaoiXEI/MxfhGDPsxsNZfoE1q66ro5aJim3XdoLFw72H+n23BaIXzbcOnz5mfPoTvYVz7KzUl5+FRxEuqkp9G/Ajia219thzg25abkRE/BpDc3pqvphHvRFys2weqvp+krbWKIX7nhDbzLOItiM8358pTwdirqpPFnMF2xLc1WvLyOwTAibpbmvHHcvttU57y5+XqNZrLe3lE/Pq8eUj2fXKfOe3pfOjzhJYtB/yll5SDFcSDiH+hRkH25+L+sdxKEAMZahrlSX8ukqMOWy/jXW2m6M9LDBc31B9LFuv6gVKg/0Szi3KAr1kGq1GMjU/aLbnq6/lRxc4XfJ98hTargX++DbMJBSiYMIe9Ck1YAxFkKEAG3xbYaKmDDgYyFK0UGYpfoWYXG+fAPPI6tJnNwb7ClP7IyF+D+bjOtCpkhz6CFrIa/I6sFtNl8auFXGMTP34sNwI/JhkgEtmDz14ySfaRcTIBInmKPE32kxyyE2Tv+thKbEVePDfW/byMM1Kmm0XdObS7oGD/MypMXFPXrCwOtoYjyyn7BV29/MZfsVzpLDdRtuIZnbpXzvlf+ev8MvYr/Gqk4H/kV/G3csdazLuyTMPsbFhzd1UabQbjFvDRmcWJxR3zcfHkVw9GfpbJmeev9F08WW8uDkaslwX6avlWGU6NRKz0g/SHtCy9J30o/ca9zX3Kfc19zn3BXQKRO8ud477hLnAfc1/G9mrzGlrfexZ5GLdn6ZZrrEohI2wVHhZywjbhUWEy8icMCGNCUdiBlq3r+xafL549HQ5jH+an+1y+LlYBifuxAvRN/lVVVOlwlCkdVm9NOL5BE4wkQ2SMlDZU97hX86EilU/lUmkQUztTE6mx1EEPh7OmdqBtAvv8HdWpbrJS6tJj3n0CWdM6busNzRV3S9KTYhqvNiqWmuroiKgYhshMjmhTh9ptWhsF7970j/SbMrsPE1suR5z7DMC+P/Hs+y7ijrQAlhyAgccjbhjPygfeBTjzhNqy28EdkUh8C+DU9+z2v/oyeH791OncxHOs5y2AtTc7nb/f73TWPkD/qwBnjX8BoJ98VQNcC+8AAAFFSURBVGgF7djbDYMwDAXQBjEMYqyqY1WMxTppLiJIQIA8ariWkp8IPuweO60am67r7MstY8wwjuPH7dMz3uUua63p+/7r9rePIRW/9QmQzCV9ub0YgSIgzhxvQkjFb1EZBAdEKolkfJTqtnb7bv/zOJm58moRE0AzYgFoRawAGhE7gDZEEKAJcQjQgjgFaEBcAtgRUQBmRDSAFZEEYEQkA9gQWQAmRDaABVEEYEAUAx5H4EaGOyw+SMl66mbXzNOD4k6gCPNUY/CFwF1YOn5zRxJJRINqaUbUuZA/79sd3wm3xIdbdS60rXzo2XVCbO60/HxKJgFKKv4CkEziuyKBWAE0InYAbYggQBPiEKAFcQrQgLgEsCOiAMyIaAArIgnAiEgGsCGyAEyIbAALogjAgCgGPI7AX9w6F3JtqHMhnMWLFSrSD9jOnakVHpZYAAAAAElFTkSuQmCC"></image>
+        <filter x="-6.8%" y="-6.5%" width="114.7%" height="115.6%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="2" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Current-Version" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="employers01" transform="translate(-771.000000, -2237.000000)" fill-rule="nonzero">
+            <g id="verifies-skills" transform="translate(315.000000, 2237.000000)">
+                <g id="code" transform="translate(456.000000, 0.000000)">
+                    <g id="bg">
+                        <use fill="#E1F0FF" xlink:href="#path-1"></use>
+                        <use fill-opacity="0.1" fill="url(#pattern-2)" xlink:href="#path-1"></use>
+                    </g>
+                    <g filter="url(#filter-4)" transform="translate(38.000000, 11.000000)">
+                        <path d="M0,22.3857868 L333,22.3857868 L333,307 C333,311.418278 329.418278,315 325,315 L8,315 C3.581722,315 5.41083001e-16,311.418278 0,307 L0,22.3857868 Z" id="bg" fill="#FFFFFF"></path>
+                        <g transform="translate(19.000000, 44.000000)">
+                            <rect id="Rectangle-2" fill="#B1CDEA" x="53.84375" y="0.771573604" width="6.40384615" height="5.5964467" rx="2.79822335"></rect>
+                            <rect id="Rectangle-2" fill="#B1CDEA" x="73.0552885" y="19.1598985" width="6.40384615" height="5.5964467" rx="2.79822335"></rect>
+                            <rect id="Rectangle-2" fill="#B1CDEA" x="66.6514423" y="8.76649746" width="34.4206731" height="5.5964467" rx="2.79822335"></rect>
+                            <rect id="Rectangle-2" fill="#B1CDEA" x="79.4591346" y="27.9543147" width="44.8269231" height="5.5964467" rx="2.79822335"></rect>
+                            <rect id="Rectangle-2" fill="#B1CDEA" x="79.4591346" y="38.3477157" width="44.8269231" height="5.5964467" rx="2.79822335"></rect>
+                            <rect id="Rectangle-2" fill="#B1CDEA" x="89.0649038" y="47.142132" width="42.4254808" height="5.5964467" rx="2.79822335"></rect>
+                            <rect id="Rectangle-2" fill="#B1CDEA" x="89.0649038" y="55.9365482" width="38.4230769" height="5.5964467" rx="2.79822335"></rect>
+                            <rect id="Rectangle-2" fill="#B1CDEA" x="89.0649038" y="64.7309645" width="27.2163462" height="5.5964467" rx="2.79822335"></rect>
+                            <rect id="Rectangle-2" fill-opacity="0.619225543" fill="#3685D6" x="135.492788" y="47.142132" width="42.4254808" height="5.5964467" rx="2.79822335"></rect>
+                            <rect id="Rectangle-2" fill-opacity="0.619225543" fill="#3685D6" x="130.689904" y="55.9365482" width="27.2163462" height="5.5964467" rx="2.79822335"></rect>
+                            <rect id="Rectangle-2" fill-opacity="0.619225543" fill="#3685D6" x="119.483173" y="64.7309645" width="18.4110577" height="5.5964467" rx="2.79822335"></rect>
+                            <rect id="Rectangle-2" fill="#3685D6" x="127.487981" y="27.9543147" width="86.4519231" height="5.5964467" rx="2.79822335"></rect>
+                            <rect id="Rectangle-2" fill="#B1CDEA" x="79.4591346" y="75.9238579" width="6.40384615" height="5.5964467" rx="2.79822335"></rect>
+                            <rect id="Rectangle-2" fill="#B1CDEA" x="69.8533654" y="160.670051" width="6.40384615" height="5.5964467" rx="2.79822335"></rect>
+                            <rect id="Rectangle-2" fill="#B1CDEA" x="89.0649038" y="179.058376" width="6.40384615" height="5.5964467" rx="2.79822335"></rect>
+                            <rect id="Rectangle-2" fill="#B1CDEA" x="82.6610577" y="168.664975" width="34.4206731" height="5.5964467" rx="2.79822335"></rect>
+                            <rect id="Rectangle-2" fill="#B1CDEA" x="95.46875" y="187.852792" width="44.8269231" height="5.5964467" rx="2.79822335"></rect>
+                            <rect id="Rectangle-2" fill="#B1CDEA" x="95.46875" y="198.246193" width="44.8269231" height="5.5964467" rx="2.79822335"></rect>
+                            <rect id="Rectangle-2" fill="#B1CDEA" x="105.074519" y="207.040609" width="42.4254808" height="5.5964467" rx="2.79822335"></rect>
+                            <rect id="Rectangle-2" fill="#B1CDEA" x="105.074519" y="215.835025" width="38.4230769" height="5.5964467" rx="2.79822335"></rect>
+                            <rect id="Rectangle-2" fill="#B1CDEA" x="105.074519" y="224.629442" width="27.2163462" height="5.5964467" rx="2.79822335"></rect>
+                            <rect id="Rectangle-2" fill-opacity="0.619225543" fill="#3685D6" x="151.502404" y="207.040609" width="42.4254808" height="5.5964467" rx="2.79822335"></rect>
+                            <rect id="Rectangle-2" fill-opacity="0.619225543" fill="#3685D6" x="146.699519" y="215.835025" width="27.2163462" height="5.5964467" rx="2.79822335"></rect>
+                            <rect id="Rectangle-2" fill-opacity="0.619225543" fill="#3685D6" x="135.492788" y="224.629442" width="18.4110577" height="5.5964467" rx="2.79822335"></rect>
+                            <rect id="Rectangle-2" fill="#3685D6" x="143.497596" y="187.852792" width="86.4519231" height="5.5964467" rx="2.79822335"></rect>
+                            <rect id="Rectangle-2" fill="#B1CDEA" x="95.46875" y="235.822335" width="6.40384615" height="5.5964467" rx="2.79822335"></rect>
+                            <rect id="Rectangle-2" fill="#B1CDEA" x="77.0576923" y="143.081218" width="6.40384615" height="5.5964467" rx="2.79822335"></rect>
+                            <rect id="Rectangle-2" fill="#B1CDEA" x="69.8533654" y="151.076142" width="6.40384615" height="5.5964467" rx="2.79822335"></rect>
+                            <rect id="Rectangle-2" fill="#B1CDEA" x="79.4591346" y="84.7182741" width="34.4206731" height="5.5964467" rx="2.79822335"></rect>
+                            <rect id="Rectangle-2" fill="#B1CDEA" x="79.4591346" y="95.9111675" width="44.8269231" height="5.5964467" rx="2.79822335"></rect>
+                            <rect id="Rectangle-2" fill="#B1CDEA" x="79.4591346" y="106.304569" width="44.8269231" height="5.5964467" rx="2.79822335"></rect>
+                            <rect id="Rectangle-2" fill="#B1CDEA" x="80.2596154" y="115.098985" width="42.4254808" height="5.5964467" rx="2.79822335"></rect>
+                            <rect id="Rectangle-2" fill="#B1CDEA" x="80.2596154" y="124.692893" width="38.4230769" height="5.5964467" rx="2.79822335"></rect>
+                            <rect id="Rectangle-2" fill="#B1CDEA" x="80.2596154" y="134.286802" width="27.2163462" height="5.5964467" rx="2.79822335"></rect>
+                            <rect id="Rectangle-2" fill-opacity="0.619225543" fill="#3685D6" x="126.6875" y="115.098985" width="42.4254808" height="5.5964467" rx="2.79822335"></rect>
+                            <rect id="Rectangle-2" fill="#3685D6" x="171.514423" y="115.098985" width="16.8100962" height="5.5964467" rx="2.79822335"></rect>
+                            <rect id="Rectangle-2" fill-opacity="0.619225543" fill="#3685D6" x="121.884615" y="124.692893" width="65.6394231" height="5.5964467" rx="2.79822335"></rect>
+                            <rect id="Rectangle-2" fill-opacity="0.619225543" fill="#3685D6" x="110.677885" y="134.286802" width="18.4110577" height="5.5964467" rx="2.79822335"></rect>
+                            <rect id="Rectangle-2" fill-opacity="0.619225543" fill="#3685D6" x="127.487981" y="103.906091" width="25.6153846" height="5.5964467" rx="2.79822335"></rect>
+                            <path d="M28.4318633,8.22278163 L28.4318633,1.57106599 L28.4318633,1.57106599 C19.6754567,1.57106599 12.5769866,8.66953611 12.5769866,17.4259428 L12.5769866,35.6116333 C12.5769866,39.1462557 9.71160896,42.0116333 6.17698656,42.0116333 L0.211538462,42.0116333 L0.211538462,49.3966352 L6.17698656,49.3966352 C9.71160896,49.3966352 12.5769866,52.2620128 12.5769866,55.7966352 L12.5769866,74.6379568 C12.5769866,83.3943635 19.6754567,90.4928336 28.4318633,90.4928336 L28.4318633,84.2260655 L27.9241047,84.2260655 C22.6221711,84.2260655 18.3241047,79.9279991 18.3241047,74.6260655 L18.3241047,54.3487142 C18.3241047,52.9413171 17.8601881,51.5731637 17.0041642,50.4560292 L13.6141354,46.0319498 L17.1204342,41.1551881 C17.9030735,40.0666484 18.3241047,38.7598135 18.3241047,37.419126 L18.3241047,17.8227816 C18.3241047,12.520848 22.6221711,8.22278163 27.9241047,8.22278163 L28.4318633,8.22278163 Z" id="Path-24" fill="#3685D6" opacity="0.365680804"></path>
+                            <path d="M295.79244,169.720244 L295.79244,163.068528 L295.79244,163.068528 C287.036034,163.068528 279.937563,170.166998 279.937563,178.923405 L279.937563,197.109095 C279.937563,200.643718 277.072186,203.509095 273.537563,203.509095 L267.572115,203.509095 L267.572115,210.894097 L273.537563,210.894097 C277.072186,210.894097 279.937563,213.759475 279.937563,217.294097 L279.937563,236.135419 C279.937563,244.891825 287.036034,251.990296 295.79244,251.990296 L295.79244,245.723527 L295.284682,245.723527 C289.982748,245.723527 285.684682,241.425461 285.684682,236.123527 L285.684682,215.846176 C285.684682,214.438779 285.220765,213.070626 284.364741,211.953491 L280.974712,207.529412 L284.481011,202.65265 C285.26365,201.56411 285.684682,200.257275 285.684682,198.916588 L285.684682,179.320244 C285.684682,174.01831 289.982748,169.720244 295.284682,169.720244 L295.79244,169.720244 Z" id="Path-24" fill="#3685D6" opacity="0.365680804" transform="translate(281.682278, 207.529412) scale(-1, 1) translate(-281.682278, -207.529412) "></path>
+                        </g>
+                        <g id="top">
+                            <path d="M8,0 L325,0 C329.418278,-8.11624501e-16 333,3.581722 333,8 L333,23.1852792 L0,23.1852792 L0,8 C-5.41083001e-16,3.581722 3.581722,2.58798134e-15 8,1.77635684e-15 Z" id="Rectangle-3" fill="#E1F0FF"></path>
+                            <g id="Group-6" transform="translate(12.000000, 8.000000)" fill="#3685D6">
+                                <ellipse id="Oval-4" cx="3.609375" cy="3.59263959" rx="2.80168269" ry="2.79822335"></ellipse>
+                                <ellipse id="Oval-4" opacity="0.442633929" cx="13.2151442" cy="3.59263959" rx="2.80168269" ry="2.79822335"></ellipse>
+                                <ellipse id="Oval-4" opacity="0.2109375" cx="23.6213942" cy="3.59263959" rx="2.80168269" ry="2.79822335"></ellipse>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

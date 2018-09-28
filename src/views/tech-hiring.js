@@ -1,10 +1,57 @@
 import React from 'react';
 import { I18n } from 'react-i18next';
 import Layout from '../components/layout';
+import TextImageWrapper from '../components/text-image-wrapper';
+import TextBox from '../components/text-box';
+import Testimonial from '../components/testimonial';
+import access from '../assets/access.png';
+import hire from '../assets/hire.png';
+import visa from '../assets/visa.png';
+import skills from '../assets/skills.svg';
+import employer from '../assets/employer.svg';
+import PaymentOptions from '../components/tech-hiring/payment-options';
+import PositionOverview from '../components/tech-hiring/position-overview';
 import '../styles/main.scss';
 
 export default () => (
   <Layout>
-    <div className="index">For Employers</div>
+    <TextImageWrapper
+      page="tech-hiring"
+      topic="access"
+      img={ access } />
+
+    <TextImageWrapper
+      page="tech-hiring"
+      topic="hire"
+      rightImage
+      img={ hire } />
+
+    <TextImageWrapper
+      page="tech-hiring"
+      topic="visa"
+      img={ visa } />
+
+    <Testimonial right page="tech-hiring" index="1" />
+
+    <TextImageWrapper
+      page="tech-hiring"
+      topic="skills"
+      sign
+      rightImage
+      img={ skills } />
+
+    <PaymentOptions />
+
+    <TextImageWrapper
+      page="tech-hiring"
+      img={ employer }>
+      <TextBox small page="tech-hiring" topic="employer.1" />
+      <TextBox small page="tech-hiring" topic="employer.2" />
+      <TextBox small page="tech-hiring" topic="employer.3" />
+    </TextImageWrapper>
+
+    <PositionOverview />
+
+    <Testimonial left right page="tech-hiring" index="2" />
   </Layout>
 )
