@@ -37,7 +37,7 @@ module.exports =
         require('autoprefixer')(['last 8 versions'])
       ]
     digest:
-      referenceFiles: /\.html|\.css|for_employers|404|join|join-de|how_it_works|terms_of_service|legal_notice|privacy|500|faq|sign_up|new|about|company_invite_request_received$/
+      referenceFiles: /\.html|\.css|for_employers|404|join|join-de|how_it_works|terms_of_service|legal_notice|privacy|500|sign_up|new|about|company_invite_request_received$/
       # digest does not work with files without file extension
       #referenceFiles: /\.html|\.css|^[^.]+$/
     envstatic:

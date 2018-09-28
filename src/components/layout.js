@@ -5,11 +5,11 @@ import Seo from '../components/seo';
 import Header from '../components/header/';
 import Footer from '../components/footer';
 
-export default ({ children }) =>
+export default ({ smallerHeader, children }) =>
   <I18nextProvider i18n={ i18n } initialLanguage={ getLang() }>
     <div>
       <Seo />
-      <Header />
+      <Header smallerHeader={ smallerHeader } />
       <div className="body">
         {children}
       </div>
