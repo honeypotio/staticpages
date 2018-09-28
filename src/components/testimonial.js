@@ -14,8 +14,8 @@ export default ({ index, page, left, right }) => {
   return <I18n ns={ page }>
     { t =>
     <div className="testimonial-wrapper">
-      { left && <SideBackground position="left" page={ page } />}
-      { right && <SideBackground position="right" page={ page } />}
+      { left && <SideBackground settings={ ['left', page, ...left] } />}
+      { right && <SideBackground settings={ ['right', page, ...right] } />}
       <div className="testimonial">
         <div className="testimonial__text">
           "{t(`testimonial.${index}.text`)}"

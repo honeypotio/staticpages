@@ -16,6 +16,7 @@ import '../styles/main.scss';
 export default () => (
   <Layout>
     <TextImageWrapper
+      left
       page="tech-hiring"
       topic="access"
       img={ access } />
@@ -31,7 +32,7 @@ export default () => (
       topic="visa"
       img={ visa } />
 
-    <Testimonial right page="tech-hiring" index="1" />
+    <Testimonial right={['flip-h']} page="tech-hiring" index="1" />
 
     <TextImageWrapper
       page="tech-hiring"
@@ -52,6 +53,6 @@ export default () => (
 
     <PositionOverview />
 
-    <Testimonial left right page="tech-hiring" index="2" />
+    <Testimonial left={['flip-v']} right={['flip-h']} page="tech-hiring" index="2" />
   </Layout>
 )

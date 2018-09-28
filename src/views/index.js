@@ -53,7 +53,7 @@ export default () => (
       img={ support }
       sign />
 
-    <Testimonial left right page="index" index="5" />
+    <Testimonial left right={['rotate']} page="index" index="5" />
 
     <TextImageWrapper
       page="index"

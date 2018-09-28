@@ -9,8 +9,8 @@ export default () =>
     {
       t =>
       <div className="payment-options">
-        <SideBackground position="left" page={ 'tech-hiring' } />
-        <SideBackground position="right" page={ 'tech-hiring' } />
+        <SideBackground settings={ ['left', 'tech-hiring'] } />
+        <SideBackground settings={ ['right', 'rotate', 'tech-hiring'] } />
         <h2 className="payment-options__headline">
           { t('payment-options.headline') }
         </h2>
