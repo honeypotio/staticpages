@@ -1,5 +1,4 @@
 /* global module */
-console.log(`***\n\n URL BASE: ${process.env.URL_BASE} \n\n ***`)
 module.exports = {
   siteMetadata: {},
   pathPrefix: process.env.URL_BASE,
