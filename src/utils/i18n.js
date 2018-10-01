@@ -8,8 +8,8 @@ import index from '../locales/index.json';
 import faq from '../locales/faq.json';
 
 export const languages = ['en', 'de', 'nl'];
-const path = (typeof window !== 'undefined' ? window.location.pathname.replace(process.env.URL_BASE, '') : '');
-console.log(path, path.split('/')[1])
+// account for feature stagings
+const path = (typeof window !== 'undefined' ? window.location.pathname.replace(/^\/pr-\d+/, '') : '');
 const defaultLang = 'en';
 
 i18n.init({
