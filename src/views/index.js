@@ -62,6 +62,6 @@ export default () => (
       sign
       rightImage />
 
-    <Newsletter />
+    { /*<Newsletter />*/ }
   </Layout>
 )
