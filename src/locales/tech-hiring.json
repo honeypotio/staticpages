@@ -90,13 +90,13 @@
     },
     "testimonial": {
       "1": {
-        "image": "/assets/avatar.jpg",
+        "image": "/avatar.jpg",
         "name": "Maud Aertsen",
         "position": "Talent Manager \n MediaMonks",
         "text": "Very innovative way of recruitment. High quality candidates.  The profiles we look for continuously change and with Honeypot I don't have to inform an agency, because we are free to approach the people that are interesting for us at any time"
       }, 
       "2": {
-        "image": "/assets/avatar.jpg",
+        "image": "/avatar.jpg",
         "name": "Thijs Slijkhuis",
         "position": "CTO \n United Wardrobe",
         "text": "We love Honeypot, not only for their refreshing view on developer recruitment, but also for their active participation in the developer community."

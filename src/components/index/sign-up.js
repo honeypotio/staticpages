@@ -1,6 +1,6 @@
 import React from 'react';
 import { I18n } from 'react-i18next';
-import arrow from '../../assets/arrow-grey.svg';
+import arrow from '../../../static/arrow-grey.svg';
 
 export default () =>
   <I18n ns={ 'index' }>
