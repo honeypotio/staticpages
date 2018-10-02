@@ -1,0 +1,22 @@
+{
+  "en": {
+    "what-why": {
+      "left": {
+        "headline": "Left",
+        "text": ""
+      },
+      "right": {
+        "headline": "Right",
+        "text": ""
+      }
+    },
+    "team": {
+      "headline": "Meet the team",
+      "tagline": "19+ Nationalities - 60% of our team speak 3 or more languages"
+    },
+    "news": {
+      "headline": "In the news",
+      "tagline": "Recruiting Startup of the Year at Hiring Success 18 Watch our winning pitch!"
+    }
+  }
+}

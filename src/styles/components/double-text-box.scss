@@ -1,0 +1,16 @@
+.c-double-text-box {
+  margin: 0 auto;
+  width: 911px;
+
+  &__left {
+    width: 50%;
+    float: left;
+  }
+
+  &__right {
+    float: left;
+    width: 50%;
+    border-left: 1px solid #E2E8F0;
+    padding-left: 77px;
+  }
+}
