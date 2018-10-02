@@ -9,8 +9,6 @@ import techHiring from '../locales/tech-hiring.json';
 import faq from '../locales/faq.json';
 
 export const languages = ['en', 'de', 'nl'];
-// account for feature stagings
-const path = (typeof window !== 'undefined' ? window.location.pathname.replace(/^\/pr-\d+/, '') : '');
 const defaultLang = 'en';
 
 i18n.init({
@@ -51,10 +49,17 @@ i18n.init({
 
 export default i18n;
 
+export function getPath() {
+  return typeof window !== 'undefined'
+    // account for feature stagings
+    ? window.location.pathname.replace(/^\/pr-\d+/, '')
+    : ''
+}
+
 export function getLang() {
-  return getCurrentLangKey(languages, defaultLang, path);
+  return getCurrentLangKey(languages, defaultLang, getPath());
 }
 
 export function getPathLang() {
-  return getCurrentLangKey(languages, '', path);
+  return getCurrentLangKey(languages, '', getPath());
 }

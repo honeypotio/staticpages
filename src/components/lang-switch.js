@@ -3,10 +3,10 @@ import { languages, getLang } from '../utils/i18n';
 import getCurrentPage from '../utils/page';
 import Link from 'gatsby-link';
 
-const lang = getLang();
-const page = getCurrentPage();
+function createLanguageSwitch(langItem) { 
 
-const createLanguageSwitch = (langItem) => { 
+  const lang = getLang();
+  const page = getCurrentPage();
   const active = langItem === lang;
   const style = 'lang-switch__lang-item ' + (active
     ? 'lang-switch__lang-item--active'
@@ -14,7 +14,8 @@ const createLanguageSwitch = (langItem) => {
   let content = langItem.toUpperCase();
 
   if(!active) {
-    content = (<Link className="" to={ '/'+langItem+'/'+page }>
+    const suffix = page !== 'index' ? page : '';
+    content = (<Link className="" to={ `/${langItem}/${suffix}` }>
       {content}
     </Link>);
   }
