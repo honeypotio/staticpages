@@ -52,7 +52,10 @@ export default i18n;
 export function getPath() {
   return typeof window !== 'undefined'
     // account for feature stagings
-    ? window.location.pathname.replace(/^\/pr-\d+/, '')
+    ? window.location.pathname
+      .replace(/^\/pr-\d+/, '')
+      // Always remove trailing slashes
+      .replace(/\/$/, '')
     : ''
 }
 
