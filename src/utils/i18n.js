@@ -9,7 +9,8 @@ import techHiring from '../locales/tech-hiring.json';
 import faq from '../locales/faq.json';
 
 export const languages = ['en', 'de', 'nl'];
-const path = (typeof window !== 'undefined' ? window.location.pathname : '');
+// account for feature stagings
+const path = (typeof window !== 'undefined' ? window.location.pathname.replace(/^\/pr-\d+/, '') : '');
 const defaultLang = 'en';
 
 i18n.init({

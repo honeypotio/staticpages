@@ -14,7 +14,7 @@
     "start": "brunch watch --server",
     "test": "mocha 'tests/**/*.spec.js' --compilers js:babel-core/register",
     "test server": "mocha 'tests/**/*.spec.js' --compilers js:babel-core/register --watch",
-    "build": "gatsby build && brunch build --production && ./scripts/create_links",
+    "build": "gatsby build --prefix-paths && brunch build --production && ./scripts/create_links",
     "postinstall": "./scripts/copy_vendor",
     "gdev": "gatsby develop",
     "gbuild": "gatsby build"

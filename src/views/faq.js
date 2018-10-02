@@ -1,13 +1,13 @@
 import React from 'react';
 import Layout from '../components/layout';
 import TextBox from '../components/text-box';
-import faqList from '../locales/faq.json';
 import { I18n } from 'react-i18next';
-
+import i18n, { getLang } from '../utils/i18n';
 import '../styles/main.scss';
 
-const talentTopics = Object.keys(faqList.en.talents).filter(topic => topic !== 'type');
-const employerTopics = Object.keys(faqList.en.employers).filter(topic => topic !== 'type');
+const currentLanguage = getLang();
+const talentTopics =  Object.keys(i18n.getResource(currentLanguage, 'faq', 'talents')).filter(topic => topic !== 'type');
+const employerTopics = Object.keys(i18n.getResource(currentLanguage, 'faq', 'employers')).filter(topic => topic !== 'type');
 
 export default () => (
   <Layout smallerHeader>
@@ -30,7 +30,7 @@ export default () => (
                   <h3>{ t(`talents.${topic}.title`) }</h3>
                   <ul>
                     {
-                      faqList.en.talents[topic].text.map((faqQn, index) => <li key={ index }>
+                      i18n.getResource(currentLanguage, 'faq', `talents.${topic}.text`).map((faqQn, index) => <li key={ index }>
                         <strong>{ t(`talents.${topic}.text.${index}.qn`) }</strong>
                         <p>{ t(`talents.${topic}.text.${index}.ans`) }</p>
                       </li>)
@@ -45,7 +45,7 @@ export default () => (
                   <h3>{ t(`employers.${topic}.title`) }</h3>
                   <ul>
                     {
-                      faqList.en.employers[topic].text.map((faqQn, index) => <li key={ index }>
+                      i18n.getResource(currentLanguage, 'faq', `employers.${topic}.text`).map((faqQn, index) => <li key={ index }>
                         <strong>{ t(`employers.${topic}.text.${index}.qn`) }</strong>
                         <p>{ t(`employers.${topic}.text.${index}.ans`) }</p>
                       </li>)
