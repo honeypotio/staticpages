@@ -1,6 +1,7 @@
 /* global module */
 module.exports = {
   siteMetadata: {},
+  pathPrefix: process.env.URL_BASE,
   plugins: [
     'gatsby-plugin-react-helmet',
     {
@@ -21,4 +22,4 @@ module.exports = {
       }
     }
   ]
-}
+};
