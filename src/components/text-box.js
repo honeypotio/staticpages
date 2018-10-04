@@ -1,7 +1,7 @@
 import React from 'react';
 import { I18n } from 'react-i18next';
 import Link from 'gatsby-link';
-import arrow from '../assets/arrow_blue.svg';
+import arrow from '../../static/arrow_blue.svg';
 
 export default ({ page, topic, sign, small }) => {
   const headline = `text-box__headline text-box__headline--${small?'small':''}`;

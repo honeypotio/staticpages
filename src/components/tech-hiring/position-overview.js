@@ -1,10 +1,10 @@
 import React from 'react';
 import { I18n } from 'react-i18next';
 import PositionCard from './position-card';
-import dev from '../../assets/software-devs.svg';
-import expert from '../../assets/data-experts.svg';
-import talent from '../../assets/product-talents.svg';
-import lead from '../../assets/engineering-lead.svg';
+import dev from '../../../static/software-devs.svg';
+import expert from '../../../static/data-experts.svg';
+import talent from '../../../static/product-talents.svg';
+import lead from '../../../static/engineering-lead.svg';
 
 export default () =>
   <I18n ns={ 'tech-hiring' }>

@@ -40,10 +40,10 @@
 
   &__list {
     &--yellow {
-      list-style-image: url('../assets/check-yellow.svg');
+      list-style-image: url('../../static/check-yellow.svg');
     }
     &--blue {
-      list-style-image: url('../assets/check-blue.svg');
+      list-style-image: url('../../static/check-blue.svg');
     }
   }
 }
