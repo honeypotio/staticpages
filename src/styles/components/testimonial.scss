@@ -26,9 +26,9 @@
   }
 
   &__text {
-    color: black;
+    color: $back-color;
     text-align: center;
-    font-size: 1.786em;
+    font-size: $fs-4;
     line-height: 37px;
     margin-bottom: 50px;
   }
@@ -45,7 +45,7 @@
 
   &__avatar {
     border-radius: 50%;
-    border: 8px solid white;
+    border: 8px solid $white-color;
     box-shadow: 0 2px 13px 0 rgba(0,0,0,0.06);
     margin: 0 auto;
     margin-top: -35px;

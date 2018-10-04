@@ -31,7 +31,7 @@ html {
 body {
   line-height: 1.5em;
   font-family: 'Proxima-Nova';
-  font-size: 0.875em; // 14px 
+  font-size: $fs-1;
   color: $text-color;
 }
 
@@ -40,20 +40,20 @@ h2, h3 {
 }
 
 h1 {
-  font-size: 3.213em;
+  font-size: $fs-6;
 }
 
 h2 {
-  font-size: 2.5em; // 35px
+  font-size: $fs-5;
   margin: 20px 0;
 }
 
 h3 {
-  font-size: 1.785em; // 24px
+  font-size: $fs-4;
 }
 
 h4 {
-  font-size: 1.286em; // 18px
+  font-size: $fs-2;
 }
 
 a {

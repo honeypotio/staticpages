@@ -6,9 +6,9 @@
 
   &__lang-item {
     padding: 0 5px;
-    border-right: 1px solid #E2E8F0;
+    border-right: 1px solid $light-blue-color;
     float: left;
-    font-size: 0.857em;
+    font-size: $fs-1;
 
     &:last-child {
       border-right: none;

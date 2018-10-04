@@ -5,18 +5,18 @@
   padding: 12px 20px;
 
   &--yellow {
-    background-color: #FFF2C6;
-    color: #CEA000;
+    background-color: $yellow-1;
+    color: $yellow-2;
   }
 
   &--blue {
-    background-color: #E1F0FF;
-    color: #3685D6;
+    background-color: $blue-3;
+    color: $blue-2;
   }
 
   &--primary {
-    background-color: #3685D6;
-    color: #FFFFFF;
+    background-color: $blue-2;
+    color: $white-color;
   }
 
   &--link {

@@ -5,7 +5,7 @@
   flex-direction: column;
 
   &__headline {
-    color: #0F2A48;
+    color: $blue-1;
     font-weight: 400;
     > b {
       font-weight: 600;
@@ -14,14 +14,14 @@
   }
 
   &__tagline {
-    font-size: 1.429em;
+    font-size: $fs-3;
     line-height: 30px;
     width: 350px;
     margin-bottom: 30px;
   }
 
   &__note {
-    background-color: #F8F9FB;
+    background-color: $gray-1;
     border-radius: 11px;
   }
 }

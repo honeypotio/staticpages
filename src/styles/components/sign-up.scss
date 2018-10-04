@@ -13,17 +13,17 @@
   &__position-nr {
     line-height: 2.4em;
     font-weight: 600;
-    color: #CEA000;
+    color: $yellow-2;
     width: 32px;
     height: 32px;
-    background-color: #FFF2C6;
+    background-color: $yellow-1;
     text-align: center;
   }
 
   &__step-headline {
-    color: black;
+    color: $black-color;
     margin-top: 0;
-    font-size: 18px;
+    font-size: $fs-2;
     line-height: 22px;
   }
 
