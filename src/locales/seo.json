@@ -8,7 +8,7 @@
       "og-image": "",
       "og-image-alt": "$t(title)"
     },
-    "for-employers": {
+    "tech-hiring": {
       "title": "Finde Top Tech Talente in Deutschland, den Niederlanden und Europa | $t(general:company-name)",
       "description": "Honeypot ist die einfachste und effizienteste Art Softwareentwickler, DevOps Engineers, Data Scientists, Product Owner, QA Tester und Engineering Leads zu finden.",
       "og-title": "$t(title)",
@@ -50,7 +50,7 @@
       "og-image": "",
       "og-image-alt": "$t(title)"
     },
-    "for-employers": {
+    "tech-hiring": {
       "title": "Hire Top Tech Talent in Germany, the Netherlands and Europe | $t(general:company-name)",
       "description": "Honeypot is the easiest and most efficient way to find skilled Software Developers, DevOps Engineers, Data Scientists, Product Owners, QA Testers and Engineering Leaders.",
       "og-title": "$t(title)",
@@ -92,7 +92,7 @@
       "og-image": "",
       "og-image-alt": "$t(title)"
     },
-    "for-employers": {
+    "tech-hiring": {
       "title": "Neem Top Tech Talent aan in Duitsland, Nederland and Europa | $t(general:company-name)",
       "description": "Honeypot is is de makkelte en meest efficiënte manier om ervaren Software Developers, DevOps Engineers, Data Scientists, Product Owners, QA Testers en Engineering Leaders aan te nemen.",
       "og-title": "$t(title)",
