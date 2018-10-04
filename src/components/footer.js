@@ -9,10 +9,11 @@ import LangSwitch from './lang-switch';
 const column = ['for-talents', 'for-employers', 'community']
 const year = (new Date()).getFullYear();
 // currently chosen language
-const plang = getPathLang();
-const prefix = '/' + (plang === '' ? '' : plang + '/');
 
-export default () => (
+export default () => {
+  const plang = getPathLang();
+  const prefix = '/' + (plang === '' ? '' : plang + '/');
+  return (
   <I18n ns={ ['footer', 'header'] }>
     { t => 
     <footer className="footer">
@@ -136,5 +137,5 @@ export default () => (
       </div>
     </footer>
     }
-  </I18n>
-)
+  </I18n>)
+}

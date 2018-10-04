@@ -2,15 +2,15 @@ import React from 'react';
 import { I18n } from 'react-i18next';
 import Layout from '../components/layout';
 import Wrapper from '../components/wrapper';
-import idealRole from '../assets/illustration-idealrole.png';
-import illustrationProcess from '../assets/illustration-process.svg';
-import techStack from '../assets/illustration-stack.svg';
-import location from '../assets/illustration-location.svg';
-import support from '../assets/worth-pic.svg';
-import worth from '../assets/illustration-worth.svg';
+import idealRole from '../../static/illustration-idealrole.png';
+import illustrationProcess from '../../static/illustration-process.svg';
+import techStack from '../../static/illustration-stack.svg';
+import location from '../../static/illustration-location.svg';
+import support from '../../static/worth-pic.svg';
+import worth from '../../static/illustration-worth.svg';
 import TextBox from '../components/text-box';
 import TextImageWrapper from '../components/text-image-wrapper';
-import signUp from '../assets/illustration-sign-up.svg';
+import signUp from '../../static/illustration-sign-up.svg';
 import SignUp from '../components/index/sign-up';
 import Testimonial from '../components/testimonial';
 import Newsletter from '../components/newsletter';
@@ -62,6 +62,6 @@ export default () => (
       sign
       rightImage />
 
-    <Newsletter />
+    { /*<Newsletter />*/ }
   </Layout>
 )
