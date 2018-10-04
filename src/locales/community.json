@@ -1,0 +1,128 @@
+{
+  "en": {
+    "meet": {
+      "headline": "Meet the Community",
+      "tagline": "We are active organizers of events across Europe, from cozy meetups to large, international conferences.",
+      "graphql-europe": {
+        "headline": "GraphQL Europe",
+        "text": "GraphQL Europe is a conference with speakers from all around the world. Organized in collaboration with Prisma and the founding team of the GraphQL technology, GraphQL Europe is the largest GraphQL conference east of the Atlantic. Learn about GraphQL best practices from industry experts and become part of the thriving GraphQL community."
+      },
+      "hive-conference": {
+        "headline": "Hive Conference",
+        "text": "Hive is a conference for HR Leaders, Technical Hiring Managers, CTOs and VPs of Engineering focused on all aspects of building and scaling great engineering teams."
+      },
+      "tech-talks": {
+        "headline": "Tech Talks & CTO Club",
+        "text": "Want to dive deep into the tech community in Germany and the Netherlands? Our tech meetups are exactly what you need - exciting tech topics and experienced speakers you can learn from."
+      },
+      "hr-in-tech": {
+        "headline": "HR in Tech",
+        "text": "Is hiring tech talent part of your everyday job? If so, our pan-European HR in Tech event series ought to be right up your alley.  Whether you live in Germany or the Netherlands, we’ve got you covered."
+      }
+    },
+    "documentaries": {
+      "headline": "Documentaries",
+      "text": "We are documenting some of the most exciting open source projects in the world. Check our first documentary 'Elixir: A Mini-Documentary', which follows creator Josè Valim."
+    },
+    "open-source": {
+      "headline": "Our open-source projects",
+      "text": "Love contributing to open-source projects? So do we! Check out these internal products our tech team members have shared with the world.",
+      "searchspot": {
+        "name": "Searchspot",
+        "text": "Responsible for Honeypot's ElasticSearch data and mainly powered by Rust and Iron, companies use it on the platform to search through"
+      },
+      "reina": {
+        "name": "Reina",
+        "text": "GitHub bot and CLI application to handle deployments and orchestrations of feature stagings on Heroku."
+      },
+      "github": {
+        "name": "Github",
+        "text": "Wanna chip in? Head over to our Github repo to contribute!"
+      }
+    }
+  },
+  "de": {
+    "meet": {
+      "headline": "",
+      "tagline": "Wir organisieren aktiv eigene Events in Europa: vom Meetup und Workshop im kleineren Kreis bis hin zu großen internationalen Konferenzen.",
+      "graphql-europe": {
+        "headline": "GraphQL Europe",
+        "text": "GraphQL Europe ist eine Konferenz mit Speakern aus der ganzen Welt.  Das Event in gemeinsamer Organisation mit Prisma und dem Gründerteam von GraphQL ist das grösste GraphQL Event ostwärts des Atlantiks. Erfahre mehr über GraphQL best practices von Branchenexperten und werde Teil der pulsierenden GraphQL community."
+      },
+      "hive-conference": {
+        "headline": "Hive Conference",
+        "text": "Hive ist eine Konferenz für HR Leader, technische Leiter, CTOs und alle anderen, die sich darauf fokussieren grossartige technische Team aufzubauen und zu skalieren."
+      },
+      "tech-talks": {
+        "headline": "Tech Talks & CTO Club",
+        "text": "Möchtest Du tief in die Tech-Community in Deutschland und den Niederlanden eintauchen? Dann sind unsere Tech-Meetups genau das Richtige - spannende Tech-Themen und erfahrene Speaker, die ihr Wissen teilen."
+      },
+      "hr-in-tech": {
+        "headline": "HR in Tech",
+        "text": "Besteht Dein Job zu einem großen Teil aus der Akquise von Tech-Talenten? Dann passen unsere HR in Tech Meetups zu Dir. Ob in Deutschland oder den Niederlanden, wir haben die richtigen Themen für Dich."
+      }
+    },
+    "documentaries": {
+      "headline": "Documentaries",
+      "text": "Wir dokumentieren einige der spannendsten Open Source Projekte auf der Welt. Sieh Dir unseren ersten Dokumentarfilm an, in dem wir Elixir Schöpfer Josè Valim begleiten: 'Elixir: A Mini-Documentary'"
+    },
+    "open-source": {
+      "headline": "",
+      "text": "Trägst Du gerne zu Open Source Projekten bei? Wir auch! Sieh Dir unsere internen Produkte an, die unser Tech Team mit der Welt geteilt hat.",
+      "searchspot": {
+        "name": "Searchspot",
+        "text": "Honeypot's Suchmaschine hauptsächlich basierend auf Rust und Iron. Firmen benutzen diese um neue developer auf unserer Plattform zu finden."
+      },
+      "reina": {
+        "name": "Reina",
+        "text": "GitHub bot und CLI Applikation für die Orchestrierung und das Deployment von Feature Stagings auf Heroku."
+      },
+      "github": {
+        "name": "Github",
+        "text": "Willst Du beitragen? Hier geht's zu unseren Github repos!"
+      }
+    }
+  },
+  "nl": {
+    "meet": {
+      "headline": "Ontmoet de community",
+      "tagline": "Wij organiseren evenementen in heel Europa, van intieme bijeenkomsten en workshops tot grote, internationale conferenties. ",
+      "graphql-europe": {
+        "headline": "GraphQL Europe",
+        "text": "GraphQL Europe is een conferentie met sprekers van over de hele wereld. Georganiseerd in samenwerking met Prisma en het founding team van de GraphQL technologie is GraphQL Europe is de grootste GraphQL-conferentie ten oosten van de Atlantische Oceaan. Lees meer over de best practices van GraphQL van experts uit de branche en maak deel uit van de bloeiende GraphQL-community."
+      },
+      "hive-conference": {
+        "headline": "Hive Conference",
+        "text": "Hive is een conferentie voor HR-leiders, Technical Hiring Managers, CTO's en VP's of Engineering die zich richten op alle aspecten van het bouwen en opschalen van top engineering teams."
+      },
+      "tech-talks": {
+        "headline": "Tech Talks & CTO Club",
+        "text": "Wil jij je diep wortelen in de tech community van Duitsland en Nederland? Dan zijn onze tech meetups precies wat jij zoekt - trending tech topics en ervaren sprekers waar je van kunt leren."
+      },
+      "hr-in-tech": {
+        "headline": "HR in Tech",
+        "text": "Is het aannemen van tech talent onderdeel van jouw dagele workflow? Dan zal onze pan-Europese HR in Tech-evenementen reeks helemaal bij je passen. Of je nu in Duitsland of Nederland woont, wij helpen jou graag verder."
+      }
+    },
+    "documentaries": {
+      "headline": "Documentaries",
+      "text": "We maken documentaires over een aantal van de vetste open-sourceprojecten ter wereld. Bekijk onze eerste documentaire 'Elixir: A Mini-Documentary', waarin we de creator Josè Valim volgen."
+    },
+    "open-source": {
+      "headline": "",
+      "text": "Ook een open-source fan? Wij ook! Bekijk deze producten die ons tech team met de wereld heeft gedeeld.",
+      "searchspot": {
+        "name": "Searchspot",
+        "text": "Verantwoordelijk voor de ElasticSearch data van Honeypot en voornamelijk aangedreven door Rust en Iron, bedrijven gebruiken het op het platform om door profielen van developers te zoeken."
+      },
+      "reina": {
+        "name": "Reina",
+        "text": "GitHub bot- en CLI-applicatie voor het afhandelen van deployments en orchestrations van feature stagings op Heroku."
+      },
+      "github": {
+        "name": "Github",
+        "text": "Meedoen? Ga naar onze Github repo om een bijdrage te leveren!"
+      }
+    }
+  }
+}

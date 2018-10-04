@@ -7,6 +7,7 @@ import seo from '../locales/seo.json';
 import index from '../locales/index.json';
 import techHiring from '../locales/tech-hiring.json';
 import faq from '../locales/faq.json';
+import community from '../locales/community.json';
 
 export const languages = ['en', 'de', 'nl'];
 const defaultLang = 'en';
@@ -24,7 +25,8 @@ i18n.init({
       seo: seo.de,
       index: index.de,
       'tech-hiring': techHiring.de,
-      faq: faq.de
+      faq: faq.de,
+      community: community.de
     },
     en: {
       footer: footer.en,
@@ -33,7 +35,8 @@ i18n.init({
       seo: seo.en,
       index: index.en,
       'tech-hiring': techHiring.en,
-      faq: faq.en
+      faq: faq.en,
+      community: community.en
     },
     nl: {
       footer: footer.nl,
@@ -42,7 +45,8 @@ i18n.init({
       seo: seo.nl,
       index: index.nl,
       'tech-hiring': techHiring.nl,
-      faq: faq.nl
+      faq: faq.nl,
+      community: community.nl
     }
   }
 });
