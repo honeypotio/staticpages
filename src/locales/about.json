@@ -1,22 +1,179 @@
 {
   "en": {
-    "what-why": {
-      "left": {
-        "headline": "Left",
-        "text": ""
-      },
-      "right": {
-        "headline": "Right",
-        "text": ""
+    "story": {
+      "headline": "Our Story",
+      "tagline": "What is Honeypot?",
+      "text": {
+        "1": "Launched in October 2015, Honeypot is Europe's tech-focused job platform. Our mission is to get every developer a great job.  Honeypot helps Developers, Data Scientists, QA, Product People and CTOs find jobs they love.",
+        "2": "On Honeypot, companies apply to you. We believe developers and other tech professionals should choose a job they love: whether that’s based on a cutting-edge tech stack, an inspiring team or just good old-fashioned salary.",
+        "3": "Today, Honeypot is Europe’s leading tech-focused job platform, serving Germany and the Netherlands."
       }
     },
     "team": {
       "headline": "Meet the team",
       "tagline": "19+ Nationalities - 60% of our team speak 3 or more languages"
     },
+    "advisors": {
+      "headline": "Our Advisors",
+      "1": {
+        "name": "Felix Plog",
+        "text": "Felix is SVP of Global Operations at Delivery Hero and previously co-founded Foodpanda where he greatly contributed to the company becoming the leading player for food delivery in emerging markets. Prior to entering the world of food delivery, Felix was a Managing Director at Axel Springer."
+      },
+      "2": {
+        "name": "Konstantin Haase",
+        "text": "Konstantin is a software developer, entrepreneur, author, speaker, and one of the busiest people in the open source community. He is co-founder of Travis CI, a continuous integration-as-service-platform, used by GitHub, Twitter, Facebook and many others. He is an active contributor to various open source projects, such as Sinatra, Rubinius, Rack, and many more."
+      },
+      "3": {
+        "name": "Timo Rößner",
+        "text": "Timo is an Engineering Manager at ResearchGate, after holding numerous lead developer positions over his career. Timo is an active contributor to open-source software and the current maintainer of 'reek', a code quality analyser popular in the Ruby community. He is an avid evangelist of new technologies and has ample experience in developing and promoting team culture within organizations."
+      },
+      "4": {
+        "name": "Torsten Curdt",
+        "text": "Torsten is a software developer, founder, author, speaker, and blogger. He specializes in scalable architectures, backend services, big data, iOS and Mac development. Torsten is also an active and long-term contributor to open source."
+      }
+    },
     "news": {
       "headline": "In the news",
       "tagline": "Recruiting Startup of the Year at Hiring Success 18 Watch our winning pitch!"
+    },
+    "career": {
+      "headline": "Career Section",
+      "text": "Interested in joining the Honeypot team?",
+      "link": "See our open positions"
+    },
+    "care": {
+      "headline": "Causes we Care About",
+      "text": "Our team volunteers with organizations which are helping the world become a better place"
+    },
+    "where": {
+      "headline": "Our Offices",
+      "link": "Show location",
+      "1": {
+        "city": "Berlin, Germany",
+        "street": "Schönhauser Allee 45, 10435"
+      },
+      "2": {
+        "city": "Amsterdam, Netherlands",
+        "street": "Singel 542, 1017"
+      }
+    }
+  },
+  "de": {
+    "story": {
+      "headline": "Unsere Story",
+      "tagline": "Was ist Honeypot?",
+      "text": {
+        "1": "Honeypot wurde 2015 gegründet und ist Europas tech-fokussierte Job Plattform. Unsere Mission ist jedem Entwickler einen grossartigen Job zu beschaffen. Honeypot hilft Developern, Data Scientists, QA, Produktleuten und CTOs Jobs zu finden, die sie lieben.",
+        "2": "Auf Honeypot bewerben sich Firmen bei Dir. Wir glauben fest daran, dass Entwickler und Experten aus verwandten technischen Feldern einen Job haben sollten, der genau zu ihren Vorlieben passt: ob das nun ein cutting-edge tech stack bedeutet, ein inspirierendes team oder einfach nur ein top Gehalt.",
+        "3": "Heute ist Honeypot die führende tech-fokussierte Job Plattform in Deutschland und den Niederlanden."
+      }
+    },
+    "team": {
+      "headline": "Lerne uns kennen",
+      "tagline": "19+ Nationalitäten - 60% von uns sprechen 3 Sprachen oder mehr"
+    },
+    "advisors": {
+      "1": {
+        "name": "Felix Plog",
+        "text": "Felix ist SVP Global Operations bei Delivery Hero und gründete zuvor Foodpanda, das er zu einem führenden Player im Essensliefermarkt in emerging markets baute. Vor der Welt der Essensbelieferung war Felix einer der Geschäftsführer bei Axel Springer."
+      },
+      "2": {
+        "name": "Konstantin Haase",
+        "text": "Konstantin ist Softwareentwickler, Unternehmer, Autor, Sprecher und einer der aktivsten Leute in der Open-Source-Community. Er ist Mitgründer von Travis CI, einer Continuous Integration-as-a-Service-Plattform, welche von Unternehmen wie GitHub, Twitter, Facebook und vielen anderen genutzt wird. Er ist ein aktiver Contributor bei vielen Open-Source-Projekten, wie Sinatra, Rubinius, Rack und vielen mehr. "
+      },
+      "3": {
+        "name": "Timo Rößner",
+        "text": "Nach zahlreichen Lead Developer Positionen in verschiedenen Tech Unternehmen, ist Timo aktuell Engineering Manager bei ResearchGate.  Timo is in der Open Source Community aktiv und derzeit Maintainer von dem Projekt 'reek', einer Software für die Analyse der Codequalität, beliebt in der Ruby Szene. Er ist ein starker Befürworter neuer Technologien und hat weitreichende Erfahrung im Aufbau und Förderung von Teamkultur in Organisationen."
+      },
+      "4": {
+        "name": "Torsten Curdt",
+        "text": "Torsten ist Softwareentwickler, Gründer, Autor, Sprecher und Blogger. Er ist spezialisiert auf Scalable Architectures, Backend Services, Big Data, iOS und Mac-Entwicklung. Torsten ist auch ein aktiver und langjähriger Mitstreiter bei Open-Source-Projekten."
+      }
+    },
+    "news": {
+      "headline": "In the news",
+      "tagline": "Recruiting Startup of the Year at Hiring Success 18 Watch our winning pitch!"
+    },
+    "career": {
+      "headline": "Jobs",
+      "text": "Lust Teil des Honeypot Teams zu werden?",
+      "link": "Hier geht's zu unseren offenen Stellen"
+    },
+    "care": {
+      "headline": "Causes we Care About",
+      "text": "Unser team unterstützt Organisationen, die helfen die Welt zu verbessern"
+    },
+    "where": {
+      "headline": "Our Offices",
+      "link": "Show location",
+      "1": {
+        "city": "Berlin, Germany",
+        "street": "Schönhauser Allee 45, 10435"
+      },
+      "2": {
+        "city": "Amsterdam, Netherlands",
+        "street": "Singel 542, 1017"
+      }
+    }
+  },
+  "nl": {
+    "story": {
+      "headline": "Ons verhaal",
+      "tagline": "Wat is Honeypot?",
+      "text": {
+        "1": "Opgericht in oktober 2015, Honeypot is Europa's Tech Focused Job Platform. Onze missie is om elke developer aan een geweldige baan te helpen. Honeypot helpt Developers, Data Scientists, QA, Product Owners and CTOs bij het vinden van hun perfecte baan.",
+        "2": "Op Honeypot solliciteren bedrijven bij jou. We zijn van mening dat developers en andere tech professionals een baan moeten kiezen waar ze van houden: of dat nu gebaseerd is op cutting-edge technologie, een inspirerend team of gewoon ouderwets een goed salaris.",
+        "3": "Op dit moment is Honeypot Europa's leidende tech-focused job platform, actief in Duitsland en Nederland."
+      }
+    },
+    "team": {
+      "headline": "Maak kennis met ons team",
+      "tagline": "Maak kennis met ons team. 19+ nationaliteiten. 60% van ons team spreekt meer dan 3 talen"
+    },
+    "advisors": {
+      "headline": "Onze Adviseurs",
+      "1": {
+        "name": "Felix Plog",
+        "text": "Felix is SVP van Global Operations bij Delivery Hero en eerder mede-oprichter van Foodpanda, waar hij er in grote mate er voor heeft gezorgd dat het bedrijf een leidende speler werd in food delivery in opkomende markten. Voordat hij de wereld van food delivery betrad, was Felix Managing Director bij Axel Springer."
+      },
+      "2": {
+        "name": "Konstantin Haase",
+        "text": "Konstantin is een softwareontwikkelaar, ondernemer, auteur, spreker en een van de drukste mensen in de open source community. Hij is mede-oprichter van Travis CI, een continuous integration-as-service-platform, gebruikt door GitHub, Twitter, Facebook en vele anderen. Hij levert een actieve bijdrage aan verschillende open source-projecten, zoals Sinatra, Rubinius, Rack en nog veel meer."
+      },
+      "3": {
+        "name": "Timo Rößner",
+        "text": "Timo is Engineering Manager bij ResearchGate, nadat hij gedurende zijn carrière verschillende lead developer posities bekleedde.  Timo levert een actieve bijdrage aan open-source software en is de huidige beheerder van 'reek', een code quality analyser die populair is in de Ruby-community. Hij is een fervent evangelist van nieuwe technologieën en heeft ruime ervaring met het ontwikkelen en promoten van teamcultuur binnen organisaties."
+
+      },
+      "4": {
+        "name": "Torsten Curdt",
+        "text": "Torsten is een software developer, oprichter, auteur, spreker en blogger. Hij is een specialist in scalable architectures, backend-services, big data, iOS- en Mac-ontwikkeling. Torsten is ook al jarenlang een actieve bijdrager aan open source projecten."
+      }
+    },
+    "news": {
+      "headline": "In het nieuws",
+      "tagline": "Recruiting Startup van het jaar - Hiring Succes 18. Bekijk onze winnende pitch!"
+    },
+    "career": {
+      "headline": "Vacatures",
+      "text": "Geïnteresseerd om je bij het Honeypot team aan te sluiten?",
+      "link": "Check onze vacatures"
+    },
+    "care": {
+      "headline": "Goede doelen waar we om geven",
+      "text": "Ons team ondersteunt organisaties die helpen de wereld te verbeteren"
+    },
+    "where": {
+      "headline": "Onze kantoren",
+      "link": "Show location",
+      "1": {
+        "city": "Berlin, Duitsland",
+        "street": "Schönhauser Allee 45, 10435"
+      },
+      "2": {
+        "city": "Amsterdam, Nederland",
+        "street": "Singel 542, 1017"
+      }
     }
   }
 }

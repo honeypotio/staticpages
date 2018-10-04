@@ -7,18 +7,18 @@ export default ({page}) =>
     <div className="c-double-text-box">
       <div className="c-double-text-box__left">
         <h3>
-          { t('what-why.left.headline') }
+          { t('story.left.headline') }
         </h3>
         <p>
-          { t('what-why.left.text') }
+          { t('story.left.text') }
         </p>
       </div>
       <div className="c-double-text-box__right">
         <h3>
-          { t('what-why.right.headline') }
+          { t('story.right.headline') }
         </h3>
         <p>
-          { t('what-why.right.text') }
+          { t('story.right.text') }
         </p>
       </div>
     </div>
