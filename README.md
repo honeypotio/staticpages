@@ -1,3 +1,5 @@
+# THIS PROJECT IS DEPRECATED WITH THE EXCEPTION OF [LANDING PAGES)[https://github.com/honeypotio/staticpages/tree/master/app/lp] FOLDER WHICH NEEDS TO BE MIGRATED TO THE (NEW WEBSITE)[https://github.com/honeypotio/website/]
+
 Staticpages [![Build Status](https://travis-ci.org/honeypotio/staticpages.svg?branch=master)](https://travis-ci.org/honeypotio/staticpages)
 ----------
 
