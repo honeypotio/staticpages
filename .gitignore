@@ -26,7 +26,7 @@ npm-debug.*
 package-lock.json
 
 # Brunch output folder.
-public/
+public/*
 !public/landing.css
 !public/maintenance.html
 
@@ -40,7 +40,6 @@ public/
 !public/path---*.js
 !public/component---*.js
 !public/build-js-styles.css
-
 
 # Other
 tmp/
